@@ -690,6 +690,8 @@ def render_startup_script_template(instance_name: str, fuzzer: str,
         'no_dictionaries': experiment_config['no_dictionaries'],
         'oss_fuzz_corpus': experiment_config['oss_fuzz_corpus'],
         'num_cpu_cores': experiment_config['runner_num_cpu_cores'],
+        'seeds_per_trial_dir': experiment_config['seeds_per_trial_dir'],
+        'use_seeds_per_trial': experiment_config['use_seeds_per_trial'],
     }
 
     if not local_experiment:

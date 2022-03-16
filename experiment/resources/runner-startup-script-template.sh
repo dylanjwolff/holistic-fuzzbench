@@ -53,3 +53,5 @@ docker run \
 {% if not local_experiment %}--name=runner-container {% endif %}\
 --cap-add SYS_NICE --cap-add SYS_PTRACE \
 {{docker_image_url}} 2>&1 | tee /tmp/runner-log.txt
+
+# {% if use_seeds_per_trial %} -e SEEDS_RAND=test -v {{seeds_per_trial_dir}}/{{benchmark}}/{{trial_id}}:~/rand_seeds {% endif %} \
