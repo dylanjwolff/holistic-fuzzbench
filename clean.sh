@@ -1,3 +1,3 @@
-rm -rf config
-rm -rf ~/scratch/experiment-data/*
-rm -rf ~/scratch/report-data/*
+yes | sudo rm -rf config
+yes | sudo rm -rf ~/scratch/experiment-data/*
+yes | sudo rm -rf ~/scratch/report-data/*
