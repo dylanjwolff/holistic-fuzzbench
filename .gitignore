@@ -44,4 +44,5 @@ docker/generated.mk
 .*.swp
 
 # Other
-config	
+config
+tags
