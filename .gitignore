@@ -46,3 +46,8 @@ docker/generated.mk
 # Other
 config
 tags
+tags.lock
+
+data-analysis/*.tar.gz
+data-analysis/seeds
+data-analysis/reports
