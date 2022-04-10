@@ -21,7 +21,9 @@ print(data.columns)
 
 # Some quick scatter-plots to look at early data
 data.groupby("fuzzer").plot.scatter(x="number of seeds", y="edges_covered")
-plt.show()
+# plt.show()
 
 data.groupby("fuzzer").plot.scatter(x="mean seed size", y="edges_covered")
-plt.show()
+# plt.show()
+
+data.to_csv("comb-data.csv")

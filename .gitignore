@@ -51,3 +51,4 @@ tags.lock
 data-analysis/*.tar.gz
 data-analysis/seeds
 data-analysis/reports
+.ipynb_checkpoints
