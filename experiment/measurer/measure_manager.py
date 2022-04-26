@@ -100,6 +100,8 @@ def measure_loop(experiment: str, max_total_time: int):
                 all_trials_ended = scheduler.all_trials_ended(experiment)
 
                 if not measure_all_trials(experiment, max_total_time, pool, q):
+                    logger.info("measured false from trials")
+
                     # We didn't measure any trials.
                     if all_trials_ended:
                         # There are no trials producing snapshots to measure.
