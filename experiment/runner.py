@@ -241,7 +241,7 @@ class TrialRunner:  # pylint: disable=too-many-instance-attributes
         else:
             self.gcs_sync_dir = None
 
-        self.cycle = 1
+        self.cycle = 0
         self.corpus_dir = 'corpus'
         self.corpus_archives_dir = 'corpus-archives'
         self.results_dir = 'results'
