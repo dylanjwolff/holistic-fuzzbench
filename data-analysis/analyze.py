@@ -2,10 +2,11 @@ import pandas as pd
 import seed_stats
 import matplotlib
 import matplotlib.pyplot as plt
-from pandasql import sqldf
 
 # Report data hard-coded here for now
-data = pd.read_csv("reports/report-data/initial-cov-80/data.csv")
+data = pd.read_csv("report-data/initial-cov-80/data.csv")
+seed_data = seed_stats.get_seed_data("seeds/*")
+print("WARNING: initial seeds and data CSV are **BOTH** expected to be on local path for now")
 data['time_ended'] =  pd.to_datetime(data['time_ended'])
 data['time_started'] =  pd.to_datetime(data['time_started'])
 
@@ -25,13 +26,13 @@ data = pd.merge(data, mintrials[["trial_id", "initial_coverage"]], how="outer", 
 print(data.columns)
 
 # Some quick scatter-plots to look at early data
-data.groupby("fuzzer").plot.scatter(x="number of seeds", y="edges_covered")
+# data.groupby("fuzzer").plot.scatter(x="number of seeds", y="edges_covered")
 # plt.show()
 
-data.groupby("fuzzer").plot.scatter(x="mean seed size", y="edges_covered")
+# data.groupby("fuzzer").plot.scatter(x="mean seed size", y="edges_covered")
 # plt.show()
 
 data.groupby("fuzzer").plot.scatter(x="initial_coverage", y="edges_covered")
-# plt.show()
+plt.show()
 
 data.to_csv("comb-data.csv")
