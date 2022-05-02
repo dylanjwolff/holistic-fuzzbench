@@ -1,81 +1,161 @@
-,Unnamed: 0,git_hash,experiment_filestore,experiment,fuzzer,benchmark,time_started,time_ended,time,edges_covered,fuzzer_stats,crash_key,bugs_covered,trial,mean seed size,number of seeds
-0,3805,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.009653,2022-04-02 00:32:31.476274,43200,7944,,,0,1,10186.373134328358,67
-1,3800,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.584087,2022-04-02 00:32:31.476274,43200,7851,,,0,2,9700.741935483871,93
-2,3822,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.459515,2022-04-02 00:32:31.476274,43200,8403,,,0,3,9742.84375,64
-3,3809,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.395442,2022-04-02 00:32:31.476274,43200,8016,,,0,4,8464.305555555555,108
-4,3812,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.091420,2022-04-02 00:32:31.476274,43200,7943,,,0,5,8639.0,89
-5,3820,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.347670,2022-04-02 00:32:31.476274,43200,7965,,,0,6,10037.569620253165,79
-6,3814,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.203456,2022-04-02 00:32:31.476274,43200,8580,,,0,7,9031.767676767677,99
-7,3807,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.407806,2022-04-02 00:32:31.476274,43200,7898,,,0,8,8393.032258064517,93
-8,3821,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.350915,2022-04-02 00:32:31.476274,43200,7807,,,0,9,9929.108695652174,92
-9,3823,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:20.951909,2022-04-02 00:32:31.476274,43200,8633,,,0,10,8274.048780487805,82
-10,3806,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:20.984876,2022-04-02 00:32:31.476274,43200,7929,,,0,11,8133.564705882353,85
-11,3832,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.045532,2022-04-02 00:32:31.476274,43200,7880,,,0,12,9167.405063291139,79
-12,3825,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.074256,2022-04-02 00:32:31.476274,43200,7800,,,0,13,11939.186440677966,59
-13,3808,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:20.874685,2022-04-02 00:32:31.476274,43200,8572,,,0,14,10041.742574257425,101
-14,3795,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.082801,2022-04-02 00:32:31.476274,43200,7992,,,0,15,9719.85,80
-15,3796,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.123616,2022-04-02 00:32:31.476274,43200,7945,,,0,16,8167.516483516483,91
-16,3792,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:20.946776,2022-04-02 00:32:31.476274,43200,8497,,,0,17,11828.307692307691,78
-17,3819,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.178674,2022-04-02 00:32:31.476274,43200,8634,,,0,18,8271.774647887323,71
-18,3830,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.459690,2022-04-02 00:32:31.476274,43200,8579,,,0,19,8212.871428571429,70
-19,3815,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.405065,2022-04-02 00:32:31.476274,43200,7767,,,0,20,9813.5,108
-20,3804,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.138551,2022-04-02 00:32:31.476274,43200,7861,,,0,21,9264.576086956522,92
-21,3829,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.070131,2022-04-02 00:32:31.476274,43200,7858,,,0,22,7981.412698412699,63
-22,3802,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:20.893320,2022-04-02 00:32:31.476274,43200,8626,,,0,23,9653.288461538461,104
-23,3831,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:20.974022,2022-04-02 00:32:31.476274,43200,8547,,,0,24,12671.788235294118,85
-24,3813,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:20.946741,2022-04-02 00:32:31.476274,43200,7813,,,0,25,9775.303797468354,79
-25,3789,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.130646,2022-04-02 00:32:31.476274,43200,8621,,,0,26,8001.950617283951,81
-26,3827,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:20.959161,2022-04-02 00:32:31.476274,43200,7800,,,0,27,8807.031578947368,95
-27,3798,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.069235,2022-04-02 00:32:31.476274,43200,8615,,,0,28,9061.494505494506,91
-28,3799,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:20.966911,2022-04-02 00:32:31.476274,43200,7772,,,0,29,11429.89156626506,83
-29,3811,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.170250,2022-04-02 00:32:31.476274,43200,7884,,,0,30,9206.229885057472,87
-30,3826,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.354543,2022-04-02 00:32:31.476274,43200,7892,,,0,31,9386.567567567568,74
-31,3818,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:20.924727,2022-04-02 00:32:31.476274,43200,8679,,,0,32,7218.327586206897,58
-32,3816,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.077912,2022-04-02 00:32:31.476274,43200,8565,,,0,33,8848.530612244898,98
-33,3803,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.046660,2022-04-02 00:32:31.476274,43200,8597,,,0,34,8724.298701298701,77
-34,3793,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.244101,2022-04-02 00:32:31.476274,43200,7716,,,0,35,8837.296703296703,91
-35,3828,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.174371,2022-04-02 00:32:31.476274,43200,7950,,,0,36,9384.0,84
-36,3801,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.302434,2022-04-02 00:32:31.476274,43200,8438,,,0,37,7341.638888888889,72
-37,3817,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.237928,2022-04-02 00:32:31.476274,43200,7683,,,0,38,10146.805970149253,67
-38,3810,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:20.890349,2022-04-02 00:32:31.476274,43200,8488,,,0,39,10115.333333333334,108
-39,3791,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,afl,bloaty_fuzz_target,2022-04-01 12:22:21.152110,2022-04-02 00:32:31.476274,43200,7941,,,0,40,8308.132352941177,68
-40,3785,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.105033,2022-04-02 00:32:31.476274,43200,7187,,,0,41,10186.373134328358,67
-41,3783,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.193692,2022-04-02 00:32:31.476274,43200,7216,,,0,42,9700.741935483871,93
-42,3780,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.335220,2022-04-02 00:32:31.476274,43200,7063,,,0,43,9742.84375,64
-43,3777,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.458591,2022-04-02 00:32:31.476274,43200,7384,,,0,44,8464.305555555555,108
-44,3787,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.153509,2022-04-02 00:32:31.476274,43200,7262,,,0,45,8639.0,89
-45,3768,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:20.956247,2022-04-02 00:32:31.476274,43200,7284,,,0,46,10037.569620253165,79
-46,3767,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.021604,2022-04-02 00:32:31.476274,43200,8129,,,0,47,9031.767676767677,99
-47,3781,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.420103,2022-04-02 00:32:31.476274,43200,7233,,,0,48,8393.032258064517,93
-48,3764,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:20.913181,2022-04-02 00:32:31.476274,43200,7202,,,0,49,9929.108695652174,92
-49,3786,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.738141,2022-04-02 00:32:31.476274,43200,7311,,,0,50,8274.048780487805,82
-50,3797,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.258005,2022-04-02 00:32:31.476274,43200,7292,,,0,51,8133.564705882353,85
-51,3778,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.411540,2022-04-02 00:32:31.476274,43200,7229,,,0,52,9167.405063291139,79
-52,3770,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.011899,2022-04-02 00:32:31.476274,43200,7007,,,0,53,11939.186440677966,59
-53,3760,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.057486,2022-04-02 00:32:31.476274,43200,8225,,,0,54,10041.742574257425,101
-54,3772,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:20.997357,2022-04-02 00:32:31.476274,43200,7495,,,0,55,9719.85,80
-55,3774,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:20.988766,2022-04-02 00:32:31.476274,43200,7279,,,0,56,8167.516483516483,91
-56,3788,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.298537,2022-04-02 00:32:31.476274,43200,7991,,,0,57,11828.307692307691,78
-57,3784,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.399539,2022-04-02 00:32:31.476274,43200,7990,,,0,58,8271.774647887323,71
-58,3766,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.006961,2022-04-02 00:32:31.476274,43200,8019,,,0,59,8212.871428571429,70
-59,3763,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.108763,2022-04-02 00:32:31.476274,43200,7346,,,0,60,9813.5,108
-60,3782,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.435288,2022-04-02 00:32:31.476274,43200,7313,,,0,61,9264.576086956522,92
-61,3765,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:20.934707,2022-04-02 00:32:31.476274,43200,7328,,,0,62,7981.412698412699,63
-62,3790,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.415625,2022-04-02 00:32:31.476274,43200,7281,,,0,63,9653.288461538461,104
-63,3824,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.323153,2022-04-02 00:32:31.476274,43200,7920,,,0,64,12671.788235294118,85
-64,3794,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.031250,2022-04-02 00:32:31.476274,43200,7272,,,0,65,9775.303797468354,79
-65,3779,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.560813,2022-04-02 00:32:31.476274,43200,7548,,,0,66,8001.950617283951,81
-66,3761,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.109173,2022-04-02 00:32:31.476274,43200,7303,,,0,67,8807.031578947368,95
-67,3833,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.155714,2022-04-02 00:32:31.476274,43200,7535,,,0,68,9061.494505494506,91
-68,3839,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.211869,2022-04-02 00:32:31.476274,43200,7172,,,0,69,11429.89156626506,83
-69,3769,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.023296,2022-04-02 00:32:31.476274,43200,7319,,,0,70,9206.229885057472,87
-70,3776,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:20.992771,2022-04-02 00:32:31.476274,43200,7211,,,0,71,9386.567567567568,74
-71,3773,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.082095,2022-04-02 00:32:31.476274,43200,7090,,,0,72,7218.327586206897,58
-72,3834,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.199981,2022-04-02 00:32:31.476274,43200,7927,,,0,73,8848.530612244898,98
-73,3775,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:20.966415,2022-04-02 00:32:31.476274,43200,7803,,,0,74,8724.298701298701,77
-74,3836,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.122609,2022-04-02 00:32:31.476274,43200,7086,,,0,75,8837.296703296703,91
-75,3835,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.161676,2022-04-02 00:32:31.476274,43200,7246,,,0,76,9384.0,84
-76,3838,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.610358,2022-04-02 00:32:31.476274,43200,7684,,,0,77,7341.638888888889,72
-77,3771,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:20.924755,2022-04-02 00:32:31.476274,43200,7181,,,0,78,10146.805970149253,67
-78,3837,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:21.105939,2022-04-02 00:32:31.476274,43200,7833,,,0,79,10115.333333333334,108
-79,3762,9d6625797c670bcbabacecc938d952546ab26608,/home/dylan/scratch/experiment-data,spt-80,libfuzzer,bloaty_fuzz_target,2022-04-01 12:22:20.980555,2022-04-02 00:32:31.476274,43200,7253,,,0,80,8308.132352941177,68
+,Unnamed: 0,git_hash,experiment_filestore,experiment,fuzzer,benchmark,time_started,time_ended,time,edges_covered,fuzzer_stats,crash_key,bugs_covered,trial,mean seed size,number of seeds,trial_id,initial_coverage
+0,4077.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.370490,2022-04-29 23:45:45.693442,45000.0,7835.0,,,0.0,,,,,
+1,4075.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.339273,2022-04-29 23:45:45.693442,45000.0,8568.0,,,0.0,,,,,
+2,4068.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.177524,2022-04-29 23:45:45.693442,45000.0,7858.0,,,0.0,,,,,
+3,4009.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.022137,2022-04-29 23:45:45.693442,45000.0,8744.0,,,0.0,,,,,
+4,4070.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.236125,2022-04-29 23:45:45.693442,45000.0,7909.0,,,0.0,,,,,
+5,4074.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.192991,2022-04-29 23:45:45.693442,45000.0,7981.0,,,0.0,,,,,
+6,4059.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.188447,2022-04-29 23:45:45.693442,45000.0,8677.0,,,0.0,,,,,
+7,4046.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.273972,2022-04-29 23:45:45.693442,45000.0,8661.0,,,0.0,,,,,
+8,4065.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.301902,2022-04-29 23:45:45.693442,45000.0,7821.0,,,0.0,,,,,
+9,4064.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.243543,2022-04-29 23:45:45.693442,45000.0,7914.0,,,0.0,,,,,
+10,4063.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.101598,2022-04-29 23:45:45.693442,45000.0,8003.0,,,0.0,,,,,
+11,4062.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.300140,2022-04-29 23:45:45.693442,45000.0,8370.0,,,0.0,,,,,
+12,4067.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.240722,2022-04-29 23:45:45.693442,45000.0,8461.0,,,0.0,,,,,
+13,4071.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.137885,2022-04-29 23:45:45.693442,45000.0,8565.0,,,0.0,,,,,
+14,4054.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.567159,2022-04-29 23:45:45.693442,45000.0,7978.0,,,0.0,,,,,
+15,4040.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.259249,2022-04-29 23:45:45.693442,45000.0,7915.0,,,0.0,,,,,
+16,4078.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.108082,2022-04-29 23:45:45.693442,45000.0,8501.0,,,0.0,,,,,
+17,4072.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.344815,2022-04-29 23:45:45.693442,45000.0,8558.0,,,0.0,,,,,
+18,4027.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.010177,2022-04-29 23:45:45.693442,45000.0,8594.0,,,0.0,,,,,
+19,4061.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.421397,2022-04-29 23:45:45.693442,45000.0,7782.0,,,0.0,,,,,
+20,4045.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.407606,2022-04-29 23:45:45.693442,45000.0,7855.0,,,0.0,,,,,
+21,4076.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.191721,2022-04-29 23:45:45.693442,45000.0,7849.0,,,0.0,,,,,
+22,4060.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.496482,2022-04-29 23:45:45.693442,45000.0,8552.0,,,0.0,,,,,
+23,4039.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.279885,2022-04-29 23:45:45.693442,45000.0,8569.0,,,0.0,,,,,
+24,4047.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.411719,2022-04-29 23:45:45.693442,45000.0,7655.0,,,0.0,,,,,
+25,4042.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.329898,2022-04-29 23:45:45.693442,45000.0,8591.0,,,0.0,,,,,
+26,4073.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.432025,2022-04-29 23:45:45.693442,45000.0,7933.0,,,0.0,,,,,
+27,4079.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.488029,2022-04-29 23:45:45.693442,45000.0,7904.0,,,0.0,,,,,
+28,4033.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.043849,2022-04-29 23:45:45.693442,45000.0,7986.0,,,0.0,,,,,
+29,4029.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.371661,2022-04-29 23:45:45.693442,45000.0,7959.0,,,0.0,,,,,
+30,4057.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.263413,2022-04-29 23:45:45.693442,45000.0,7959.0,,,0.0,,,,,
+31,4051.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.196422,2022-04-29 23:45:45.693442,45000.0,8604.0,,,0.0,,,,,
+32,4044.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.138014,2022-04-29 23:45:45.693442,45000.0,8523.0,,,0.0,,,,,
+33,4034.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.094916,2022-04-29 23:45:45.693442,45000.0,8588.0,,,0.0,,,,,
+34,4055.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.296032,2022-04-29 23:45:45.693442,45000.0,7886.0,,,0.0,,,,,
+35,4066.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.153136,2022-04-29 23:45:45.693442,45000.0,7870.0,,,0.0,,,,,
+36,4056.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.262281,2022-04-29 23:45:45.693442,45000.0,8602.0,,,0.0,,,,,
+37,4069.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.506409,2022-04-29 23:45:45.693442,45000.0,7869.0,,,0.0,,,,,
+38,4043.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.215367,2022-04-29 23:45:45.693442,45000.0,8384.0,,,0.0,,,,,
+39,4030.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,afl,bloaty_fuzz_target,2022-04-29 10:55:35.224386,2022-04-29 23:45:45.693442,45000.0,7972.0,,,0.0,,,,,
+40,4037.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.256373,2022-04-29 23:45:45.693442,45000.0,7204.0,,,0.0,,,,,
+41,4026.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.279521,2022-04-29 23:45:45.693442,45000.0,7259.0,,,0.0,,,,,
+42,4023.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.255535,2022-04-29 23:45:45.693442,45000.0,7079.0,,,0.0,,,,,
+43,4019.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.443210,2022-04-29 23:45:45.693442,45000.0,7288.0,,,0.0,,,,,
+44,4038.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.271747,2022-04-29 23:45:45.693442,45000.0,7280.0,,,0.0,,,,,
+45,4015.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.067191,2022-04-29 23:45:45.693442,45000.0,7231.0,,,0.0,,,,,
+46,4036.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.308424,2022-04-29 23:45:45.693442,45000.0,8114.0,,,0.0,,,,,
+47,4032.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.078164,2022-04-29 23:45:45.693442,45000.0,7248.0,,,0.0,,,,,
+48,4025.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.313089,2022-04-29 23:45:45.693442,45000.0,7218.0,,,0.0,,,,,
+49,4022.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:34.978171,2022-04-29 23:45:45.693442,45000.0,7289.0,,,0.0,,,,,
+50,4052.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.358522,2022-04-29 23:45:45.693442,45000.0,7264.0,,,0.0,,,,,
+51,4049.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.479957,2022-04-29 23:45:45.693442,45000.0,7253.0,,,0.0,,,,,
+52,4006.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.212347,2022-04-29 23:45:45.693442,45000.0,7111.0,,,0.0,,,,,
+53,4048.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.415635,2022-04-29 23:45:45.693442,45000.0,8182.0,,,0.0,,,,,
+54,4014.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.177335,2022-04-29 23:45:45.693442,45000.0,7529.0,,,0.0,,,,,
+55,4028.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.396287,2022-04-29 23:45:45.693442,45000.0,7153.0,,,0.0,,,,,
+56,4013.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.223236,2022-04-29 23:45:45.693442,45000.0,7937.0,,,0.0,,,,,
+57,4005.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.226307,2022-04-29 23:45:45.693442,45000.0,7882.0,,,0.0,,,,,
+58,4020.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.361972,2022-04-29 23:45:45.693442,45000.0,7926.0,,,0.0,,,,,
+59,4017.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.343240,2022-04-29 23:45:45.693442,45000.0,7283.0,,,0.0,,,,,
+60,4004.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.078253,2022-04-29 23:45:45.693442,45000.0,7323.0,,,0.0,,,,,
+61,4018.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.312653,2022-04-29 23:45:45.693442,45000.0,7345.0,,,0.0,,,,,
+62,4002.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.317002,2022-04-29 23:45:45.693442,45000.0,7232.0,,,0.0,,,,,
+63,4058.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.280143,2022-04-29 23:45:45.693442,45000.0,7928.0,,,0.0,,,,,
+64,4007.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.138708,2022-04-29 23:45:45.693442,45000.0,7288.0,,,0.0,,,,,
+65,4016.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.517456,2022-04-29 23:45:45.693442,45000.0,7516.0,,,0.0,,,,,
+66,4021.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.271688,2022-04-29 23:45:45.693442,45000.0,7285.0,,,0.0,,,,,
+67,4003.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.249636,2022-04-29 23:45:45.693442,45000.0,7537.0,,,0.0,,,,,
+68,4031.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.270637,2022-04-29 23:45:45.693442,45000.0,7218.0,,,0.0,,,,,
+69,4035.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.156483,2022-04-29 23:45:45.693442,45000.0,7342.0,,,0.0,,,,,
+70,4041.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.294067,2022-04-29 23:45:45.693442,45000.0,7239.0,,,0.0,,,,,
+71,4011.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.492031,2022-04-29 23:45:45.693442,45000.0,7284.0,,,0.0,,,,,
+72,4053.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.380277,2022-04-29 23:45:45.693442,45000.0,7940.0,,,0.0,,,,,
+73,4001.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.218386,2022-04-29 23:45:45.693442,45000.0,8035.0,,,0.0,,,,,
+74,4008.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.135518,2022-04-29 23:45:45.693442,45000.0,7184.0,,,0.0,,,,,
+75,4010.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.338552,2022-04-29 23:45:45.693442,45000.0,7177.0,,,0.0,,,,,
+76,4012.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.334638,2022-04-29 23:45:45.693442,45000.0,7731.0,,,0.0,,,,,
+77,4024.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.339272,2022-04-29 23:45:45.693442,45000.0,7125.0,,,0.0,,,,,
+78,4050.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.321251,2022-04-29 23:45:45.693442,45000.0,7814.0,,,0.0,,,,,
+79,4000.0,b144c888823a362cbd38f29f6b50511602990c96,/home/dylan/scratch/experiment-data,initial-cov-80,libfuzzer,bloaty_fuzz_target,2022-04-29 10:55:35.577737,2022-04-29 23:45:45.693442,45000.0,7215.0,,,0.0,,,,,
+80,,,,,,,,,,,,,,,,,1.0,6989.0
+81,,,,,,,,,,,,,,,,,2.0,7043.0
+82,,,,,,,,,,,,,,,,,3.0,6817.0
+83,,,,,,,,,,,,,,,,,4.0,7116.0
+84,,,,,,,,,,,,,,,,,5.0,7097.0
+85,,,,,,,,,,,,,,,,,6.0,7055.0
+86,,,,,,,,,,,,,,,,,7.0,7798.0
+87,,,,,,,,,,,,,,,,,8.0,6999.0
+88,,,,,,,,,,,,,,,,,9.0,7028.0
+89,,,,,,,,,,,,,,,,,10.0,7096.0
+90,,,,,,,,,,,,,,,,,11.0,7104.0
+91,,,,,,,,,,,,,,,,,12.0,7002.0
+92,,,,,,,,,,,,,,,,,13.0,6811.0
+93,,,,,,,,,,,,,,,,,14.0,7976.0
+94,,,,,,,,,,,,,,,,,15.0,7180.0
+95,,,,,,,,,,,,,,,,,16.0,6974.0
+96,,,,,,,,,,,,,,,,,17.0,7706.0
+97,,,,,,,,,,,,,,,,,18.0,7662.0
+98,,,,,,,,,,,,,,,,,19.0,7744.0
+99,,,,,,,,,,,,,,,,,20.0,7087.0
+100,,,,,,,,,,,,,,,,,21.0,7092.0
+101,,,,,,,,,,,,,,,,,22.0,6940.0
+102,,,,,,,,,,,,,,,,,23.0,7056.0
+103,,,,,,,,,,,,,,,,,24.0,7753.0
+104,,,,,,,,,,,,,,,,,25.0,7035.0
+105,,,,,,,,,,,,,,,,,26.0,7097.0
+106,,,,,,,,,,,,,,,,,27.0,7080.0
+107,,,,,,,,,,,,,,,,,28.0,7264.0
+108,,,,,,,,,,,,,,,,,29.0,7049.0
+109,,,,,,,,,,,,,,,,,30.0,7186.0
+110,,,,,,,,,,,,,,,,,31.0,6944.0
+111,,,,,,,,,,,,,,,,,32.0,6761.0
+112,,,,,,,,,,,,,,,,,33.0,7749.0
+113,,,,,,,,,,,,,,,,,34.0,7597.0
+114,,,,,,,,,,,,,,,,,35.0,6941.0
+115,,,,,,,,,,,,,,,,,36.0,7034.0
+116,,,,,,,,,,,,,,,,,37.0,7527.0
+117,,,,,,,,,,,,,,,,,38.0,6922.0
+118,,,,,,,,,,,,,,,,,39.0,7648.0
+119,,,,,,,,,,,,,,,,,40.0,6932.0
+120,,,,,,,,,,,,,,,,,41.0,6989.0
+121,,,,,,,,,,,,,,,,,42.0,7043.0
+122,,,,,,,,,,,,,,,,,43.0,6817.0
+123,,,,,,,,,,,,,,,,,44.0,7116.0
+124,,,,,,,,,,,,,,,,,45.0,7097.0
+125,,,,,,,,,,,,,,,,,46.0,7055.0
+126,,,,,,,,,,,,,,,,,47.0,7798.0
+127,,,,,,,,,,,,,,,,,48.0,6999.0
+128,,,,,,,,,,,,,,,,,49.0,7028.0
+129,,,,,,,,,,,,,,,,,50.0,7096.0
+130,,,,,,,,,,,,,,,,,51.0,7104.0
+131,,,,,,,,,,,,,,,,,52.0,7002.0
+132,,,,,,,,,,,,,,,,,53.0,6811.0
+133,,,,,,,,,,,,,,,,,54.0,7976.0
+134,,,,,,,,,,,,,,,,,55.0,7180.0
+135,,,,,,,,,,,,,,,,,56.0,6974.0
+136,,,,,,,,,,,,,,,,,57.0,7706.0
+137,,,,,,,,,,,,,,,,,58.0,7662.0
+138,,,,,,,,,,,,,,,,,59.0,7744.0
+139,,,,,,,,,,,,,,,,,60.0,7087.0
+140,,,,,,,,,,,,,,,,,61.0,7092.0
+141,,,,,,,,,,,,,,,,,62.0,6940.0
+142,,,,,,,,,,,,,,,,,63.0,7056.0
+143,,,,,,,,,,,,,,,,,64.0,7753.0
+144,,,,,,,,,,,,,,,,,65.0,7035.0
+145,,,,,,,,,,,,,,,,,66.0,7097.0
+146,,,,,,,,,,,,,,,,,67.0,7080.0
+147,,,,,,,,,,,,,,,,,68.0,7264.0
+148,,,,,,,,,,,,,,,,,69.0,7049.0
+149,,,,,,,,,,,,,,,,,70.0,7186.0
+150,,,,,,,,,,,,,,,,,71.0,6944.0
+151,,,,,,,,,,,,,,,,,72.0,6761.0
+152,,,,,,,,,,,,,,,,,73.0,7749.0
+153,,,,,,,,,,,,,,,,,74.0,7597.0
+154,,,,,,,,,,,,,,,,,75.0,6941.0
+155,,,,,,,,,,,,,,,,,76.0,7034.0
+156,,,,,,,,,,,,,,,,,77.0,7527.0
+157,,,,,,,,,,,,,,,,,78.0,6922.0
+158,,,,,,,,,,,,,,,,,79.0,7648.0
+159,,,,,,,,,,,,,,,,,80.0,6932.0
