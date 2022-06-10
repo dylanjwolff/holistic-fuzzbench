@@ -5,9 +5,9 @@ import shutil
 import glob
 
 trials_per_fuzzertarget = 4
-fuzzers = ["afl", "libfuzzer"]
-targets = ["bloaty_fuzz_target", "harfbuzz-1.3.2"]
-corpus_dirs = ["cminned/bloaty_fuzz_target/aflfast", "cminned/harfbuzz-1.3.2"]
+fuzzers = ["afl", "libfuzzer", "aflfast"]
+targets = ["bloaty_fuzz_target", "harfbuzz-1.3.2", "lcms-2017-03-21"]
+corpus_dirs = ["cminned/bloaty_fuzz_target/aflfast", "cminned/harfbuzz-1.3.2", "cminned/lcms-2017-03-21"]
 distribution = "UNIFORM"
 seed_usage = 2
 
@@ -54,6 +54,7 @@ for fuzzer in fuzzers:
         # for testing
         # seeds_per_trial = 2
 
+        print()
         print(f"Target is {target}. Fuzzer is {fuzzer}")
         print(f"Approx. {seeds_per_trial} seeds per trial from {distribution} dist")
         print(f"{trials_per_fuzzertarget} unique trials, {total_trials} total trials")
@@ -61,7 +62,7 @@ for fuzzer in fuzzers:
 
         for tri in range(trials_per_fuzzertarget):
             trial_num = trial_num + 1
-            src_trial_num = (trial_num - 1) % (trials_per_fuzzertarget*len(fuzzers)) + 1
+            src_trial_num = (trial_num - 1) % (trials_per_fuzzertarget*len(targets)) + 1
             trial_dir = f"seeds/{target}/{trial_num}"
 
             if trial_num != src_trial_num:
