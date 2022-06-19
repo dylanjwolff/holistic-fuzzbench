@@ -690,9 +690,16 @@ def render_startup_script_template(instance_name: str, fuzzer: str,
         'no_dictionaries': experiment_config['no_dictionaries'],
         'oss_fuzz_corpus': experiment_config['oss_fuzz_corpus'],
         'num_cpu_cores': experiment_config['runner_num_cpu_cores'],
-        'seeds_per_trial_dir': experiment_config['seeds_per_trial_dir'],
-        'use_seeds_per_trial': experiment_config['use_seeds_per_trial'],
     }
+
+    if 'use_seeds_per_trial' in experiment_config:
+        kwargs['seeds_per_trial_dir'] = experiment_config['seeds_per_trial_dir']
+        kwargs['use_seeds_per_trial'] = experiment_config['use_seeds_per_trial']
+        fuzzer_trials = len(experiment_config['fuzzers']) * experiment_config['trials']
+        kwargs['mod_trial_id'] = trial_id % fuzzer_trials
+
+    else:
+        kwargs['use_seeds_per_trial'] = False
 
     if not local_experiment:
         kwargs['cloud_compute_zone'] = experiment_config['cloud_compute_zone']
