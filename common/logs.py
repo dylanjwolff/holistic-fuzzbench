@@ -18,9 +18,11 @@ import os
 import sys
 import traceback
 
-import google.cloud.logging
-from google.cloud.logging.handlers.handlers import CloudLoggingHandler
-from google.cloud import error_reporting
+# @FIXME needed to remove these imports because they were causing errors
+# during local experiments (Dylan 18-Jun-22)
+# import google.cloud.logging
+# from google.cloud.logging.handlers.handlers import CloudLoggingHandler
+# from google.cloud import error_reporting
 
 # Disable this check since we have a bunch of non-constant globals in this file.
 # pylint: disable=invalid-name
