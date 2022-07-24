@@ -4,10 +4,14 @@ import random
 import shutil
 import glob
 
-trials_per_fuzzertarget = 4
-fuzzers = ["afl", "libfuzzer", "aflfast"]
+trials_per_fuzzertarget = 2
+fuzzers = ["afl", "libfuzzer", "aflplusplus", "entropic", "honggfuzz"]
 targets = ["bloaty_fuzz_target", "harfbuzz-1.3.2", "lcms-2017-03-21"]
 corpus_dirs = ["cminned/bloaty_fuzz_target/aflfast", "cminned/harfbuzz-1.3.2", "cminned/lcms-2017-03-21"]
+
+targets = os.listdir("oss-corpora")
+corpus_dirs = [f"oss-corpora/{target}" for target in targets]
+
 distribution = "UNIFORM"
 seed_usage = 2
 
@@ -52,7 +56,7 @@ for fuzzer in fuzzers:
         seeds_per_trial = max(1, seeds_per_trial) # at least one seed per trial
 
         # for testing
-        # seeds_per_trial = 2
+        seeds_per_trial = 2
 
         print()
         print(f"Target is {target}. Fuzzer is {fuzzer}")
