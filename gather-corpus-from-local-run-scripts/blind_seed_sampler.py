@@ -28,65 +28,37 @@ for corpus_dir in corpus_dirs:
     corpora_paths.append(corpus_paths)
     print(f"Sampling from {len(corpus_paths)} files under {corpus_dir}")
 
+for ti, target in enumerate(targets):
+    num_seeds = len(corpora_paths[ti])
 
-if len(targets) > 1:
-    print()
-    print("".join(['*']*80))
-    print("".join(['*']*80))
-    print("WARNING: running fuzzbench with multiple targets and initial seeds not well \nsupported because it depends on Fuzzbench's ordering of trials")
-    print("".join(['*']*80))
-    print("".join(['*']*80))
-    print()
+    seeds_per_trial = int(min(num_seeds / trials_per_fuzzertarget * seed_usage, num_seeds/2))
+    seeds_per_trial = max(1, seeds_per_trial)  # at least one seed per trial
 
-# Trials are ordered by fuzzer (alphabetic or cli order?), then by target (cli order), then by repetition
-# e.g. AFL ,bloaty,0
-#      AFL ,bloaty,1
-#      AFL ,  lcms,0
-#      AFL ,  lcms,1
-#      libf,bloaty,0
-#      libf,bloaty,1
-# etc...
+    # for testing
+    seeds_per_trial = 2
 
+    print(f"Target is {target}")
+    print(f"Approx. {seeds_per_trial} seeds per trial from {distribution} dist")
+    print(f"{trials_per_fuzzertarget} unique trials, {total_trials} total trials")
+    print("---------------------------------------")
 
-trial_num = 0
-for fuzzer in fuzzers:
-    for ti, target in enumerate(targets):
-        num_seeds = len(corpora_paths[ti])
-        seeds_per_trial = int(min(num_seeds / trials_per_fuzzertarget * seed_usage, num_seeds/2))
-        seeds_per_trial = max(1, seeds_per_trial) # at least one seed per trial
+    for tri in range(trials_per_fuzzertarget):
+        trial_dir = f"seeds/{target}/base/{tri}"
+        sp.run(f"mkdir -p {trial_dir}", shell=True)
+        if distribution == "UNIFORM":
+            trial_num_seeds = random.randint(1, seeds_per_trial*2) # inclusive []
+        else:
+            trial_num_seeds = seeds_per_trial
 
-        # for testing
-        seeds_per_trial = 2
+        trial_seeds = random.choices(corpus_paths, k=trial_num_seeds)
+        for ts in trial_seeds:
+            shutil.copy2(ts, trial_dir)
 
-        print()
-        print(f"Target is {target}. Fuzzer is {fuzzer}")
-        print(f"Approx. {seeds_per_trial} seeds per trial from {distribution} dist")
-        print(f"{trials_per_fuzzertarget} unique trials, {total_trials} total trials")
-        print("---------------------------------------")
-
-        for tri in range(trials_per_fuzzertarget):
-            trial_num = trial_num + 1
-            src_trial_num = (trial_num - 1) % (trials_per_fuzzertarget*len(targets)) + 1
-            trial_dir = f"seeds/{target}/{trial_num}"
-
-            if trial_num != src_trial_num:
-                src_trial_dir = f"seeds/{target}/{src_trial_num}"
-                shutil.copytree(src_trial_dir, trial_dir)
-                numcpd = len(os.listdir(trial_dir))
-                print(f"copied {numcpd} from trial {src_trial_num} to {trial_num}")
-                continue
-            sp.run(f"mkdir -p {trial_dir}", shell=True)
-
-            if distribution == "UNIFORM":
-                trial_num_seeds = random.randint(0, seeds_per_trial*2) # inclusive []
-            else:
-                trial_num_seeds = seeds_per_trial
+        print(f"sampled {len(os.listdir(trial_dir))} for fb trial {tri}")
 
 
-            trial_seeds = random.choices(corpus_paths, k=trial_num_seeds)
-            for ts in trial_seeds:
-                shutil.copy2(ts, trial_dir)
-            print(f"sampled {len(os.listdir(trial_dir))} for trial {trial_num}")
+    for fuzzer in fuzzers:
+        shutil.copytree(f"seeds/{target}/base", f"seeds/{target}/{fuzzer}")
 
 
 

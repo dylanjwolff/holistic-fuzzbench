@@ -596,6 +596,18 @@ def start_trials(trials, experiment_config: dict, pool):
     logger.info('Starting trials.')
     trial_id_mapping = {trial.id: trial for trial in trials}
 
+    id_fb = {}
+    d = {}
+    for tp in trials:
+        if tp.benchmark not in d:
+            d[tp.benchmark] = {}
+        if tp.fuzzer not in d[tp.benchmark]:
+            d[tp.benchmark][tp.fuzzer] = 0
+        id_fb[tp.id] = d[tp.benchmark][tp.fuzzer]
+        d[tp.benchmark][tp.fuzzer] = d[tp.benchmark][tp.fuzzer] + 1
+
+
+
     # Shuffle trials so that we don't create trials for the same fuzzer
     # benchmark close to one another. This *may* make the preemption rate more
     # evenly distributed across fuzzer benchmarks which will help if we don't
@@ -606,7 +618,7 @@ def start_trials(trials, experiment_config: dict, pool):
     random.shuffle(shuffled_trials)
 
     start_trial_args = [
-        (TrialProxy(trial), experiment_config) for trial in shuffled_trials
+        (TrialProxy(trial), experiment_config, id_fb[trial.id]) for trial in shuffled_trials
     ]
     started_trial_proxies = pool.starmap(_start_trial, start_trial_args)
     started_trials = update_started_trials(started_trial_proxies,
@@ -642,7 +654,7 @@ def _initialize_logs(experiment):
 # https://cloud.google.com/compute/docs/instances/preemptible#preemption_selection
 
 
-def _start_trial(trial: TrialProxy, experiment_config: dict):
+def _start_trial(trial: TrialProxy, experiment_config: dict, id_fb = 0):
     """Start a trial if possible. Mark the trial as started if it was and then
     return the Trial. Otherwise return None."""
     # TODO(metzman): Add support for early exit (trial_creation_failed) that was
@@ -653,7 +665,7 @@ def _start_trial(trial: TrialProxy, experiment_config: dict):
     _initialize_logs(experiment_config['experiment'])
     logger.info('Start trial %d.', trial.id)
     started = create_trial_instance(trial.fuzzer, trial.benchmark, trial.id,
-                                    experiment_config, trial.preemptible)
+                                    experiment_config, trial.preemptible, id_fb)
     if started:
         trial.time_started = datetime_now()
         return trial
@@ -663,7 +675,7 @@ def _start_trial(trial: TrialProxy, experiment_config: dict):
 
 def render_startup_script_template(instance_name: str, fuzzer: str,
                                    benchmark: str, trial_id: int,
-                                   experiment_config: dict):
+                                   experiment_config: dict, id_fb = 0):
     """Render the startup script using the template and the parameters
     provided and return the result."""
     experiment = experiment_config['experiment']
@@ -690,6 +702,7 @@ def render_startup_script_template(instance_name: str, fuzzer: str,
         'no_dictionaries': experiment_config['no_dictionaries'],
         'oss_fuzz_corpus': experiment_config['oss_fuzz_corpus'],
         'num_cpu_cores': experiment_config['runner_num_cpu_cores'],
+        'per_fuzzer_bench_id': id_fb,
     }
 
     if 'use_seeds_per_trial' in experiment_config:
@@ -709,14 +722,14 @@ def render_startup_script_template(instance_name: str, fuzzer: str,
 
 
 def create_trial_instance(fuzzer: str, benchmark: str, trial_id: int,
-                          experiment_config: dict, preemptible: bool) -> bool:
+                          experiment_config: dict, preemptible: bool, id_fb = 0) -> bool:
     """Create or start a trial instance for a specific
     trial_id,fuzzer,benchmark."""
     instance_name = experiment_utils.get_trial_instance_name(
         experiment_config['experiment'], trial_id)
     startup_script = render_startup_script_template(instance_name, fuzzer,
                                                     benchmark, trial_id,
-                                                    experiment_config)
+                                                    experiment_config, id_fb)
     startup_script_path = '/tmp/%s-start-docker.sh' % instance_name
     with open(startup_script_path, 'w') as file_handle:
         file_handle.write(startup_script)
