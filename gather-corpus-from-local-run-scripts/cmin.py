@@ -1,8 +1,20 @@
 import os
 import subprocess as sp
 
-targets = os.listdir("dest")
-# targets = ["bloaty_fuzz_target"]
+# for e.g. prev. generated run
+# corpus_root = "dest"
+
+# for e.g. oss-fuzz
+corpus_root = "oss-corpora"
+TARGET_ONLY = True
+
+targets = os.listdir(corpus_root)
+# targets = ["bloaty_fuzz_target", "lcms-2017-03-21"]
+
+# Want to throw an error here b/c minimization is v. expensive
+os.mkdir("cminned")
+
+ps = []
 for target in targets:
 
     entry = f"""
@@ -15,7 +27,7 @@ for target in targets:
         f.write(entry)
 
     dockerignore = f"""
-    dest
+    {corpus_root}
     cminned
     """
     with open(".dockerignore", "w") as f:
@@ -23,8 +35,9 @@ for target in targets:
 
 
     dockerfile = f"""FROM gcr.io/fuzzbench/runners/afl/{target}
+        RUN apt update -y
         RUN apt install git -y
-        RUN git clone https://github.com/google/AFL.git
+        COPY AFL AFL
         RUN cd AFL; make
         ENV AFL_PATH=$WORKDIR/AFL
         COPY entry.sh entry.sh
@@ -36,12 +49,25 @@ for target in targets:
 
     sp.run(f"docker build . -t {target}-cmin", shell=True)
 
-    fuzzers = os.listdir(f"dest/{target}")
+    if TARGET_ONLY:
+        cmin_dir = f"{os.getcwd()}/cminned/{target}"
+        sp.run(f"mkdir -p {cmin_dir}", shell=True)
+        corpus_dir = f"{os.getcwd()}/{corpus_root}/{target}"
+        p = sp.Popen(f"docker run -v {corpus_dir}:/opt/corpus -v {cmin_dir}:/opt/out {target}-cmin", shell=True)
+        ps.append(p)
+        continue
+
+    fuzzers = os.listdir(f"{corpus_root}/{target}")
     # fuzzers = ["libfuzzer"]
+
     for fuzzer in fuzzers:
         cmin_dir = f"{os.getcwd()}/cminned/{target}/{fuzzer}"
         sp.run(f"mkdir -p {cmin_dir}", shell=True)
 
-        corpus_dir = f"{os.getcwd()}/dest/{target}/{fuzzer}"
+        corpus_dir = f"{os.getcwd()}/{corpus_root}/{target}/{fuzzer}"
 
         sp.run(f"docker run -v {corpus_dir}:/opt/corpus -v {cmin_dir}:/opt/out {target}-cmin", shell=True)
+
+if TARGET_ONLY:
+    for p in ps:
+        p.wait()
