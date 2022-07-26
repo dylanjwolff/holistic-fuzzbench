@@ -9,22 +9,18 @@ corpus_root = "oss-corpora"
 TARGET_ONLY = True
 
 targets = os.listdir(corpus_root)
-# targets = ["bloaty_fuzz_target", "lcms-2017-03-21"]
+targets = ["libpcap_fuzz_both"]
+
+bin_names = {"openssl_x509": "./x509",
+             "mbedtls_fuzz_dtlsclient": "./fuzz_dtlsclient",
+             "libpcap_fuzz_both": "./fuzz_both"}
+targets = bin_names.keys()
 
 # Want to throw an error here b/c minimization is v. expensive
 os.mkdir("cminned")
 
 ps = []
 for target in targets:
-
-    entry = f"""
-    BIN=$(find . -type f -executable -maxdepth 1 | grep -v "afl-fuzz" | grep -v "entry.sh")
-    AFL/afl-cmin -i /opt/corpus -o /opt/out/cminned -t 30000 -- $BIN
-    mv /opt/out/cminned/* /opt/out
-    rmdir /opt/out/cminned
-    """
-    with open("entry.sh", "w") as f:
-        f.write(entry)
 
     dockerignore = f"""
     {corpus_root}
@@ -34,15 +30,21 @@ for target in targets:
         f.write(dockerignore)
 
 
+    if target in bin_names.keys():
+        bin_name_str = f"ENV BIN={bin_names[target]}"
+    else:
+        bin_name_str = ""
+
     dockerfile = f"""FROM gcr.io/fuzzbench/runners/afl/{target}
         RUN apt update -y
         RUN apt install git -y
         COPY AFL AFL
         RUN cd AFL; make
         ENV AFL_PATH=$WORKDIR/AFL
-        COPY entry.sh entry.sh
-        RUN chmod a+x entry.sh
-        ENTRYPOINT $WORKDIR/entry.sh
+        COPY entry.py entry.py
+        RUN chmod a+x entry.py
+        {bin_name_str}
+        ENTRYPOINT python3 $WORKDIR/entry.py
     """
     with open("Dockerfile", "w") as f:
         f.write(dockerfile)
