@@ -3,17 +3,20 @@ import subprocess as sp
 import random
 import shutil
 import glob
+import numpy as np
 
-trials_per_fuzzertarget = 2
+trials_per_fuzzertarget = 20
 fuzzers = ["afl", "libfuzzer", "aflplusplus", "entropic", "honggfuzz"]
 targets = ["bloaty_fuzz_target", "harfbuzz-1.3.2", "lcms-2017-03-21"]
 corpus_dirs = ["cminned/bloaty_fuzz_target/aflfast", "cminned/harfbuzz-1.3.2", "cminned/lcms-2017-03-21"]
 
-targets = os.listdir("oss-corpora")
-corpus_dirs = [f"oss-corpora/{target}" for target in targets]
+seed_root = "aflpp-edge-cminned-oss"
+targets = os.listdir(seed_root)
+corpus_dirs = [f"{seed_root}/{target}" for target in targets]
 
-distribution = "UNIFORM"
-seed_usage = 2
+# distribution = "UNIFORM"
+distribution = "EXP"
+mean_seed_usage = 0.2
 
 assert(len(corpus_dirs) == len(targets))
 sp.run("rm -r seeds", shell=True)
@@ -31,14 +34,15 @@ for corpus_dir in corpus_dirs:
 for ti, target in enumerate(targets):
     num_seeds = len(corpora_paths[ti])
 
-    seeds_per_trial = int(min(num_seeds / trials_per_fuzzertarget * seed_usage, num_seeds/2))
+    seeds_per_trial = num_seeds * mean_seed_usage
     seeds_per_trial = max(1, seeds_per_trial)  # at least one seed per trial
+    seeds_per_trial = min(num_seeds, seeds_per_trial)  # no more than exists
 
     # for testing
-    seeds_per_trial = 2
+    # seeds_per_trial = 20
 
-    print(f"Target is {target}")
-    print(f"Approx. {seeds_per_trial} seeds per trial from {distribution} dist")
+    print(f"\nTarget is {target}")
+    print(f"Approx. {int(seeds_per_trial)} seeds per trial of {num_seeds} total, from {distribution} dist")
     print(f"{trials_per_fuzzertarget} unique trials, {total_trials} total trials")
     print("---------------------------------------")
 
@@ -46,9 +50,12 @@ for ti, target in enumerate(targets):
         trial_dir = f"seeds/{target}/base/{tri}"
         sp.run(f"mkdir -p {trial_dir}", shell=True)
         if distribution == "UNIFORM":
-            trial_num_seeds = random.randint(1, seeds_per_trial*2) # inclusive []
+            trial_num_seeds = random.randint(1, int(np.round(seeds_per_trial*2))) # inclusive []
+        elif distribution == "EXP":
+            trial_num_seeds = int(np.round(np.random.exponential(scale=seeds_per_trial, size=1)[0]))
         else:
             trial_num_seeds = seeds_per_trial
+        trial_num_seeds = min(trial_num_seeds, num_seeds) # no more than exists
 
         trial_seeds = random.choices(corpus_paths, k=trial_num_seeds)
         for ts in trial_seeds:

@@ -9,12 +9,11 @@ corpus_root = "oss-corpora"
 TARGET_ONLY = True
 
 targets = os.listdir(corpus_root)
-targets = ["libpcap_fuzz_both"]
+targets = ["bloaty_fuzz_target"]
 
 bin_names = {"openssl_x509": "./x509",
              "mbedtls_fuzz_dtlsclient": "./fuzz_dtlsclient",
              "libpcap_fuzz_both": "./fuzz_both"}
-targets = bin_names.keys()
 
 # Want to throw an error here b/c minimization is v. expensive
 os.mkdir("cminned")
@@ -35,15 +34,19 @@ for target in targets:
     else:
         bin_name_str = ""
 
-    dockerfile = f"""FROM gcr.io/fuzzbench/runners/afl/{target}
+    dockerfile = f"""FROM gcr.io/fuzzbench/runners/aflplusplus/{target}
         RUN apt update -y
         RUN apt install git -y
+        RUN git clone https://github.com/AFLplusplus/AFLplusplus.git
+        RUN cd AFLplusplus; make afl-showmap
+        ENV AFL_PATH=$WORKDIR/AFLplusplus
         COPY AFL AFL
         RUN cd AFL; make
-        ENV AFL_PATH=$WORKDIR/AFL
+        # ENV AFL_PATH=$WORKDIR/AFL
         COPY entry.py entry.py
         RUN chmod a+x entry.py
         {bin_name_str}
+        ENV AFL_MAP_SIZE=131072
         ENTRYPOINT python3 $WORKDIR/entry.py
     """
     with open("Dockerfile", "w") as f:
