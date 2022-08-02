@@ -641,6 +641,7 @@ def start_trials(trials, experiment_config: dict, pool, core_allocation=None):
         if tp.fuzzer not in d[tp.benchmark]:
             d[tp.benchmark][tp.fuzzer] = 0
         id_fb[tp.id] = d[tp.benchmark][tp.fuzzer]
+        print(f'NONCE=1mKd3 Trial ID Mapping:{tp.id},{tp.benchmark},{tp.fuzzer},{d[tp.benchmark][tp.fuzzer]}')
         d[tp.benchmark][tp.fuzzer] = d[tp.benchmark][tp.fuzzer] + 1
 
 
