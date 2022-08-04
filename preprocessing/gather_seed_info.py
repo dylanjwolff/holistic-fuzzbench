@@ -28,7 +28,7 @@ for target in targets:
         RUN apt update -y
         RUN apt install xxd -y
 
-        FROM gcr.io/fuzzbench/runners/aflplusplus/{target}
+        FROM gcr.io/fuzzbench/runners/noinst/{target}
         RUN apt update -y
         RUN apt install git wget unzip markdown -y
         RUN git clone https://github.com/GJDuck/e9patch.git
