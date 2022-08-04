@@ -11,7 +11,7 @@ corpus_root = "seeds"
 TARGET_ONLY = False
 
 targets = os.listdir(corpus_root)
-targets = ["bloaty_fuzz_target"]
+# targets = ["bloaty_fuzz_target"]
 
 # Want to throw an error here b/c minimization is v. expensive
 os.mkdir("progstats")

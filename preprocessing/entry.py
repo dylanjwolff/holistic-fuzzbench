@@ -13,9 +13,9 @@ for path, _, fnames in os.walk("/opt/corpus"):
     for fname in fnames:
         fpath = os.path.join(path, fname)
         for inst in instrums:
-            sp.run(f"{inst} {fpath} | grep NONCE | sort | uniq >> {inst}_log.txt", shell=True)
+            sp.run(f"./{inst} {fpath} | grep NONCE | sort | uniq >> {inst}_log.txt", shell=True)
         start = time.time_ns()
-        sp.run(f"{sut} {fpath}", shell=True)
+        sp.run(f"./{sut} {fpath}", shell=True)
         end = time.time_ns()
         elapsed = end - start
         all_elapsed.append(elapsed)
@@ -24,6 +24,7 @@ for path, _, fnames in os.walk("/opt/corpus"):
 
 vals = []
 vals.append(("per_target_trial", trial))
+vals.append(("benchmark", os.getenv("TARGET")))
 for inst in instrums:
     if inst in ["eq", "ineq"]:
         ub = pe9l.count_unexplored_branches(f"{inst}_log.txt")

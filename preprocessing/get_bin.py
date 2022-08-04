@@ -13,7 +13,7 @@ if sut is None or sut == "":
     if benchmark is not None and benchmark in bin_names:
         sut = bin_names[benchmark]
         print(sut)
-        sp.run(f"mv {sut} sut")
+        sp.run(f"mv {sut} sut", shell=True)
         exit()
 
     p = sp.run('find . -type f -executable -maxdepth 1 | grep -v "afl-fuzz" | grep -v "entry.py"', shell=True, capture_output=True)
