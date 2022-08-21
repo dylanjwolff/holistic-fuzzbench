@@ -2,6 +2,7 @@ import subprocess as sp
 import os
 import process_e9_logs as pe9l
 import time
+import numpy as np
 
 sut = "sut"
 instrums = os.getenv("INSTRMS").split(',')
@@ -25,8 +26,8 @@ for path, _, fnames in os.walk("/opt/corpus"):
             end = time.time_ns()
             elapsed = end - start
             cum_elapsed = elapsed + cum_elapsed
-        if cum_elapsed / 1e9 > N:
-            continue
+        # if cum_elapsed / 1e9 > N:
+        #    continue
 
         all_elapsed.append(cum_elapsed / N)
         all_sizes.append(size)
@@ -64,8 +65,19 @@ for inst in instrums:
         vals.append((f"{inst}_unexplored", ub))
     ur = pe9l.count_unique_reached(f"{inst}_log.txt")
     vals.append((f"{inst}_reached", ur))
+
 vals.append(("mean_exec_ns", sum(all_elapsed)/len(all_elapsed)))
+vals.append(("q25_exec_ns", np.quantile(all_elapsed, 0.25)))
+vals.append(("q50_exec_ns", np.quantile(all_elapsed, 0.50)))
+vals.append(("q75_exec_ns", np.quantile(all_elapsed, 0.75)))
+vals.append(("q100_exec_ns", np.quantile(all_elapsed, 1)))
+
 vals.append(("mean_size_bytes", sum(all_sizes)/len(all_sizes)))
+vals.append(("q25_mean_size_bytes", np.quantile(all_sizes, 0.25)))
+vals.append(("q50_mean_size_bytes", np.quantile(all_sizes, 0.50)))
+vals.append(("q75_mean_size_bytes", np.quantile(all_sizes, 0.75)))
+vals.append(("q100_mean_size_bytes", np.quantile(all_sizes, 1)))
+
 vals.append(("corpus_size", len(all_sizes)))
 
 headers, values = zip(*vals)
