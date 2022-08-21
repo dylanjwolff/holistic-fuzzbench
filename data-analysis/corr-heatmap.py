@@ -25,7 +25,7 @@ def spear(df, a_key, b_key, p = False, c = True, unstack = True):
     else:
         return o
 
-df = pd.read_csv("comb-data.csv")
+df = pd.read_csv("e2-comb-data.csv")
 df["coverage_inc"] = df["edges_covered"] - df["initial_coverage"]
 
 def plot(key_a, key_b):
@@ -56,7 +56,7 @@ def plot(key_a, key_b):
     figure.set_size_inches(8, 6)
     # plt.show()
     plt.savefig(f'assets/spearman-heatmaps/{key_a}_{key_b}.png', bbox_inches="tight", \
-            dpi = 100)
+        dpi = 100)
 
     plt.close()
     plt.cla()
@@ -69,7 +69,39 @@ toplot = [("initial_coverage", "coverage_inc"),\
           ("eq_unexplored", "initial_coverage"),\
           ("indir_reached", "initial_coverage"),\
           ("corpus_size", "initial_coverage"),\
+          ("q25_mean_size_bytes", "q50_mean_size_bytes"),\
+          ("q50_mean_size_bytes", "q75_mean_size_bytes"),\
+          ("q25_mean_size_bytes", "coverage_inc"),\
+          ("q50_mean_size_bytes", "coverage_inc"),\
+          ("q75_mean_size_bytes", "coverage_inc"),\
+          ("q100_mean_size_bytes", "coverage_inc"),\
+          ("q100_mean_size_bytes", "q100_exec_ns"),\
+          ("q100_mean_size_bytes", "initial_coverage"),\
+          ("q100_exec_ns", "initial_coverage"),\
+          ("q25_exec_ns", "q50_exec_ns"),\
+          ("q50_exec_ns", "q75_exec_ns"),\
+          ("q25_exec_ns", "coverage_inc"),\
+          ("q50_exec_ns", "coverage_inc"),\
+          ("q75_exec_ns", "coverage_inc"),\
+          ("q100_exec_ns", "coverage_inc"),\
           ]
 
 for ka,kb in toplot:
     plot(ka, kb)
+
+predictors = ["initial_coverage", "mean_size_bytes", "mean_exec_ns", "ineq_unexplored", "eq_unexplored", "indir_reached", "corpus_size", "q25_mean_size_bytes", "q50_mean_size_bytes", "q75_mean_size_bytes", "q100_mean_size_bytes", "q25_exec_ns", "q50_exec_ns", "q75_exec_ns", "q100_exec_ns"]
+
+
+o = df[predictors].corr(method="spearman")
+o = o.round(decimals=2)
+
+ax = sns.heatmap(o, annot=True, vmin=-1, vmax=1)
+ax.set_xticklabels(ax.get_xticklabels(), rotation = 45, horizontalalignment="right")
+ax.set_yticklabels(ax.get_yticklabels(), rotation = 0)
+
+figure = plt.gcf() # get current figure
+figure.set_size_inches(8, 6)
+
+plt.savefig(f'assets/spearman-heatmaps/all-pred.png', bbox_inches="tight", \
+    dpi = 100)
+#plt.show

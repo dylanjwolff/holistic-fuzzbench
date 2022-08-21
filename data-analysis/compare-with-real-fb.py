@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 import os
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 fuzzers = ["afl", "libfuzzer", "aflplusplus", "entropic", "honggfuzz"]
 
@@ -61,14 +63,27 @@ if not os.path.exists("tmp.csv"):
 else:
     sampled_df = pd.read_csv("tmp.csv")
 
-    sampled_df["fbsdiff"] = abs(sampled_df["rank"] - sampled_df["fbsranks"])
-    sampled_df["fbmdiff"] = abs(sampled_df["rank"] - sampled_df["fbmranks"])
-    m = sampled_df.groupby(["benchmark", "corpus_size", "mean_size_bytes"]).mean().reset_index()
+sampled_df["fbsdiff"] = abs(sampled_df["rank"] - sampled_df["fbsranks"])
+sampled_df["fbmdiff"] = abs(sampled_df["rank"] - sampled_df["fbmranks"])
+m = sampled_df.groupby(["benchmark", "corpus_size", "mean_size_bytes"]).mean().reset_index()
 
-    print(m)
+# Rescaled if desired
+m['msb_r'] = m.groupby('benchmark')['mean_size_bytes'].apply(lambda x: (x-x.min())/(x.max()-x.min()))
+m['mens_r'] = m.groupby('benchmark')['mean_exec_ns'].apply(lambda x: (x-x.min())/(x.max()-x.min()))
+m['minit_r'] = m.groupby('benchmark')['initial_coverage'].apply(lambda x: (x-x.min())/(x.max()-x.min()))
 
 
+for x in ["mean_size_bytes", "mean_exec_ns", "initial_coverage", "q100_mean_size_bytes", "q100_exec_ns"]:
+    g = sns.lmplot(data=m, x=x, y="fbmdiff", col="benchmark", sharex=False)
+    g.set(ylim=(0, 2.5), ylabel="Difference in Rank to Fuzzbench")
+    plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)
 
+    # plt.show()
+    plt.savefig(f'assets/compare-w-fb/{x}.png', bbox_inches="tight", \
+                dpi = 100)
 
+    plt.close()
+    plt.cla()
+    plt.clf()
 
 
