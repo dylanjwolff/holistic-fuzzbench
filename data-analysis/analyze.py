@@ -4,25 +4,48 @@ import matplotlib
 import matplotlib.pyplot as plt
 
 # Report data hard-coded here for now
-data = pd.read_csv("report-data/initial-cov-80/data.csv")
-seed_data = seed_stats.get_seed_data("seeds/*")
-print("WARNING: initial seeds and data CSV are **BOTH** expected to be on local path for now")
+data = pd.read_csv("aggregate.csv")
+
+# Seed stats
+seed_stats_names = {"e1v0-afl": "afl-progstats.csv", "e1v0-libfuzzer": "libfuzzer-progstats.csv"}
+
+# Mappings
+mappings = pd.read_csv("mappings.csv")
+mappings.columns = ["fuzzbench_trial_id", "benchmark", "fuzzer", "per_target_trial"]
+
+SINGLE_CORPUS = len(seed_stats_names.keys()) == 1
+
+
+ss_dfs = []
+for corpus, fname in seed_stats_names.items():
+    ss = pd.read_csv(fname)
+    ss = pd.merge(ss, mappings, how="left", left_on=["per_target_trial", "benchmark"], right_on=["per_target_trial", "benchmark"])
+    ss["corpus"] = corpus
+    ss_dfs.append(ss)
+merged_ss = pd.concat(ss_dfs, ignore_index=True)
+
 data['time_ended'] =  pd.to_datetime(data['time_ended'])
 data['time_started'] =  pd.to_datetime(data['time_started'])
 
-mintrials = data.groupby("trial_id").min("time")
+mintrials = data.groupby(["trial_id", "benchmark", "fuzzer"]).min("time")
+
 mintrials.rename(columns = {'edges_covered':'initial_coverage'}, inplace = True)
 mintrials = mintrials.reset_index()
 
-end_data = data.groupby("trial_id").max()
+end_data = data.groupby(["trial_id", "benchmark", "fuzzer"]).max().reset_index()
 
-# Seeds hard-coded here for now
-seed_data = seed_stats.get_seed_data("seeds/*")
+# @TODO
+# need to merge in seed stats as well
 
-seed_data['trial'] =  pd.to_numeric(seed_data['trial'])
+data = pd.merge(end_data, mintrials[["trial_id", "initial_coverage", "benchmark", "fuzzer"]], how="outer", left_on=["trial_id", "benchmark", "fuzzer"], right_on=["trial_id", "benchmark", "fuzzer"])
 
-data = pd.merge(end_data, seed_data, how="outer", left_on="trial_id", right_on="trial")
-data = pd.merge(data, mintrials[["trial_id", "initial_coverage"]], how="outer", left_on="trial", right_on="trial_id")
+
+if not SINGLE_CORPUS:
+    data["corpus"] = data["experiment"].map(lambda e: "e1v0-afl" if "afl" in e else "e1v0-libfuzzer")
+else:
+    raise Exception("unimplemented")
+
+data = pd.merge(data, merged_ss, how="left", left_on=["trial_id", "benchmark", "fuzzer", "corpus"], right_on=["fuzzbench_trial_id", "benchmark", "fuzzer", "corpus"])
 print(data.columns)
 
 # Some quick scatter-plots to look at early data
@@ -32,7 +55,7 @@ print(data.columns)
 # data.groupby("fuzzer").plot.scatter(x="mean seed size", y="edges_covered")
 # plt.show()
 
-data.groupby("fuzzer").plot.scatter(x="initial_coverage", y="edges_covered")
-plt.show()
+# data.groupby("fuzzer").plot.scatter(x="initial_coverage", y="edges_covered")
+# plt.show()
 
 data.to_csv("comb-data.csv")
