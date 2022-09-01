@@ -12,15 +12,15 @@ docker_registry: gcr.io/fuzzbench
 
 # The local experiment folder that will store most of the experiment data.
 # Please use an absolute path.
-experiment_filestore: /home/wolffd/scratch/experiment-data
+experiment_filestore: /home/user/scratch/experiment-data
 
 # The local report folder where HTML reports and summary data will be stored.
 # Please use an absolute path.
-report_filestore: /home/wolffd/scratch/report-data
+report_filestore: /home/user/scratch/report-data
 
 # Flag that indicates this is a local experiment.
 local_experiment: true
 
 # New Flags
-seeds_per_trial_dir: /home/wolffd/git/seeded-fuzzbench/seeds
+seeds_per_trial_dir: /home/user/git/seeded-fuzzbench/seeds
 use_seeds_per_trial: true

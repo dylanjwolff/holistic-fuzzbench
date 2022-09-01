@@ -4,7 +4,7 @@ from common import yaml_utils
 import os
 from common import utils
 
-config_filename = "wolff-exp.yaml"
+config_filename = "test-exp.yaml"
 config = yaml_utils.read(config_filename)
 
 RESOURCES_DIR = os.path.join(utils.ROOT_DIR, 'experiment', 'resources')
