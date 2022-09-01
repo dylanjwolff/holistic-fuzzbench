@@ -15,7 +15,7 @@ for path, _, fnames in os.walk("/opt/corpus"):
     for fname in fnames:
         fpath = os.path.join(path, fname)
         size = os.path.getsize(fpath)
-        if size > 1000:
+        if size > 1000000:
             continue
 
         cum_elapsed = N

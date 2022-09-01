@@ -3,7 +3,10 @@ import subprocess as sp
 
 bin_names = {"openssl_x509": "./x509",
              "mbedtls_fuzz_dtlsclient": "./fuzz_dtlsclient",
-             "libpcap_fuzz_both": "./fuzz_both"}
+             "libpcap_fuzz_both": "./fuzz_both",
+             "systemd_fuzz-link-parser": "./fuzz-link-parser",
+             "curl_curl_fuzzer_http": "./curl_fuzzer_http",
+             "jsoncpp_json_cpp_fuzzer": "./json_cpp_fuzzer"}
 
 
 sut = os.getenv("BIN")
