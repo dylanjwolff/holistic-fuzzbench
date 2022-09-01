@@ -1,13 +1,7 @@
-# Seeded Per Trial Fuzzbench
+# Explainable Fuzzer Evaluation Artifact
 
-Mounts a different set of seeds as a volume in each container for a local run of Fuzzbench. I expect this will not work in the cloud environment without some tweaking.
+This artifact is structured as follows:
 
-Seeds are expeced to be in {{seeds\_per\_trial\_dir}}/{{benchmark}}/{{trial\_id}} on the host machine.
-
-The trials ids start at 1 (not 0) incrementing upwards and are persistent **across experiments**. Thus you must delete the experiment filestore (from the YAML experiment configuration file) before running a "seed per trial" experiment if you have any old experiments that used that location -- even if the old experiments have different names. In theory, multiple targets are supported, but stick to single targets for now until that has been better tested.
-
-Two new variables have been added to the experiment YAML file, exemplified in `example-seed-per-trial-experiment.yaml`.
-seeds\_per\_trial\_dir: The location of the seeds on the host system. These should be pre-split by benchmark into trials
-use\_seeds\_per\_trial: Feature flag for using a unique initial corpus for each trial.
-
-The feature flag overwrites the `SEED_CORPUS_DIR` environment variable to point to the location of the per-trial seeds rather than Fuzzbench's default intial corpora.
+`fuzzbench-per-trial-seeds` -- A modified version of Fuzzbench which allows seeds files to be provided for each trial. Also contains some pre- and post-processing scripts for gathering data
+`final-data-analysis` -- An R Jupyter notebook and Python script used to generate the figures in the paper, along with the cleaned and aggregated data in CSV files
+`raw-data` -- The raw CSV files output by Fuzzbench for our experiments
