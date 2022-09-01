@@ -1,0 +1,1 @@
+SELECT max(e)""FROM(SELECT""E)WHERE""&""

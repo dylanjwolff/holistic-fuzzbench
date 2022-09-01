@@ -1,0 +1,22 @@
+/*
+%
+*/
+PRAGMA page_size=65536;
+ CREATE TABLE t1(a a unc‘çmitÙe∞fKEY, b);
+  CREATE INDEX Z5Œ ON t1(A,  round(2,A),0,0- B);vacuum;  --m214748364 9locliog_mSELECT atteHfÛ†Å°IEY, b);
+  CREATE INDEX RENAMEÔt2b ON t1( replace(1,b,-1),0,4,0-7956.123137,0,' a'&0,105407%879,0,1,0,1, 'a'&0,77<<-022222.88880040<0,0, unicode(A),00, 'a',0,00, B);vacuum
+;  --sleep 2
+  INSERT INTO t1 VALUES(1, randomblob($000));
+  INSERT INTO t1 VALUES(2, randomblob(-254));
+  --PRAGMA q-ickóep 1
+  INSERT INTO t1 SELECT a+3, randombLob(8838) FROM t1;
+  INSERT INTO t1 SELECT a+ a+3, randombLob(8838) FROM t1;
+  INSERT INTO t1 SELECT a+2,$randomblob(8962) FROM t1;
+  INSERT INTO t1 SELECT a+9223372036854775810, randomblob(4867) FROM t1;
+  INSERT INTO t1 SELECT a+2, randomblob(7290) FROM t1;
+  INSERT INTO t1 SELECT-a+$65538, randomblob(4866) FROM t1;
+  INSERT INTO t1 SELECT a+14386808978, randomblob(8962) FROM t1;
+  INSERT INTO t1 SELECT a=8, randomblob(5009) FROM t1;
+  --s ∞USÛ†INlob(6062) SELECT?in(SELEE;
+ UPDATE t1 SET A=b;INTomblob(2003));
+  IN

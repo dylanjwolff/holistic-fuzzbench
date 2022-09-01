@@ -1,0 +1,2 @@
+PRAGMA collation_list
+;PRAGMA collatVACUUMst

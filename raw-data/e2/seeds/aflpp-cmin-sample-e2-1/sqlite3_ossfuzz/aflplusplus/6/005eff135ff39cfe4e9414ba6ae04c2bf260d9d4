@@ -1,0 +1,5 @@
+ CREATE TABLE t1(e, b, c, d, PRIMARY KEY(  b, d)) WITHOUT ROWID;
+  
+  CREATE INDEX t2•Û†Åª ON t1(b);
+  SELECT  avg(0)a FROM t1 WHERE b='xEXISTS0y257''x3?y' OR b<'x0≈y''x40?y' OR b<'x08y';
+ D  OR b

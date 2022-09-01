@@ -1,0 +1,1 @@
+(str:split('úzþd',g)/preceding::node()[*>preceding::node()=(str:split('o844,*±€!',ancestor::*))])

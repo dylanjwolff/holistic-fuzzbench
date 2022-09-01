@@ -1,0 +1,4 @@
+		PRAGMA reverse_unordered_selects (1) ;	   CREATE TABLE t1(a INTEGER PRIMARY KEY, b quote(1));
+  SELECT a FROM t1 WHERE a>'x17y';
+  SELECT a FROM t1 WHERE a>'x17y';
+  SELECT a FROM 

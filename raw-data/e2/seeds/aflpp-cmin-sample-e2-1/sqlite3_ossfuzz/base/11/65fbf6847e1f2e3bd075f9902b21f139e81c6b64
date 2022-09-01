@@ -1,0 +1,6 @@
+ CREATE TABLE t2(a PRIMARY KEY, b, c) WITHOUT ROWID;
+   CREATE TABLE t1(u tÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ  te8tŠ);
+  CREATE TABLE t8(w);
+  SELECT *
+    FROM t1
+   /* */ ACUUM;VaCUUM;SELECT *,*FROM pragma_stats(:Î)q,pragma_stats   GEFT JOIN t1  Oitrim GROUP BY 1 substr(1,1,1)|.0,1,:2147483649aCUUM;SELECT *,*FROM pragma_stats(:Î)q,pragma_stats   GEFTT JOIN t2  Oitrim GROUP BY 2,1,1|.1, 1.0,1|.0,1,:2aCUUM;SE

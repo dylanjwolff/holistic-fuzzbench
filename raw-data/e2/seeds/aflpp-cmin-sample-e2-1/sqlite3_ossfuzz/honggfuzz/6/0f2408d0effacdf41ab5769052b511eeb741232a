@@ -1,0 +1,1 @@
+SELECT  (SELECT+"ииииии"LIKE total(5)LIKE"%ии"LIKE total(4)LIKE"з-eи"LIKE total(0)LIKE"c")

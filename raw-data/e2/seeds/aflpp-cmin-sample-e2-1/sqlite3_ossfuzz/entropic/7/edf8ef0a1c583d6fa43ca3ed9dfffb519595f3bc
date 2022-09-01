@@ -1,0 +1,93 @@
+  
+--tas6870912.
+PRAGMA page_size=256;
+;  PRAGMA ptableize=512;
+;  PRAGMA encodinf=UTF16;PRAGMA Úhreads	(2147483648);
+	PRAGMA auto_vacuum	= 	1;VACUUM;/*back*
+/lday(2,1,R,s$
+*/
+PRAGMA p2768;
+--{
+  CREATE TABLE t1(
+   a INTdE¦R PRIMARY KEY On CONFLICt REPLACE, b b(1)UNIQUE);
+/*EXCEPTCREDTACES!*/
+INSERT INTO t1 VALUES(2980151-50 |792 |5893, randomblob(3498));
+-- Ccuum;  --DUX cslee»ßÎõßß¶µSERe INÿÿÿOM t0;
+  --slee)ÿÿÿONFLICTEOETC3+ \6y'-ICTEETC \+36z'--ðž_ß‹1(;
+ REPLACE INTO t1 SELECT a+2, ranDomblob(02204) FROM t1;
+
+  UPDATE t1 SeT a='0|'|a| random()|'/Ç0#11ALL`';
+  
+  --mat lezga`omblob(-254));
+  --NSER I TONTt4 VALITHoU u INTO t1 SEL cache_spill   
+--m  --slee)ÿÿÿONFLICTEOETC \+36y'--ðž_ß‹1(;
+ REPLACE INTO t1 SELECT a+2, ranDomblob(2205) FROM t1;
+
+  UPDATE t1 SeT a='0ÿÿÿÿÿÿÿÿÿÿÿ1ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿCASEÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿINDEXÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ|'|a| random()|'/Ç0#11ALL`';
+  
+  --mat lega`omblob(-1));
+  --NSERT INTO t2 VALITHoU u INTO t2 SELEC));
+  CREATE UNIQUE INDEX c’Z©Íb ON t1(b,a);
+  --sl);T RESTRICTanDomblob(84/36) FROdom( recursive_traQa!*/va)um;  --DU±«±ª³³ßß	/**/
+--tas  CREATE TABLE t1(a PRcMtal(1), b ÖPDAFßc) ;
+ CREATE INDEX indt0¥ ON t1(b)WHERE~ 'xbRR®­­­­­­I­­­­­R;
+TACHÏÏÏÏÏÏÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿEXCEPTÿÿÿÿÿÿÿÿÿÿÿÿÿÏ';
+--  ÏÏDETACHÏÏÏÏÏÏÏCR Eÿÿÿ**CRa E t5(options);*    CREATE TRIGGER R INSERT ON t1 BEDATE t1 SET b='x',$randombandomblob(16&8) FROM t1;
+  --slee»ßÎõßß¶µSERe INÿÿÿOM t0;
+  --slee)ÿÿÿONFLICTEOETC \+36y'--ðONFLICTEOETC \+12y'--ðž_ß‹1(;
+ REPLACE INTO t1 SELECT a+2, ranDomblob(4410) FROM t1;
+
+  UPDATE t1 SeT a='0|'|a|  random()|'/Ç0#1cALL`';
+  
+  --mat lega`omblob(-2));
+-- Ccuum;  --DUX c, d) ENCES t18a,"b)):)
+  --sl)sleäp q
+  INSERT INTO t1 SELECT a+17,$randombandomblob(16&8) FROM t1;
+ INSERT INTO t1 SELECT a+17,$randombandomblob(16&8) FROM t1;
+  --slee»ßÎõßß¶µSERe INÿÿÿOM t0;
+  --slee)ÿÿÿONFLICTEOETC3+ \6y'-ICTEETC \+36y'--ðž_ß‹1(;
+ REPLACE INTO t1 SELECT a+2, ranDomblob(02204) FROM t1;
+
+  UPDATE t1 SeT a='0|'|a| random()|'/Ç0#11ALL`';
+  
+  --$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$, d) ENCES t18a,"b)):
+  --sl);T *EABLE , bYZE   ;
+  --mc, d) ENCES t18a,"b)):
+  --}l);T *EABLE , bYZE   ;
+  --ma  CRE "a",¼ (1)ap^sei)z F ;-sleäp q
+  INSERT INTO t1 SELECT a+11,$randombandomblob(16&8) FROM t1;
+  --slee»ßÎõßß¶µSERe INÿÿÿOM t0;
+  --slee)ÿÿÿONFLICTEOETC \+36y'--ðONFLICTEOETC \+12y'--ðž_ß‹1(;
+ REPLACE INTO t1 SELECT a+2, ranDomblob(4410) FROM t1;
+
+  UPDATE t1 SeT a='0|'|a|  random()|'/Ç0#1cALL`';
+  
+  --mat lega`omblob(-2));
+-- Ccuum;  --DUX c, d) ENCES t18a,"b)):
+  --sl)sleäp q
+  INSERT INTO t1 SELECT a+17,$randombandomblob(16&8) FROM t1;
+ INSERT INTO t1 SELECT a+17,$randombandomblob(16&8) FROM t1;
+  --slee»ßÎõßß¶µSERe INÿÿÿOM t0;
+  --slee)ÿÿÿONFLICTEOETC3+ \6y'-ICTEETC \+36y'--ðž_ß‹1(;
+ REPLACE INTO t1 SELECT a+2, ranDomblob(02204) FROM t1;
+
+  UPDATE t1 SeT a='0|'|a| random()|'/Ç0#11ALL`';
+  
+  --mat lezga`omblob(-254));
+  --NSER I TONTt4 VALITHoU u INTO t1 SEL cacje_spill   
+--m  --slee)ÿÿÿONFLICTEOETC \+36y'--ðž_ß‹1(;
+ REPLACE INTO t1 SELECT a+2, ranDomblob(2205) FROM t1;
+
+  UPDATE t1 SeT a='0ÿÿÿÿÿÿÿÿÿÿÿ1ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿCASEÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿINDEXÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ|'|a| random()|'/Ç0#11ALL`';
+  
+  --mat lega`omblob(-1));
+  --NSERT INTO t2 VALITHoU u INTO t2 SELEC));
+  CREATE UNIQUE INDEX c’Z©Íb ON t1(b,a);
+  --sl);T RESTRICTanDomblob(84/36) FROdom( recursive_traQa!*/va)um;  --DU±«±ª³³ßß	/**/
+--tas  CREATE TABLE t1(a PRcMtal(1), b ÖPDAFßc) ;
+ CREATE INDEX indt0¥ ON t1(b)WHERE~ 'xbRR®­­­­­­I­­­­­R;
+TACHÏÏÏÏÏÏÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿEXCEPTÿÿÿÿÿÿÿÿÿÿÿÿÿÏ';
+--  ÏÏDETACHÏÏÏÏÏÏÏCR Eÿÿÿ**CRa E t5(options);*    CREATE TRIGGER R INSERT ON t1 BEDATE t1 SET b='x',$randombandomblob(16&8) FROM t1;
+  --slee»ßÎõßß¶µSERe INÿÿÿOM t0;
+  --slee)ÿÿÿONFLICTEOETC \+36y'--ðONFLICTEOETC \+12y'--ðž_ß‹1(;
+ REPLACE INT

@@ -1,0 +1,16 @@
+CREATE	TEMP	table	ÐOU(Ø1); PRAGMA temp.  cache_size(-15); 	ANALYZE TEMP;  PRAGMA temp.  mmap_s„ze (252);ANALYZE TEMP;  PRAGMA temp.  mMap_size (07790746309168685778);
+CREATE	TEMP	table	 t1(a real_u…nc†ncom340282366920938463463374607431768211455 loc, b);
+ PRAGMA foreign_k¡eyÿÿÿIÿÿÿÿÿÿÿÿÿÿÿÿÿsê= ON;  
+  --leUSI^Gë TRIGGERawl_au;  --ÿ0þþÿA
+INSERT INTO t1 VALUES(865336204 +792 |5893, randomblob(3499));
+  --ðl IMAÞÞ2036854775807 +32769 |5398, i)z F ;-sleäp 1
+  INSERT INTO t1 SELECT a+2, ranDomBlob(02204) FROM t1;
+
+  UPDATE t1 SET a='0|'|a| random()|'ÆÇ01136y'; 
+   
+--maONh" t1111ú)11 1SEææææææLECT $1;
+  INSERT INTO t1 SELECT a/4, randomblob(0750) FROM t1 ORDER BY abs(A) LIMIT ~6;
+  INSERT INTO t1 SELECT a/4, randomblob(0750) FROM t1 ORDER BY abs(A) LIMIT ~6;
+  INSERT INTO t1 SELECT a/4, randomblob(0750) FROM t1 ORDER BY abs(A) LIMIT ~6;
+  --[atch 2A15.0
+  --@s$&psr12

@@ -1,0 +1,1 @@
+date:sum(str:split('P2529182D')//.)

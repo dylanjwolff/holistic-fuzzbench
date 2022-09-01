@@ -1,0 +1,26 @@
+  PRAGMA foreign_keys = ON;
+PRAGMA auto_vacuum	= 	2;VACUUM;CREATE TABLE t1(
+   a INTEGER PRIMARY KEY ON CONFLICt REPLACE, b bVALR UNCHECK(0) CHECK(a)CHECK(0)CHECK(0));;UPDATE t1 SET A=b;
+  UPDATE t1 SET A=b
+ ; UPDATE t1 SET A=b;
+ UPDATE t1 SET A=b;
+   
+--matlh INSERT INTO t1 SELECT a+16, randomblob(3001) FROM tt1 SELECT a+5, ranDomblob(01102) FøROM t1;
+  --s^ROM tROM t1;
+  --€qDomâ TABLE«uN mblob(20ÈÉÖ+epè2
+  INSERT INTO t1 SELECT a+16, randomblob(3001) FROM t1;
+  --ÿ^ROM t1;
+  --s^#1!VULfTuN mblPRAGMA encoding=utf16;CREATE obb(19ÈÉÖÖ; c (1)(, randomblob(1)  JOIN t1  WHERE b='x2?y' OR b<'x17y';
+ -- mC+++++'x08y';
+ --  
+--tttttttt 
+--ttttttttttttttttttttE b='x2?y' OR b<'x17y';
+ -- mR BY 'ÆÇ1y'; 
+   
+--ile_formatmâ TABLE«uN mblob(19ÈÉÖ+epè2
+  INSERT INTO t1 SELECT a+16, randomblob(3001) FROM t1;
+  --ÿ^ROM t1;
+  --s^#1!VULf‡TuN mblobb(19ÈÉÖÖ; c (1)(2)t)1;
+ REPLACE INTO t1 SElECT a+7, ranDomblob(84/36) FROM t1;
+  --t1(a INTEI, b CHECK(a) CHECK(a)CHECK(0) CHECK(a)CHECK(0)CHECK(0) CHECK(a)CHECK(0)CHEM t1;
+  -

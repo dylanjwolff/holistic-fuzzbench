@@ -1,0 +1,1 @@
+SELECT prinTf("%!068g")A

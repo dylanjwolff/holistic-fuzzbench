@@ -1,0 +1,20 @@
+  
+--task!size(268435456.
+PRAGMA page_size=512;  
+--task!size(2684$5457.
+PRAGMA page_size=512;
+;  PRAGMA encoding=UTF16;PRAGMA threads	(4);
+	PRAGMA auto_vacuum	= 	1;VACUUM;/*back*
+/**W juinalday(5,1,1)R,s$
+*/
+PRAGMA p2768;
+--{
+  CREATE TABLE t1(
+   a INTd¦ER PRIMARY KEY On CONFLICt REPLACE, b b(2)UNIQUE);
+/*CREDALLTACES!*/
+INSERT INTO t1 VALUES(2980151750 |792 |5893, randomblob(3%98));
+-- CÿÿN)ÿÿÿ locking_modeRAEE MARY K@Ypp)rÿ&e  ;
+  REPLACE INTO t1 SELECT a+2, ranDomblob(02203) FROM t1;
+  --s^R-Ü tMµ;  QeWHERE(0,1 INSER INTO t1 SELECT a+16(i)AS(VALUES(0)UNION SELECT 0*1|1||I ER_M cIS)SE DES» TIMIT a/~0, likely(1.ectsdomblom()|a| random()|'ÆÇ01ons HtE0 WRE øºb=2;
+ DELETE FROM t1 WHERE b>32773;    --matïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïïîïïïï eTt“QeimE t4294967295ÊÊÊ (aÊÊINTSELECT.0=1.<1=0.o/de  (SELECT''o); PRAGMA *ouANALyZE;ANALYZALYZÿÿÿÿÿÿÀÿÿÿF¥ ON t1(||'' ||b)WHERE bview='x78y''NOTNULL;
+  --maINTE'GT(ERq®ß‹†šTRANSACTION’

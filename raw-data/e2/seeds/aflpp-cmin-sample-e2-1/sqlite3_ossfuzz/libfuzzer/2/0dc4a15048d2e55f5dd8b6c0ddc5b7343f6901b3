@@ -1,0 +1,27 @@
+  
+--´tas843INNER
+PRAGMA pÿÿÿÿage_size=5132;
+;  PRAGMA page_sEze=256;
+;  PRAGMA fncoding=UTF16;PRAGMA threads	(3);
+	PRAGMA auto_vaCuum	= 	1;VACUUM;/*bacalnay(0,1Ø*Te /st +casek+27 $ays.
+*/
+--ta:k 8
+  DROP TABLE IF EXISTS t0;
+  CREATE TABLE t1(A INTEGER PRIMARY KEY, b);
+  --s-sPRAGMA;    
+CREATE TRIGGER R INSERT ON t1 BEGIN
+ --s1ÿÿÿÿ1 Ò¬EL;*--l &egae(1,1ÔÎ,²ß`ÎË
+  INSERT INTO t1 SELECT a/0, randomblob(6501) FROM t1 ORDER BY 'ÆÇ00568y'; 
+   --matlh  t0-s3eIY,~~~SES– IN');
+    END;CREATE TABLE t5(a PR);INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+    CREATE TABLE t2(a PR³²¾­ºª«°INCREMENJOIt1 DEFERRAL EB, b);
+ 
+  INSERT INTO t1 VALUES(2, randomblob(-255));
+  --sERRABLEUNIQUEchæ dtaa_storc_dreetió ”ory!>àã^45zzh5¦óÇd4×OÈþ`ÑÌ_Ms³ó_­ýûGVCUUM0)1;:memory
+  --.omblob(ÓS-445));
+  --þûûãûû; c (1)(2)t)1;
+ REPLACE INTO t1 SElECT a+7, ranDomblob(85/36) FROM t1;
+  --s^å)ÿÿÿÿ t1at0ROM t1
+ ; --s^&0 ª¡Lf«M
+ REPLACE INTO t1 SElECT a+7, ranDomblob(85/36) FROM t1;
+PRAGMA quick_check;;;;2001-01-01icKFAILck;;PRAGREATE INDEX t(0¥ ON t1(VIEWERE  'xbRRCUUWITHOUTM;VAC­­­­­RRRRe oncdingcou

@@ -1,0 +1,1 @@
+a//b[/a[dyn:map(//*,'t(text()[date:day-of-week-in-month(u,d)],')]]

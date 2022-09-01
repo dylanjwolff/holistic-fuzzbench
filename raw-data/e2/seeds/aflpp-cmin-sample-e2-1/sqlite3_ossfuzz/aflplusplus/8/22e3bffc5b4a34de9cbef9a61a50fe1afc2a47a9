@@ -1,0 +1,1 @@
+;SELECT *,*FROM pragma_stats NATURAL   JOIN pragma_stats  NAURAL           JOIN pragma_stats  NATURAL RIGHT     JOIN pragma_stats  NATURAL   JOIN pra

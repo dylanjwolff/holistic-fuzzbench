@@ -1,0 +1,31 @@
+CREATE	TEMP	table	 t1(a re¡l_u…nc†ncom2147483649 locliog_modettodetteHfIEY, b);
+  CREATE INDEX ït6b ON t1( replace(1,b,-1),1,4,0.0,0,' a'&0,105477%809,0,0,0,1, 'a'&0,77<<-022222.88880040<0,0, unicode(A),00, 'a',0,00, B);vacuum
+;  --“eep 2
+  INSERT INTO t1 VALUES(1, randomblob($000));
+  INSERT INTO t1 VALUES(2, randomblob(-254));
+  --PRAGMA quick_check;;P:memoryt1 SeLE´CT a+¼ÍÓßž‘›oblobm(9987) FROM t1;
+  --M t1;
+  --ÿÿÿÿPRAGM  “ÎÄõß­º¯LACE INTO t1 SELECT a+5( ranDombloB(01102) FROM t1;
+  --s^R-15-01792ÿÿÿÿÿÿ CONFLICEACHPLACEÿÿÿÿ?ÿÿÿÿÿÿrdbao blob 
+--matl |5893,e 1
+  INSERT INTO t1 SeLECT a+:4, randomblob(9987) FROM t1;
+  INSERT INTO t1 SeLECT a+:2, randomblob(9987) FROM t1;
+  --M t1;
+  --ÿÿÿÿPRAGM  t1;
+ REPLACE INTO t1 SELECT a+5, ranDombloB(01102) FROM t1;
+  --s^R-0NTO t1 SeLECT a+:4, randomblob(9987) FROM t1;
+  INSERT INTO t1 SeLECT a+:2, randomblob(9987) FROM t1;
+  --M t1;
+  --ÿÿÿÿPRAGM  t1; REPLACE IGTO t1 SELECT a+5, ranDombloB(01102) FROM t1;
+  --s^R-00-01792 |5  C ATE t1ÿÿÿÿ?ÿÿÿÿÿandomblo  
+--matl |589³,e 1
+  INSERT INTO t1 SeLECT a+:4, randomblob(9987) FROM t1;
+  INSERT INTO t1 SeLECT a+:2, randomblob(9987) FROM t1;
+  --M t1  --ÿÿÿÿPRAGM  ;1t REPLACE INTO t1 SELECT a+5, ranDombloB(01102) FROM t1;
+  --s^R-00-01792 |5  C ATE t1 IST"A=b
+ ; UPDATE t1 SET A=b;
+ UPDATE t1 SET A=b;
+   
+--mctlh  t02775ÿÿÿÿ?ÿÿÿÿÿÿrandomblo  
+--matl |2596,e 1
+  INSERT INTO t1 SeLECT a+:4, randomblob(9 t1 SELECT a+5, ranDombloB(01102) FROM 

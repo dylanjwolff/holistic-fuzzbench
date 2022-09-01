@@ -1,0 +1,3 @@
+PRAGMA page_size=512;
+;VACUUm;   CREATE TABLE t1(EY YaE, b); INSERT INTO t1(b )  WITH c(i) AS (VALUES(1) UNION SELECT i+.139046*1 FROM c WHERE i<<50)
+   SELECT i+1 FROM c;VACUUM; 	 	PRAGMA secure_delete  (1)	; 	VACUUM;VACUU

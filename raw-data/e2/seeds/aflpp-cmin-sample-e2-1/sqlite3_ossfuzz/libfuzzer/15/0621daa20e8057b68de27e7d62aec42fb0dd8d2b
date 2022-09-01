@@ -1,0 +1,26 @@
+/*
+%
+*/
+PRAGMA page_size=65536;
+ CREATE TABLE t1(a a uÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿORDERÿncÔmitôe°fKEY, b);
+  CREATE INDEX Z5Î ON t1(A,  round(2,A),0,0- B);vacuum;  --m214ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿT a FROM t1 WHERE  a='x2y' OR a=-9;
+  SELECT a FROM t1 WHERE  a='x2147483647y' OR a=-9;
+  SELECT a FROM t1 WHERE  a='x1y' OR a=-9;
+  SELECT a FROM t1 WHERE  a='x1y' OR a=-32768;
+  
+  --le p CR5wal_autocheckpointELSEÿÿ)‰;
+  INSERT INTO t1 VALUES(3, randomblob(1000));
+  --ANALYZE;
+  INSERT INTO t1 SELECT a+7, randomblob(6000)  FROM t1;
+ANALYZE   ;
+  --AL   JOIN  t1  ON»    NATURAL     L2EFT     JOIN t1  WHERE b='x2?yy' ORDER BY b DESC LIMIT 4;
+  --sl)IN( SELERR SET A=a  WHERE b='x2RRRRRRR S@0000008261+++@0000++8261+++@0000 1=10ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ08261+++@0000+@00000082611)WHARE+:‚‚‚;
+	SELECT+++ min(0.1)>:ÆÅ++@0T++++++++@1  FROM t1  ON»     NATURAL     JOIN t1  NATURAL   JOIn  t1  ON»    NATURAL     LEFT     JOIN t1  writable_schema ORDER BY b DESC LIMIT 4;
+  --, randomblob(600170 FROM t1;
+ANALYZE   ;
+  --ma  CRE "a","b",0,0,05­77580SELECT time('118882036››gddd›››››LECu tim	SELECT+8261+++@0000008261+++@0000++8261+++@0000 1=10ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ08261+++@0000+@00000082611)WHERE+:‚‚‚;
+	SELECT+++ min(0.1)>:ÆÅ++@0T++++++++@1  FROM t1  ON»     NATURAL     JOIN t1  NATURAL   JOIN  t1  ON»    NATURAL     LEFT     JOIN t1  WHERE b='x2?yy' ORDER BY b DESC LIMIT 4;
+  --sl)IN( SELERR SET A=a  W61+++@0000++8261+++@0000 1=10ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ08261+++@0000+@00000082611)WHARE+:‚‚‚;
+	SELECT+++ min(0.1)>:ÆÅ++@0T++++++++andomblob(6000)  FROM t1;
+ANALYZE   ;
+  --ma  CRE "a","b",0,0,05­77580SELECT time('118882035››gddd›››››LECu tim	SELECT time('118882035››gddd›››››LECu tim	SELECT+8261+++@00004++829223372036854775809+++@0000008261+++@00004++8261+++@2 2=2147483648ÿÿÿÿÿÿÿÿÿ

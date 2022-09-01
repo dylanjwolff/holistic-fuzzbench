@@ -1,0 +1,1 @@
+str:tokenize( 'quot˜ ÿq'	)[unparsed-entity-uri(p./*)=/*<*//e]

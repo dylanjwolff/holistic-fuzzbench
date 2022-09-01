@@ -1,0 +1,4 @@
+  
+  CREATE TABLE t1(a PRIMARY KEY, b, c) WITHOUT ROWID;
+  CREATE INDEX MD¼«¾½ASEM0Q ON t1(b);
+  SELECT * FROM t1 WHERE:c AND a<'y'COLLATE'x0"ECT?y' AND a>'x1"EE?yCT?y' AND a>'x1"EC?y' AND a= b AND a<'?y' AND a>'x1"EC?yCT?y' AND a>'x1"EC?y' AND a= b AND a<'?y' AND a>'x1"EC?yCT?y' AND a>'x1"EC?y' AND a= b AND a<'y' OR a='x1"EC?yCT?y'AND a<'y'COLLATE'x0"ETC?y' AND a>'x1"E¥C?yCTT? zeroblob(1)ÿÿÿÿÿÿx1"EC?yCT?y' a=' AN

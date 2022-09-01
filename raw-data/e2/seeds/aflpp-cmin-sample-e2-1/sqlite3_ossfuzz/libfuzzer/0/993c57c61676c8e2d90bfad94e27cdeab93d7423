@@ -1,0 +1,1 @@
+CREATE	TEMP	table	ÐOU(Ø1k); PRAGMA temp.  cache_size(Ø1); 	ANALYZE TEMP;  pRAGMA temp.  mmap_size (10347);ANALYZE TEMP;  PRAGMA temp.  mmap_size (-3);ANALYZE TEMP;  PRAGMA temp.  mmap_size (--2148055375);ANALYZE

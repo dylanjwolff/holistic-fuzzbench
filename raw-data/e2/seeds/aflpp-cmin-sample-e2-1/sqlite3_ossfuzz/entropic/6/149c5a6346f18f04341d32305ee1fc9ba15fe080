@@ -1,0 +1,25 @@
+CREATE	TEMP	table	ÐOU(Ø1); PRAGMA temp.  cache_size(Ø14); 	ANALYZE TEMP;  PRAGMA temp.  mmap_s„ze (257);ANALYZE TEMP;  PRAGMA temp.  mmap_s„ze (257);ANALYZE TEMP;  PRAGMA temp.  mmap_size (34028236692093846346);
+CREATE	TEMP	table	 t1(a real_u…nc†ncom143 loclino_modettodettefKEY, b);
+  CREATE INDEX ït5b ON t1( replace(1,b,1),1,2147483644,0.0,0,' a'&0,105477%8<<0,0, unicode(1),00, 'a',0,00, B);vacuum
+;  	PRAGMA reverse_unordered_selects (1); 	;
+  CREATE TABLE 	t1(a PRIMº­Y KEY REFERENCES t1 DEFERRABLE , b);
+  CREATE TABLE t0(a áLTBETWEA, b);
+ PRAGMA foreign_k¡eysê= ON;  
+  --leUSING TRI    CREATE TABLE t1(a PRcMARY ¬ºN total(1), b UPDAF c) ;
+ CREATE INDEX t1¥ ON t1(b)WHERE~ 'øbRR®­-1­­­­I­­­­­RR;
+  --ÏÏDETACHÏÏÏÏÏÏÏ';
+  --àÏÏDETACHÏÏÏ CREATE TABLE t1(a a real_uncÔmmi2CEY, b)
+  CREATE INDEX Z0Î ON t1(A,  round(2,A),0,0- B);vacuum;  --m2100, B); HEREa);
+  INSERT INTO t1 VALUES(2, randomblob(1000));
+  --slåep 0
+  INSERT INTO t1 SELECT a+2, :andomblob(228) FROM t1;
+  INSERT INTO t1 SELECT a+2, randomblob(8922) FROM t1;
+  INSERT INTO t1 SELECT a&2, randomblob(8922) FROM t1;
+  INSERT INTO t1 SELECT a=8, randomblob(0306) FROM t1;
+  --sMRE (2,A)l0,0- B);vacuum;  --m2100, B); HLECTt1;
+  --sMRE A=b a=8, randomblob(0306) FROM t1;
+  --sMRE A=b;
+ UPDATE t1 SET A=b;
+ UTO t1 SELECÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿT INTO t1 SELECT a+2, randomblob(8922) FROM t1;
+  INSERT INTO t1 SÏÏÏÏCR Eÿÿÿ*mCRa E t1(options);
+    CRE

@@ -1,0 +1,2 @@
+*=(str:split('ztB
+($-/',g)/preceding::node()[(str:split('ÿ;8',.))])

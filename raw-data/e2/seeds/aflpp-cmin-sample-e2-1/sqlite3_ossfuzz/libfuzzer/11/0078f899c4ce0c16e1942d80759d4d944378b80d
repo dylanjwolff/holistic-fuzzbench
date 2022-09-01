@@ -1,0 +1,1 @@
+SELeCT*FROM( SELECT B),(SELECT b…,b)USING(b,b,b)

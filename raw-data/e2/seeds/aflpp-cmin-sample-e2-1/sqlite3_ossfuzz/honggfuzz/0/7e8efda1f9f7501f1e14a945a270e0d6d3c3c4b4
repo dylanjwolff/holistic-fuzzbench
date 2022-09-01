@@ -1,0 +1,5 @@
+		PRAGMA reverse_unordered_selects (2) ;	 	/* T:sat ecses involving incomplete transactimns that must be rolle! back.
+*/
+--task 0
+SELECT *,*,*FROM(SELECT 2),((SELECT 1,0)s,(sqlite_master));  --sleep b=' 0
+SELECT *,*,*FROM(SELECT 3),((SELECT 1,1)s,(sqli

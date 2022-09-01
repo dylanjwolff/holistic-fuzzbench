@@ -1,0 +1,5 @@
+
+    CREATE TABLE t1(a,b,c);
+  CREATE INDEX t1ar ON t1(a,a,b,c);
+   INSERT INTO t1 VALUES(6,4,3), (55.2,1), (1,2,1), (55,2,1);
+ 

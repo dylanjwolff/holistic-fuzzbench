@@ -1,0 +1,1 @@
+dyn:map(//node(),'local-name(@b)')

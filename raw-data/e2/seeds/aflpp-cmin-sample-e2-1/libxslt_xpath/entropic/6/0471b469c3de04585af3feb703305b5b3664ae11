@@ -1,0 +1,1 @@
+*[dyn:map(//text(),'generate-id(//c|.)')]

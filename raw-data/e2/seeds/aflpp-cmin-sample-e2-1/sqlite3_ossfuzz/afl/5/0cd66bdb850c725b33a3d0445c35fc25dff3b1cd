@@ -1,0 +1,5 @@
+ CREATE TABLE T2(a PRIMARY KEY,n);
+  SELECT* FROM T2
+  WHERE (A,a) IN t2; ;
+  SELECT * FROM T2
+ WHERE (n,a) IN t3; V

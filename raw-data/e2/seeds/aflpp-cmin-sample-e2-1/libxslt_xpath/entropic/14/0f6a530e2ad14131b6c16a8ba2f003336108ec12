@@ -1,0 +1,1 @@
+document(str:split('#xpointer(string-range(P,*,5))'))

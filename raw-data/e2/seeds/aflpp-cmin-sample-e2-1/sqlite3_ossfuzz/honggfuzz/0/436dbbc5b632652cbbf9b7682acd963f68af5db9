@@ -1,0 +1,1 @@
+	SELECT	:ltrn	UNION		VALUES	(0	)		,(0)			,(0)	,(1)			,(0)		UNION		SELECT(1)EXCEPT SELECT? 'y' ORDER BY  1,1,1,1,1,1,1,1,1, 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1, 1,1,1,1,1,1,1,1,1, 1

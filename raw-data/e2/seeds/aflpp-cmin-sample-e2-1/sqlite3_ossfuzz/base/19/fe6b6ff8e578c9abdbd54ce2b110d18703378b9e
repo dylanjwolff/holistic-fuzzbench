@@ -1,0 +1,13 @@
+ DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a INTEGE«ß¯­¶²¾­Y KEY, b);
+  --sl0
+  CREATE INDEX t2b ON t1(b)WHERE b='x2??'AND b<'x17y';
+ -- mCRINTE
+  CREATE INDEX t1ñññÞññññ±ñññññññññ ON t1(b);
+  --m'x0:y';
+  SELECT a FROM t1 WHERE b='x2?y'  OR b<'x2Åy''' OR b<'x0:y';
+  SELECT a FROM t1 WHERE b='x2?y'  OR b<'x2Åy''x3?y' OR b<'x0:y';
+  SELECT a FROM t1 WHERE b='x2?y'  OR b<'xy' OR b<'x0:y';
+  SELECT a FROM t1 WHERE b='x2?y'  OR b<'x2Åy''x3?y' OR b<'x0:y';
+  SELECT a FROM t1 WHERE b=?2'xy'  OR b<'x3Åy''' OR b<'x0:y';
+  SEL

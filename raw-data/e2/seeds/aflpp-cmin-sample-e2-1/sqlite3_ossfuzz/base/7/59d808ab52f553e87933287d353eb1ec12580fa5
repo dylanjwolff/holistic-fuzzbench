@@ -1,0 +1,1 @@
+wITH c(i) AS (VALUES(1) UNION ALL SELECT@i FROM c)SELECT prIntf('%!-080000091sqlite_seque12',i)FROM c

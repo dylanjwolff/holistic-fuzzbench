@@ -1,0 +1,1 @@
+;SELECT( SELECT( SELECT-subsTr(0, changes(),instr(0,:81)-2) GROUP BY 1,1, @12,1)H GrOUP BY 1,1,1)H GrOUP BY 1,1,1

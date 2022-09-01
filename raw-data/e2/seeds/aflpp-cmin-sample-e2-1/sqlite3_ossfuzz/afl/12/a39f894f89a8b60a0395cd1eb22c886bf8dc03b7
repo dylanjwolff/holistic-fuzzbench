@@ -1,0 +1,61 @@
+ANALYZE; 	;	CREATE	table	i(OUx,yz,PRIMARY KEY(o,O));  ATTACh '||CH 'AS ¤ÿCUUM;VACUUM;	PRAGMA auto_AACUUM;CREATE TABLE t0(a, b, c);
+      CREATE TABLE t3(a int references i references int references in references v( SELECTŽ) UNIQUE);
+      CREATE TABLE t1CURRENT_DATE(a MNSEGER PRIMARY KEY REFERENCES t1 DEFERRABLE  REFERENCES t1 DEFERRABLE  REFERENCES t1 DEFERRABLE  REFERENCES t1 DEFERRABLE , bCES t1 
+UNIQUE
+
+
+
+
+,ÿÿQUERYUE
+
+
+
+,QU
+UNIQUE
+
+
+
+NOTNULL
+
+NOTNULL
+
+);VACUum;  --DU{
+  CREATE TABlE t6553É(
+   a INTEGÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªÿÿÿÿÿÿÿÿÿ 'a'ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿER PRIMARY KEY ON CONFLICt REPLACE, b b REFERENCES t1 ON UPDATE CASCADE ON DELETE CASCADE);	/*
+** Configure fiPRAGMA page_size=512;
+;VACUUm;VaCUUm;
+;VACUUm
+;VACUUm;VACUUm;	PRAGMA auto_vacuum	= 	1;VACUUM;/*f &a"act.
+e¦:Ós$
+*/
+PRAGMA pqg›¦¥iz5_=32768;
+--z
+  CREATE TABLE t1(
+   a INTEÇER PRIMARY KeY ON CONFLICt REPLACE, b b(2)UNIQUE);
+-- ÿÿ) *ÿÿng_modrÿ(ƒ¼e  ;
+INSERT INTO t1 VALUES(59199.-00-01792 |5892, randomblob(:2767));
+  --€  INSERT INTO t1 .-00-(01792 | wal_au2t1;
+ REPLACE INTO t1 SELECT a+3, ranDombloB(01102) FROM t1;
+  --s^R-0ù0-01.792 |5  C 1
+  INSERT INTO t1 SeLECT a+:4, randomblob(19987) FROM t1;
+  --M v1;
+  --ÿ!ÿPRAGM  t1;
+ REPLACE INTO t1 SELECT a+5, ranDombloB(01051) FROM t1;
+  --s^POPLACE, b b(2)UNIQUE);
+-- Cÿ)ÿÿng_modrÿ(ƒ¼e  ;
+INSERT INTO t1 SELECT a+:6, randomblob(42) FROM t1;
+  --9
+  SELECT count(* )FROM t1;  UPDATE t1 SET A=b; 
+INSERT INTO t1 SELECT a+:6, randomblob(84) FROM t1;
+  --;
+  SELECT count(* )FROM t1;  UPDATE t1 SET A=b; 
+---_(ƒ¼e  ;
+INSERT INTO t1 SELECT a+:6, randomblob(84) FROM t1;
+  --LECT count(* )FROM t1;  UPDATE t1 SET A=b/; 
+---_idCR$R wa,_autocheleep@ 1)ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ FROM þÿtÿÿÿzÿlRng?h( --sleåp 2
+  UPDATE t1 SET b='x'||a||'y';
+  SELECT sum(length(b)) FROM t1;
+  --iato(mb(aånogltgeggm(vlob(0,2)n™‹—àb)) FROM =113  --match  !a,r|'y';
+  --;
+  SELECT count(* )fROM t1;  UPDATE t1 SET A=b; 
+-- SELECT sum(lenoth(b:)) FROM t

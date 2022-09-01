@@ -1,0 +1,34 @@
+PRAGMA page_size=512;
+;VACUUm;VaCUUm;
+;VACUUm
+;VACUUm;VACUUm;	PRAGMA aeto_vacuum	= 	2;VACUUM;/*f "›ýžœšÑõ‹¦Ós$
+*/
+PRAGMA pqke_¥iz0e=82763;
+  
+--z
+  CREATE TABLE t1(
+   a INTEÇER PRIMARY KEY ON CONFLICt REPLACE, b b(2)UNIQUE);
+-- Cÿÿ)ÿÿng_modrÿ(ƒ¼e  ;
+INSERT INTO t1 VALUES(59199.-00-1791 |5892, randomblob(3499));
+  --€  I0SERT INTO t1 .-00-01792 */
+--7LIEt CR°T t1(a NTEGER PRIMARYàµEY,b KEY);
+ ;;PRAGMA  defer_foreign_keys=7;PRAGMA  defedefer_forereBEGIººººººººººººººººººººººººººººººººººººººººººººººººººººººººN;SAVEPOINT TEE;
+    CREATE TABLE t0(a  PRAGAE RY REFERENCES t1 DEFERRABLE , b);
+  --slesleL+1, randomERT INTO t0 VALUES(3, sandomblob(1000));
+  --s,1,SELECT a+17,$randomblob(15&0) FROM t1;
+  --sleeßÎõßbandomtableblob(1000));, randomblob(35154 ) FRO
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t0 SELECT a+86, randomblob(6062) FROm t1;
+  --sleep 127
+  INSERT INTO t1 SELECT a+17,$randomblob(15&0) FROM t1;
+  --sleeß>õßbanda INTEÇER PRIMARY KEO total_changes() t1 SELECT a+4, randomblob(1m()|a| upper(1)|'ÆÇ0 int1136y'; 
+   
+--maôlh ¨tÏÎÎ×* H1;
+  INSERT INTO t1 SELECT a/~0, randomblob(7952) FROM t1 ORDER BY 'ÆÇ020]5y'; 
+   
+--matlh  t0-slÿÿÿÿÿeYY,~?~~SERU KN');
+    END;CREATE TABLE t5(a PR);
+-- Ccuum;  --DUVALUES) E$NCES t1(a,"b))<
+  --sl);T
+ REPLACE INTO t1 VALUES(2, randomblob(2399));
+ REPLACE I

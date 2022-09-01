@@ -1,0 +1,2 @@
+
+      WITH RECURSIVE c AS (VALUES(1) ) SELECT#i0 FROM c  index_infoÿ LEFT JOIN  (SELECT"E"in( SELECT#i0 FROM c LEFT JOIN  (SELECT"M"in( SELECT#i0 FROM c ex_infoÿ LEFT JOIN  (SELECT""FROM(SELECT"s"""E))WHERE""+""&""OR""+""&""+"'&"""+"]"& 241)""FROM(SELECT"s"""E))WHERE""+""& 129)""FROM(SELECT"s"""E))WHERE""AND 5+""&+"&""O/"""+""

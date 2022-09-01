@@ -1,0 +1,46 @@
+	ATTACH?AS	 Va;
+SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		  
+--task!si­e(268435456.
+PRAGMA page_size=512;
+;  PRAGMA encoding=UTF16;PRAGMA threai_“zÆÊÂ2;
+;  PRAGMA  pa—e_sizeTF16;;
+  CREATE TaBLE t1(a I EG spra› ˆraceEY max(0,1), b);
+ CREATE INDEX t2¥ ON t1(b)WHERE mIN(A,A);
+  --WERHEçß¶±¬A·Adom()|a| rando¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼'¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼1ðŸÇ’ÂÍ294967368b ON t1(b-75< 'a',0,00, B)uaum;cv
+;  --sleep 4
+  INSERT INTO t1 VALUES(9223370000795964754, randomblob(2000));
+  INSERT INTO t1 VALUES(9223370000795964754, randomblob(2000));
+  INSERT INTO t1 VALUES(2, randomblob(-254));
+  --9SEdÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿb(0)ATE0
+  CREATE TABLE t2(a, b, c, d, e, FOREIGN KEY(c, d) REFERENCES t1(a,b));
+  CREATE UNIQUE INDEX c’Z©Íb ON t1(b,a);
+  --sl);T  DEX TEranDomblob(84/36) FROdom((6062) F ;2147483649RC';
+  UPDATE t1 SET A='x17y';
+  --T Rÿÿÿÿÿÿÿÿÿ-- CÿÿN) --s^ÿÿÿÿÿÿELECT a/0,=randoo=');;UPDA REPLACE, b b(55807067905ÿ599089)UNIQUE);
+/*°TSHLDCW¿¤*/
+  --theck;;;;;PRAGMA quick_check;;PRAGMA qu2t1;
+PRAGMA quick_check;;;;;PRAGMA quick_check;;PRAGMA qu2;
+ REPLACE INTO t1 SELECT a+5, ranDomblob(02204) FROM t1;
+  --s^&1 VULfTuN m instr(1,1)blobINTEGER wZlob(3498));
+-- CÿÿN)ÿÿ--s^R-Ü tM1;  s^&1 VULfPRAGMA quick_check;;PRAGMA qu2t1;
+PRAGMA quick_check;;;   DROP TABLE IF EXISTS t0;
+  CREATE TABLE t1(a reALLtomatic_indexEY, b);
+  CREATE INDEX ït2b ON t1(9, randomblob(0001));
+  --s t1(UN));
+  --sìe inãra}ental_vaCM QNT  O1StELECV a/
+  UPDATe t1 SET a='0|'|astrftime(1,1,1,1);;PRAGMA quick_check;;PRAGMA qu2;
+ REPLACE INTO t1 SELECT a+5, ranDomblob(02204) FROM t1;
+  --s^&1 VULfTuN mblobINTEGER wZlob(3498));
+-- CÿÿN)ÿÿÿ locking_modeRAEE MARY K@Ypp)rÿ&e  ;
+  REPLACE INTO t1 SELECT a+2, ranDomblob(022ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿomblob(-254));
+  --9SE vime(1,1,1)LECT a+ÿÿ CREATE TABLE t1(a,u,b6,Úxÿ,bxwxÿ,bxw);ªªªªªªªªª| random()|'ÆÇ012LA#L';
+  
+  --match  t2 [ intmap_sei)z F ;-slEX ït2b ON t1( re-1,0*0.2,0,' a'&0,0054*75=09,0,0,0,0, '>'&0,0, 'a',0,00, B);vacuum
+;  --s#eHAÖING
+  INSERT INTO t1 VALUES(2,$ravdomblob(-0#4));
+ ªªªªªªddddddddddddddddddddddªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªÿÿÿÿÿÿÿÿÿ 'a'ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿER PRIMARY KEY ON CONFLICt REPLACE, b b REFERENCES t1 ON U -- ROM t0;
+  --ÎBL$ t1(UN));
+  --sìe+PDATE CASCADE ON DELETE CASCADE);	/*
+** Configure fiT‘ ,"/*
+** Configure fiT "]"FR,¿061));
+  INSERT INTO sÿt1

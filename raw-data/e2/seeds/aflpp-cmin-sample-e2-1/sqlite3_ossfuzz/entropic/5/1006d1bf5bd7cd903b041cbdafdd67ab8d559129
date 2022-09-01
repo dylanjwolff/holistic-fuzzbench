@@ -1,0 +1,7 @@
+ CREATE TABLE t1(a, b, c, d, PRIMARY KEY(  b, d)) WITHOUT ROWID;
+  
+  CREATE INDEX t2•Û†Åª ON t1(b);
+  SELECT  avg(1)a FROM t1 WHERE b='xEXISTS17y257''x3?y' OR b<'x08y';
+ DELETE FROM t1 WHERE b='x3?y'  OR b<'x18446744073709558y';
+ DELETE FROM t1 WHERE b= b<'x2≈y''x40?y' OR b<'x08y';
+ DELETE FROM t1 WHERE b='x3?y'  ORWHERE b='x3?y'  OR b

@@ -1,0 +1,4 @@
+    CREATE TABLE t1( a,ba PRIMARY KEY, b, OUnIQUE,UOUc) WITHOUT ROWID;
+--=bA
+  UPDATE t1 SET A=b;
+AP  DUTE t1 SE

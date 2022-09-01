@@ -1,0 +1,45 @@
+CREATE TABLE t2(a, b);/* Test]e. */
+  ANALYZE;
+   CREATE TEMP VIEW vxKEY( 'a', a4 )  AS SELECT x, yÀ -2 AS yy FROM  ıııııııııııt1ııııııııııııııııııııııııııııısFRORR Ï,tsFRORRM ptss INDEXED BY a,tsFpts INDEXED BY aÏ,tsFRORROTEMPORARYM pts INDEXED BY a,tsFRO0M  Ï,tsFRORROM pts INDEXED BY a,tsFROM  qts INDEXED BY ta,tsFM pts INDEXED BY aÏ,tsF74064M pts INDEXED BY a,tsFROM pts INDEXED BY a,tsFROM  pts INDEXED BY ta,tsFM pts INDEXED BY aÏ,tsF74064M pts INDEXED BY a,tsFROM  ptTEMP	 	;/*
+*MA temp.  CREATE TABLE t1(a Dhar(1) PRIMARY KEY, b c) WITHOUT ROWID;
+  
+  --slh 16A randomblo"(2001));
+  INSERT INTO t1 VALUES(1, randomblob(1));
+  INSERT INTO t1 VALUES(2, randomblob(1000));
+  --sl3225) FROM t1;
+  INSERT INTO t1 SELECT a  cache_si$:eUE,UOUnIQUE,«ªIÿOUnIQUE,UNIÿÿUE,UNIÿÿEUnIQCHMPORARYM pts INDEXED BY a,tsFRO0M  Ï,tsFRORROM pts INDEXED BY a,tsFROM  pts INDEXED BY ta,tsFM pts INDEXED BY aÏ,tsF74064M pts INDEXED BY a,tsFROM pts INDEXED BY a,tsFROM  pts INDEXED BY ta,tsFM pts INDEXED BY aÏ,ts  
+--tas8435456.
+PRAGMA page_size=512;
+;  PRAGMA page_si÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷ze=512;
+;  PRAGMA encoding=UTF16;PRAGMA threads	(3);
+	PRAGMA auto_vacuum	= 	0;VACUUM;/*back*
+/**W juinalday(5,1,R,s$
+*/
+PRAGMA p2768;
+--{
+  CREATE TABLE t1(
+   a INTd¦ER PRIMARY KEY On CONFLICt REPLACE, b b(2)UNIQUE);
+/*CREDTACES!*/
+INSERT INTO t1 VALUES(2980151-50 |792 |5893, randomblob(3498));
+-- Cÿÿ incremental_vacuumN)ÿÿÿ locking_modeRAEE ÿÿÿÿÿÿÿÿMARY K@Y--matlh  1b,bEt1SL5 CREATE TABLE t1(a a uncÔmittefKEY, b);
+  CREATE INDEX Z5Î ON t1(A,  round(0-A),0, - B);vacuum;  --DUX c, d) ENCES t1(a, b));
+  --sl);T *EABLE , bÿ
+  CREATE UNIQUE INDEX cfb4ğŸÇ’ÂÍ294967368b ON t1(b-75<09,0,0,0,0, 'a'&0,001,00, 'a',0,00, B);vacuum
+;  --sleep 2
+  INSERT INTO t1 VALUES(9223370000795964754, randomblob(2000));
+  INSERT INTO t1 VALUES(2, randomblob(-254));
+  --9LEECTS a+ÿÿÿÿÿÿÿomblob(14&8) FROM t1;
+  --slee»ßÎõßßIµSERe INÿÿÿ)ÿÿÿOaDEFERRABLEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaiaaaaaaaaaaaaaaaaaTABLE t1(a NTEGER PRIMARY KEY,b KEY);
+ ;;PRAGMA  defer_foreign_keys=5;PRAGMA  defedefer_forereBEGIN;SAVEPOINT TEE;
+    CREATE TABLE t0(a  PRAGAE RY REFERENCES t1 DEFERRABLE , b);
+  --slesleL+1, randomERT INTO t0 VALUES(3, r00));
+  --s,1,1*š¦ ONt REPLACE,eee*/
+-- C(((((((((((((((((((((((((((((((bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbWHEREbbbbbbbbbbTEGERq®ß‹†š’™$(2), b);EXPLAI=N  'a'&0,10; PRAGMA jouANALYZE;ANALYZALYZE TEMP;VACUUMÌõ
+SAVEPOINT	Va; 	;	ANALYZE ; 	PRAGMA TE ;  ROLLBACK		TO	 Va;   ROLLBACK	TO	  Va;  		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	ACK		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	A;--g¼ößß¶±¬º²T INT[ 02 V!LUES(6, òa
+  --ÎBLE t2(a ÊÊÊÊÊINTEGERq®ß‹†š’™$(1), b);EXPLAI=N  'a'&0,10; PRAGMA jouANALYZE;ANALYZALYZE TEMP;VACUUMÌõ
+SAVEPOINT	Va; 	;	ANALYZE ; 	PRAGMA TE ;  ROLLBACK		TO	 Va;   ROLLBACK	TO	  Va;  		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	ACK		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	A;--g¼ößß¶±¬º²T INT[ 02 V!LUES(6, òa
+  --ÎBLE t2(a ÊÊÊÊÊINTEGERq®ß‹†š’™$(1), b);EXPLAI=N  'a'&0,10; PRAGMA jouANALYZE;ANALYZALYZE TEMP;VACUUMÌõ
+SAVEPOINT	Va; 	;	ANALYZE ; 	PRAGMA TE ;  ROLLBACK		TO	 Va;   ROLLBACK	TO	  Va;  		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	ACK		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	A;--g¼ößß¶±¬º²T INT[ 02 V!LUES(6, òa
+  --ÎBLE t2(a ÊÊÊÊÊINTEGERq®ß‹†š’™$(1), b);EXPLAI=N  'a'&0,10; PRAGMA jouANALYZE;ANALYZALYZE TEMP		TO	 Va;   ROLLBACK	TO	  Va;  		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	ACK		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	A;--g¼ößß¶	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	ACK		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	A;--g¼ößß¶±¬º²T INT[ 02 V!LUES(6, òa
+  --ÎBLE t2(a ÊÊÊÊÊINTEGERq®ß‹†š’™$(1), b);EXPLAI=N  'a'&0,10; PRAGMA jouANALYZE;ANALYZALYZE TEMP;VACUUMÌõ
+SAVEPOINT	Va; 	;	ANALYZE ; 	PRAGMA TE ;  ROLLBACK		TO	 Va;   ROLLBACK	TO	  Va;  		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	ACK		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE 

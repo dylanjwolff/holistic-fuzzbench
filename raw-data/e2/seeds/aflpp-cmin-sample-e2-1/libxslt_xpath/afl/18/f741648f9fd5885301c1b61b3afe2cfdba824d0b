@@ -1,0 +1,1 @@
+//ancestor::*[set:trailing(*/namespace::*,*+namespace::*[3])]

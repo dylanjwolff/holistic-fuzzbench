@@ -1,0 +1,14 @@
+PRAGMA auto_vacuum	= 	2;VACUUM;CREATE TABLE t1
+ (  a INT2EGER PRIMARY KEY ON CONFLICt REPLACE, b bVALR UNIJXb asESQUE);
+/*Ca!*/
+--FLICt RE°³¾¼ºÓßŸuum
+;  --sleep 1
+  INSERT INTO t1 VALUES(92233700007959647&4, randomblob(24300));
+  INSERT INTO t1 VALUES(2, randomblob(-624));
+  --2, ránDomblob,3498));  --ðt0;
+ REPLACE INTO t1 SELECT a+3, ranDomBlob(02204) FROM t1;
+
+  UPDATE t1 SET a='0|'|a| random()|'ÆLL';
+  
+ -- 4, rInUUEZRES(3910.1su u_be(ÿ0)EXPLAINot1;
+ PRAGMA quick_check	=3;PRAG

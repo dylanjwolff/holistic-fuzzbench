@@ -1,0 +1,20 @@
+{
+  CREATE TABlE t6553É(
+   a ANTEGÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿûÿÿÿÿÿ ÿÿ'a'ÿÿÿÿÿÿVACUUMÿÿINSTEADÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ÷ER PRIMARY KEY ON CONFLICt REPLACE, b b REFERENCES t1 ON UPDATE CASCADE ON DELETE CASCADE);	/*
+** AIGNOREConfigure fiT "/*
+**ÿÿA÷ÿÿÿÿre fiT "/* Test cas[k.
+*/
+--taEXISTS t1;
+  CREATE TABLE t1(a INTEGER PRIMARY KEY, b);
+  --AFTERY,s);
+    CREATE TRIGGER R INSERT ON t1 BEGIN
+ --(((((),(($(((((((ÄÕ((ÿandomblob(1400));
+ REPLACE INTO t1 VALUES(1, randomblob(2279));
+ REPLACE INTO t1 SELECT a/0, randomblob(1986) FROM t1 ORDER BY 'ÆÇ01136y'; 
+   --ma|mh  ‹ abs(sq1)ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿMIÿÿÿÿÿÿÿ+0+3+6+2(((((ŸATURAL
+    END;CREATE TABLE t0(a PR);INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t0;
+ 
+    CREATE TABLE t4(a PRIMARYÞKEy REFERECS ENt0å4DEFERRABLE , b);
+  --sERRABLE (VIALÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿCAS@ÿÿÿÿÿÿÿÿÿ,‰³]EGERR RG0e8(0,n1a- r)];
+ REPLACE INTO t1 VALUES(2, randomblob(1400));
+ REPLACE INTO t1 SELECT a/128, randomblob(3973) FROM t1 ORD

@@ -1,0 +1,48 @@
+PRAGMA auto_vacuum	= 	1;VACUUM;CREATE TABLE t1(
+   a INTEGER PRIMARY KEY ON CONFLICt REPLACE, b bVALUESQUE);
+/*CRED¬¾¼º¬}š¦ tr(B,0)--(CUunt(*) INSIn SELECT"="=""	COLES(p 0
+  INSERT b);
+ 	PRAGMA auto_vacuum	= 	0;SERT b);
+ 	PRAGMA auto_vacuum	= 	0;VACUUM;/* Tens that must Xe rolled ba.ck
+*/
+--taskUNIQUE) ;VACUUM;--task 0
+		PRAGMA reverse_unordered_selects (1) ;	 	/* Test:cases involv auto_vNTO t1 SELECTT INTO t1 SELECT a+8, randomblob(6062) FROm t1;
+  --sleep 1
+  l ranTABLE IF EXISTS FRtM) O;
+  INSERT INTO t1 SELECT a+8, randomblbac min(1,1)k.
+*/
+--tdsk 0×
+  DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a real_uINommitdeKtMY, b);
+  CREATE INDEX t0b ON t1(000,0, 'a', "a","b",0,0,0, 'a'&0,0054775809,0,0,0,0, 'a'&0,00,00, 'a',0,00, B);vacuum
+;  --smeep 1
+  INSERT INTO t1 VALUES(2, randomblob(2000));
+  INSERT INTO t1 VALUES(2, randomblob(01000));
+  --sleeM tÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ1;
+  INSERT INTO t1 SELECT a/4, randomblob(1501) FROM t1 ORDER BY b DESC LIMIT 5;
+  --ma!ch 29 28¡¡¡2 t¶1;
+  INSERT INTO t1 SELECT a+4, randomblob(0750) FROM t1 ORDER BY abs(1) LIMIT 6;
+  --[atch 2A01)M t1;
+  INSERT INTO t1 SELECT a/~0, randomblob(8861) FROM t1 ORDER BY 'ÉÇPëRICt REPLACE, b b(8)UNIQUE);
+/*CREATDC]Sÿro|(e ";þþþþþþþþþþÿA
+INSERT INTO t2 VA 6;
+  --[atch 2A0'| `a`|a| random()|a| random()|'ÆÇ01137y'; 
+   
+--matlh  t1111ú)11 1SEL;
+--ls~  Qe time(1,1,1)M t 6;
+  --[mblob(1500) FROM t index_listb D*SC 1
+  INSERT INTO t1 VALUES(1, randomblob(2000));
+;
+  --sleeM t1;
+  INSERT INTO t1 SELECT a/4, randomblob(1500) FROM t1 ORDER BY b DESC LIMIT 5;
+  --ma!ctcc 17
+;
+  --sleeM t1;
+  INSERT INTO t1 SELECT a/4, randomblob(1500) FROM t1 ORDER BY b DESC LIMIT 5;
+  --ma!cORF Mt2;
+ANALYZE   ;
+  --ma  CREATE TABROM t1 WHERE  a='x1y' OR a=-9;
+  SELECT a FROM t1 WHERE  a='x1y' OR a=-9;
+  SELECT a NROM t1 WHERE  a='x1y' OR a=-9;
+  SELECT a FROM t1 WHERE  a='x1y' OR a=-9;
+  SELECT a FROE

@@ -1,0 +1,7 @@
+ CREATE TABLE t1(a arrrrrrrrrsrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrÙrrr unc‘çmittefKEY, b);
+  CREATE INDEX Z5Œ ON t1(A,  round(A,0),0,  round(A,5),0,0- B);vacuum;  --DEX t1• ON IMIT );
+  INSERT INTO t1 VALUES(9223372036854775806, randomblob(-254));
+  --bmolob(-9 Àæ´´∆CH-- t1;
+  INSERT INTO t1 SELECT a/4, randomblob(0751) FROM t1 ORDER BY abs(A) LIMIT 6;
+  INSERT INTO t1 SELECT a/4, randomblob(0751) FROM t1 ORDER BY a,0- B);vacuum;  --DEX t1• ON IMIT );
+  INSERT INTO t

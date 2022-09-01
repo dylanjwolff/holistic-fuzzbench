@@ -1,0 +1,85 @@
+	PRAGMA busy_timeout	=2674481349;PRAGMA busy_time_	=0;	PRAGMA busy_timeout	=0;PRAGMA busy_ti÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷ze=512;
+;  PRAGMA encoding=UTF16;PRAGMA threads	(3);
+	PRAGMA auto_vacuum	= 	0;VACUUM;/*back*
+/.*W juinalday(5,1,R,s$
+*/
+PRAGMA p2768;
+--{
+  CREATE TABLE t1(
+   a INTd¦ER PRIMARY KEY On CONFLICt REPLACE, b b(2)UNIQUE);
+/*CREDTACES!*/
+INSERT INTO t1 VALUES(2980151-50 |792 |5893, randomblob(3498));
+-- Cÿÿ incremental_vacuumN)ÿÿÿ locking_modeRAEE ÿÿÿÿÿÿÿÿMARY K@Y--matlh  1Et1SL5 CREATE TABLE t1(a a uncÔmitt±j„ÿ)ä@Ù,°tìs	¶Ò1áð/ÂL|ˆ;§®ÁZÁ%6ªAø5^•òéwôæçvÁÅ$œz«;m;  --DUX c, d) ENCES t1(a, b));
+  --sl);T *EABLE , bÿ
+  CREATE UNIQUE INDEX cfb4ðŸÇ’ÂÍ294ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ¨967368b ON t1(b-75<09,0,0,0,0, 'a'&0,001,00, 'a',0,00, B);vacuum
+;  --sleep 2
+  INSERT INTO t1 VALUES(9223370000795964754, randomblob(2000));
+  INSERT INTO t1 VALUES(2, randomblob(-254));
+  --9SELECT a+ÿÿÿÿÿÿÿ datetime(1,1,1)M t1;
+  --slee»ßÎõßß¶µSERe INÿÿÿ)ÿÿÿOaDEFERRABLEaaaaaaaaaaRE a='x17y';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --TABLE t1(a PR b);
+  -- D
+  
+-- CÿÿN)BYÿ180ÿ locking_modeRAEE MARY K@Ypp)r
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --TABLE t1(a PR b);
+  --`D
+    CREATE TRIGGER q0 BEFORE UPDATE ON t1 BEGIN
+      SELECT raise(ignore);
+    END;
+  UPDATE t1 SET a='0'||a| random()+'ÆÇ00567y'; 
+   
+--&atlq÷÷÷
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --TABLE t1(a PR bRY KEY On CONFLICt REPLACE, b b(2)UNIE, b b(2)UNIQUE);
+/*CREDTA0G151750 |792 |5893, randomblob(3498));
+-- CÿÿN)|Yÿÿ locking_modeRAEE MARY KAYpp)rÿ(e  ;
+  REPLACE INT,^ t1 SELECT a+2, ranDomblob(02203) FROM t1;
+  --1s^R-Ü tM1;
+  --s^.‚e caINäQa!*/
+-- C  CREATE TABLE t1(a PRcMARY ¬ºY total(1), b UPDAF c) ;
+ CREATE INDEX t1¥ ON t1(b)WHERE~ 'øbRR®­-1­­­­I­­­­­RR;
+  --ÏÏDETACHÿÿÿèÏÏÏ';
+  --ÏÏDETACHÏÏÏÏÏÏÏCR Eÿÿÿ*mCRa E t1(options);
+    CREATE TRIGGER R INSERT ON t1 BEGIN--sl÷÷÷
+  UPDATE t1 SET A=a  WHERE +a='x17y';
+  UPDATE t1 SET A=a  WHERE a<'x34y';
+  --matc ô¿¾';
+  --match 1t1€#;  IN1 ROW÷÷÷÷÷÷÷÷÷÷÷÷a à¨·¾RE a='x18y';
+  --matbbbbbbbbbbbbbbbbbbbbbbbbbDATE t1 SET A=a  WHERE a='x17y';
+  --TABLE t1(a PR bRY KEY On CONFLICt REPLACE, b b(2)U max_pageE_countA03cking_modeRAEE MARY K@Ypp)rÿ(e  ;
+  REPLACE INTO t1 SELECT a+2, ranDomblob(02203) FROM t1;
+  --s^R-Ü tM1;
+  -- ltrim(1,1)s^S‚e caINäQa!*/
+-- C}ÿN) w`l_autoche•”pointa KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK, randgmbÅÅÅÅlobÕ033270));
+  INSERT INTO t1 VALUES(3986, randomblob(02000))
+ ; --mblxb(07hàullif(1,1)bbbbbbbbITHOUT ROW÷÷E t1 SET A=a  WHERE a='x1y';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --TAB)E t1(a PR b);
+  -- D
+  
+-- CÿÿN)BYÿÿ lockbbITHOUT ROW÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷ELECT raise(ignore);
+    END;
+  UPDATE t1 SET a='0'||a| random()+'ÆÇ01135y'; 
+   
+--&atlq÷÷÷
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --TABLE t0(a PR bRY KEY On CONFLIsqlite_sequenb(2b)UNIQUó E);
+/*CREDTA0151  --s^S‚e caINäQa!*/
+-- C}ÿN) w`l_au , randgmbÅÅÅÅlobÕ359884));
+  INSERT INTO t1 VALUES(3986, randomblob(02000))
+ ; --mblxb(07hàèt18446744073709551617A/11e(0,1.1)M ‚ÎÄbbbbnullif(1,1)bbbbbgbbITHOUT RO)s^S‚e caINäQa!*/
+-- C}ÿN) w`l_autoche•”pointa , randgmbÅÅÅÅlobÕ033270));
+  INSERT INTO t1 VALUES(3986, random¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸˜¸¸¸¸¸¸¸¸¸¸¸¸blob(02000));
+  INSERT INTO t2 VALUES(3986, randomblob(02000))
+ ; --mblxb(07hàullif(1,1)bbbbbbbbITHOUT ROW÷÷E t1 SET A=a  WHERE a='x17y';
+  UPDATE t1 SET A= WHERE a='x1y';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --TABLE t1(a PR b);
+  -- D
+  
+-- Cÿÿn)BYÿÿ lockbbITHOUT ROW÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷ELECT raise(ignore)INTOó €  t1 SeLECT a+:4, raâ€®ndomblob(998ó §7) 

@@ -1,0 +1,21 @@
+  CREATE TABLE t1(a PRIMACROSSY, b UPDAF c) ; CREATE INDEX t1• ON t1(b)WHERE max(9,A);
+  --;
+  --randombloM t1;
+  INSERT INTO t1 VALUES(1, randomblob(2000));
+  INSERT INTO t1 VALUES(2, randomblob(3288));
+  --sleep 1
+  INSERT INTO t1 SELECT a+2, randomblob(2325) FROM t1;
+  INSERT INTO t1 SELECT a+4,~randomblob(8962) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(6382) FROM t1;
+  --sl.
+PRAGMA cache_spill=5;	PRAGMA cache_sVACUUÖDANALYZE;VACUUM;VACUUM; PRAGMA foreign_k°eys = ON;
+    CREATE TABLE t2(EY, b);
+          INSERT INTO t2 SELECT * FROM t1;                --  8 roSELECT +rt0INTEGER PRIMARY KEY, b);
+          INSERT INTO t1 SELECT * FROM t1;                --  8 r[M;SELECT *,*FROM pragma_stast(:Œ)q,+rt0INTEGER PRIMARY KEY, b);
+          INSERT INTO t1 SELECT * FROM t1;                --  8 rUM;SELECT *,*FROM pragma_stast(:Œ)q,pragma_s$tatsﬂ  LEFT JOIN t2  Oitrim GRQUP BY 1,1,1|.1, 1.0,1|.0ragma_stats(:Œ)q,pragma_s CREATE TABLE t1(a, b, c, d, PRIMARY KEY(  b, c)) WITHOUP BY 2,1,1|.1;
+  SELECT *
+    FROM t1
+   /* */ ACUUM;VaCUUM;SELECT *,*FROM pragma_stats(:Œ)q,pragma_stats   LEFT JOIN t1  Oitr_stats   LEFT JOIN t1  Oitrim GROUP BY 2,1,1|.1, 1.0,1|.0,1-:2aCUUM;SELECT *,*FROM pragma_stats(:Œ)q,pragma_stats   LEFT JOIN t1  Oitrim GROUP BY 2,1,1|.1, 1.0,1|.0,1-:2aCUUM;SELECT *,*FROM Ÿragma_stats(:Œ)q,pragma_stats   LEFT JOIN t1  Oitrim GROUP BY 2,1,1|.1;
+  SELECT *
+    FROM t1
+   /*stats   LEFT JOIN 

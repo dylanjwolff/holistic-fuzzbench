@@ -1,0 +1,1 @@
+CREATE	view	t AS SELECT y; DELETE FROM t

@@ -1,0 +1,1 @@
+SELECT instr(  changes() -60,.0)

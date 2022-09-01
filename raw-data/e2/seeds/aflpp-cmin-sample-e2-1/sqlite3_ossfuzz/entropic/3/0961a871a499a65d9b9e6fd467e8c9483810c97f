@@ -1,0 +1,14 @@
+ CREATE TABLE t1(a INTERSECTﬂßåèöíåô(1), b);EXPLAIN
+   CREATE INDEX Ù4b ON t1(b);
+  INSERT INTO t1 VALUES(5, randomblob(2003));
+  INSERT INTo t1 SELECT a+3, randoMblob(0) FROM T1;
+  INSERT INTO t1 SELECT a+0, randomblob(0751) FROM t1; 
+ INSERT INTo t1 SELECT a+0, randomblob(0751) FROM t1; 
+ INSERT INTo t1 SELECT a+3, randomblob(17%77 ) FROM t1;
+;  CREATE	TEMP	taBLE t0(	ÙE…S¨STIX ·bs(1) ,
+NkÕ  UNIQUE);--FOREIGN VALUE423));
+  INSERT INTo t1 SELECT a+1, randoMblob(9758	) FROM T1; 
+ INSERT INTO t0 SELECT a+2, @andomblob(0751) FROM t1; 
+ INSeRT INTo t1 SELECT a+2, randomblob(1) FROM t1; 
+ INSERT INTo t0 SELECT a*8, randomblob(35154 ) FROM t1;  --πvdbe_debug()
+REINDEX;REINDEX;REINERT INTo 0CEESt LT a*8, 

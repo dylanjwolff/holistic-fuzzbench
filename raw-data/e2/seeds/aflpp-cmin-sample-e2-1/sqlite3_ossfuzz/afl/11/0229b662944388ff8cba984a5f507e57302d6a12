@@ -1,0 +1,1 @@
+VACUUM;SELECT *,*FROM pragma_stats()GrOUP BY 1,1

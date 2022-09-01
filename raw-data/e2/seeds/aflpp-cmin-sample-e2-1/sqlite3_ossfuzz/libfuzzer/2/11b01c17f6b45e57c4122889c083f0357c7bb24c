@@ -1,0 +1,17 @@
+ CREATE TABLE t0(a,b);
+    CREATE INDEX t ON t0(a);
+    PRAgMA writable_schema=ON;
+    UPDATE sqlite_master SET sql='CÙ?ATE TABLE abLE#b(`eeeeeeeeeeeeeeeeeeeeeeežeeeeeÊ²eeeeeeeeeeeeeeeeeeeeeeceeeeeeeeeeeeeeHa UNIQUE';
+    BEGIN;
+    CREATE TABLE t1(x);
+    ROLLBACK;
+    ;
+    PRAGMA writable_schema=ON;
+SAVEPOINT	œœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœœM;CREATE TABLE t1(
+   a INTEGER PRIMARY KEY ON CONFLICt REPLACE, b bVALR UNIJ XXY KEY REFERENCES t1 DEFERRABLE) WITHOUT ROWID;
+--“atcIE;b- CREATE TABLh t1E OUT ROWacuum;  --DUX c, d) MNCES ó ¿t1(a, Hb)):
+  --sl);T *EABLE  typeof(3), bÿ
+  --sl);T *EAB¶º  ty½ÁsõæïÉ/§Ùz8Ûuz¨|‚À@ì—3á´üàý"‹ž„Dpkö×9š•>Ù3.¹-E ïÙ™wúÇµ¡:µGvÓˆomblob(ÿÿÿÿÿÿÿtttttt 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;z  ROLLBACK		TO	 Va;
+SAVEPOINT	Va; 		ANALYZE TE

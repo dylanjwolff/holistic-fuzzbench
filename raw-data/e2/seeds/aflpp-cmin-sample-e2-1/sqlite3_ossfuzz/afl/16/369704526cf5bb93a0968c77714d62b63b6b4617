@@ -1,0 +1,1 @@
+SELECT time(-0,"utc","utc","uc")

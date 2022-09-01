@@ -1,0 +1,1 @@
+a//text()[1][document(str:tokenize('~/i’#xmlns(Y%09/))D'))]

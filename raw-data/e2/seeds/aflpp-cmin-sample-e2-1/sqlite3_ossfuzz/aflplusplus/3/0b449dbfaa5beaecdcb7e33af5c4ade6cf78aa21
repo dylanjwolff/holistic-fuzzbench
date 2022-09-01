@@ -1,0 +1,1 @@
+SELECT*FROM(Sqlite_master,sqlite_master)Ç

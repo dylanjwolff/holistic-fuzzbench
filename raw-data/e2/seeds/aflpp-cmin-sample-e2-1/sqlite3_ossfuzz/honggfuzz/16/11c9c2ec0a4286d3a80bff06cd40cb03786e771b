@@ -1,0 +1,4 @@
+ DROP TABLE IF EXISTS t0;
+  CREATE TABLE t1(a INTEGE«ß¯­¶²¾­Y KEY, b);
+  --sl8
+  CREATE INDEX t1b ON t1(b)WHERE b='x2?y' OR ROWx

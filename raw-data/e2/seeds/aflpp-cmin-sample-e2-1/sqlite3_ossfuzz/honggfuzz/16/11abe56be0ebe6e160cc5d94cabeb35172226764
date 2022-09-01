@@ -1,0 +1,14 @@
+PRAGMA auto_vacuum	= 	2;VACUUM;CREATE TABLE t1(
+   a INTEGER PRI count_changesNFLICt REPLACE, b bVALptions);
+    CREATE TRIGGER R INSERT ON t1 BEGIN--sleepTRI+2 daysSET A=b;
+ UPDATE t1 SET A=b;
+   
+--matlh  t02774ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿomblo  
+--     LEFT       LEFT     JOIN t1  ; --mblxb(07hàèt1A/11e(0,1.1)M bbÄÎb‚b nullif(1,1)bbbbbbbbKTHOUT ROW÷÷÷÷÷÷
+ REPLACE INTO t1 SElECT a+7, ranDomblob(84/36) FROM t1;
+  --t1(a INTEI, b  :1CK(a7, ranD«mblob(84/36) FROM t1;
+  --t1(a INTEI, b  :1CK(a) CHEC2UR_TIME CHECK(a)CHECK(0)CHECK(0) CHECK(a)C4/36) FROM t1;
+  --t1(a INTEI, b  :1CK(a) CHECCURRENT_TIME CHECK(a)CHECÿHECK,0) CHECK(a)CHECK(0)CHECK(0));;UPDraise(ignore);
+    END;
+    CREATE TABLE t0(a  RpAUTOnIQUðUE) ; ALTER TABLE T0 RENAME [a] TO XMIT; recursive_triggerÙ51617) FROM 1)a)NIQUE);
+/*CREATöDC]Sÿro

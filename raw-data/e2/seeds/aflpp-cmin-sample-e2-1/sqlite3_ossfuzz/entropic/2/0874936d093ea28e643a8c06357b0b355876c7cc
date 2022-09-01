@@ -1,0 +1,2 @@
+   CREATE TABLE t1(u, "b",t);SELECT *
+  FROM t1  ý NATURAL LEFT JOIN t1   TURAL  LEFT JOIN t1  

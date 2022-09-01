@@ -1,0 +1,40 @@
+  
+--task!size(13421=456.
+PRAGMA page_size=512;
+;  PRAGMA encoding=UTF16;PRAGMA threads	(3);
+	PRAGMA auto_vacuum	= 	2;VACUUM;/*back*
+/**W juinalday(5,1,)0R,s$
+*/
+PRAGMA p2568;
+--'
+  CREATE TABLE t1(
+   a INTd¦ER PRIMARY KEY On CONFLICt REPLACE, b b(2)UNIQUE);
+/*CRUD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@INSERT@@TACES÷!*/
+INSERT INTO t1 VALUES(2980151750 |792 |5893, randomblob(3497));
+-- CÿÿN)ÿÿÿ locking_modeRAEEbb(32ÈÉÖÖ; c (utocckehpointÿÿ)‰;
+  INSERT INTO t1 VALUES(3, randomblob(999));
+  --sl u.icode(1)2940)(2)t)1;
+ REPLACE INTO t1 SElECT a+7, ranDomblob(84/36) FROM t1;
+  --s^å)ÿÿÿÿ t1;t0ÿÿÿÿÿÔ(b¸¸LLSNUI¸1y'; 
+   
+--ileRAEE b CHECK(a) CHECK(a)C#aGz°„•º%ER PRIMARY KEY, b+;
+  --s-sle[,s);
+    CREATE TRIGGER R INSERT ON t1 BEGIN
+ --~~~~ last_iHAVINGnseóÿÿÿt_ORDEVALUES ¶ESC  LIM fullfsync[-atc20 0Ah.=
+  --s$&p$l#keÿ
+  UPDATE t1 SET a= 'a|'|0|random()|a| random()|'01‡Æ136y'; 
+   
+--mWô–h  t05556*$t1;ššššššššššššššššššššššššššššššššššššššš
+  INSERT INTO t1 SELECT a/~65535, randomblob(1510 )FROM t1 ORDER BY 'ÆÇ0113|'|0|random()|a| random()|'Æ‡1y'; 
+   
+--mWôlh  t1111""""!"""""""""""""""""""""&""""""""""""""""""* t1;
+  --[atÒ0 0Ah.!0
+  INSERT INTO t1 SELECT a/~0, randomblob(3002) FROM t1 ORDER BY 'ÆÇ01135y'; 
+   
+--matlhdgmbÅÅnîÿ]•E¹T fitstrEGIN©¡me.(((((((((;
+    END;cREATE TABLE t0( aPR);INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+ 
+    CREATE TABLE t3(a PRIOARY KEy REFERENCES t5 DEFERRABLE , b);
+ --sÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿERRABL““×ÎÊ00));
+ REPLACE INTO t1 VALUES(2, randomblob(1200));
+ REPLACE INTO 

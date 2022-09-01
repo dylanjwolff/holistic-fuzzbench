@@ -1,0 +1,14 @@
+PRAGMA encoding=utf16;PRAGMA encoding=UTF16;
+    CREATE TABLE t1(x);
+    INSERT INTO t1 VALUES(1);
+    ALTER TABLE t1 ADD COLUMN b INTEGER ╪╨╧╬╙Ё╚ь'.1ЪЪЪЪ
+ЪЪЪЪЪЪ-600ЪЪЪЪЪЪЪЪЪЪЪ24лллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллл5%,")к WHERE-к-к-кллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллttttttttttttttttttttttttttttttttttttttttttttяя,яяяяяяя]=NUяяяЭЭЭ ddata_store_dЭЭЭЭяяяяя,яяяяяя,яяяяяEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE0*292"")ANDttt  NATURAL  NA/TURAL     JOIN t1  N╩O     NATURAL     LEFT       LEFT     JOIN t1  WHERE170141183460469231731687303715884105712y';
+ -- mC++++++++++	NRAGMA aut	= 	0;VACUUM;/*b*/
+SELECT*FROM( SELECT 1.0*292"")ANDttt  NATURAL  NATURAL     JOIN t1  ON╩     NATURAL     LEFT       LEFT     JOIN t1  WHERE b='x2?йURAL  NA/TURAL     JOIN t1  N╩O     NATURAL     LEFT       LEFT     JOIN t  WHERE170141183460469231731687303715884105712y';
+ -- mC++++++++++	NRAGMA aut	= 	0;VACUUM;/*b*/
+SELECT*FROM( SELECT 1.0*292"")ANDttt  NATURAL  NATURAL     JOIN t1  ON╩     NATURAL     LEFT       LEFT     JOIN t1  WHERE b='x2?й╤y' OR b<'x34028211456y';
+ -- sqlite_compileoption_used(1) mC+++++++++ t65536 E b='x2?y' OR b<'x17y';
+ -- mC++++┘++++  NATURAL  JOIN pragma_stats  NATURAL           JOIN pragma_stats  NATURAL   JOIN pragma_stats;SELECT *,*FROM pragma_stats  NAgma_stats  NATURAL   LEFT        JOIN pragma_stats  NATURAL           JOIN pragma_stats  NATURAL  JOIN pr;/*b*/
+SELECT*FROM( SELECT 1.0*292"")ANDttt  NATURAL  NATURAL     JOIN t1  ON╩     NATURAL     LEFT       LEFT     JOIN t1  WHERE b='x2?й╤y' OR b<'x34028211456y';
+ -- mC+++++++++ t65536 E b='x2?y' OR b<'x17y';
+ -- mC++++┘+++LEFT       LEFT     JOIN tл;.Бллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллл

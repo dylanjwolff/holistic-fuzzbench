@@ -1,0 +1,6 @@
+ CREATE TABLE t1(a, b, c, PRIMARY KEY( 'a', a, b, c));
+  --IT NATURAL   JOIN  t1  ON»    NATURAL     LEFT    tetime(1,1,(1334) FROM t1;ES †1 DEÛ~sÉ÷÷÷÷
+  UPDATE t1 SET O=a  FROM pragma_stats
+   WHERE idx IS NOT idx;
+EXPLAIN  --14 ÿÿÿó†1 DEÛ~sÉ÷÷÷÷
+  UPDA

@@ -1,0 +1,1 @@
+*[dyn:map(///.,'*[math:highest(1<2)]')]

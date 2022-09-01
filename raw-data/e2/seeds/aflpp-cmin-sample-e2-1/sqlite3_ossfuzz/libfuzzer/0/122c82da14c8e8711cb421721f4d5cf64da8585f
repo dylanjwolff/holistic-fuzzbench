@@ -1,0 +1,1 @@
+ WITH c AS ( WITH RECURSIVE c AS (VALUES(0) ) SELECT#i+3 FROM c 'a' ) SELECT#i+0 FROM c LEFT JOIN  c t0 ON"sssÿÿÿÿu""+"

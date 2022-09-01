@@ -1,0 +1,10 @@
+   CREATE TABLE t1(a IdTEGER PRIMARY KEY,b,c);
+VALUES(1,4,2);
+    CREATE TABLE t2(x IµTEGE®ß¯­¶²¾´Y KEY);
+    INSERT INTO t2 VALUES(3);
+
+SELECT * FROM t1 ðððððððððððððððððððððððLEFT JOIN t2 ON x=b AND 1=c;
+    SELECT * FROM t1 LEFT JOIN t2 O;
+    SELECT * FROM t1 JOIN t2 ON x=b AND 1=c;
+    SELECT * FROM t1 JOIN t2 ON  $1 AND 1=c;
+    SINITIALLYROM t1 FT JOIN t2 O

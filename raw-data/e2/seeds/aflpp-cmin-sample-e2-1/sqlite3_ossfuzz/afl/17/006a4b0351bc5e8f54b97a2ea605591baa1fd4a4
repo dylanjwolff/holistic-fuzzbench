@@ -1,0 +1,24 @@
+{
+  CREATE TABlE t1(
+   a INTEGER PRIMARYÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿþÿÿ);
+    CREATE TRIGGER  trAFT0ER INSERT ON t1 BEGIN
+      INSERT INTO t1 vALUES(new. compiÿÿÿÿÿÿÿÿns|| '+');
+    END; DROP TABLE IF EXISTS t1;
+  CREATE	TEMP	taBLE t1(a03EY, ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿþÿÿ);
+    CREATE TRIGGER  trAFT0ER INSERT ON t1 BEGIN
+      INSERT INTO t1 VALUES(new. compile_options|| '+');
+    END;CREATE TRIGGER  trAFT1ER INSERT ON t1 BEGIN
+      INSERT INTO t1 VALUES(new. compile_options|| '+');
+    END;CREATE TRIGGER  tÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿrAFT1ER INSERT ON t1 BEGIN
+      INSERT INTO t1 VALUES(new. compile_options|| '+');
+    END; DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a03EY, ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿþÿÿ);
+    CREATE TRIGGER  trAFT0ER INSERT ON t1 BEGIN
+      INSERT INTO t1 VALUES(new. compile_options|| '+');
+    END;CREATE TRIGGER  trAFT1ER INSERT ON t1 BEGIN
+      INSERT INTO t1 VALUES(new. compile_options|| '+');
+    END;CREATE TRIGGER  tÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿrAFT1ER INSERT ON t1 BEGIN
+      INSERT INTO t1 VALUES(new. compile_options|| '+');
+    END; DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a INÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿþÿÿ);
+    CREATE TRIGGER  trAFT0+');

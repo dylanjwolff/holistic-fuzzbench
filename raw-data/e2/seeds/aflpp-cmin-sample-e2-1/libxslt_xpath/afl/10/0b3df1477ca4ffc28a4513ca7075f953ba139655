@@ -1,0 +1,1 @@
+//*[tra.*/>node()[*][document(str:tokenize('ÿ|("¢¢¢¢¾ÐÐ #xpointer(r-in=$ssi)p'))]]

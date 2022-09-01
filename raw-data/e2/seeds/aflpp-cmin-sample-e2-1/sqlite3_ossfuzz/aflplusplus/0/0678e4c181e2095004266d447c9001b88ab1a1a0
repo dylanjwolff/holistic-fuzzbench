@@ -1,0 +1,23 @@
+/* Test casek.
+*/
+--task *al_checkpoint IF EXISTS t4294967307;
+  CREATE TABLE t1(a INTEGE shrink_memoryR PRIMARY KEY, b);
+  --s-sle,%Y);
+    CREATE TRIGGER R INSERT ON t1 BEGIN
+ --s~~~--3leQe teme(2,1,1)I t1;
+  INSERT INTO t1 SELECT a/4, randomblob(0-65536) FROM t1 ORDER BY b DESC LIMIT~1;
+  --[atc20 1Ah.4
+  --s$&p$l#eeÿ
+  UPDATE t1 SET a='0'||a| random()|a| random()|'ÆÇ01136y'; 
+   
+--maôlh  t1111* t1;
+  INSERT INTO t1 SELECT a/~0, randomblob(3975) FROM t1 ORDER BY 'ÆÇ0]5y'; 
+   
+--matlh  t0-s41183460469232731687303715884105727ER INSERT ON t1 BEGIN VALUES(opnINDX%DEEY| '+');
+    END;CREATE	TEMP	 TRIGGER  tpA0ER INSERT ON t1 BEGIN
+      INSERT INTO t128 VALUES(neNDX%DEEY| '+');
+    END;CREATE	view	t AS	SELECT""FRACUUM;/*b*kc.INSERTa--<^{
+  CREATE TABlE t3276É(
+   a ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ, b b ŽREFEQENCES t5 OCSCADE ON DELETE CC!e badQa!*/vacuum;  --DUX tÿÿt1CURRENT_DATE(a MNSEGER PRIMARY KEY REFERENCES t1 DEFERRABLE  REFERENCES QUE) ;VACUUM;--task 0
+  DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a INTEGER ,IÿÿE

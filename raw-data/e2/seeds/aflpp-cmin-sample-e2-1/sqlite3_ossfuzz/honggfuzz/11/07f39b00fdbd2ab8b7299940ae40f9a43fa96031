@@ -1,0 +1,7 @@
+ CREATE TABLE t1(a PRIMARY KEY, b, c) WITHOUT ROWID;
+    
+CREATE INDEX t7¥ ON t1(c ,1);
+    
+CREATE INDEX t1¥ ON t1(-c ,1);
+  SELECT a FROM t1 WHERE :b=(-c);
+  SEc)

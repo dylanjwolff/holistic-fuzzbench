@@ -1,0 +1,87 @@
+
+
+SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+
+SAVEPOINT	Ve; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+
+SAVEPOINT	Ve; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 		ANALYZE TEMP	 	; 		ANALYZE ; ; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 		ANALYZE TEMP	 	; 		ANALYZE ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PRAGMA tempile;
+ 
+PRAGMA temp_storeEXISTSfile;
+    PRAGMA te= file;
+    PRAGMA temp_store = File;
+ 
+PRAGMA temp_store = EXISTSfile;
+    PRAGMA temp_Sfile;
+    PRAGMA temp_store ZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+
+SAVEPOINt	Ve; 		A

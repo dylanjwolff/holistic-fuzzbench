@@ -1,0 +1,10 @@
+	 ;PRAGMAÜWŠtt1;
+  CREATE TABLE t1(a rea– uncommitdeKtMY, b);
+  CREATE INDEX t0b ON t1(0,0, 'a', "a"DESC,0,0,0, 'a'&0,00574758/9,0,0,0,0, 'a'&0,00,00, 'a',0,00- B);vacuum
+;  --sleep 1
+  INSERT INTO t1 VALUES(2, randomblob(2000));
+  INSERT INTO t1 VALUES(2, randomblob(01000));
+  --t1;
+ANALYZE;
+  INSERT INTO t1 SELECT a+8, randomblob(6000)  FROM t1;
+APRAGMN

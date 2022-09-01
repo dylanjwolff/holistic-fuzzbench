@@ -1,0 +1,120 @@
+d
+--
+PRAGMA page_size=256;
+;VACUUm;	PRAGMA ayto_vacagd_size=32768;
+--{
+  CREATE TABLE t1(
+   a INTEÿÿÿÿÿÿÿÿÿGER PRIMARY KEY ON CONFLICt REPLACE, b b(2)UNIQUE);
+/*CRRIGHTCSÿòo|!e badQa!*/
+-- C,ÿÿS)ÿ0ÿ lockiITHOU upp)rÿ(e ";þþþþþþÔþþþþÿA
+INSERT INTO t1 VALUES(865336204 +792 |5893, randomblob(3499));
+  --ðl IMAÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY "" CREATE TABLE t1(a INTEGER ®ß‹†š’™(0), b);EXPLAINTE INDEX ôuh ON t(b);
+  InSERT INTO t1 VALUES(0, randomblob(2002));
+  INSERT INTo t1 SELECT a+2, randoMblob(0750) FROM T1;
+  INSERT INTO t1 SELECT a+1, randomblob(0751) FROM t1; 
+ INSERT INTo t1 SELECT a+3, randomblob(35154 ) FROM t1;
+;  CREATE	TEMP	taBLE t0(	äÉESLSTIXÉýL ,
+NkÍ  UNIQUE);--Žg¼ößß¶±¬º²T INT[ t1 V!LUES(-3, òa
+  --ÎBLE t3(a Êa;   ROLLBACK	TO	  Va;  		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	ACK		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	A;--Žg¼ößß¶±¬º²T INT[ 02 V!LUES(6 òa
+  --ÎBLE t2(a ÊÊÊÊÊINTEGERq®ß‹†š’™$(1), b);EXPLAI=N  'a''b'T»al_mode  (o); PRAGMA jouANALYZE;ANALYZALYhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh†š’g×ÎÒÓßÐ;EXPLAI;=N  'a''b'TE INDE) FROM T1;
+  INSERT INTO t1 SELECT a+2, randomblob(0751) FROM t1; 
+ INSERT INTo t0 SELECT a+3, randomblob(35154 ) FROM t1;  --ÎBL$ t1(UN juliandaš’g×ÎÒÓßÐ;EXPLAI;=N  'a''b'TE INDE) FROM T1;
+  INSERT INTO t1 SELECT a+2, randomblob(0751) FROM t1; 
+ INSERT INTo t0 SELECT a+3, randomblob(35154 ) FROM t1;  --ÎBL$ t+6+2+6+2+3+6++2+6+2+2+3+6+6+2+6+2+6++6+6+2+6+2+36+2+2+3+6+6+26+6+2+6+2+3+6++2+6+2+2+3+6+6+2+6+2+6++6+6+2+6+2+3+6+2+6+2+3+6+6+2+6+2+3+6+2+2+3+6+2+6+2+32+6+2+3+6+6+2+6+0+2+6+2+6+2+6+2+3+6+2+6+2+6+6+2+6+2+3+ ?1+6+2+3+6+6+2+6+2+3+6+2+6+2+6+2+3+6+5+2+6+2+3+6+2+6+2+3+6+6+2+6+2+6+2+3+6+2+6+-2+36+2+6+2+3+6+2+6+2+3+6+66+2+6+2+3+6+2+6+2+3+6+6+2+6+2+3+6+2+6+2+3+6+6+2+6+2+3+6++2+6+2+6+2+6+2+3+6+2+6+2+3+6+6+2+6+2+3+6+2+6+2+3+6+6+2+6+2+3+6+2+6+2+3+6+2+6+-2+3+6+6+2+3+6+6+2+6+2+3+6+2+6+2+domblob(0751) FROM t1; 
+ INSERT INTo t0 SELECT a+3, randomblob(35154 ) FROM t1;  --ÎBLE t1(a INTEGER ®u‹†+3,  count(COLLATE54 ) FROM t1;  --ÎBLE t1(UNIQUE);--Žg¼ößß¶±¬º²T INT[ t1 V!LUES(6ßôôô³ºß‹1(a INTE page_size3,  count(1)bq35154 ) FROM t1;  --ÎBLE t1(UNIQUE);--Žg¼ößß¶±¬º²T INT[ t0 V!LUES(3, òa
+  --ÎBLE t1(a ÊÊÊÊÊINTEGERq®ß‹†š’g×ÎÒÓßEXPLAI;=N  'a''b'TE INDE) FROM T1;
+  INSERT INTO t1 SELECT a+2, randomblob(0751) FROM t1; 
+ INSERT INTo t0 SELECT a+3, randomblob(35154 ) FROM t1;  --ÎBL$ t1(UN juliand; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	A;--Žg¼ößß¶±¬º²T INT[ 01 V!LUES(6, òa
+  --ÎBLE t2(a ÊÊÊÊÊINTEGERq®ß‹†š’™(1), b);EXPLAI=N  'a''b'T»ß¶±»º§èô!1b ON ; 
+ INSERT INTo t0 SELECT a+3, randomblob(35154 ) FROM t1;  --ÎBL$ t1(UN julianday(1,1,1)IQUE);--Žg¼ößß¶±¬º²T INT[ t2 V!LUES(6, òa
+  --ÎBLE t1ÊÊÊ (aÊÊINTEGERq®ß‹åš’™(1), b);EXp); PRAGMA journal_mo/de  (o); PRAGMA jouANALYZE;ANALYZALYZE TEMP;VACUUMÌõ
+SAVEPOINT	Va; 	;	ANALYZE ; 	PRAGMA TE ;  ROLLBACK		TO	 Va;   ROLLBACK	TO	  Va;  		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	ACK		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	A;--Žg¼ößß¶±¬º²T INT[ 02 V!LUES(6, òa
+  --ÎBLE t2(a ÊÊÊÊÊI vdbe_listingNTEGERq®ß‹†š’™$(1), b);EXPLAI=N  'a''b'T»al_mode  (o); PRAGMA jouANALYZE;ANALYZALYhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh†š’g×ÎÒÓßÐ;EXPLAI;=N  'a''b'TE INDE) FROM T1;
+  INSERT INTO t1 SELECT a+2, randomblob(0751) FROM t1; 
+ INSERT INTo t0 SELECT a+3, randomblob(35154 ) FROM t1;  --ÎBL$ t1(UN juliandaš’g×ÎÒÓßÐ;EXPLAI;=N  'a''b'TE INDE) FROM T1;
+  INSERT INTO t1 SELECT a+2, randomblob(0751) FROM t1; 
+ INSERT INTo t0 SELECT a+3, randomblob(35154 ) FROM t1;  --ÎBL$ t1(UN julianday(1,1,1)IQUE);--Žg¼ößß¶±¬º²T INT[ t2 V!LUES(6, òa
+  --ÎBLE t1ÊÊÊ (aÊÊINTEGERq®ß‹åš’™(1), b);EXp); PRAGMA journal_mo/de  (o); PRAGMA jouANALYZE;ANALYZALYZE TEMP;VACUUMÌõ
+SAVEPOINT	Va; 	;	ANALYZE ; 	PRAGMA TE ;  ROLLBACK		TO	 Va;   ROLLBACK	TO	  Va;  		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	ACK		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	A;--Žg¼ößß¶±¬º²T INT[ 01 V!LUES(6, òa
+  --ÎBLE t2(a ÊÊÊÊÊINTEGERq®ß‹†š’™$(1), b);EXPLAI=N  'a''b'T»al_mode  (o); PRAGMA jouANALYZE;ANALYZALYhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh†š’g×ÎÒÓßÐ;EXPLAI;=N  Æa''b'TE INDE) FROM T1;
+  INSERT INTO t1 SELECT a+2, randomblob(0751) FROM t1; 
+ INSERT INTo t0 SELECT a+3, randomblob(35154 ) FROM t1;  --ÎBL$ t1(UN julianday(1,1,1)IQUE);--Žg¼ößß¶±¬º²T INT[ t2 V!LUES(6, òa
+  --ÎBLE t1ÊÊÊ (aÊÊINTEGERq®ß‹åš’™(;), b);EXp); PRAGMA journal_mo/de  (o); PRAGMA jouANALYZE;ANALYZALYZ~ TEMP;VACUUMÌõ
+SAVEPOINT	Va; 	;	ANALYZE ; 	PRAGMA TE ;  ROLLBACK		TO	 Va;   ROLLBACK	TO	  Va;  		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	ACK		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	A;--Žg¼ößß¶±¬º²T INT[ 02 V!LUES(32767, òa
+  --ÎBLE t-1(a ÊÊÊÊÊINTEGERq®ß‹†š’™$(1), b);EXPLAI=N  'a''b'T»al_mode  (o); PRAGMA jouANALYZE;ANALYZALYZE TEMP;VACUUMÌõ
+SAVEPOINT	Va; 	;	ANALYZE  	;PRAGMA TE ;  ROLLBACK		TO	 Va;   ROLLBACK	TO	  Va;  		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	ACK		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	A;--Žg¼ößß¶±¬º²T INT[ 00 V!LUES(6, òa
+  --ÎBLE t2(a ÊÊÊÎÊINTEGERq®ß‹†š’™(1), b);EXPLAI=N  'a''b'T»ß¶±»º§èô!1b ON t1(b);
+  INSERT INTO t1 VALUES(0, randomblob(2002));
+  INSERT INTo t0 SELECT a+2, randoMblob(07520) FROM T1;
+  INSERT INTO t1 SELECT a+2, randomblob(0751) FROM t1; 
+ INSERT INTo t0 SELECT a+3, randomblob(35154 ) FROM t1;  --ÎBLE t1(UNIQUE);--Žg¼ö cache_sizeßß¶±¬º²T INT max(1,1)ES¨6, t1(UN julianday(1,1,1)IQUE);--Žg¼ößß¶±¬º²T INT[ t2 V!LUES(6, òa
+  --ÎBLE t1ÊÊÊ (aÊÊINTEGERq®ß‹åš’™(1), b);EXp); PRAGMA journal_mo/de  (o); PRAGMA jouANALYZE;ANALYZALYZE TEMP;VACUUMÌõ
+SAVEPOINT	Va; 	;	ANALYZE ; 	PRAGMA TE ;  ROLLBACK		TO	 Va;   ROLLBACK	TO	  Va;  		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	ACK		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	A;--Žg¼ößß¶±¬º²T INT[ 02 V!LUES(6, òa
+  --ÎBLE t2(a ÊÊÊÊÊINTEGERq®ß‹†š’™$(1), b);EXPLAI=N  'a''b'T»al_mode  (o); PRAGMA jouANALYZE;ANALYZALYhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh†š’g×ÎÒÓßÐ;EXPLAI;=N  'a''b'TE INDEÚ FROM T1;
+  INSERT INTO t1 SELECT a+2, randomblob(0751) FROM t1; 
+ INSERT INTo t0 SELECT a+3, randomblob(35154 ) FROM t1;  --ÎBL$ t1(UN julianday(1,1,1)IQUE);--Žg¼ößß¶±¬º²T INT[ t2 V!LUES(6, òa
+  --ÎBLE t1ÊÊÊ (aÊÊINTEGERq®ß‹åš’™(1), b);EXp);V!LUESÊÊÊÊINEGERq®ß‹†š’™(LYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	A;--Žg¼ößß¶±¬º²T INT[AI=N  'a''b'TE INDEX ô1b ON t1(b);
+  INSERT INTO t1 VALUES(0, randomblob(2002));
+  INSERT INTo t0 SELECT a+3, randoMblob(07520) FROM T1;
+  INSERT INTO t1 SELECT a+2, randomblob(0751) FROM t1; 
+ INSERT INTo t0 SELECT a+3, randomblob(35154 ) FROM t1;  --ÎBLE t1(a INTEGER ®u‹†+3,  count(COLLATE54 ) FROM t1;  --ÎBLE t1(UNIQUE);--Žg¼ößß¶±¬º²T INT[ t1 V!LUES(6LUES(6, òa
+  --ÎBLE t2(a ÊÊÊÊÊINTEGERq®ß‹†š’™(1), b);EXPLAI=N  'a''b'T»ß¶±»º§èô!1b ON ; 
+ INSERT INTo t0 SELECT a+3, randomblob(35154 ) FROM t1;  --ÎBL$ t1(UN julianday(1,1,1)IQUE);--Žg¼ößß¶±¬º²T Ihhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh†š’g×ÎÒÓßÐ;EXPLAI;=N  'a''b'TE INDE) FROM T1;
+  INSERT INTO t1 SELECT a+2, randomblob(0751) FROM t1; 
+ INSERT INTo t0 SELECT a+3, randomblob(35154 ) FROM t1;  --ÎBL$ t1(UN juliandaš’g×ÎÒÓßÐ;EXPLAI;=N  'a''b'TE INDE) FROM T1;
+  INSERT INTO t1 SELECT a+2, randomblob(0751) FROM t1; 
+ INSERT INTo t0 SELECT a+3, randomblob(35154 ) FROM t1;  --ÎBL$ t+6+2+6+2+3+6++2+6+2+2+3+6+6+2+6+2+6++6+6+2+6+2+36+2+2+3+6+6+26+6+2+6+2+3+6++2+6+2+2+3+6+6+2+6+2+6++6+6+2+6+2+3+6+2+6+2+3+6+6+2+6+2+3+6+2+2+3+6+2+6+2+32+6+2+3+6+6+2+6+0+2+6+2+6+2+6+2+3+6+2+6+2+6+6+2+6+2+3+ ?1+6+2+3+6+6+2+6+2+3+6+2+6+2+6+2+3+6+5+2+6+2+3+6+2+6+2+3+6+6+2+6+2+6+2+3+6+2+6+-2+36+2+6+2+3+6+2+6+2+3+6+66+2+6+2+3+6+2+6+2+3+6+6+2+6+2+3+6+2+6+2+3+6+6+2+6+2+3+6++2+6+2+6+2+6+2+3+6+2+6+2+3+6+6+2+6+2+3+6+2+6+2+3+6+6+2+6+2+3+6+2+6+2+3+6+2+6+-2+3+6+6+2+3+6+6+2+6+2+3+6+2+6+2+domblob(0751) FROM t1; 
+ INSERT INTo t0 SELECT a+3, randomblob(35154 ) FROM t1;  --ÎBLE t1(a INTEGER ®u‹†+3,  count(COLLATE54 ) FROM t1;  --ÎBLE t1(UNIQUE);--Žg¼ößß¶±¬º²T INT[ t1 V!LUES(6ßôôô³ºß‹1(a INTE page_size3,  count(1)bq35154 ) FROM t1;  --ÎBLE t1(UNIQUE);--Žg¼ößß¶±¬º²T INT[ t0 V!LUES(3, òa
+  --ÎBLE t1(a ÊÊÊÊÊINTEGERq®ß‹†š’g×ÎÒÓßEXPLAI;=N  'a''b'TE INDE) FROM T1;
+  INSERT INTO t1 SELECT a+2, randomblob(0751) FROM t1; 
+ INSERT INTo t0 SELECT a+3, randomblob(35154 ) FROM t1;  --ÎBL$ t1(UN juliand; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	A;--Žg¼ößß¶±¬º²T INT[ 01 V!LUES(6, òa
+  --ÎBLE t2(a ÊÊÊÊÊINTEGERq®ß‹†š’™(1), b);EXPLAI=N  'a''b'T»ß¶±»º§èô!1b ON ; 
+ INSERT INTo t0 SELECT a+3, randomblob(35154 ) FROM t1;  --ÎBL$ t1(UN julianday(1,1,1)IQUE);--Žg¼ößß¶±¬º²T INT[ t2 V!LUES(6, òa
+  --ÎBLE t1ÊÊÊ (aÊÊINTEGERq®ß‹åš’™(1), b);EXp); PRAGMA journal_mo/de  (o); PRAGMA jouANALYZE;ANALYZALYZE TEMP;VACUUMÌõ
+SAVEPOINT	Va; 	;	ANALYZE ; 	PRAGMA TE ;  ROLLBACK		TO	 Va;   ROLLBACK	TO	  Va;  		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		;PRAGMA journal_mode=OGF;
+--edn
+--task 4
+  PRAGMA mmap_size(268544357);
+--eOFd=Fe;
+--end
+--ta t
+--task 4
+  PRAGMA joÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎÎurnal_mode=OFF;
+--eÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿnd
+--task 4
+  PRAGMA mma;
+--end
+--ta t
+--task 4
+  PRAGMA journal_mode=OFF;
+--end
+--
+PRAGMA page_size=256;
+;VACUUm;	PRAGMA ayto_vacagd_size=32768;
+--{
+  CREATE TABLE t1(
+   a INTEÿÿÿÿÿÿÿÿÿGER PRIMARY KEY ON CONFLICt REPLACE, b b(2)UNIQUE);
+/*CRRIGHTCSÿòo|!e badQa!*/
+-- C,ÿÿS)ÿ0ÿ lockiITHOU upp)rÿ(e ";þþþþþþþþþþÿA
+INSERT INTO t1 VALUES(865336204 +792 |5893, randomblob(3499));
+  --ðl IMAÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY "" CREATE TABLE t1(a INTEGER ®ß‹†š’™(0), b);EXPLAINTE INDEX ôuh ON t(b);
+  InSERT INTO t1 VALUES(0, randomblob(2002));
+  INSERT INTo t1 SELECT a+2, randoMblob(0750) FROM T1;
+  INSERT INTO t1 SELECT a+1, randomblob(0751) FROM t1; 
+ INSERT INTo t1 SELECT a+3, randomblob(35154 ) FROM t1;
+;  CREATE	TEMP	taùLE t0(	äÉESLSTIXÉýL ,
+NkÍ  UNIQUE);--Žg¼ößß¶±¬º²T INT[ t1 V!LUES(-3, òa
+  --ÎBLE t3(a Êa;   ROLLBACK	TO	  Va;  		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	ACK		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	A;--Žg¼ößß¶±¬º²T INT[ 01 V!LUES(6, òa
+  --ÎBLE t2(a ÊÊÊÊÊINTEGERq®ß‹†š’™$(1), b);EXPLAI=N  'e''b'T»al_mode  (o); PRAGMA jouANALYZE;ANALYZALYhhhhhhhhhhhhhhhhhhhhhh~hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh†š’g×ÎÒÓßÐ;EXPLAI;=N  'a''b'TE INDE) FROM T1;
+  INSERT INTO t1 SELECT a+2, randomblob(0751) FROM t1; 
+ INSERT INTo t0 SELECT a+3, randomblob(35154 ) FROM t1;  --ÎBL$ t1(UN juliandaš’g×ÎÒÓßÐ;EXPLAI;=N  'a''b'TE INDE) FROM T1;
+  INSERT INTO t1 SELECT a+2, randomblob(0751) FROM t1; 
+ INSERT INTo t0 SELECT a+3, randomblob(35154 ) FROM t1;  --ÎBL$ t+6+2+6+2+3+E b='x2?yy' ORDER BY b DESC LIMIT 4;
+  --sl)IN(cuum;  --DUX tÿÿÿÿõßÞ--ÿÿÿÿÿ((b¸¸¸¸¸HGGGGGGÙ;¸);
+/*CREATDC!e badQa!*/vacuum;  --DUX ¸¸¸-¸¸¸¸);¸);
+/*CREATÿÿÿÿ7483646,ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ›››LECT time()833,"-36 month","+256 mo"tnh)"›››››››››››;  --lob(0433) FROM  sqß          ÿÿÿM t1 t0 WHERE b STINCT?F;;;SELECT DISTINCT?FROM( SE/ECT 5),pragma_stats();;;SELECT DISTINCT?FROM(Y ON CONFLICt REPLACE, b b(55807067911198178)UNIQUE);
+/*°TSHLDCS¿¤*/
+-- CNA 'a''bãRaECT * FROM t1Eygaäk;;
+  --slñññññññññ€ñññññññÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿUPDATE CASCADE ON DELETE CASCADE);		ATTACH?AS D; 	
+INSERT INTO t1 VALUES(596015E1750 |107092912489795893, randomblob(3898));
+-- CÿÿN) --s^R'170)4118 0=134:046923173168730 FROM t1Eyg ON CONFLICt REPLACE, b b(558070679

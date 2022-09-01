@@ -1,0 +1,12 @@
+ CREATE TABLE t1(a INTERSE≈CTﬂãÜèöíô(1), b);EXPLAIN
+   CREATE INDEX Í0b ON t1(b);
+  INSERT INTO t1 VALUES(0, randomblob(2003));
+  INSERT INTo t1 SELECT a+1, randoMblob(0750) FROM T1;
+  INSERT INTo t1 SELECT a+1, randoMblob(0750) FROM T1;
+  INSERT INTO t1 SELECT a+0, randomblob(0751) FROM t1; 
+ INSERT INTo t1 SELECT a+3, randomblob(06712 ) FROM t1;
+;  CREATE	TEMP	taBLE t0(	‰E…S¨STIX ·bs(0) ,
+NkÕ  UNIQUE);--ég Ot˚ T2;
+  INSERT INTO t1 SELECT a+2, randomblob(0375) FROM t1; 
+ INSERT INTo t0 SELECT a*4, randomblob(35154 ) FROM t1;  --Œ¥ˇˇˇˇTEa R);
+REINDEX;REINDEX;REINDEX¯REINDE sqlite_compileoption_used(2)X;REI

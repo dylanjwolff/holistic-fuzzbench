@@ -1,0 +1,5 @@
+CREATE TABLE tw1(a, b);/*ʲ Test]e. */
+  ANALYZE;
+  DELETE FROM sqlite_stat1;
+  DELETE FROM sqlite_stat1;
+  DELETE FROM sqlite_s

@@ -1,0 +1,24 @@
+	PRAGMA count_changes= 	ON;; PRAGMA  sechange¨= 	ON;; PRAGMA  secure_delete  = 5532;
+  PRaGMA auto_ELSSSmx0946848201 = incrementan;
+/*_vacuum	= R;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;µ;;;;;;(0,1,/* Test +casek+2 days.
+*/
+--ta:k 8
+  DROP TABLE IF EXISTS t0;
+  CREATE TABLE t1(A INTEGER PRIMARY KEY, b);
+  --s-sP[AGMA;
+    CREATE TRIGGER R INSERT ON t1 BEGIN
+ --s1ÿÿÿÿ1 Ò¬EL;*--l &egae(1,1ÔÎ,²ß‹ÎË
+  INSERT INTO t1 SELECT a/5, randomblob(3002) FROM t1 ORDER BY 'ÆÇ00568y'; 
+   --matlh  1t1ÿÿ --sleQ­­­
+  UPDATE t1 SET a='0'||a| random()|a| random()|'ÆÇ2y'; 
+   
+--#maôlh  t11112* t‘;
+  INSERT INTO t1 SELECT a/~0, randomblob(1%01) FROM t1 ORDER BY 'ÆÇ0@1135y'; 
+   
+--matlh  t1-s3eIY,~~~SES– IN');
+    END;CREATE TABLE t5(a PR);INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+    CREATE TABLE t2(a PR³²¾­¾ª«°INCREMENJOIt1 DEFERRAL EB, b);
+ 
+  --sRRABLEUNIQUEchæ dtaa_storecdr_etió ”ory!>àã^46ýzh5¦óÇd4×OÈþ`ÑÌ_Ms³÷_­ýûGVACUINNER1;:memory
+  INSERT INTO t1 VALUES(2, randomblob(-274));
+  --.om

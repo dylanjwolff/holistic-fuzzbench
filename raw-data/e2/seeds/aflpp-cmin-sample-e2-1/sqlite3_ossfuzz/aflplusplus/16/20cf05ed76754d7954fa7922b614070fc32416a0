@@ -1,0 +1,23 @@
+	PRAGMA reverse_unordered_selects (1); 	;
+  CREATE TABLE t1(a PRIMARY KEY REFERENCES t1 DEFERRABLE , b);
+  CREATE TABLE t0(a áLTBETWEA, b);
+ PRAGMA foreign_k¡eysê= ON;  
+  --leUSING TRIGGERwal_autocckehpointÿÿ)‰;
+  INSERT INTO t1 VALUES(3, randomblob(1000));
+  --sleep 1) FROM t1
+  --t1;
+  --sleep 2
+  INSERT INTO t1 SELECT a+:Û6, randomblob(8354) FROM t1;
+  --»
+  SELECT count(* )FROM t1;  UPDATE t1 SET A=b; 
+--CHECKRCR wal_autocheckpoi -- CREATE TABLE t255(a Pÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿmÿÿÿÿRYMRIA KEY, b, c) ;
+   
+ CREATE INDEX tFFFFFF¥ ON t1(b)WHERE b='x78y'NOTNULL;
+  --ma1FFAILFFFF;
+  SELECT a FROM t1 WHERE '7-b1xy';
+ CREATE INDEX tFFÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿF¥ ON t1(b)WHERE b='x78y'NOTNULL;
+  --ma CREATE TBALE ELETE FROM t1;
+    INSERT INTO t1(a,b,c,d,e) VALUES(1,2,3,4,5);
+    INSERT INTO d_memort1(a,b,c,d,e) VALUES(1,NUlL,3,4,5)
+      ON CONFLICT(c) DO UPDATE SET b='c'
+      ON ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÿÿÿÿÿÿÿÿÿ

@@ -1,0 +1,1 @@
+WItH c(i)AS(VALUES(0)UNION SELECT:i fROM c,c c)SELECT:i fROM c,c

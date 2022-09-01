@@ -1,0 +1,7 @@
+ CREATE TABLE t3928(PRIMAY  EYKRAUSOINCREMENT, CREMENT, b);
+    
+     CREATE TRIGGER t3002ŽËß¶FTER UPDATE ON t3928 
+        WHEN typeof(new.b)=='r' BEGIN
+   INSERT INTO t7857(b) VALUES('after-int-' || new.b);
+      END;
+    UPDATE t3928 SET b=0 

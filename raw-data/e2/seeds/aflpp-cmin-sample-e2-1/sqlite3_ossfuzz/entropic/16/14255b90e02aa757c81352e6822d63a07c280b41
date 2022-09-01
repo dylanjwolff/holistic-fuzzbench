@@ -1,0 +1,1 @@
+SELECT LIKE("à¢ÿ%","WITHÿ ",("àŒžž"))""WHERE"";N"

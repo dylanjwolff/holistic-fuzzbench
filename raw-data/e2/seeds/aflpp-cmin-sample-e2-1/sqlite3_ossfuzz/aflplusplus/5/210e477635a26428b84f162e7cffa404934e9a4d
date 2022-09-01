@@ -1,0 +1,32 @@
+    CREATE TABLE t0(a PRIMARY KEY,Y,k OI¡U¡n¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡RABLE ,MRAGMA  index_lir‹for incremental_vacuumdirectoryS“t0 D REFERENCE);
+    DROP TABLE IF EXISTS t128;
+/*GROOUISTS t1; index_list
+/*
+:ble.
+*/
+--ta:k 1 buil DOP&BT R>LE IF EXISTS t1;
+  CREATE TABLE t1(a INTEGER PRIMARY KEY AUTOINCREMENT DEFERRABLE ,MRAGMf b(31076)UNIQUE);/*CREDuAC»«ºÁEr PRIMARY KEc  last_in'sert_rowidÖÖ b(310Ú6)UNIQUE);
+//*CREDTACESeu aN‚cäQa!*/
+-- Cûÿÿ N)ÿÿÿl@zLUES(861VIEW@98(|8|ÁÌßFRACES‚e äI ?®±ÅÅlobÕ35995848(884));
+  INSERT INTO t1 VALUES(3986, randomblob(02000))
+ ; --,bloÿb(Üàè12ht0f/11e(0,1.RIGNOREY KEY On CONFLICt REPLQÂ¼, bUN)b(2 IQUÿN)ÿÿÿ lVzEANAL&ZEX5BALTERRY×¬ºY toUal(â€«ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ*,m0)(0C[a E t0(oÆtions);
+    CREATE TRIGGER R INsERT ON t1 BEGIN--slˆˆ;ˆˆˆˆˆˆˆˆˆˆˆˆˆxuwwwww|ˆˆˆˆˆsql%+t_eemp_mas
+  UPDATE t1 SET a='A117516334'||a| random()|a| random()|'ÆÇ01136y'; 
+   
+--mat journal_?odeb DESC LIM·¦ 4;
+  --m~
+  INSERT INTO t1 SELECT a/0, randomblob(1501) FROM t1 ORDER BY 'ÆÇ011EACHŠ3y'; 
+   --matlèah 0, b);
+  --HERE a GLOB !x37yRO ' <a'x3?y' OR locking_mode854765808 ORDER BY 'ÆÇ011„6y'; 
+   --matlhah 1@-ECT raise(ignore);
+    END;
+  UPDATE t1 SET a='0'||a| random()+'ÆÇ0151y3'; 
+   
+--&atlRIGHT/059*1WITHSE¹¸ T a+9,tri™ FRO;
+  --ðl  t1;
+ REPLACE INTO t1 SELECT a+2, ranDomblob(01102) FROM t1;
+  --s¸ T a+9, !h™ FRO;
+  --ðl  t1;
+ REPLACE INTO t1 SELECT a+2, ranDomblob(07102) FROM t1;
+  REPLACE INTO t1 SELECT a+2, ranDomblob(01102) FROM t1;
+  --s 

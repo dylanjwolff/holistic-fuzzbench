@@ -1,0 +1,15 @@
+ CREATE TABLE t0(a,b);
+    CREATE INDEX t ON t0(a);
+    PRAgMA writable_schema=ON;
+    UPDATE sqlite_master SET sql='b(`eeeeeeeeeeeeeeeeeeeeeeežeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeHa UNIQUE';
+    BEGIN;
+    CREATE TABLE t1(x);
+    ROLLBACK;
+    ;
+    PRAGMA writable_schema=ON;
+SAVEPOINT	Va;
+
+SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+
+SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va

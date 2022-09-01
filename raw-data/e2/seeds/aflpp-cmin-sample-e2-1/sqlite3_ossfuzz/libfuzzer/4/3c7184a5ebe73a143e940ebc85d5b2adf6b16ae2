@@ -1,0 +1,32 @@
+SAVEPOINT	Va; ROLLBACK		TO	 Va;
+
+CREATE	TEMP	table	Ð±¤(Ø14); PRAGMA temp.  cache_size(Ø129sq); 	;;;;;;;;;	;	ANALYZE TEMP	;;;;;;;PRAGMA temp;;;;;;;PRAGMA temp.  cache_size(Ø14); ;;;;	;	ANALYZE TEMP	;;;;;;;PRAGMA temp.  cache_WHEREsize(Ø14); 	ANALYZE TEMP;  PRAGMA temp.  mmap_sizEMP;  PRAGMA temp.  mmap_size (21344);ANALYZE TEMP;  PRAGMA EMP	;;;;;;;;;	ANALYZE TEMP	 	; ROLLBACK;;  PRAGMA f1oreign_keys = ON;
+    CREATE TABLE t129(a PRIMARY KEY, b);
+    CREATE TABLE t0(c REFERENCES t1 DEFERRABLE INITIALLY DEFERRED, d);
+    DROP TABLE IF EXISTS t2;
+  CREATE TABLE t2(c KEFERONENCES t1 DEFERRABLE INITIALLY DEFERRED, d);
+ PRAGMA journal_mode=OGF;
+--edn
+--task 4
+  PRAGMA mmap_size(268544357);
+--eOFd=Fe;
+--end
+--ta t
+--task 4
+  PRAGMA jourDELETEnal_mode=OFF;
+--end
+--
+PRAGMA page_sÛªYze=512;
+;VACUUm;	PRAGMA ayto_vacagd_size=32768;
+--{
+  CREATE TABLE t1(
+   a INVEÿÿÿÿÿÿÿÿÿGER PRIMARY KEY ON CONFLICt REPLACE, b b(07520)UNIQUE);
+/*CREATDCSÿòo|!e badQaSCññññññ€ññññññññññññññññ avg(ñ)ññ0ñb b(00000001457660341)UNIQUE);
+/*°TSHLDCS¿¤*/
+-- CNA 'a''bãRaECT * FROM t18446744073709551614ñññññññññññññññ t2;  FROðDððððððððððððððÿatch aaSAVEPOINT	Va; ROLLBACK		TO	 Va;
+
+CREATE	TEMP	table	sql(Ø14); PRAGMA temp.  cache_size(Ø129sq); 	;;;;;;;;;	;	ANALYZE TEMP	;;;;;;;PRAGMA temp;;;;;;;PRAGMA temp.  cache_size(Ø14); ;;;;	;	ANALYZE TEMP	;;;;;;PRAGMA 0emp.  cache_WHEREsize(Ø14); 	ANALYZE TEMP;  PRAGMA temp.  mmap_sizEMP;  PRAGMA temp.  mmap_size (21344);ANALYZE TEMP;  PRAGMA EMP	;;;;;;;;;	ANALYZE TEMP	 	; ROLLBACK;;  PRAGMA f1oreign_keys ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ= ON;
+    CREATE TABLE t129(a PRIMARY KEY, b);
+    CREATE TABLE t0(c REFERENCES t1 DEFERRABLE INITIALLY DEFERRED, d);
+    DROP TABLE IF EXISTS t2;
+  CREATE TABLE t2(c KEFERONENC

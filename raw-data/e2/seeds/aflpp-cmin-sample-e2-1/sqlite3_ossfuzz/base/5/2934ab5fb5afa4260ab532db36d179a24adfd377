@@ -1,0 +1,9 @@
+ CREATE TABLE t1(a a realumncÔm_ifKEY, b);
+  CREATE INDEX t0Î ON t1(0,  time(A,B));vacuum;  --seelp 2
+  INSERT INTO t1 VALUES(1, randomblob($000));
+  INSERT INTO t1 VALUES(2, randomblob(-255));
+  --/9Ò»Òù…ûûõ1M ‚ßÎõßÄížÞþ9ÿÿÿÿÿÿÿ€Üt1;
+  INSERT INTo t1 SELECT a=8,$randomblob(026³³³³³³³³³³³³³³³³³³) FROM t1;
+  --rEREFC¸ß‹Í;
+  INSERT INTO t1 SELECT a+2, randomb(obl9862) FROM t1;
+  INS01ÿÿÿÿÿÿÿÿÿ36204 +7 59|982

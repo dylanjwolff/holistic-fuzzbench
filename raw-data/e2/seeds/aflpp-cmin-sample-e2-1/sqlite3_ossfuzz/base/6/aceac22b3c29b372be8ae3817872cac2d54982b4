@@ -1,0 +1,1 @@
+SELECT suubstr(5,1,1)over /* ubs

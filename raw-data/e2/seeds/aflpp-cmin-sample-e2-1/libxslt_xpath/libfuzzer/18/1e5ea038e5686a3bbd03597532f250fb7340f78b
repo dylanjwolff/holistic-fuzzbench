@@ -1,0 +1,1 @@
+(str:split('úzþd',g)/preceding::node()[/*>prš š£//comment()=(str:split)][document(str:tokenize('”=$/a:asf#xpointer(round(sum(*)=0=iz5)!=0)*9!',ancestor::*))])

@@ -1,0 +1,1 @@
+SELECT strftime("%Y%ss%m6%Y%s3")

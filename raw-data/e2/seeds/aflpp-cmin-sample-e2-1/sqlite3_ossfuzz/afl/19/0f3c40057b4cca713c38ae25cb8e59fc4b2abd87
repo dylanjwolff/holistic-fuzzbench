@@ -1,0 +1,5 @@
+  
+--t6Æ
+PRAGMA page_size=512;
+;  PRAGMA enNod6;PRAGMA threads	(7);
+	SELECT"wI{{{ëJOI last_inšC yÿÿÿÿÿÿÿÿÿÿýÿÿÿ2,1"FROM(WITH c(i)AS(VALUES(2)UNION SELECT 6*I FROM c)SELECT@ô&I FROM c)GROUP BY 1,1,1,1,1,1,1,1

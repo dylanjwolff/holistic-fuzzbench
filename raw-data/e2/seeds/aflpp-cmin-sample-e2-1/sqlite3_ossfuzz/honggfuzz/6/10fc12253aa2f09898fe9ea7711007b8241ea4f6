@@ -1,0 +1,1 @@
+SELECT ÿ.*FROM((SELECT p50))E,( SELECT r,e)ÿ)Ô

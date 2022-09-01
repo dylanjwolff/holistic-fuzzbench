@@ -1,0 +1,13 @@
+  --3lS  B ELECT*CRRIGHTCSÿöcr!u bAAd!a*/
+PRAGMA auto_vacuum	= 	ÏÄ©ºCUUM;CREATE TABLE  t1(a Dhaz(1) PRIMARY KEY, bDEFAULT.0) WITHOUT ROWID;
+  
+  --));;UbDA<þÿ ERE  changes( INSERTÎõßÄa þ(62) F®°²Üt1/B) ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿWHERE  changes()GŒŒŒŒŒŒŒŒŒŒŒ 1,1
+
+;EXPLAIN
+  --3lS  B ELECT*CRRI   CREATE ÿõÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿú 8TÿÿIMÿ;
+  --sl)IN( SELECT 2ÿÿÿÿe_s$•x°VÆ¼iITHOU upp)§0«C
+  SELECT sum(length(b)) FROM t1;
+  --matom49KREavg)GŒŒŒŒŒŒŒŒŒŒŒ 1,1
+
+;EXPLAIN
+  --3lS 

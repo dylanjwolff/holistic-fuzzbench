@@ -1,0 +1,10 @@
+;
+/*CˇEDTACESÇe cauN‰Qa!*/
+-- CˇˇN)ˇˇˇ lV-59004261VIEW298(|8|¡Ãﬂ»………………DETACH…k…≈(860VIEW298(|8|¡   INSERT INTO t1(a,b,c,d,e) VALUES(1,2,3,4,5);
+    INSERT INTO d_memort1(a,b,c,d,e) VALUES(1,NUlL,3,4,5)
+      ON CONFLICT(c) DO UPDATE SET b='c'
+      ON CONFLICT(a) DO UPDATE SET b='a–
+      ON CONFLICT(d) DO UPDATE SET b='d'
+      ON CONFLICT(e) DO                                                                                                      UPDATE SET b='e';
+˛ˇˇ    SELECT a,b,c,d,e FROM t1;
+  } {1

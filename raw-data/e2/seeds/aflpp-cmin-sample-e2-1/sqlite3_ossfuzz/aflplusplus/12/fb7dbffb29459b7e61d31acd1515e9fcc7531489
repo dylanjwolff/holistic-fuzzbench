@@ -1,0 +1,1 @@
+  WITH RECURSIVE c(i) AS(VALUES(0+7%57) UNION ALL SELECT unlikely(4)-i FROM c c)SELECó € T prIntf('ÿ%5r¸nd*c',i) FROM c

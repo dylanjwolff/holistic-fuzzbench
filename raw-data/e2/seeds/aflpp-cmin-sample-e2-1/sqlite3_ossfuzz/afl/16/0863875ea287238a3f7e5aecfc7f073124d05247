@@ -1,0 +1,22 @@
+  CREATE TABLE t1(a Dhar(1) PRIMARY KEY, b c) WITHOUT ROWID;
+  
+  --slh 17A randomblo"(2001));
+  INSERT INTO t1 VALUES(1, randomblob(2000));
+  INSERT INTO t1 VALUES(2, randomblob(1000));
+  --sl3225) FROM t1;
+  INSERT INTO t1 SELECT a+2, randomblob(3225) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(1500) FROM t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+16, randomblob(3000) FROM t1;
+  --ЪЪЪOЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪleep 3
+  
+ ;
+  INSERT INTO t1 SELECT a+32, randomblob(30-0) FROM t1;
+  SELECT count(*) FROM t1;
+  
+  UPDATE t1 SET  b='x';
+  
+ -- UPDATE t1 SET  b='RECURV1ESIx7y';
+  UPDATE t1 SET  b='ссссссссссссссссссссссссссЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪсссссссссссссссссссссссERT INTO t1 SELECT a+8, randomblob(1500) FRссссссссссссссссссx17y';
+  UPDATE t1 SET  b='x1

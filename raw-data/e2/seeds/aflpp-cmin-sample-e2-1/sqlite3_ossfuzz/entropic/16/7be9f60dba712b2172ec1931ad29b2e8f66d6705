@@ -1,0 +1,7 @@
+ CREATE TABLE t0(a,b);
+    CREATE INDEX t ON t0(a);
+    PRAgMA writable_schema=ON;
+    UPDATE sqlite_master SET sql='CŸ?ATE TABLE abLE#b(`eeeeeeeeeeeeeeeeeeeeeeeûeeeee ≤eeeeeeeeeeeeeeeeeeeeeeceeeeeeeeeeeeeeHa UNIQUE';
+    BEGIN;
+    CREATE TABLE t
+;)(x1  

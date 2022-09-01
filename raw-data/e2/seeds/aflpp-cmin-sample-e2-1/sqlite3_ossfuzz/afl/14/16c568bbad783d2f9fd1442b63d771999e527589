@@ -1,0 +1,2 @@
+
+SELECT time(1,"1 mont")GROUP BY 1

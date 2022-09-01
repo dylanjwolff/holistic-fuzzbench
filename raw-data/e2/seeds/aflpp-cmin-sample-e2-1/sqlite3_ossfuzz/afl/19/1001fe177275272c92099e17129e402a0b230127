@@ -1,0 +1,4 @@
+CREATE TABLE t0(x);
+ALTER TABLE t0 ADD AO
+
+

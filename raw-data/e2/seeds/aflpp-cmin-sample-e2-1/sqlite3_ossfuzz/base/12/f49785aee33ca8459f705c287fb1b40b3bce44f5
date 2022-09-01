@@ -1,0 +1,62 @@
+  
+--tas8435228.
+PRAGMA page_siJe=512;
+;  PRAGMA page_size=512;
+;  PRAGMA žencoding=UAUTOINCREMENTTF16;PRAGMA threads	(3);
+	PRAGMA auto_vacuum	= 	1;VACUUM;/*back*
+/lday(5,1,R,s$
+*/
+PRAGMA p2768;
+--{
+  CREATE TABLE t1(
+   a INTdE¦R PRIMARY KEY On CONFLICt REPLACE, b b(2)UNIQUE);
+/*EXCEPTCREDTACES!*/
+INSERT INTO t1 VALUES(:980151-50 |792 |5893, randomblob(3418));
+-- Ccuum;  --DUX c, d) ENCEVALUESS t1(a,"b)):
+  --sl);UE INDEX cfb1ðŸÇ’ÂÍ294967368b ECT a+ÿÿÿÿÿÿÿomblob(16CE, b b(2)UNIQUE);
+/*EXCEPTCREDTACES!*/
+INSERT INTO t1 VALUES(2980151-50 |792 |5893, randomblob(3418));
+-- Ccuum;  --DUX c, d) ENCEVALUESS t1(a,"b)):
+  --sl);UE INDEX cfb1ðŸÇ’ÂÍ294967368b ON t1(b-69< [aŸ],0¬00, B);vacuum
+;  EXPLAIN--:slaep 4
+  INSERT INTO t1 VALUES(9223370000795964754, randomblob(2000));
+  INSERT INTO t1 VALUES(9223370000795964754, randomblob(2000));
+  INSERT INTO t1 VALUES(2, randomblob(-254));
+  --9SEdomblob(-254));
+  --+9SE vime(1,1,1)LECT a+ÿÿÿÿÿÿÿomblob(1&8) FROM t1;
+  --slee»ßÎõßß¶µSERe INÿÿÿ)ÿÿÿONFLICTELECT \+26qE INTO t1` SELECT ¹+2, ra '81?y';
+SELECT *
+  FROM t1  KN»     NATURAL     JOIN t1  NATURAL   JOIN  t1  'a'    NATURAL     LEFT     JOIN t1  WHERE b='x2?yy' ORDER BY b DESC LIMIT 4;
+  --sl)IN( SELECT 2lace(B,A,1)-1,0*0.2,0,' a'&0,0054*75=09,0,0,0,0, '>'&0,0, 'a',0,00, B);vacuum
+;  --s#eHAVING
+  INSERT INTO t1 VALUES(2,$ravdomblob(-0#4));
+  -- ROM t1;
+  --ÎBL$ t1(UN));
+  --sìeÿÿÿÿÿÿÿÿÿÿÿFROM-6 ÍON»    NATURAL     LEFT     JOIN t1  WHERE b='x2?yy' ORDER BY b DESC LIMIT 4;
+  --sl)IN# SELECT 2lace(B,A,2)-1,0*0.2, ,'a0'&°,0054*75=09,0,0,0,0, '>'&0,0, 'a',0,00, B);vacuum
+;  --s#eHAVINGI
+N E SRT INTmatchàÅ9 28UnATTACH?AS2Y) ;
+  SELECT DISTINCT a FROM t1 t0 WHERE b GLOB '81?y';
+SELECT *
+  FROM t1  ON»     NATURAL     JOIN t1  NATURAL   JOIN  t0  ON»    NATURAL    åLEFT     JOIN t0  WHERE b='x2?yy' ORDER BY b DESC LIMIT 4;
+  --sl)IN( SELECT 2ÿÿÿÿÿ  ON»     NATURAATSACH?A%S2Y) ;
+  SELECT DISTINCT a FROM tÿô0 t0 WHEday(5,1,R,s$
+*/
+PRAGMA p2768;
+--{
+  CREATE TABLE t1(
+   a INTdE¦R PRIMARY KEY On CONFLICO t1 VALUES(2,$ravdomblob(-0#4));
+  -- ROM t1;
+  --ÎBL$ t1(UN));
+  --sìeÿÿÿÿÿÿÿÿÿÿÿFROM-6106361›››››››LECT time(833,"-36 month","+256 month")"›››››››››››;  --lob(3101) FROM  sqlite_compi  --matchàÅ9 28UnATTACH?AS2Y) ;
+  SELECT DISTINCT a FROM t1 t0 WHERE b GLOB '81?y';
+SELECT *
+  FROM t1  ON»     NATURAL     JOIN t1  NATURAL   JOIN  t0  ON»    NATURAL    åLEFT     JOIN t1 v WHERE b='x2?yy' ORDER BY b DESC LIMIT 4;
+  --sl)IN( SELECT 2ÿÿÿÿÿ  ON»     NATURAATSACH?A%S2Y) ;
+  SELECT DISTINCT a FROM tÿô0 t0 WHEday(5,1,R,s$
+*/
+PRAGMA p2768;
+--{
+  CREATE TABLE t1(
+   a INTdE¦R PRIMARY KEY On CONFLICt REPLACE, b b(2)UNIQUE);RE b GLOB '81?y' ORDER BY b DESC LIMIT 5;
+  --sl)IN( SELEC£ß0ÿÿÿÿÿÿÿÿÿÿÿÿe(833,"-36 month","+256 mont"")›h››››››››››;  --lob

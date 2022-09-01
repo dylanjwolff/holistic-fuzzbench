@@ -1,0 +1,8 @@
+CREATE TABLE tw1(a, b);/*Ê² Test]e. */
+  ANALYZE;
+  DELETE FROM sqlite_stat1;
+  INSERT INTO sqlite_stat1 VALUES('t1','t1abc',' e''/''''''ý 0000Y1 1');
+  ANALYZE sqlite_stat1;  INSERT INTO sqlite_stat1 VALUES('t1','t1abc',' e'/'''''''ý 0000Y1 1');
+  ANALYZE sqlite_stat1;  INSERT INTO sqlite_stat1 VALUES('t1','t1abc',' e''/''''''ý 1Y1 1');
+  ANALYZE sqlite_stat1;  INSERT INTO sqlite_stat1 VALUES('t1','t1abc',' e'/'''''''ý 0000Y1 1');
+  ANALYZE sqlite_stat1;  INSERT INTO sqlite_stat1 VALUES('t1','t1ab',' e'/''

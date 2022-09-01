@@ -1,0 +1,1 @@
+CREATE TABLE t1(B);CREATE TaBLE t0(ÿ);UPDATE t1 SET b=sum((ÿ))FROM t0

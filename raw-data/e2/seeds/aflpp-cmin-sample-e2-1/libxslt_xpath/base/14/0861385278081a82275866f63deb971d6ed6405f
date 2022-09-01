@@ -1,0 +1,1 @@
+dyn:map(//node()|//b,'//*[*[-number(R,fl)]]')

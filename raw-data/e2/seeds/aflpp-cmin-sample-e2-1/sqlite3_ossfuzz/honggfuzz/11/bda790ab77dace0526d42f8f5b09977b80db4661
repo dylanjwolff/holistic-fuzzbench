@@ -1,0 +1,20 @@
+/*NALYZE TEMP	;PRAGMA temp_storeerÀÀÀ/
+--task 1
+  DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a INTEGER PRIMARY KEY, b);
+ ;
+  INSERT INTO tFt1 VALUES(2, randomblob(1000));
+  --sleep IN  S1ERT INTO t1 SELECT a+2, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROCT a+8, randomblob(15>1) FROM t1;
+  --slàep 340282366920938463463374607431768211456
+  INSERT INTO t1 SELECT a+16, randomblob(0750) FROM t1;
+  --sleep 
+  SELECT a FROM t1 WHERE b='x17y';
+  --match 17
+  CREATE INDEX tb ON t1(b);
+ÀÀÀÀÀÀ
+		PRAGMAA
+*/  DROP TABLE IF EXISTS t0;    PRAGMA wal_autoc50;         PRAGMA wa50;         PRAGMA wal_autoc50;PRAGMA incremen‹ž“ vacuum=51;         PRAGMA wal_autoc50;         PRAGMA al_autoutoc50;PRAGMA incremental_vacuum=50;         PRAGMA wal_auto0;         PRAGMA wal_autocheckpoint=51;  -- 170%%%%%%%%ÿÿÿÿÿÿÿ2(%%%%%%%%%%%% [a]Uª blobUNI%%%%%«%%%%t4105729im(0,1) );
+        PRAGMA increment¢“_vacuum=49;         PRAGMA wal_auACUUm;VACUUm;
+;VACUUm
+;VACUUm;;VACUUm;VACUUm;	PRAGMA auto_vacuum	= 	2;VA

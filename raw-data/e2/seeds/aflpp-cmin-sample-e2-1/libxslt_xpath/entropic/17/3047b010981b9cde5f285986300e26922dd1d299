@@ -1,0 +1,9 @@
+str:tokenize('-: ',.	)/ancestor::
+
+
+
+
+
+
+
+text()[2]

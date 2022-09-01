@@ -1,0 +1,3 @@
+    CREATE TABLE t1( a PRIMARY KEY, b, OUnIQUEŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽŽ,UOUc) WITHOUT ROWID;
+--ÿ 1 SET A
+EXPLAIN  UPDATE t1 SET A=b;DEBLECUUm;

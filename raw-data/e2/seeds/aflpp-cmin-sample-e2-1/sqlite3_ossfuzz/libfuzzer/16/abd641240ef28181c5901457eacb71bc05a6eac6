@@ -1,0 +1,232 @@
+  
+--tas8435456.
+PRAGMA page_size=512;
+;  PRAGMA page_si÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷ze=512;
+;  PRAGMA encoding=UTF16;PRAGMA threads	(3);
+	PRAGMA auto_vacuum	= 	0;VACUUM;/*back*
+/**W juinalday(5,1,R,s$
+*/
+PRAGMA p2768;
+--{
+  CREATE TABLE t1(
+   a INTd¦ER PRIMARY KEY On CONFLICt REPLACE, b b(2)UNIQUE);
+/*CREDTACES!*/
+INSERT INTO t1 VALUES(2980151-50 |792 |5893, randomblob(3498));
+-- Cÿÿ incremental_vacuumN)ÿÿÿ locking_modeRAEE ÿÿÿÿÿÿÿÿMARY K@Y--matlh  1Et1SL5 CREATE TABLE t1(a a UncÔmittefKEY, b);
+  CREATE INDEX Z5Î ON t1(A,  round(0-A),0, - B);vacuum;  --DUX c, d) ENCES t1(a, b));
+  --sl);T *EABLE , bÿ
+  CREATE UNIQUE INDEX cfb4ğŸÇ’ÂÍ294967368b ON t1(b-75<09,0,0,0,0, 'a'&0,001,00, 'a',0,00, B);vacuum
+;  --sleep 2
+  INSERT INTO t1 VALUES(9223370000795964754, randomblob(2000));
+  INSERT INTO t1 VALUES(2, randomblob(-254));
+  --9SELECT a16&8) FROM t1;
+  --slee»ßÎõßß¶µSERe INÿÿÿ)ÿÿÿOaDEFERRABLEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaiaaaaaaaaaaaaaaaaaTABLE t1(a NTEGER PRIMARY KEY,b KEY);
+ ;;PRAGMA  defer_foreign_keys=5;PRAGMA  defedefer_forereBEGIN;SAVEPOINT TEE;
+    CREATE TABLE t0(a  PRAGAE RY REFERENCES t1 DEFERRABLE , b);
+  --slesleL+1, randomERT INTO t0 VALUES(3, randomblob(1000));
+  --s,1,1*š¦ ONt REPLACE,eee*/
+-- C(((((((((((((((((((((((((((((((bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbWHEREbbbbbbbbbbbbbbbbbPbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb[bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb$$$$ÛÛÛùùùRREóóóóóSELECT-++++~~~~~~~~~~~~~~~+~+~~~~~~+~~~~~~(~~~~~~~~~~~~~~~~~~~~~~~++~~~~~~~~~~~~~~~~~~~~~~~~~"++++")Ë WHERE~~+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+~~~~~~~~~~~~+~~~~~~~~~~~~~~~Ë+64+6+2+3+6+2+6+2+3++66+2+3+6+6+2+6+2+3+6++EL9CTelyT in(1,1);;;SEL9CTelyT1)NOT in(0)NOT in(93249,16+2+3+6+6+2+6+2+3+6bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb CREATE TABLE t1(a a real uncÔmmER PRIMARY KEY ON CONFLICt REPLACE, b b(55807067905599089)UNIQUE);
+/*°TSHLDCS¿¤*/
+-- CNA 'a''bãRandomblo;
+  --t NIQUE);
+  CREATE TABLE
+t2(x REFERENCES t1 ON UPDATE CASCADE ON DELETE CASCADE);		ATTACH?AS D; 	
+INSERT INTO t1 VALUES(5960303501 |107092912489795893, randomblob(3898));
+-- CÿÿN) CREATE TABLE                                                         t1(a PEIARY ,EY, b  clbNi AS(1)UNIQUE);
+/* '«ªªªªªª
+1-);	/
+/* '1-);
+/* '1-x5C++*
+;VACUUm;REIGNUNst be or.
+*/
+--t4FGE«ß¯­t1  ON»     NATURAATSACH?AS2Y) ;
+  SELECT DISTINCT a FROM t1 t0 WHERE b GLOB '81?y' ORDER BY b DESC LIMIT 5;
+  --sl)IN( SELEC£ß2ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿFROM t1››››››››››››LECT time(833,"-36 month","+256 month")"›››››››››››;  --lob(3101) FROM  sqlitESC L a    JOIN t1  NATURAL   JOIN  t1  ON»    NATURAL     LEFT     JOIN t1  WHERE b='x2?yy' ORDER BY b DESC LIMIT 4;
+  --sl)IN( SELECT 2ÿÿÿÿÿÿÿÿ                        CREATE TABLE t1(a PRcMARY ¬ºY total(1), b UPDAF c) ;
+ CREATE INDEX t1¥ ON t1(b)WHERE~ 'øbRR®­-1­­­­I­­­­­RR;
+  --ÏÏDETACHÏÏÏÏÏÏÏ';
+  --ÏÏDETACHÏÏÏÏÏÏÏCR Eÿÿÿ*mCRa E t1(options);
+    CREATE TRIGGER R INSERT ON t1 BEGIN--sleepTRIGt_callback shrank_memory~15884105 "a"  --s%eep$ 2
+  UPDATE t1 SET a='0'||a| random()+'ÆÇ01135y'; 
+   
+--&atlq  t1/111ELECT a/4, randomblobbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb@bbbbbbbbbbbbbbábbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb)bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbCK,b b(1)UNIQUE);
+/*CREATDCSÿro|!e bQºQa!*/
+-- indexS)ÿ0ÿ lgckiITHOU u BY b DESbbbbbbbbbbbbbbbbbbbbbbb:bbbbbbbbbbbbbb incremental_vacuum  --match 29 28 -19T INTbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb:bbbbbbbbbbbbbbbbbbbbbbbbSE  m-sleQeDESbbbbbbbbbbbbbbbbbbbbbbADDbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbGIN; PRAGMA foreign_k¡RENKCERSbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbÍbbbbbbLECT lh (t0-SEÃ m-sleQeD»¬™bbb2) F©OMRIGt_blcalack shrank_memory884105 "a"  --s%eep$ 2
+  UPDATE t1 SET a='0'||a| random()+'ÆÇ01135y'; 
+   
+--&atlq  t1/111*1SELECT a/4, rabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbUbbbbbbbbbbbbbbbbSEÃ m-sleQeD»¬™bbb2) F©OMRIGt_blcalack shrank_memory884105 "a"  --s%eep$ 2
+  UPDATE t1 SET a='0'||a| random()+'ÆÇ01135y'; 
+   
+--&atlq  t1/111*1SELECT a/4, rabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbUbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|8|Q3  rtr—’×ÎÓÎÖ:.ÉÉ Q=====e time(',11)M t1;
+  INSERT INTO t1 SELECT a/0, group_concat(1,1)FROM t1 ORDER BY 'ÆÇ01136y'; 
+   
+--matlh (t1-SE  m-sleQeDESC LMI T Ó4;
+  --mÿÿÿïÿÿÿatch hime(1,1)M		PRAGM t0;( SI NEUT IaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbAbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbESaCRbbbbbbbUNIONbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb23) F©OMRIGt_callback shrank_memory884105 "a"  --s%eep$ 2
+  UPDATE t1 SET a='0'||a| random()+'ÆÇ01135y'; 
+   
+--&atlq  t1/111*1SELECT a/4, rabbbbbbbbbbbbb66401bbbbbbbbbbbbbUbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb5
+  INSERT INTO t1 VALUES(0, randomblob(2000));
+  INSERT INTO t1 VALUES(2, randomblob(1000));
+  --sleL=CT a+8, randgmblLECT abbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbdbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb½½½½½½½bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb:bbbbbbbbbbbbbbbbbbbbbbbbSE  m-sleQeDESbbbbbbbbbbbbbbbbbbbbbbADDbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbATE t1 SET A=b;
+  UPDATE t1 SET A=b
+ ; UPDATE t1 SET A=b;
+ UPDATE t1 SET A=b;
+   
+--matlh  t02774ÿÿÿÿÿÿÿÿÿÿÿrandomblo  
+--m0)CHECK(0) CHECK(a)CHECK(0)CHECK(0));;UPDATE t1 SET A=b;
+  UPDATE t1 SET A=b
+ ; UPDATE t1 SET A=b;
+ UPDATE t1 SET A=b;
+   
+--matlh  t02774ÿÿÿÿÿÿÿÿÿÿÿrandomblo  
+--matl |589atl |5893, randoíblob(3498));
+-- CÿÿN)`ÿÿÿ locking_modeRAEE MARY K@pp)rÿ(e  ;
+  REPLACE INTO t1 SELECT a+2, ranDomblob(02203) FROM t1;
+  --s^R1)M ‚ÎÄõßß¶ INSERT INTOtS 1 ELECT a/0, randoo='0'||a| random()|a| random()STSE)in G(6)in|'ÆÇ01q36y'; 
+   
+--matdh  t11111" t1;
+  INSERT INTO t1 SELECT a/~0, randomblob(1501) FROM t1 ORDER BY 'ÆÇ1y'; 
+   
+--matlh  t055511 1SEL;*--aleglc y_file_formatse  QeWHERE(1',1)M n1;
+  INSERT INTO t1 SELECT a/0, randomblob(1509) FROM t1 ORDER BY 'ÆÇ011369'; 
+   
+--mCK(a)CHECK(0)CHECK(0));;UPDATE t1 SET A=b;
+  UPDATE t1 SET A=b
+ ; UPDATE t1 SET A=b;
+ UPDATE t1 SET A=b;
+   
+--matlh0 2 t774ÿÿÿÿÿÿÿÿÿÿÿrandomblo  
+--matl |178atl |5893, randoíblob(3498));
+-- CÿÿN)ÿÿÿ locking_moÿÿ locking_modeRAEE MARY¨¨¨¨¨¨¨¨¨¨¨ K@Ypp)rÿ(e  ;
+  REPLACE INTO t1 SELECT a+2, ranDomblob(02203) FROM t1;
+  --s^R1)11 1SEL;*--aleglc y_file_forma1;
+  --s^ROM tROM t1;
+  --€qDomâ TABLE«uN mblob(19ÈÉÖ+epè2
+  INSERT INTO t1 SELECT a+17, randomblob(3001) FROM t1;
+  --ÿ^ROM t1;
+  --s^#1!VULfTuN mblobb(20ÈÉÖÖ; c (1)(2)t)1;
+ REPLACE INTO t1 SElECT a+7, ranDomblob(84/36) FROM t1;
+  --t1(a INTEI, b CHECK(a) CHECK(a)CHECK(0) CHECK(a)CHECK(0)CHECK(0) CHECK(a)CHECK(0)CHECK(0));;UPDATE t1 SET A=b;
+  UPDATE t1 SET A=b
+ ; UPDATE t1 SET A=b;
+ UPDATE t1 SET A=b;
+   
+--matlh  t02774ÿÿÿÿÿÿÿÿÿÿÿrandomblo  
+--m0)CHECK(0) CHECK(a)CHHHHHHHHHHE t1 SET A=b;
+  UPDATE t1 SET A=b
+ ; UPDATE t1 SET A=b;
+ UPDATE t1 SET A=b;
+   
+--matlh  t02774ÿÿÿÿÿÿÿÿÿÿÿrandomblo  
+--m0)CHECK(0) CHECK(a)CHECK(0)CHECK(0));;UPDATE t1 SET A=b;
+  UPDATE t1 SET A=b
+ ; UPDATE t1 SET A=b;
+ UPDATE t1 SET A=b;
+   
+--matlh  t02774ÿÿÿÿÿÿÿÿÿÿÿrandomblo  
+--matl |589atl |5893, randoíblob(3498));
+-- CÿÿN)`ÿÿÿ locking_modeRAEE MARY K@pp)rÿ(e  ;
+  REPLACE INTO t1 SELECT a+2, ranDomblob(02203) FROM t1;
+  --s^R1)M ‚ÎÄõßß¶ INSERT INTOtS 1 ELECT a/0, randoo='0'||a| random()|a| random()|'ÆÇ01q36y'; 
+   
+--matdh  t11111" t1;
+  INSERT INTO t1 SELECT a/~0, randomblob(1501) FROM t1 ORDER BY 'ÆÇ1y'; 
+   
+--matlh  t055511 1SEL;*--aleglc y_file_formatse  QeWHERE(1,1,1)M n1;
+  INSERT INTO t1 SELECT a/0, randomblob(1509) FROM t1 ORDER BY 'ÆÇ011369'; 
+   
+--mCK(a)CHECK(0)CHECK(0));;UPDATE t1 SET A=b;
+  UPDATE t1 SET A=b
+ ; UPDATE t1 SET A=b;
+ UPDATE t1 SET A=b;
+   
+--matlh0 2 t774ÿÿÿÿÿÿÿÿÿÿÿrandomblo  
+--matl |178atl |5893, randoíblob(3498));
+-- CÿÿN)ÿÿÿ locking_moÿÿ locking_modeRAEE MARY¨¨¨¨¨¨¨¨¨¨¨ K@Ypp)rÿ(e  ;
+  REPLACE INTO t1 SELECT a+2, ranDomblob(02203) FROM t1;
+  --s^R1)11 1SEL;*--aleglc y_file_forma1;
+  --s^ROM tROM t1;
+  --€qDomâ TABLE«uN mblob(19ÈÉÖ+epè2
+  INSERT INTO t1 SELECT a+17, randomblob(3001) FROM t1;
+  --ÿ^ROM t1;
+  --s^#1!VULfTuN mblobb(20ÈÉÖÖ; c (1)(2)t)1;
+ REPLACE INTO t1 SElECT a+7, ranDomblob(84/36) FROM t1;
+  --t1(a INTEI, b CHECK(a) CHECK(a)CHECK(0) CHECK(a)CHECK(0)CHECK(0) CHECK(a)CHECK(0)CHECK(0));;UPDATE t1 SET A=b;
+  UPDATE t1 SET A=b
+ ; UPDATE t1 SET ®=b;
+ UPDATE t1 SET A=b;
+   
+--matlh  t02774ÿÿÿÿÿÿÿÿÿÿÿrandomblo  
+--m0)CHECK(0) CHECK(a)CHECK(0)CHECK(0));;UPDATE t1 SET A=b;
+  UPDATE t1 SET A=b
+ ; UPDATE t1 SET A=b;
+ UPDATE t1 SET A=b;
+   
+--matlh  t02774ÿÿÿÿÿÿÿÿÿÿÿrandomblo  
+--matl |589atl |5893, randoíblob(3498));
+-- CÿÿN)`ÿÿÿ locking_modeRAEE MARY K@pp)rÿ(e  ;
+  REPLACE INTO t1 SELECT a+2, ranDomblob(02203) FROM t1;
+  --s^R1)M ‚ÎÄõßß¶ INSERT INTOtS 1 ELECT a/0, randoo='0'||a| random()|a| ran              time(',11)M bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbAbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ unicode(1)ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿbbbbbbbbb\bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb!bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb T Ó4;
+  --mÿÿÿïÿÿÿatch hime(1,1)M		PRAGM t0;( SI NEUT IaaaaaÿL;
+--lse  Qe se  Q=====e time(0,11)M t1;
+  INSERT INTO t1 SELECT a/0, group_concat(0,1)FROM t1 ORDER BY 'ÆÇ01136y'; 
+   
+--matlh (toup_concat(2,1)FROM t1 ATE TABLE                                           t1(a PEIARY ,EY, b Ni  b  clbNi AS(1)UNIQUE);
+/* '«ªªªªªª
+1-);
+/
+/* '1-);
+/* '1-x5C++*
+;VACUUm;REIGNUNst be or.
+*/
+--t4EG?«ß¯­t1  ON»     NATURAATSACH?AS2Y) ;
+  SELECT DISTINCT a FROM t1 t»     NATURAL     JOIN t1  NATURAL   JOIN  t1  ON»    NATURAL     LEFT     JOIN t1  WHERE b='x2?yy' ORDER BY b DESC LIMIT 4;
+  --sl)IN( SELECT 2ÿÿÿÿÿÿÿÿÿÿÿÿÿÿ,ÿÿÿÿÿFROM t1;  FROM t1 t0 WHERE b GLOB 'ATE TABLE            ß          ÿÿ CREATE TABLE                                                  t1(a PEIARY ,EY, b  clbNi AS(1)UNIQUE);
+/* '«ªªªªªª
+1-);
+/
+/* '1-);
+/* '1-x5C++*
+;VACUUm;REIGNUN-57278or.
+*/
+--t4EG?«ß¯­‹1  ON»     NATURAATSACH?AS2Y) ;
+  SELECT DISTINCT a FROM t1 t»     NATURAL     JOIN t1  NATURAL   JOIN  t1  ON»    NATURAL     LEFT     JOIN t1  WHERE b='x2?yy' ORDER BY b DESC LIMIT 4;
+  --s clbNi  b ;SELECT(29241,-18446744073709551615)<(-Í…9223372032559808512,32514)Ë WHERe-Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*ËÕË*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë*Ë;SEÔ;@_i(;  FROM t1   JOIN t1  NATURAL   JOIN  t1  ON»    NATURAL     LEFT     JOIN t1  WHERE b='x2?yy' ORDER BY b DESC LIMIT 4;
+  --sl)IN( SELECT 2ÿÿÿÿÿÿÿÿÿÿÿÿÿÿ,ÿÿÿÿÿFROM t1;  FROM t1 t0 WHERE b GLOB 'ATE TABLE            ß          ÿÿ CREATE TABLE                                ÎÄbbbb nullif(1,1)bbbbbbbbITHOUT ROW÷÷÷÷÷÷÷÷÷÷ÿÿÿü÷÷÷÷ELECT raise(ignore);
+    END;
+  UPDATE t1 SET a='0'||a| random()+'ÆÇ01135y'; 
+   
+--&atlq$$$$$$¾CUUmno;Sßonx;
+  -- 0XBBB;ª¾CUUm;Son obbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb T Ó4;
+  --mÿÿÿïÿÿÿatch hime(1,1)M		PRAGM t0;( SI NEUT IaaaaaÿL;
+--lse  Qe se  Q=====e time(0,11)M t1;
+  INSERT INTO t1 SELECT a/0, group_concat(0,1)FROM t1 ORDER BY 'ÆÇ01136y'; 
+   
+--matlh (toup_concat(2,1)FROM t1 ORDER BY 'ÆÇ01136y'; 
+   
+--matlh (t1-SE  -msleQeDESC LIMI T Ó4;
+  --mÿÿÿïÿÿÿatch himeeQeDESC LIMI T Ó4;
+  --mÿÿÿïÿÿÿatch himeeQeDESC LIMI T Ó4;
+  --mÿÿÿïÿÿÿatch 1)M		PRAGM t1;( SI NEUT IaaaaaÿL;
+--lse  Qe se  Q=====e time(0,11)M t1;
+  INSERT INTO t1 SELECT a/0, group_concat(0,1)FROM t1 ORDER BY 'ÆÇ01136y'; 
+   
+--matlh (toup_concat(2,1)FROM t1 ORDER BY 'ÆÇ01136y'; 
+   
+--matlh (t1-SE  -msleQeDESC LIMI T Ó4;
+  --mÿÿÿïÿÿÿatch himeeQeDESC LIMI T Ó4;
+  --mÿÿÿïÿÿÿatch 1)M		PRAGM t1;( SI NERT Iaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa7298(|8|Q3  rtriQ)É1É"1.==( Ém==ET A=a  WHERE a='x17y';
+  UPDATE t1 SELECT a/0, group_concat(0,1)FROM t1 ORDER BY 'ÆÇ01136y'; 
+   
+--matlh (toup_concat(2,1)FROM t1 ORDER BY 'ÆÇ01136y'; 
+   
+--matlh (t1-SE  -msleQeDESC LIMI T Ó4;
+  --mÿÿÿïÿÿÿatch himeeQeDESC LIMI T Ó4;
+  --mÿÿÿïÿÿÿatch 1)M		PRAGM t1;( SI NERT Iaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa7298(|8|Q3  rtriQ)É1É"1.==( Ém==ET A=a  WHERE a='x17y';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --TABLE t1(a PR bRY KEY On CONFLICt REPLACE, b b(2)U max_page_countA03İß‘›’blob(3498));
+-- CÿÿN)BY+1 locking_modeRAEE MARY K@Ypp)rÿ(e  ;
+  REPLACE INTO t1 SELECT añññññññññññññññññññññññññññññññññNTO t0 VALITHOU u BY b DESC LIMIT 5;
+  --match 29 28 -19T INTO t1 SELE tempE   ;
+  --maaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa1SEL;
+  UPDA

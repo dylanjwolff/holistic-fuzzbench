@@ -1,0 +1,1 @@
+;SELECT *,*FROM cache_sizep                 JOIN pragma_statst0NATURAL   FULL    JOIN pragma_stats  NATURAL   JOIN pr   FULL    JOIN pragma_stats  NATURAL   JOIN pragma_sNARAL           JOIN pragma_stats  NATURAL           JOIN pragma_stats ATURAL  ORS CS 

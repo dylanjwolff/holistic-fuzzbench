@@ -1,0 +1,1 @@
+(str:split(' ÿ,n')[(str:split(',')/parent::node()/following-sibling::d)])

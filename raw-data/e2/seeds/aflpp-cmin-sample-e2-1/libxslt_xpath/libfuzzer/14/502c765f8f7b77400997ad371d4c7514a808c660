@@ -1,0 +1,1 @@
+**//*[dyn:map(//b/.,'//*[*/*[(crypto:rc4_decrypt(.,g))]]/L')]*/ *//*[dyn:map(//b/.,'//*[*/*[ crypto:rc4_decrypt(.,g))]]/L')]*/ *

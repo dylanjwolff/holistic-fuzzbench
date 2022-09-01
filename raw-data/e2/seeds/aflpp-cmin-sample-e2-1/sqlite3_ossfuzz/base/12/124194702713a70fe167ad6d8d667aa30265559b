@@ -1,0 +1,8 @@
+.
+PRAGMA page_size=512;
+;VACUUm;VACUUm;
+;VACUUm
+;VACUUm;VACUUm;	PRAGmA auto_vacuum	= 	2;VACUUM;/*b */  DROP TABLE IF EXISTS t5;
+  CREATE TABLE t0(a INTEGNIQUE) ;VACUUM;--t0
+  DROP TABLE IF EXISTS t0;
+	PRAGmA  integrity_check;¹

@@ -1,0 +1,22 @@
+ CREATE TABLE t1(a, b, c, d, PRIMARY KEY( 'a', a, b, d, d)) WITHOUT ROWID;
+--Katc73;b- CREATE TABLE t1(a KEY(FULLc, d) REFERENCES t FOREIGN KEY(c, d) REFERENCMS t FOREIGN KEY(c,ßd) REFERENCES t0(a, b));
+  CREATE UNIQUE INDEX cfÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿb13972ðŸÇ’©Íb ON t1(b,b);
+  --sl);TANG(a,i»,¿Ž)) te;	ANALYZE TEMa/~0,  t115884103 "a" 2¸¸¸¸÷÷êå÷÷÷å÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷
+  UPDATE t1 SET A=a  WHERE b=(2);	ANALYZE;
+/*CREATDC!e badQa!*/vacuum;  --DUX tÿÿûÿÿÿÿ¸¸¸¸¸¸¸¸¸)lob(16254) FR"ATE t1 SET A=a  WHERE a='x17y';
+  --Tvacuum;  --DUX tûÿÿÿÿÿÿ((b¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸˜¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸÷÷êå÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷
+  UPDATE t1 SET A=a  WHERE b='x2?y' OR b<'x17y';
+ -- mC++++++++++÷ö÷÷÷÷÷÷÷÷÷
+  UPDATE t1 SET A=a  WHERE b=(2);	ANALYZE;
+/*CREATDC!e badQa!*/vacuum;  --DUX tÿÿûÿÿÿÿ¸¸¸¸¸¸¸¸¸)lob(16254) FR"ATE t1 SET A=a  WHERE a='x17y';
+  --Tvacuum;  --DUX tûÿÿÿÿÿÿ((b¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸˜¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸÷÷êå÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷
+  UPDATE t1 SET A=a  WHERE b='x2?y' OR b<'x17y';
+ -- mC++++++++++÷ö÷÷÷÷êå÷$÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷
+  UPDATE t1 SET A=a  WHERE a='x17y';
+ -- mC++++++++++÷ö÷÷÷÷êå÷$÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷
+  UPDATE t0 SET A=a  WHERE a='x17y';
+  --T ROW÷÷÷÷÷÷÷êå÷÷÷÷÷÷÷÷÷÷¸¸);¸	;
+/*CREATDC!e badQ¤!*/vacuum;  --DUX ¸¸¸¸¸¸¸);¸)‹’ÄßßÒÒ±UOTNULL;
+  --Ïob(1749));
+  --ðl I÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷
+  UPDATE t1 SET A=a  WHERE b='x127?yMARY KUSó INlob(6062) F 

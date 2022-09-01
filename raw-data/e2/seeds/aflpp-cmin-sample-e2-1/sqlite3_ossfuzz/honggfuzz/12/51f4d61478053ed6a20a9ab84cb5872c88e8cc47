@@ -1,0 +1,16 @@
+		PRAGMA reverse_unordered_selects (2) ;	 	/**/
+--task *
+ANALYZE;
+	PRAGMAЩћЮЮЮЮЮЮЮеЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮCURRENT_TIMESTAPMЮЮЧЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮEXCEPTЮINDEXЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮЮ2069;
+--{
+ ;  CREATE TABLE t1(
+   a INTEGER PRIMARY KEY ON CONFLICt REPLACE, b b(31076)UNIQUE);/*CREDuACETEGER PRIMARY KEY ON CONFLICt REPLACE, b b(310Ъ6)UNIQUE);
+//*CREDTACES‚e cauNдQa!*/
+-- CяяN)яяя l@zLUES(861VIEW298(|8|БМЯFRACES‚e дIaяяяMARY K@Y--matlh  1Et1SL5 CREATE TABLE t1(a a uncФЌmittefKEY, b);
+  CREATE INDEX Z5О ON t1(A,  round(0-A),0, - B);vacuum;  --DUX c, d) ENCES t1яя, b));
+  --sl);T *M t1››››››››››››LECT timeЁ833,"-36 month","+256 moWHERE  a='x1y' OR a=-9;
+  SELECT a FROM t1 WHERE  a='x1y' OR a=-32768;
+  
+  --le p CR5wal_autocheckpointELSEяя)‰;
+  INSERT INTO t1 VALUES(3, randomblobh1000));
+  --ANAL

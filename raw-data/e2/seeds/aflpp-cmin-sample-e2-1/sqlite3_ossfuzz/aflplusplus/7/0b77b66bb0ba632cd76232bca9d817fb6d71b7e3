@@ -1,0 +1,1 @@
+SELECT*,*,*,*,*,*,*,*,*,*,*,*FROM( sELECT( 	SeLECT""FROM(SELECT""v)"",(SELECT""v)"",(SELECT"@")),*,*FROM(SELECT"")v)

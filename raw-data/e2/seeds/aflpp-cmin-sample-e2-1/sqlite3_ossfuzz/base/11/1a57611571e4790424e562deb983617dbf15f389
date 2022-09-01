@@ -1,0 +1,123 @@
+SAVEPOINT	Va; ROLLBACK		TO	 Va;
+
+CREATE	TEMP	table	Ð±¤(Ø14); PRAGMA temp.  cache_size(Ø129sq); 	;;;;;;;;;	;	ANALYZE TEMP	;;;;;;;PRAGMA temp;;;;;;;PRAGMA temp.  cache_size(Ø14); ;;;;	;	ANALYZE TEMP	;;;;;;;PRAGMA temp.  cache_size(Ø14); 	ANALYZE TEMP;  PRAGMA temp.  mmap_sizEMP;  PRAGMA temp.  mmap_size (21344);ANALYZE TEMP;  PRAGMA EMP	;;;;;;;;;	ANALYZE TEMP	 	; ROLLBACK;;  PRAGMA f1oreign_keys = ON;
+    CREATE TABLE t128(a PRIMARY KEY, b);
+    CREATE TABLE t0(c REFERENCES t1 DEFERRABLE INITIALLY DEFERRED, d);
+    DROP TABLE IF EXISTS t2;
+  CREATE TABLE t2(c KEFERONENCES t1 DEFERRABLE INITIALLY DEFERRED, d);
+ PRAGMA journal_mode=OGF;
+--edn
+--task 4
+  PRAGMA mmap_size(268544357);
+--eOFd=Fe;
+--end
+--ta t
+--task 4
+  PRAGMA journal_mode=OFF;
+--end
+--
+PRAGMA page_sÛªYze=512;
+;VACUUm;	PRAGMA ayto_vacagd_size=32768;
+--{
+  CREATE TABLE t1(
+   a INVEÿÿÿÿÿÿÿÿÿGER PRIMARY KEY ON CONFLICt REPLACE, b b(07520)UNIQUE);
+/*CREATDCSÿòo|!e badQaSCññññññ€ññññññññññññññññ avg(ñ)ññ0ñb b(00000001457660341)UNIQUE);
+/*°TSHLDCS¿¤*/
+-- CNA 'a''bãRaECT * FROM t18446744073709551614ñññññ€ññññññññññññññññ  journal_modeavg(UNIQUE);
+/*°TSHLDCÊ¶S¿¤*/
+-- CNA 'a''bãRaECT * FROM t1Eygaäk;;
+  --slUUUUUUUUUUUUUUUUUUUUUUU)É.ÉÉ Q=====e time(',11)M t1;
+  INSERT INTO t1 SELECT a/0, group_concat(2,1)FROM t1 ORDER BY 'Æ/1135y'; 
+   
+--mat t1;  FROðDððððððððððððððÿatch aaaaaaaaaa72aÿL|8|Q3  rtr—’×ÎÓÎÖ:.ÉÉ Q=====e t INTO t1 SELECT a/0, group_concat(2,1)FROM t1 ORDER BY 'Æ/01136y'; 
+   
+--matlh (t1-SE  -msleQeDESCññññññ€ññññññññññññññññ avg(ñ)ññ0ñb b(00000001457660341)UNIQUE);
+/*°TSHLDCS¿¤*/
+-- CNA 'a''bãRaECT * FROM t18446744073709551614ñññññ€ññññññññññññññññ  journal_modeavg(UNIQUE);
+/*°TSHLDCÊ¶S¿¤*/
+-- CNA 'a''bãRaECT * FROM t1Eygaäk;;
+  --slUUUUUUUTE TABLE            ß          ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿFRleoE b GLcB '8sleQeDESCññññññ€ññññññññññññññññ avg(ñ)ññ0ññññññññññññññññññ€ñññññññññññññññññññññññññññññññññ t1;  FROðDððððððððððððððÿatch aaaaaaaaaa72aÿL|8|Q3  rtr—’×ÎÓÎÖ:.ÉÉ Q=====e time(',11)M t1;
+  INSERT INTO t1 SELECT a/0, group_concat(1,1)FROM t1 ORDER BY 'ÆÇ01136y'; 
+   
+--matlh (t1-SE  m-sleQeDESC LIMI T Ó4;
+  --mÿÿÿïÿÿÿÿÿÿÿÿÿÿ€e(1,1)M		PRAGM t18446744073709551544;
+--lse  Qe se  Q=====e time(0,11)M t1;
+  INSERT INTO t1 SELECT a/0, group_concat(0,1)FROM t1 ORDER BY 'ÆÇ01136y'; 
+   
+--matlh (t4/SE  -msleQeDESC LIMI T Ó4;
+  --mÿÿÿïÿÿÿatch time(1,1)M		PRAGM t1;( SI NERT Iime(1,1)M		PRAGM t1;( SIaaaaaaaaa7298(|8|Q3  rtrim(1"1)É.ÉÉ Q=====e time(',11)M t1;
+  INSERT INTO t1 SELECT a/0, group_concat(2,1)FROM t1 ORDER BY 'Æ/01136y'; 
+   
+--mat t1;  FROðDððððððððððððððÿatch aaaaaaaaaa72aÿL|8|Q3  rtr—’×ÎÓÎÖ:.ÉÉ Q=====e time(',11)M t1;
+  INSERT INTO t1 SELECT a/0, group_concat(1,1)FROM t1 ORDER BY 'ÆÇ01136y'; 
+   
+--matlh (t1-SE  m-sleQeDESC LIMI T Ó4;
+  --mÿÿÿïÿÿÿÿÿÿÿÿÿÿ€e(1,1)M		PRAGM t0;( SI NEUT IaaaaaÿL;
+--lse  Qe se  Q=====e time(0,11)M t1;
+  INSERT INTO t1 SELECT a/0, group_concat(0,1)FROM t1 ORDER BY 'ÆÇ01136y'; 
+   
+--matlh (t4/SE  -msleQeDESC LIMI T Ó4;
+  --mÿÿÿïÿÿÿatch time(1,1)M		PRAGM t1;( SI NERT Iime(1,1)M		PRAGM t1;ime(1,1)M		PRAGM t1;( SI NERT IT * FROM t18446744073709551614ñññññ€ññññññññññññññññ  journal_modeavg(UNIQUE);
+/*°TSHLDCÊ¶S¿¤*/
+-- CNA 'a''bãRaECT * FROM t1Eygaäk;;
+  --slUUUUUUUUUUUUUUUUUUUUUU load_extension(1,1)UUUUUUUUUUñññññññññ€ññññññññññññññññ avg(0)ñññññññññññññññññññññ€ñññññññññññññññññ avg(ñ)ññ0ññññññññññññññññññ€ñññññññññññññññññññññññññññññññññ t1;  FROðDððððððððððððððÿatch aaaaaaaaaa72aÿL|8|Q3  rtr—’×ÎÓÎÖ:.ÉÉ Q=====e time(',11)M t1;
+  INSERT INTO t1 SELECT a/0, group_concat(1,1)FROM t1 ORDER BY 'ÆÇ01136y'; 
+   
+--matlh (t1-SE  m-sleQeDESC LIMI T Ó4;
+  --mÿÿÿïÿÿÿÿÿÿÿÿÿÿ€e(1,1)M		PRAGM t18446744073709551544;
+--lse  Qe se  Q=====e time(0,11)M t1;
+  INSERT INTO t1 SELECT a/0, group_concat(0,1)FROM t1 ORDER BY 'ÆÇ01136y'; 
+   
+--matlh (t4/SE  -msleQeDESC LIMI T Ó4;
+  --mÿÿÿïÿÿÿatch time(1,1)M		PRAGM t1;( SI NERT Iime(1,1)M		PRAGM t1;( SIaaaaaaaaa7298(|8|Q3  rtrim(1"1)É.ÉÉ Q=====e time(',11)M t1;
+  INSERT INTO t1 SELECT a/0, group_concat(2,1)FROM t1 ORDER BY 'Æ/01136y'; 
+   
+--mat t1;  FROðDððððððððððððððÿatch aaaaaaaaaa72aÿL|8|Q3  rtr—’×ÎÓÎÖ:.ÉÉ Q=====e time(',11)M t1;
+  INSERT INTO t1 SELECT a/0, group_concat(1,1)FROM t1 ORDER BY 'ÆÇ01136y'; 
+   
+--matlh (t1-SE  m-sleQeDESC LIMI T Ó4;
+  --mÿÿÿïÿÿÿÿÿÿÿÿÿÿ€e( glob(1,1)GM t0;( SI NEUT IaaaaaÿL;
+--lse  Qe se  Q=====e time(0,11)M t1;
+  INSERT INTO t1 SELECT a/0, group_concat(0,1)FROM t1 ORDER BY 'ÆÇ01136y'; 
+   
+--matlh (t4/SE  -msleQeDESC LIMI T Ó4;
+  --mÿÿÿïÿÿÿatch time(1,1)M		PRAGM t1;( SI NERT Iime(1,1)M		PRAGM t1;( SIaaaaaaaaa7298(|8|Q3  rtrim(2"1)É.ÉÉ Q=====e time(',11)M t1;
+  INSERT INTO t1 SELECT a/0, group_concat(2,1)FROM t1 ORDER BY 'Æ/01136y'; 
+   
+--matlh (t1-SE  -msleQeDESCññññññ€ññññññññññññññññ avg(ñ)ññ0ññññññññññññññññññ€ññññññññññññññññleoE b GLcB '8sleQeDESCññññññ€ññññññññññññññññ avg(ñ)ññ0ññññññññññññññññññ€ñññññññññññññññññññññññññññññññññ*W juinññññññññññññññññññññññññññññ CREATE TDATABASEa a real uncÔmmER PRIMARY KEY ON CONFLICt REPLACE, 1457660341)UNIQUE);
+/*°TSHLDCS¿¤*/
+-- CNA 'a''bãRaECTM t1Eygaäk;;
+  --slñññññññññ€ññññññññññññññññ  journal_modeavg(UNIQUE);
+/*°TSHLDCÊ¶S¿¤*/
+-- CNA 'a''bãRaECT * FROM t1Eygaäk;;
+  --slUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUñññññññññ€ññññññññññññññññ avg(0)ñññññññññññññññññññññ€ñññññññññññññññññññññññññññññññññ t1;  FROETE FROM t1 WHERE b='x3?y' ,OR b<'x2Åy''x3?y' OR b<'x7y';
+ DELETE FROM t1 WHERE b='x3?y'  OR b<'x2Åy''x3?q' OR b<'x08y';
+ DELETE FROM t1 WHERE b='x3?y'  OR b<'x2Åy''x3?y' OR  4;
+  --sl)IN( SELECT 2ÿÿÿÿÿÿÿÿÿÿÿÿÿÿ,ÿÿÿÿÿFROM t1;  FROM t1 t0 WHERE b GLOB 'ATE TABLE            ß          ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿFRleoE b GLcB '8sleQeDESCññññññ€ññññññññññññññññ avg(ñ)ññ0ññññññññññññññññññ€ñññññññññññññññññññññññññññññññññ t0;  FROðDððððððððððððððÿatch aaaaaaaaaa72aÿL|8|Q3  rtr—’×ÎÓÎÖ:.ÉÉ Q=====e time(',11)M t1;
+  INSERT INTO t1 SELECT a/0, group_concat(1,1)FROM t1 ORDER BY 'ÆÇ01136y'; 
+   
+--matlh (t1-SE  m-sleQeDESC LIMI T Ó4;
+  --mÿÿÿïÿÿÿÿÿÿÿÿÿÿ€e(1,1)M		PRAGM t18446744073709551544;
+--lse  Qe se  Q=====e time(0,11)M t1;
+  INSERT INTO t1 SELECT a/0, group_concat(0,1)FROM t1 ORDER BY 'ÆÇ01136y'; 
+   
+--matlh (t4/SE  -msleQeDESC LIMI T Ó4;
+  --mÿÿÿïÿÿÿatch time(1,1)M		PRAGM t1;( SI NERT Iime(1,1)M		PRAGM t1;( SIaaaaaaaaa7298(|8|Q3  rtrim(1"1)É.ÉÉ Q=====e time(',11)M t1;
+  INSERT INTO t1 SELECT a/0, group_concat(2,1)FROM t1 ORDER BY 'Æ/01136y'; 
+   
+--mat t1;  FROðDððððððððððððððÿatch aaaaaaaaaa72aÿL|8|Q3  rtr—’×ÎÓÎÖ:.ÉÉ Q=====e time(',11)M t1;
+  INSERT INTO t1 SELECT a/0, group_concat(1,1)FROM t1 ORDER BY 'ÆÇ01136y'; 
+   
+--matlh (t1-SE  m-sleQeDESC LIMI T Ó4;
+  --mÿÿÿïÿÿÿÿÿÿÿÿÿÿ€e(1,1)M		PRAGM t0;( SI NEUT IaaaaaÿL;
+--lse  Qe se  Q=====e time(0,11)M t1;
+  INSERT INTO t1 SELECT a/0, group_concat(0,1)FROM t1 ORDER BY 'ÆÇ01136y'; 
+   
+--matlh (t4/SE  -msleQeDESC LIMI T Ó4;
+  --mÿÿÿïÿÿÿatch time(1,1)M		PRAGM t1;( SI NERT Iime(1,1)M		PRAGM t1;( SIaaaaaaaaa7298(|8|Q3  rtrim(1"1)É.ÉÉ Q=====e time(',11)M t1;
+  INSERT INTO t1 SELECT a/0, group_concat(2,1)FROM t1 ORDER BY 'Æ/01136y'; 
+   
+--matlh (t1-SE  -msleQeDESCññññññ€ññññññññññññññññ avg(ñ)ññ0ññññññññññññññññññ€ñññññññññññññññññññññññññññññññññ t1;  FROETE FROM t1 WHERE b='x3?y'  OR b<'x2Åy''x3?y' OR b<'x08y';
+ DELETE FROM t1 WHERE b='x3?y'  OR b<'x2Åy''x3?y' OR b<'x08y';
+ DELETE FROM t1 ñññññññññññññññññ*W juinññññññññññññññññññññññl)IN1;
+  INSERT INTO t1 SELECT+a/0, group_

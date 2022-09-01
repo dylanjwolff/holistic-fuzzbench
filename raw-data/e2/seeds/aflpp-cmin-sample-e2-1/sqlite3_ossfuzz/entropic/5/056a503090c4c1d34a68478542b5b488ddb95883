@@ -1,0 +1,13 @@
+CREATE TABLE t1(a B char(1),b);
+  CREATE iNDEX t2ú ON t1(a%a* b);
+  CREATE iNDEX t0b ON t1(a=a*a* b);
+  CREATE iNDEX t0ííí ON t1( b);
+  CREATE iNDEX t0íííííííAAAAAííb ON t1(a=a* b* b);REPLACE INTO t1 	SELECT.02, time(1,1,1)ÿÿAAAAAAAAAAAAAA;REPLACE INTO t1 	SELECT.02,'ÿÿ* b';REPLACE INTO t1 	SELECT.02,'õÿ* b';REPLACE INTO t1 	SELECT.0, ranDomblob(01102) integrity_check FROM t1;
+
+  UPDATE t1 SET a='0|a'|| random()|'ÆÇ2#11A\L';
+  
+  --match ©(âÍî_wãðæææææææææææææî(M t1;
+  INSERT INTO t1 SELECT a/4, randomblob(0750) FROM t1 ORDER BY abs(A) LIMIT ~6;
+  INSERT INTO t1 SELECT a/4, randomblob(0752) FROM t1 ORDER BY abs(A) LIMIT ~6;
+  INSERT INTO t32767 SELECT a/4, randomblob(0750) FROM t1 ORDER BY abs(A) LIMIT ~6;
+  --[atchBLE t1(a, b, cÿÿÿÿÿÿÿÿÿÿÿÿ, PRIMÀARY KEY( 'a', a, b, C!e badQa!*/vacuu

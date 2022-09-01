@@ -1,0 +1,8 @@
+CREATE TABLE t1(a, b);/*ʲ Test]e. */
+  ANALYZE;
+  DELETE FROM sqlite_stat1;
+  INSERT INTO sqlite_stat1 VALUES('t1','t1abc',' e''/''idx IS NOT :E
+   OR idx IS NOT :NELE
+WITHOUT uOWIDINSERT INTO vacuum_;
+   CREAY1 1');
+  ANALYZE sqlite_stat1;  INSERT IN

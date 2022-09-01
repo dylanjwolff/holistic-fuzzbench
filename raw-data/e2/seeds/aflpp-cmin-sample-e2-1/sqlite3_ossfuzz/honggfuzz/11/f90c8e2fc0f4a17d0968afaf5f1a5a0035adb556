@@ -1,0 +1,23 @@
+CREATE TABLE t1(aIEUIEUN¶QUÑÃÐÑQUÑÑÑÑÑEPOINT
+¬2EEEEEEEL,EE,U,ÿU,ÿÿQUE,OÿÿUÿÿÿÿ$þÿ÷ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ blobÿÿÿÀÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿggggggggggggggggggggggggggggggggggggggggggggggggggggggÿÿÿÿggggggggggggggggggggggggggggggggggggggggggggggggggEEEEEEL,EEDEEEL,EEDEEEEEEEEEEEL,EEEEEEEEE c,L,EEEEEEEEL,EEEEEEEEEÑ1,EEEEEE1EÑEE,ÑÑ½ÑÑÑÑ1,ÑÑÑÑÑÑÑÑÑÑÑÑÐÑÑÑ3,ÑÑ,ÑÑÑÑ,ÑÑÑÑÑÑÑÑüüüüäüüÑÑÑÑÑ,ÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑ,ÑÑÑÑÑÑÑÑÑÑüüý,ÍüüüÑÒUNIQUEEEEÑÑÑ,ÑÑÑÑÑÑÑEEEEEEEEEEEEEEEºEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEÑÑÑ,ÑÑÑÑÑÑÑEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEÑÑÑ,ÑÑÑÑÑÑÑEEEEEEEEEELEEEEEOUP BY ªªªªªªªªªªªªªªªªªªªªªªªªªªªªªUªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªÑÑÑÑÑÑÑEÑÑÑÑÑÑÑÑÑÑÑüüÑ,ÑÑÑÑÑÑüÑ,ÑÑÑÑÑÑEEEEEEEEEELEEEEEEEEEEüüüüü,üó ¢üÑÑUNIQUEEEEEE integrity_check10NSERTQUE,UNNw,x,yüüüüüÑÑÑÑÑ,ÑÑÑÑÑÑÑÑÑÑüüü ddata_stf½9—düüüüÑÑÑÑÑ, a INTEGER PRIMARY KEY ON CONFLICt REPLACE, b bVALüR UNIJ XEL,EEEEEEEEEEE,Ñ1EY);
+ ;;PRAGMA  defer_foreign_keys=0;PRAGMA  defedefer_forereBEGIN;SAVEPOINT TEE;
+    CREATE TABLE t0(a  PRAGAE RY REFERENCES t1 DEFERRABLE , b);
+  --sleATE t1 SET b='x'||a||'y';
+  SELECT sum(length(b)) FROM t1;
+  --0x'|eepTR ”bbbbbbbbbbbbbbbbbbbbbbbWHEREbbbbbbbE t0 SET b='x'||a||'y';
+  SELECT sum(length(b)) FROM t1;
+  --0x'|eepTRIGGElCOLLATE)) FSOM ORDER øøøøøøøøøIMIT a/~0, randombl  --[Ÿc.A0h.00 2
+  --s$&pleeÿ
+  UPDATE t1 SET a='0'||a| random()|a| random()|'ÆÇ01137y'; 
+   
+--matlh  EEEEEEEEEEøøøøøøøøøIMRDER BY abs(2) LIUPDATE t1 SET a='0'||a| random()|a| random()|'ÆÇ011%7y'; 
+   
+--matlh  EEEEEEEEEEøøøøøøøøøIMRDER BY abs(2) LIMIT 6:03 --[Ÿch 2A00.0
+  --s$&pleeÿcheck20NSERTQUE,UNNw,x,yüüüüüÑÑÑÑÑ,ÑÑÑÑÑÑÑÑÑÑüüü ddata_stf½9—düüüüÑÑÑÑÑ, a INTEGER PRIMARY KEY ON COCURRENT_TIMECE, b bVALüR UNIJ XXY KEY FEREnCES t1 DEFERRABLE) WI-[Ÿch 2A00.0
+  --s$&pleeÿ
+  UPDATE t1 SET a='0'||a| random()|a| random()|'ÆÇ01137y'; 
+   
+--matlATE)) FSOM ORDER øø  EEEEEEEEEEøøøøøøøøøm(length(b)) FROM t115884103 "a" 2
+  UPDATE t1 SET b='x'||a||'y';
+  SELECT sum(length(b)) FROM t1;
+  --0x'|eepTRIGGElCOLDER BY abs(2) LIMIT 6:03 -

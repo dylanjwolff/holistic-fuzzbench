@@ -1,0 +1,2 @@
+	PRAGMA reverse_unordered_selects (1); 	;
+  CREATE TABLE t1(a PRIMARY KEY REFERENCES t1÷÷÷÷÷÷n_key_listÑÑ¿’ÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑ,ÑÑÑÑÑÑÑÑÑÑÑÑÑ±ÑÑÑÑÑñÙ`a`Ñ÷÷L÷÷÷÷÷÷÷÷÷÷÷÷÷÷ soft_heaªIÿOUnYQUE,UOUnItabl›¬Iÿ,UÿEIÿÿNIÿÿ0Þ000UnIQUE,UÿEIÿÿÞ000UnIQUE,ATEUQ,Nÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ, b, c, d, PRIMARY KEY(  b, c)) WITHOUT ROWID;--<ÑÑÑÐÑÑÑ3ÔÑÑ,ÑÑÑÑ,ÑÑÑÑÑÑÑÑüüüüäüüÑÑÑÑÑ,ÑÑÑÑÑÑÑÑÑ,ÑUÑ

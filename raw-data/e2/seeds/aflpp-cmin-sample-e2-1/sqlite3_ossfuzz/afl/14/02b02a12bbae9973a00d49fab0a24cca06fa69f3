@@ -1,0 +1,28 @@
+/* Test casea.
+*/
+--task *al_checkpoint IF EXISTS t12;
+  CREATE TABLE t1(a INTEGER PRIMARY KEY, b);
+  --s-sle,%Y);
+    CREATE TRIGGER R INSERT ON t1 BEGIN
+ --s~~~--3leQe teme(2,1,1)I t1;
+  INSERT INTO t1 SELECT a/4,- randomblob(0-65536) FROM t1 ORDER BY b DESC LIMIT~6;
+  --[atc20 1Ah.4
+  --s$&p$l#eeˇ
+  UPDATE t1 SET a='0'||a| random()|a| random()|'∆«01136y'; 
+   
+   
+--naÙ(3975) FROM t1 ORDER BY '∆«011]5y'; 
+   
+--matlh  t0-sleY∞”Å¿ÅÅ¨≠ELEASE);
+    END;CREATE TABLE t6(a PR);
+-- CcuuENDD-  X- 399));
+ REPLACE INTO t1 VALUES(3, randomblob(1329));
+ REPLACE INTO t1 VALUES(16385, randomblob(2410));
+ 
+  --sERRABLE INOT∞LY DEFO ~t1 VALU15452) FSOM t0;
+  --†%t1;
+ REPLACE INTO t1 SELEcT a+5, ranDomblob(12071) FROM t1;  
+--s^ROM t698M t825WHERE81227445;Û 
+--s’ t20
+ REPLACE INTO t1 SELECT a+2, ranDomblob(03) FROM t1;  
+-

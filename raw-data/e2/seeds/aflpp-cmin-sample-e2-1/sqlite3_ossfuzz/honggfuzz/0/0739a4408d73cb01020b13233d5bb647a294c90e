@@ -1,0 +1,1 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;SELECT(  SELECT 2 FROM(  SELECT 3 FROM(SELECT 0 FROM(SELECT@11))ORDER BY 1)G0)GROUP BY 1,1,1

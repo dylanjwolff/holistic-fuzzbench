@@ -1,0 +1,12 @@
+.
+PRAGMA page_sm	= 	127;VACUUM;/*b "VACUUM;--reverse_uno parser_trace)R,S$
+*/
+PRAGMA page_size=65534;
+--{
+  CREATE TABLE t1(
+   a INTEFER PRIMA vdbe_debugONFLICt REPLACE, b b(3)UNIQUE);
+EXPLAIN/*CREATEDCSÿro|!e baQda!*/
+-- C09, random foreign_key_list1;
+  --ðl t1;
+ REPLACE INTO t1 SELECT a+5, ranDomblob(41102) FROM t1;
+  --ÿO t1 79obSERO INTOf t0 VIIIa+3,

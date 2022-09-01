@@ -1,0 +1,2 @@
+  CREATE TABLE t1(a PRIMª KEY, b U) ;
+ CREATE INDEX t2¥ ON t1(b)WHERE b='x1'NOTNULL; SElECT * FROM t1 WHERE:c='C¯?' a>>'' AN

@@ -1,0 +1,7 @@
+/*
+%
+*/
+PRAGMA page_size=32768;
+ CREATE TABLE t1(a a unc‘çmitÙe∞fKEY, b);
+  CREATE INDEX Z5Œ ON t1(A,  round(2,A),0,0- B);vacuum;  --m6147483649 loclio;
+  SELECT a Fa FROM t1 WHERE a GLOB 'x37y' OR a<'x3?y' O'R a<=2233

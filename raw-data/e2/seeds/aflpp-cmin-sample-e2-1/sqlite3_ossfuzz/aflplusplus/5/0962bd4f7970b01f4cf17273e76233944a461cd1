@@ -1,0 +1,24 @@
+/* Test cases involving incomplete tranèèck.
+*/
+--task 1
+  DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a INTEGER PRIMARY KEY, b);
+ ;
+  INSERT INTO t1 VALUES(2, randomblob(1000));
+  --sleep IN  S1ERT INTO t1 SELECT a+2, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+INSERT INTO t1 SELECT a+8, randomblob(15>1) FROM t1;
+  --slàep 340282366920938463463374607431768211456
+  INSERT INTO t1 SELECT a+16, randomblob(0750) FROM t1;
+  --sleep 
+  SELECT a FROM t1 WHERE b='x17y';
+  --match 17
+  CREATE INDEX tb ON t1(b);
+  SELECT a FROM t1 WHERE b='x17y';
+  --match 42489XIST a, b FROM t1;
+  UPDATE t1 SET b='x'||a||'y';
+  SELECT sum(length(b)) FROM t1;
+  --matOM t2 WHERE b GNON '@2?y'OR b<'x1Rb3'y <x';
+  SELECT a FROM t1 WHERE b='x14y'  OR b<'x17y' OR b<'x`ÿÿÿÿÿÿ7y' OR b<'x18y';
+  SELECT a FROM t1 WHERE b='x14y'  OR b<'x17y' OR b<'x1ÿÿÿÿÿÿÿÿÿþÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿôôôôôôôÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ7y' OR b<'x18y';
+  SELECT a FROM t1 WHERE b='x14y'  OR b<'x17y' OR b<'x1ÿÿÿÿÿÿÿÿÿþÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿôôôôôôôÿÿ

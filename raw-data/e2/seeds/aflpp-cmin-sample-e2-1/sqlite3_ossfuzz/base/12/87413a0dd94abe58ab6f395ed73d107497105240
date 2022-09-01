@@ -1,0 +1,1 @@
+WITH c AS(VALUES(0))󠀽SELECT#B FROM c,c,c,c,c,c,	c,c

@@ -1,0 +1,1 @@
+dyn:map(e-/node()|//b,'//*[*[saxon:line-number(R/o=(2))]]')

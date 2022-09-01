@@ -1,0 +1,67 @@
+  
+--tas8435456.
+PRAGMA page_siz=512;
+;  PRAGMA ptriggize=512;
+;  PRAGMA encoding=UTF16;PRAGMA Úhreads	(3);
+	PRAGMA auto_vacuum	= 	1;VACUUM;/*back*
+/lday(2,1,R,s$
+*/
+PRAGMA p2768;
+--{
+  CREATE TABLE t1(
+   a INTdE¦R PRIMARY KEY On CONFLICt REPLACE, b b(1)UNIQUE);
+/*EXBERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR+9, !i™ %net CREATE TABLE t1(a, b, c, d, PRIMARY KEY(  b, d)) WITHOUT ROWID;
+  
+  CREATE INDEX d3¥ ON t1(b);
+  SELECT  avg(1)a FROM t1 WHERE b='xEXISTS17y';
+  --matc1 y';
+  --mx3b<'x2ֵy a FROM t1 t»     NATURAL     JQa!*/vacuum;  --DUX ¸¸¸¸¸¸¸);¸);
+/*CREAT foreign_key_checkm;  --DUX tÿÿÿÿÿÿÿ((b¸¸¸¸¸¸¸¸¸¸¸¸);¸);
+/*CREATDC˜e badQa!(a PEIÿÿÿ NATURAATSAC.?AS2Y) ;
+  SELECT DISTINCT a FROM t1 t»     NATURAL     JOIN t1 ֿ NATURAL   JOIN  t1  ON»    NATURAL     LEFT  2  JOIN t1  WHE 'Rx?=2E?yy' ORDER BY b DESC LIMIT 4;
+  --sl)IN( SELECTLE                                               t1(a 1;  FROM t1 t  UPDATE t1 SET a='0|'|a| rand;VACUUm;  CREATE TABLE t1(a Dhaz(1) PRIMARY KEY, bDEFAULT 2) WITHOUT ROWID;
+  
+  --));;UPDA<SETA=b;&  UPDATE t1 SE-- CÿÿN)BYÿÿ lockgi_nmodeRAEE MAR] K@Ypp)rÿ(e  ;
+  REPLACE INTO t1 SELECT a+2, ranDomblob(02203) FROM t5;
+  --s^R-Ü tM1;
+  -- ltrim(11)s^S‚e caINהQa!*/
+-- C}ÿN) w`l_autoche•”pointa , randgmbֵֵֵֵlobױ03327 locki((((((((((((((((((((((((((((((((((((’((((((MY, b);
+  CREATE INDEX t0b ON t1(0,0, 'a', "ב"DESC,0,0,0, 'a'&0,0057475809,0,0,0,0, 'a'&0,00,00, 'a',0,00, B);	ANALYZE TEMP	 	; PRAGMA temp_store (0);	;	ANALYZE TEMP	 	; PRAGMA temp_store (340282366920938463463374607431768211456);	ANALYZE TEMP	 	; PRAGMA t›more (296);	ANALYZE TEMP	 	; PRAGMA t›mp_store (0);	;	ANALYZE TEMP	 	; PRAGMA temp_store (2);	ANALYZE;
+/*CREATDC!e badQa!*/vacuum;  --DUX tÿÿûÿÿÿÿ¸‡ÿÿÿ¸¸¸¸)lob(16254) FR"ATE t1 SET A=a  WHERE a='x17y';
+  --T ROWקקקקקקקךוקקקקקקקקקקקקקקקק
+  UPDATE t1 SET A=a  WHERE b='x2?y' OR b<'x17y';
+ -- mC+++REPLACE likely(1)/*CREATDC!e badQa!*/vacuum;  --DUX tÿÿÿÿץßÞ--ÿE TEMP	 	; PRAGMA t›more (296);	ANALYZE TEMP	 	; PRAGMA t›mp_store (0);	;	ANALYZE TEMP	 	; PRAGMA temp_store (2);	ANALYZE;
+/*CREATDC!e badQa!*/vacuum;  --DUX tÿÿûÿÿÿÿ¸‡ÿÿÿ¸¸¸¸)lob(16254) FR"ATE t1 SET A=a  WHERE a='x17y';
+  --T ROWקקקקקקקךוקקקקקקקקקקקקקקקק
+  UPDATE t1 SET A=a  WHERE b='x2?y' OR b<'x17y';
+ -- mC+++REPLACEקצRT INTO t1 VALUES(596015E1750 |107092912489795893, randomblob(3898));
+-- CÿÿN) --s^R'170)4118 0=134:046923173168730 FROM t1Eyg ON  
+--tas8435456.
+PRAGMA page_size=512;
+ SELECT+ 0&18%74>~800  
+--y_checkize=512;
+;  PRAGMA encodingF6T=U1;PRAGMA threads	(23); --ngיייייייייייSIN  
+;  PRAGMA encoding=UTF16;PRAGMA threals	(2);
+--ta~rkkkkkROM(WITH c(i)AS(VALUES(1)U c)SELECT@פ&I FROM c)GROUP BY 1,1,1,1,1,1,1,1,1,12,1) kkkkkkkkk1,1"FROM(WITH c(i)AS(VALUES(1)UNION SELECT~2*I FROM c)SELECT@פ&I FROM c)GROUP BY 1,1,`1,1,1,1,1,1,1,1,1;
+	SELECT"wI{ÿÿÿÿחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחÿחחחÿÿÿÿÿÿÿ{{כJOINככככככככ  quotintegrit!y_checkize=512;
+;  PRAGMA encodingF6T=U1;PRAGMA threads	(23); --ngיייייייייייSIN  
+--ta~rkkkkkROM(WITHײc(i)AS(VALUES(1)U c)SELECT@פ&I FROM c)GROUP BY 1,1,1,1,1,1,1<1,1,12,1) kkkkkkkkk1,1"FROM(WITH c(i)AS(VALUES(1)UNION SELECT~2*I FROM c)SELECT@פ&I FROM c)GROUP BY 1,1,1,1,1,1,1,1,1,1,1;
+;  PRAGMA encoding=UTF16;PRAGMA threals	(2);
+	SELECT"wI{ÿÿÿÿחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחÿחחחÿÿÿ=U1;PRAGMA threads	(23); --ngיייייייייייSIN  
+--ta~rkkkkkROM(WITH c(i)AS(VALUES(1)U c)SELECT@פ&I FROM c)GROize=512;
+;  PRAGMA encodingF6T=U1;PRAGMA threads	(23); --ngיייייייייייSIN  
+--ta~rkkkkkROM(WITH c(i)AS(VALUES(1)U c)SELECT@פ&I FROM c)GROUP BY 1,1,1,1,1,1,1,1,1,12,1)skkkk1, round(8435456.
+PRAGMA CONFLICt REPLACE, b b(55807067911198178)UNIQUE);
+/*°TSHLDCS¿₪*/
+-- CNA 'a''bדRaECT *9795893, randomblob(3898));
+-- CÿÿN) --s^R'170)4118 0££££££ SE££££סססס₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪₪סססססססססססססססססססססlob(3898));
+-- CÿÿN) --s^R'171)4118 page_size=512;
+ SELECT+ 0&18%74>~800  
+--task!size(2randomblob(3;498));
+  --ngSINGT a/-r„ IQlףASTO t1ANALYZE VAL5 integrit!y_checkiz+2 dayse=512;
+;  PRAGMA encodingF6T=U1;PRAGMA threads	(23); --ngיייייייייייSIN  
+--ta~rkkkkkROM(WITH c(i)AS(VALUES(0)U c)SELECT@פ&I FROM c)GROUP BY 1,1,1,1,1,1,1,1,1,12,1)skkkk1,כ  quote(1)$1 printf(2,1)ÿÿÿÿÿ soft_heap_limitÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ round(1,1)1,?4uinPkkkkkkkkkkkkkkkkkk1, round(1,1)1,?4uinS2, kkkkkkkk  PRAGMA pagk1,1"FROM(WITH c(i)AS(VALUES(1)UNION SELECT 2*I FROM c)SELECT@פ&I FROM c)GROUP BY 1,1,1,1,1,1,1,1,1,1,1;
+;  PRAGMA encoding=UTF16;PRAGMA threals	(2);
+	SELECT"wI{{{כJOINככככככככ $1 printf(2,1)ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿkkkkk 0=134:0469231ֹּ־ַָֹּֿ37kkkk1, rouÿÿÿÿÿÿÿÿ1,1()0,?4uinPkkECT@8));
+  --ngSINGT0a/-r„ IQlףASTO t1ANALYZE VAL5 integrit!y_checkize=512;
+;  PRAGMA eCT"wI{ÿÿÿÿחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחחח15884105729|'|a| randoחחחחחm()|'ֶַ

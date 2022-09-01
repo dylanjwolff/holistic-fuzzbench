@@ -1,0 +1,2 @@
+PRAGMA encoding=utf16be;ANALYZE;VACUUM;PRAGMA quicÿÿÿÿÿÿÿÿÿ;	SELECT  hex( hex( hex("")))*""+";
+;ÿÿ"*""+""

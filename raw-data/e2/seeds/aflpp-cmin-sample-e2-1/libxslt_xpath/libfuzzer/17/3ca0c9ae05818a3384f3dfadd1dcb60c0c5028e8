@@ -1,0 +1,1 @@
+//preceding::*[node()//@*[document(str:split('% #xmlns(zs=%05=)'))]]

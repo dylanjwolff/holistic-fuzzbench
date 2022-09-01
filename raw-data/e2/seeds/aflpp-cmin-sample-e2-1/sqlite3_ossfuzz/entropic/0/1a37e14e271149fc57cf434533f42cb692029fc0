@@ -1,0 +1,35 @@
+CREATE TABLE t1(aIEUIEUN¶QUÑÃÐÑQUÑÑÑÑÑEPOINT
+¬2EEEEEEEL,EE,U,ÿU,ÿÿQUE,OÿÿUÿÿÿÿ$þÿ÷ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ blobÿÿÿÀÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿggggggggggggggggggggggggggggggggggggggggggggggggggggggÿÿÿÿggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggEEEEEEL,EEDEEEL,EEDEEEEEEEEEEEL,EEEEEEEEE c,L,EEEEEEEEL,EEEEEEEEEÑ1,EEEEEE1EÑEE,ÑÑ½ÑÑÑÑ1,ÑÑÑÑÑÑÑÑÑÑÑÑÐÑÑÑ3,ÑÑ,ÑÑÑÑ,ÑÑÑÑÑÑÑÑüüüüäüüÑÑÑÑÑ,ÑÑÑÑÑÑÑÑüü,üó ¢üÑÑUNIQUEEEEEE integrity_check10NSERTQUE,UNNw,x,yüüüüüÑÑÑÑÑ,ÑÑÑÑÑÑÑÑÑÑüüü ddata_stf½9—düüüüÑÑÑÑÑ, a INTEGER PRIMARY KEY ON CONFLICt REPLACE, b bVALüR UNIJ XEL,EEEEEEEEEEE,Ñ1EY);
+ ;;PRAGMA  defer_foreign_keys=5;PRAGMA  defedefer_forereBEGIN;SAVEPOINT TEE;
+    CREATE TABLE t0(a  PRAGAE RY REFERENCES t1 DEFERRABLE ,b);
+   --sleATE t1 SET b='x'||a||'y';
+  SELECT sum(length(b)) FROM t1;
+  --0x'|eepTR ”bbbbbbbbbbbbbbbbbbbbbbbWHEREbbbbbbbE t0 SET b='x'||a||'y';
+  SELECT sum(length(b)) FROM t1;
+  --0x'|eepTRIGGElCOLLATE)) FSOM ORDER øøøøøøøøøIMIT a/~0, randombl  --[Ÿc.A0h.00 2
+  --s$&pleeÿ
+  UPDATE t1 SET a='0'||a| random()|a| random()|'ÆÇ01137y'; 
+   
+--matlh  EEEEEEEEEEøøøøøøøøøIMRDER BY abs(2) LIUPDATE t1 SET a='0'||a| random()|a| random()|'ÆÇ011%7y'; 
+   
+--matlh  EEEEEEEEEEøøøøøøøøøIMRDER BY abs(2) LIMIT 6:03 --[Ÿch 2A00.0
+  --s$&pleeÿcheck20NSERTQUE,UNNw,x,yüüüüüÑÑÑÑÑ,ÑÑÑÑÑÑÑÑÑÑüüü ddata_stf½9—düüüüÑÑÑÑÑ, a INTEGER PRIMARY KEY ON COCURRENT_TIMECE, b bVALüR UNIJ XXY KEYATE t1 SET A=b
+ ; UPDATE t1 SET A=b;
+ UPDATE t1 SET A=b;
+   
+--matlh INSERT INTO t1 SELECT a+16, randobbbbbbITHOUT ROW÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷ELECT raise(ignore);
+    END;
+  UPDATE t1 SET a='0'||a| random()+'ÆÇ01135y'; 
+   
+-- t1 SELECT a+16, randomblob(3001) FROM t1;
+  --ÿ^ROM t1;
+  --s^ndombl  --[Ÿc.-A0h.00 2
+  --s$&pleeÿ
+  UPDATE t1 SET a='0'||a| random()|a| random()|'ÆÇ01137y'; 
+   
+--matlh  EEEEEEEEEEøøøøøøøøøIMIT a/~0, randombROM ORDER!!!!!!!!!!!!!!!!!!!!!!!!ROWID;
+--Katc73;b- CREATE TABLE t1(a KEY(FULLc																				, d) REFERENCES t FOREIGN KEY(c, d) REFERENCMS t FOREIGN KEY(c,ßd) REF+2 daysERENCES t1÷÷(3, randomblob(1200));
+ REPLACE INTO t1 VALUES(3, randomblob(1200));
+ REPLACE INTO t0 SELECT a/4, randomblob(0992) FROM t1m()|'ÆÇ01137y'; 
+   
+--matlATE)) 

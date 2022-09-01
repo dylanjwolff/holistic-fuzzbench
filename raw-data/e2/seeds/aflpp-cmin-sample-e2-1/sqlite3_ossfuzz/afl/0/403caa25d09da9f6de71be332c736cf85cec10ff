@@ -1,0 +1,9 @@
+ CREATE TABLE t0(a,b);
+    CREATE INDEX t ON t0(a);
+    PRAgMA writable_schema=ON;
+    UPDATE sqlite_master SET REATsql='CREATE TABLE abLE#b(`eeeeeeeeeeeeeeeeeeeeeeežeeeeeÊ²eeeeeeeeeeeeeeeeeeeeeeceeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeHa UNIQUE';
+    BEGIN;
+    CREATE TABLE t1(x);
+    ROLLBACK;
+    ;
+    PRAGMA writable_”””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””””

@@ -1,0 +1,9 @@
+SELECT+++$Ô$$, count(0)OVER()
+
+Ô$$RDÔ$$, count(0)OVER()
+
+ORDÔ$$, count(1)OVER()
+
+ORDER BY+++$$$$, count(0)OVER()
+
+ORDER BY 2,1,1

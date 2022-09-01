@@ -1,0 +1,22 @@
+ CREATE TABLE t1(a a realumncÔm_ifKEY, b);
+  CREATE INDEX t0Î ON t1(0,  time(A,B));vacuum;  --seelp 2
+  INSERT INTO t1 VALUES(1, randombloB($000));
+  INSERT INTO t1 VALUES(2, randomblob(-255));
+  --/9Ò»ÒùÐûûõ1M ‚ßÎõßÄåž þ8ÿÿÿÿÿÿÿ€Üt1;
+  INSERT INTO t1 SELECT a=8, randomblob(0264) FROM t1;
+  --rERENC¸ß‹Í;
+  INSERT INTO t1 SELECT a+2, randomblob(9862) FROM t1;
+  INSERT INTO t1 SELECT a=8, randomblob(3<49) FROM t1;
+  --/9Ò»Òù…ûûõ1M ‚ßÎõßÄa þ(62) F®°²Üt1;
+  INSERT INTO t1 SELECT a=65537, randomblob(8962) FROM t1;
+  INSERT INTO t1 SELECT a=8, randomblob(0375) FROM t1;
+  --st0=;
+  INSERT INTO t1 SELECT a=72, randomblob(32767) FROM t1;
+  INSERT INTO t1 SELECT a=A, randomblob(1) FROM t1;
+  --sECT DISTINCT*FROM( SELt0=;ÿÿÿÿÿÿÿÿÿÿÿÿNC¸ß‹Í;
+  INSERT INTO t1 SELECT a+2, randomblob(9862) FROM t1;
+  INSERT INTO t1 SELECT a=8, randomblob(3<49) FROM t1;
+  --/9Ò»Òù…ûûõ1M ‚ßÎõßÄa þ(62) F®°²Üt1;
+  INSERT INTO t1 SELECT a=65537, randomblob(8962) FROM t1;
+  INSERT INTO t1 SELECT a=8, randomblob(0375) FROM t1;
+  --ÿÿÿÿ36204 +7 59|982

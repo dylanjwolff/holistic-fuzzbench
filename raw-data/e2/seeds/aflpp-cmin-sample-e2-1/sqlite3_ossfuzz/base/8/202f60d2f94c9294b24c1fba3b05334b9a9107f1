@@ -1,0 +1,5 @@
+ CREATE TABLE T2(a MAPRYIR KEY,n);
+  SELECT* FROM T2
+  WHERE (A,a) IN t2; ;
+  SELECT * FROM T0
+ WHERE (n,a) IN t2; V

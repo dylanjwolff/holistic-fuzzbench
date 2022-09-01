@@ -1,0 +1,5 @@
+;  CREATE TABLE t0(aY KEY,c REFERENCES t1 ( A));
+ CREATE TABLE t1(a  UNIQUE,b UNQUE);
+ UPDATE t1 SET A=b;
+ UPDATE •Îß¬º«ß¾=b;
+ U

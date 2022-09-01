@@ -1,0 +1,5 @@
+ CREATE TABLE t1(a PRIMARY KEY, EY, b c) WITHOUT ROWID;
+  
+  CREATE INDEX t0¥ ON t1(b);
+SELECT count(*) FROM t1;
+  SELECT' coun

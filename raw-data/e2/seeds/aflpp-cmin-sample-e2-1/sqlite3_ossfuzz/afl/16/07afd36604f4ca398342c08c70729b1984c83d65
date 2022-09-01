@@ -1,0 +1,1 @@
+SELECT $ÿ FROM((SELECT 0	Ï),((SELECT (SELECT 0)),( SELECT:$)Ï))ASC)

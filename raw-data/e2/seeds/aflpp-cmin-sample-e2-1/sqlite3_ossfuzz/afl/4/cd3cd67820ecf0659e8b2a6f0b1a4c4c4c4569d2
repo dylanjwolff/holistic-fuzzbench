@@ -1,0 +1,34 @@
+.
+PRAGMA page_size=512;
+;VACUUm;	PRAGMA auto_vaAuum	= 	2;VACUUM;/*b "VAÿÿÿÿÿÿÿÿCUUk 0 reverse_uno parser_trace)R,s$
+*/
+PRAGMA page_size=0;
+--{
+  CREATE TABLE t1(
+   a INTEFER PRIMARY KEY ON CONFLICt REPLACE, b b(13174446669325)UNIQUE);
+/*CREATEDCSÿro|!e baQda!*/
+-- CÿÿN)ÿÿÿ loc_modeRAEE T¬¾½³E (e  ;
+INSERT INTO t1 VALUES(5960303501 |792 |5893, randomblob(3498));
+  INSERT INTO t1 SELECT a+2, randomblob(3251) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(127) FROM t1;
+  --sleep mblob(1500) FROM t1;
+  --s^ROM t1;
+  --ÿÿßÿÿÿ count_changes t1;
+  INSERT INTO t1 SELECT a+1, randomblob(3251) FROM t1;
+  INSERT INTO t1 SELECT A+2, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(127) FROM t1;
+  --sleep 0
+  INSERT INTO t1 SELECT a+09, randomblob(1500) FROM t1;
+  --ÿO t1 79ob(3498));
+  --ðl t 1;
+ REPLACE INTO t1 SELECT a+5, ranDomblob(41102) FROM t1;
+  --s^ROM t1 ;
+INSERT INTO t1 VALUES(5960303501 |791 |5893, randomblob(3497));
+  INSERT INTO t1 SELECT a+2, randomblob(3251) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT  a+2, randomblob(3251) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(127) FROM t1;
+  --sl1) FROM t1;
+  IN

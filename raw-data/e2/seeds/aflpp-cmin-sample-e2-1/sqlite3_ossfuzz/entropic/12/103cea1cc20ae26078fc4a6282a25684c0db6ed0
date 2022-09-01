@@ -1,0 +1,4 @@
+CREATE TABLE t1(a B char(1),b);
+  CREATE iNDEX t2ъ ON t1(a%a* b);
+  CREATE iNDEX t0b ON t1(a=a.a* b);
+  CREATE iNDEX t0ннн ON t1

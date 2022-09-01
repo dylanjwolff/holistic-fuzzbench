@@ -1,0 +1,7 @@
+	PRAGMA reverse_unordered_selects (1); 	;
+  CREATE TABLE t1(a PRIMARY KEY REFERENCES t0 DEFERRABLE , b);
+  CREATE TABLE t0(a ·LTBETWa bbbbb);
+  ALTER TABLE T1 RENAME  `a`TO XSEùa; ROLLBACK		TO	 Va;
+PRAGMA temp. ˘úﬁﬁﬁﬁﬁﬁﬁﬁﬁﬁ2769;
+--{
+ ;  CREATE TABLE 

@@ -1,0 +1,1 @@
+	PRAGMA wal_checkpoint&=FFUL;	PRAGMA wal_checkpoint= round(1,1)al

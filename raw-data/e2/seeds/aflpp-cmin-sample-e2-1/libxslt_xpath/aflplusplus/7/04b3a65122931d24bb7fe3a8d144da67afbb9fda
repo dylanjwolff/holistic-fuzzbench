@@ -1,0 +1,1 @@
+*[//a:*[dyn:map(/|//b,'str:decode-uri(g*g,*)')]]

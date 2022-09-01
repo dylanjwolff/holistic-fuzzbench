@@ -1,0 +1,1 @@
+a//b[/a[dyn:map(//a:*,'t(text()[date:day-in-month(u,d)],')]]

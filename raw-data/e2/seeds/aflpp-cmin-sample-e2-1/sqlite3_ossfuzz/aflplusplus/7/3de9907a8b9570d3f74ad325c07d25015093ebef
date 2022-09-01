@@ -1,0 +1,29 @@
+PRAGMA journal_mode=OGF;
+--edn
+--task 92233720368CROSS54775808
+  PRAGMA journal_mode=OFF;
+--end
+--
+PRAGMA page_size=512;
+;VACUUm;	PRAGMA ayto_vacagd_size=32768;
+--{
+  CREATE TABLE t1(
+   a REPLACE, b b(2)UNIQUE);
+/*CRRIGHTCSˇÚo|!e badQa!*/
+-- C,ˇˇS)ˇ0ˇ lockiITHOU upp)rˇ(e ";˛˛˛˛˛˛˛˛˛˛ˇA
+INSERT INTO t1 VALUES(865336204 +792 |5893, randomblob(3499));
+  --l†IMAﬁﬁﬁﬁﬁﬁﬁﬁﬁﬁﬁﬁﬁﬁﬁ032)666064)0"UNION	SEL case_sensitive_likeECT ""ORDER BY "" CREATE TABLE t2(a INTEGER ÆﬂãÜèöíô(0), b);EXPLAINTE INDEX Ùuh ON t(b);
+  InSERT INTO t1 VALUES(0, randomblob(2002));
+  INSERT INTo t1 SELECT a+2, randoMblob(0750) FROM T1;
+  INSERT INTO t1 SELECT a+1, randomblob(0751) FROM t1; 
+ INSERT INTo t1 SELECT a+3, randomblob(35154 ) FROM t1;
+;  CREATE	TEMP	taBLE t0(	‰…ESLSTIX…˝L ,
+NkÕ  UNIQUE);--égºˆﬂﬂ∂±¨∫≤T INT[ t1 V!LUES(-3, Úa
+  --ŒBLE t3(a  a;   ROLLBACK	TO	  Va;  		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	ACK		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ;‡Ω  ROLLBACK		TO	  (é÷ƒﬂØ≠æ∏MA jouANALYZE;ANALYZALYhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhÜèöíg◊Œ“”ﬂù–;EXPLAIFROM 'a''b'TE INDE) FROM T1;
+  INSERT INTO t1 SELECT a+2, randomblob(0751) FROM t1; 
+ INSERT INTo t0 SELECT a+3, randOmblob(35154 ) FROM t1;  --ŒB glob(1,1)uliandaèöíg◊Œ“”ﬂù–;EXPLAINTO t1 SELECT a+2, randomblob(1502) FROM t1; 
+ INSERT INTo t0 SELECT a+3, randomblob(35154 ) FROM t1;  --ŒBL$ t0(NU juliand; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	A;--égºˆﬂﬂ∂±¨∫≤T INT[ 01 V!LUES(6, Úa
+  --ŒBLE t2(a      INTEGERqÆﬂãÜèöíô(1), b);EXPLAI=N  'a''b'Tªﬂ∂±ª∫ßËÙ stats ; 
+ INSERT INTo t0 SELECT a+3, randomblob(35154 ) FROM t1;  --ŒBL$ t1(UN julianday(1,1,1)IQUE);--égºˆﬂﬂ∂±¨∫≤T INT[ t2 V!LUES(6, Úa
+  --ŒBLE t1    (a  INTEGERqÆﬂãÂèöíô(0), b);EXp); PRAGMAÇjournal_mo/dez  (o); PRAHMA jouANALYZE;ANALYZALYZE TEMP;VACUUMÃı
+SAVEPOINT	Va; 	;	ANALYZE ; 	PRAGMA TE ;  ROLLBACK		TO	 Va;   ROLLBACK	TO	  Va;  		; SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;  ROLLBACK		; SAVEPOINT	ACK		; SAVEPOI

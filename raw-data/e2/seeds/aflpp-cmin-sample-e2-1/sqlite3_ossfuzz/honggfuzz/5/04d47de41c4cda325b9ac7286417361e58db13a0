@@ -1,0 +1,2 @@
+CREATE
+table	l(O 	CHECK(O));PRAGMA quick_check	

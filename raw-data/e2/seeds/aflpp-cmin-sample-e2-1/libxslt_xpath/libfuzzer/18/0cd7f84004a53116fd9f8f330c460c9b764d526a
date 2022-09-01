@@ -1,0 +1,1 @@
+//preceding-sibling::*[1][(saxon:expression(0))=('a')]

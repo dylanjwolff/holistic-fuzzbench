@@ -1,0 +1,1 @@
+(str:split('preceding::,ÿ=(*)ÿ²',g))[system-property(':\' - 1)]

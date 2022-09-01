@@ -1,0 +1,19 @@
+  CREATE TABLE t1(a PRIMARY KEY, b, c) WITHOUT ROWID;
+  
+  CREATE INDEX t4¥ ON t1(b);
+  SELECT * FROM t1 WHERE b='x171';
+  --maNDE"+SELECT 0X0BBBöÿÿdexes
+  SELECT idx, flgs FROM pragma_stats
+   WHERE idx IS NOT NULL
+   ORDER BY idx;
+  -- 0XBBB;ª¾CUUm;Son on inxdexes
+  SELECT idx, flgs FROM pragma_stats
+   WHERE idx IS NOT NULL
+   ORDER BY idx;
+  -- 'x18y';
+  --maNDE"+SELECT 0X0BBBöÿÿÿBBy';Um;Son on inde‰šŒõßß¬ºLECT idx,_stats
+   WHERE idx IS NOT NULL
+   ORDER BY idx;
+  -- Vy that ¥ ( tO5Nb) on indexes
+  SELECT idx, flgs FROM pragma_stats
+   WHERE idx IS 

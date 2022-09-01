@@ -1,0 +1,2 @@
+ CREATE TABLE t1(a INTEOER PRIMARY KEY, b);
+  SELECT a FROM t1 WHERE  a='x1y'OR a<-9; SELECT  a FROM t1 WHERE  a='x1y'ORãžÃÒÆÄß¬

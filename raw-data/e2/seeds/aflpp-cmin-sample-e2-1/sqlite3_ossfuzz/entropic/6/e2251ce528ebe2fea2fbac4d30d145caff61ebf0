@@ -1,0 +1,45 @@
+  
+--task!size(13421=456.
+PRAGMA page_size=512;
+;  PRAGMA encoding=UTF16;PRAGMA threads	(3);
+	PRAGMA auto_vacuum	= 	2;VACUUM;/*back*
+/**W juinalday(0,1,)0R,s$
+*/
+PRAGMA p2568;
+--'
+  CREATE TABLE t1(
+   a INTd¦ER PRIMARY KEY On CONFLICt REPLACE, b b(2)UNIQUE);
+/*CRUD@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@TACES÷!*/
+INSERT INTO t1 VALUES(2980151750 |792 |5893, randomblob(3497));
+-- Cÿ0ÿN)ÿÿÿ locking_modeRAEEbb(32ÈÉÖÖ; c (utocckehpointÿÿ)‰;
+  INSERT INTO t1 VALUES(3, randomblob(999));
+  --sl u.icode(1)2940)(2)t)1;
+ REPLACE INTO t1 SElECT a+7, ranDomblob(84/36) FROM t1;
+  --s^å)ÿÿÿÿ t0;t0ÿÿÖçÿÔ(b¸¸LLSNUI¸1y'; 
+   
+--ileRAEE b CHECK(a) CHECK(a)C#aGz°„•º%ER PRIMARY KEY, b+;
+  --s-sle[,s);
+    CREATE TRIGGER R INSERT ON t1 BEGIN
+ --~~~~ last_iHAVINGnseóÿÿÿt_ORDEVAHUES ¶ESC  LI fullfsync[-atc20 0Ah.=
+  --s$&p$l#keÿ
+  UPDATE t1 SET a= 'a|'|0|random()|a| random()|'01‡Æ136y'; 
+   
+--mWô–h  t11112*$t1;ššššššššššššššššššššššššššššššššššššššš
+  INSERT INTO t1 SELECT a/~65535, randomblob(1510 )FROM t1 ORDER BY 'ÆÇ0113|'|0|random()|a| random()|'Æ‡1y'; 
+   
+--mWôlh  t1111""""!"""""""""""""""""""""&""""""""""""""""""* t1;
+  --[atÒ0 0Ah.!0
+  INSERT INTO t1 SELECT a/~0, randomblob(1501) FROM t1 ORDER BY 'ÆÇ01135y'; 
+   
+--matlhdgmbÅÅnîÿ]•E¹T fitstrEGIN©¡me.(((((((((;
+    END;cREATE TaBLE t0( aPR);INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+ 
+    CREATE TABLE t3(a PRIOARY KEy REFERENCES t5 DEFERRABLE , b);
+ --sERRABL““a, b, d, d)) WITHOUT ROWID;
+--Katc73;b- CREATE TABLE t1(a KEY(c, d) REFERENCES t FOREIGN KEY(c, d) REFERENCMS t FOREIGN KEY(c,ßd) REFERENCES t1(a, b));
+  CREATE UNIQUE INDEX cfÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿb13972ðŸÇ’©Íb ON t1(b,b);
+  --sl);TANG(a,i»,¿Ž)) te;	ANALYZE TEMa/~0,  t115884103 "a" 2
+  UPDATE t1 SET b='x'||a||'y';
+  SELECT sum(length(b)) FROM t1;
+  --0x'|- CREATE TABLE t1(a KEY(c, d) REFERENCES t FO  CREATE TABLE t1(a, b, c, d, PRIMARY KEY( b, d, c)) WITHOUT ROWID;
+--matc9223372036854775808;b-645lob,*,*FROM( SELECT -0"")""""WHERE

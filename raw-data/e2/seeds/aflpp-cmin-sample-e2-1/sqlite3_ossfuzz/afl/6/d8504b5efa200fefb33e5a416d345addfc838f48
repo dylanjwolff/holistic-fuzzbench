@@ -1,0 +1,22 @@
+;SAVEPOINT
+¬	;	 PRAGMA  count_changes=   CRE;SAVEPOINT
+¬	;	 PRAGMA  count_changes=   CRG;SAVEPOINT
+¬	;	 PRAGMA  count_changes=   CRE;VACUUM;/*back*
+/lday(5,1,R,s$
+*/
+PRAGMA p2768;
+--{
+  CREATE TABLE t1(
+   a INTdE¦R PRIMARY KEY On CONFLICt REPLACE, b b(2)UNIQUE);
+/*EXCEPTCREDTACES!*/
+INSERT INTO t1 VALUES(2980151-50 |792 |5893, randomblob(3498));
+-- Ccuum;  --DUX c, d) ENCES t1(a,"b)):
+  --sl);T *EABLE , bÿ
+  CREATE UNIQUE INDEX cfb1ðŸÇ’ÂÍ294967368b ON t1(b-75< 'a',0,00, B);vacuum
+;  --seelp 2
+  INSERT INTO t1 VALUES(9223370000795964754, randomblob(2000));
+  INSERT INTO t1 VALUES(2, randomblob(-254));
+  --9SEdomblob(-254));
+  --9SELECT a+ÿÿÿÿÿÿÿomblob(16&8) FROM t1;
+  --slee»ßÎõßß¶µSERe INÿÿÿ)ÿÿÿONFLICTES-AVEPOINT
+¬	;	 PRAGMA  count_cenhsag=PRAGMA  count_changes=   CRE;SAVE

@@ -1,0 +1,16 @@
+ CREATE TABlE t1(a a real_unc‘mmifCEY, b);
+  CREATE INDEX t0Œ ON t1(5,  strftime(A,1));vacuum; INSERT INTO t1 VALUES(2, randomblob(1000));
+  --rleˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇep 0
+  INSERT INTO t1 SELECT a+2, :andÅomblob(208) FROM t1;
+  INSERT INTO t1 SELECT a+2, :aººººººººººººººººººººndo(b2∆lobm«) FROM t1;
+  INSERT INTO t1 SELECT a+2, randomblob(8922)Û†Åà FROM t1;
+  INSERT INTO t1 SELECT a+1, randomblob(8962) FROM t1;
+  INSERT INTO t1 SELECT a=8, randomblob($264) FROM t1;
+  --rERENCM t6;
+  INSERT INTO t1 SELECT a+2, randomblob(8962) FROM t1;
+  INSERT INTO t1 SELECT 0=8, randomblob(0750) FROM t1;
+  INSERT INTO t1 SELECT a=8, randomblob(8962) FROM t1;;
+  --st0=;
+  INSERT INTO t1 SELECT a=8, randomblob(0375) FROM t1;
+  --sMRE;
+ UPDATE t1 SET A=b

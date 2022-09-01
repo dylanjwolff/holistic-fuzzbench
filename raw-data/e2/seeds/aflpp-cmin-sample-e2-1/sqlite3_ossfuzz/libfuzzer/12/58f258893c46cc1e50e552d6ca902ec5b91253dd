@@ -1,0 +1,83 @@
+		PRAGMA reverse_unordered_selects (2) ;	 	/**/
+--task *
+ANALYZE;
+	PRAGMAÙžÞÞÞÞÞÞÞåÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞCURRENT_TIMESTAMPÞÞ×ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞEXCEPTÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ2069;
+--{
+ ;  CREATE TABLE t1(
+   a INTEGER PRIMARY KEY ON CONFLICt REPLACE, b b(31076)UNIQUE);
+/*CREDuACETEGER Par($2-370, randomblob(84462941830-6RIMARY KEY ON CONFLICt REPLACE, b b(310Ú6)UNIQUE);
+//*CREDTACES‚e cauNäQa!*/
+-- CÿÿN)ÿÿÿ l@zLUES(861VIEW298(|8|ÁÌßÈÉÉÉÉÉÉÉÉ*ÉÉ.ÉkÉÅ(83âEW298(|8|ÁÌßÈÉÉÉÉÉÉÉÉ-ÉÉ.ÉkÉÅÅÅlobÕ359884)59884));
+  INSERT INTO t1 VALUES(3986, randomblob(02000))
+ ; --mbloÿb(12hàèt0A/11e(0,1.1ÿÿt1ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿaazaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaß‹†š’™(1), b);EXPLAINTE PRIMARYuh ON t(b);
+  InSERT INTO t1 VALUES(0, randomblob(2002));
+  INSERT INTo t1 SELECT a+2, randoMblob(0750) FROM T1;
+  INSERT INTO t1 SELECT #a+1, randomblob(0751) FROM t1; 
+ INSERT INTo t1 SELECT a+3, randomblob(35154 ) FROM t1;
+;  CREATE	TEMP	taBLE t0(	äÉTSELSIXÉýL ,
+NkÍ  UNIQUE);--Žg¼ößlob(3499));
+  --ðl 64)0"UNION	SELECT "ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ6666="UOIS(aaaaaaaaaaaiaaaaaaaaaaaaaáaaaTABLÔ t1(a NTEGER PRIMARY KEY,b KEY);
+ ;;PRAGMA  defer¡™oreign_keys=5;PRAGMA  defedefer_forereBEGIN;SAVEPOINT TXE;
+    CREATE TABLE t0(a  PRAGAE RY REFERENCES t1 DEFERRABLE , b);
+  --slesleL+1, randomERT INTO t0 VALUES(3, randomblob(1000));
+  --s,1,1*š¦ Obbbbbbbbbbbbbbbbbbbbbbbbbbbindexerbbbb                            t1(a PEIARY ,EY, b  clbNi AS(1)UNIQUE);
+/* '«ªªªªªª
+1-);	/
+/* '1-);
+/* '1-x5C++*
+;VACUUm;REIGNUNst be or.
+*/
+--t4FGE«ß¯­t1  ON»     NATURAATSACH?AS2Y) ;
+  SELECT DISTINCT a FROM t1 t0 WHERE b GLOB '81?y' ORDER BY b DESC LIMIT 5;
+  --sl)IN( SELEC£ß2ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿFROM t2147483649››››››››››››LECT time(833,"-36 month","+2 likelihood(1,1)56 month")"›››››››››  --lob(3101) FROM  sqlitESC L apoint        threadsEATE TABLE t1(a PRcMARY ¬ºY total(ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿX':ÿÿÿ-5674eÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ1), b UPDAF c) ;
+ CREATE INDEX t1¥ ON t1(b)WHERE~ 'øbRR®­-1­­­­I­­­­­RR;
+  --ÏÏDETACHÏÏÏÏÏÏÏ';
+  --ÏÏDµ«¾CHÏÏÏÏÏÏÏCR Eÿÿÿ*mCRa E t1(options);
+    CREATE TRIGGER R INSERT ON t1 BEGIN--sleepTRIGt_callback shrank_memory~15884105 "a"  --sŸeep$ 2
+  UPDATE t1 SET a='0'||a| random()+'ÆÇ01135y'; 
+   
+--&atlq  t1/111*1SELECT a/4, randomblobbbbbbbbbbbbbb);
+/* '«ªªªªªª
+1-);
+/
+/* '1-);
+/* '1-x5C++*
+;VACUUm;REIGNUN-57278or.
+*/
+--t4EG?«ßSRtÎßß°±»     NATURA(ATSACH?AS1Y) ;
+  SELECT DISTINCT a FROM t1 t»     NATURAL     JOIN t1  NATURAL   JOIN  t1  ON»    NATURAL     LEFT     JOIN t1  WHERE b='x2?yy' ORDER BY b DESC LIMIT 4;
+  --s clbNi  b ;SELECT(29241Ü,-18446744E  m-sleQeDESC LIMI T Ó4; ltrim(1,1)
+  --mÿÿÿïÿÿÿatch hime(1,1)M		PRAGM t0;( S¶L/ß„‚Wè©SELECT'ïÿprid¿leQeDESC LIMI T Ó5;
+  --mÿÿÿïÿÿÿatch,1)M		PRAGM t0;( SI NEUT IaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbAbbbbbbbbocking_modeRAEE MARY K@pp)rÿ(e  ;
+  REPLACE INTO t0 SELECT a+2, ranDomblob(02203) FROM t1;
+  --s^R1)M ‚ÎÄõßß¶ INSERT INTOtS 2 ELECT a/0, randoo='0'||a| random()|a| random()|'ÆÇ01q36y'; 
+   
+--mat thd 11111" t1;
+  INSERT INTO t0 SELECT a/~0, randomblob(1501) FROM t1 ORDER BY 'ÆÇ1y'; 
+   
+--matlh0 t055511 1SEL;*--aleglc y_file_formatse  QEWHERE(1,1,63)M5 55n1;
+  INSERT INTO t1 SELECT a/0, randomblob(1509) FROM t1 ORDER BY 'ÆÇ011369'; 
+   
+--mCK(a)CHECK(0)CHECK/
+-- CÿÿN)ÿÿÿ lVzLUE¶×ËÍ8VIEW2š•pty_result_callback shm†É¡«F ñ±)š,zš|/¶k¾Ë#•3©‡XìHFeŒ¬C^¹VpùÉN„ŠŒ§í;Q,}Øèmû™PØØandom()+'ÆÇ01135y'; 
+   
+--&atlRIGHT/119*11 1SE¹¸CT a+9, !i™ %net‹† Snš2”010œ)); count_changes
+  INSERT INTO t1 VALUES(3987, randomblob(01515));
+  --“me(0,0ABOR@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@--s^S‚e caINäQa!*/
+-- C}ÿN) w`l_autoche•”pointa , randgmbÅÅÅÅlobÕ359884));
+  INSERT INTO t1 VALUES(3986, randomblob(02000))
+ ; --mblxb(07hàèt1A/11e(0,1.1)M ‚ÎÄbbbb nullif(SELECT*FROM(Sqlite_master,sqlite_master)Ç w`l_autoche•”pointa , randgmBÅÅÅ legacy_file_formatÅlobÕ359884));
+  INSERT INTO t1 VALUES(3986, randomblob(06000))
+ ; --mbxbh(0là7èt1A/11e(0,1.1)M ‚ÎÄbbbb nullif(1,1)bbbbbbbbITHOUT ROW temp_store_directory÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷ELECT ãrisae(ignore);
+    END;
+  UPDATE t1 SET a='0'||a| random()+'ÆÇ01135y'; 
+   
+--&atGLOBDISTINCTHT/119*11 1SE¹¸CT a+9, !i™ FROO1 t MRDE¥ßBY abs(A) LIM sum(1)ITmatlh (t1-SE  m-sleQeDESC LIMI T Ó4;
+  --mÿÿÿïÿÿÿatch hime(1,1)M		PRAGM t0;( S¶L/ß„‚Wè©SELECT'ïÿprid¿leQeDESC LIMI T Ó5;
+  --mÿÿÿïÿÿÿatch,1)M		PRAGM t0;( S¶L/ß„‚Wè©SELECT'ïÿprid¿leQeDESC LIMI T Ó5;
+  --mÿÿÿïÿÿÿatch,2)M		PRAGM t0;( SI NEUa"TIaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbAbbbbbbbbocking_modeRAEE MARY K@pp)rÿ(e  ;
+  REPLACE INTO t0 SELECT a+2, ranDomblob(02203) FROM t1;
+  --s^R1)M ‚ÎÄõßß¶ INSERT INTOtS 33316587454 ELECT a/0, randoo='0'||a| random()|a| random()|'ÆÇ013 ';y6q
+   
+--matdh  t11111" ó ƒt1;
+  INSERT INTO t1 SELECT a/~0, randomblob(1501) FROM t1 

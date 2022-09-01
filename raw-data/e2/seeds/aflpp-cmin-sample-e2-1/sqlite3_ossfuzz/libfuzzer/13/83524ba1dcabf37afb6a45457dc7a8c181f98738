@@ -1,0 +1,31 @@
+ CREATE TABLE t1(a a realumncÔm_ifKEY, b);
+  CREATE INDEX t0Î ON t1(0,  time(A,B));vacuum;  --seelp 2
+  INSERT INTO t1 VALUES(1, randomblob($000));
+  INSERT INTO t1 VALUES(2, randomblob(-255));
+  --/9Ò»Òù…ûûõ2M ‚ßÎõßOM tCURRENT_DATEINTO t1 SELECT a=8, randomblob(3<49) FROM t1;
+  --/9Ò»Òù…ûûõ1M ‚ÛÎõßÄamblob($000));
+  INSERT INTO t1 VALUES(2, randomblob(-255));
+  --M/9Ò»Òù…ûûõ2M ‚ßÎõßÄa þ9ÿÿÿÿÿÿÿ€Üt1;
+  INSERT INTO t1 SELECT a=8, randomblob(0264) FROM t1;
+  --rERENC¸ß‹lÍ;
+  INSERT INTO t1 SELECT a+2, randomblob(9862) FROM t1;
+  INSERT INTO t1 SELECT a=8, randomblob(3<49) FROM t1;
+  --/9Ò»Òù…ûûõ1M ‚ÛÎõßÄaàÆÑr) F®DATABASE INSERT INTO t1 SELECT a=65537, ranb(3<49) FROM t1;
+  --/9Ò»Òù…ûûõ1M ‚ÛÎõßÄa þ962) F®DATABASE INSERT INTO t1 SELECT a=65537, randomblob(8962) FROM t1;
+  INSERT INTO t1 SELECT a=8, randomblob(0187) FROM t1;
+  --st0=;
+  INSERT INTO t1 SELECT a=72, randomblob(32767) FROM t1;
+  INSERT INTO t1 SELECT a=A, randomblob(1) FROM t1;
+  --st0=;ÿÿÿÿÿÿ5ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿPRf16be;CREATE	TEMP	table	 t2(ast0=;
+  INSERT INTO t1 SELECT a=72, randomblob(32767) FROM t1;
+  INSERT INTO t1 SELECT a=A, randomblob(1) FROM t1;
+  --st0=;ÿÿÿÿÿÿ5ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿPRf16be;CREATE	TEMP	table	 t2(a Real_u…nbn1mc†o43 loaling_modettoetteddKDY, b);
+  CREATE INDEx çt0b ON t1( replace(1,1,b),1,4,0.0,0&' a'& char(1),00,~B);vacuum
+;  --/**_ julian—ay(e5,0RECURSIViiGRNR)iUiP,s$ö#*/
+PRAGMA page_sizeAND768;
+--{
+  CREATE TABLE t1( a  
+ INTEG†Eó —P PRM index_E®»‹–OFFSETACE, b b(5)UNIQUE);/*CREATEDCSÿrz|&e  sbadQ–Þ*/
+--;CÿÿN)ÿÿþ;
+INSERT INTO t1 VALUES(5=6001 |0 |?896, randomblob(ÿ5þþIKDEXEDRT INTO1748));
+  --ðmCHE FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFt1 

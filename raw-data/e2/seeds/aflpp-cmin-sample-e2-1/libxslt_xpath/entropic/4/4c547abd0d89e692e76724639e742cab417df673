@@ -1,0 +1,1 @@
+//descendant-or-self::node()[set:difference(.,*/*)]//descendant-or-self::node()[set:difference(.,6*/*)]//descendant-or-self::node()[set:difference(.,*/*)]//descendant-or-self::node()[set:difference(.,./*)]

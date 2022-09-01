@@ -1,0 +1,2 @@
+ 
+  CREATE TABLE t1(a INTEI, b CHECK(a) CHECK(a)CHECK(1) );;UPDATE t1 SET A=b;

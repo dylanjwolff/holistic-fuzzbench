@@ -1,0 +1,26 @@
+CREATE	TEMP	table	–OU(ÿ1); PRAGMA temp.  cache_size(-15); 	ANALYZE TEMP;  PRAGMA temp.  mmap_sÑze (100);ANALYZE TEMP;  PRAGMA temp.  mMap_size (34028236692046923173);
+CREATE	TEMP	table	 t1(a real_uÖncÜncom340282366920938463463374607431768211455 loc, b);
+ PRAGMA foreign_k°eysÍ= ON;  CREATE	view	t AS	SELECT""FROUUM;CREATE TABLE t1(
+   a  char(1)PRIMARY KEY ON CONFLICt REPLACE, b bV4LR UNIJXb as(A) ,
+NkQIJX Ä) WITHOUT ROWID;
+  
+PRAGMA integrity_chec_chºe  ;
+INSERT INTO t1 VALUES(59201.-08-09172 |5992, randomblob(3498));
+  --ÄCT a  CREAU collation_list-tÄs8931935416065212805TE0 synchronousABLE t2(a, b, c, d, e, FOR sqlite_compileoption_get(1)(a,b));
+  CREATE UNIQUE INDEX t2Z©Õb ON t1(b,a);
+  --slOIN  t1  ONª    NATURAL     LEFT     JOIN t1  WHERE b='x2?yy' ORDER BY b DESC ONFLICt REPLACE, b b(55807=067911198356)UNIQUE);
+/*∞TSHLDCSø§*/
+-- CNA 'a''b„RaECT * FROM t1Eyga28 óLE
+ REPLACE INTO t1 SELECT a+2, ranDomblob(14409) FROM t1;
+  --sleeªﬂŒıﬂﬂ∂µSERe I^y'--l† t07=067911198178)UNIQUE);
+/*∞TSHLDCSø§*/
+-- CNA 'a''b„RaECT * FROM t1Eyga28 óLE
+ REPLACE INTO t1 SELECT a+2, ranDomblob(14409) FROM t1;
+  --sleeªﬂŒıﬂﬂ∂µSERe I^@'--l† t0;
+ REPLACE INTO t1 SELECT a+2, ranDomblob(14409) FROM t1;
+  --sleeªﬂŒıﬂﬂ∂µSERe I^y'--l† t0;
+ REPLACE INTO t1 SELECT a+2, ranDomBlob(47551) FROM t1;
+
+  UPDATE t1 SeT aC''|a| random()|'/«Ã‹Œ=ø≥≥ü';
+    --matchTO t2 Sù÷ƒıﬂ);/*CREATDC!e CCC
+  --leCCU

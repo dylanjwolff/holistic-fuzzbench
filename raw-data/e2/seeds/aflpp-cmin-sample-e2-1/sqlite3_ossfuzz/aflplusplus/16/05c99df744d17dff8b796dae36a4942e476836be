@@ -1,0 +1,4 @@
+  CREATE TABLE t1(a PRIMARY KEY, b  c) 
+  ; SELECT * FROM t1 WHERE b= (1)AND(a=(1) OR a<=+(++501));
+   SELECT * FROM t1 WHERE b= (1) AND(a='x16yy' OR a<'x¥b' OR a=+(++501));
+   SELECT * FROM t1 WHERE b= 'x¥b' AND(a='x16yy' OR a<'x¥b' OR a=+(++500=(;

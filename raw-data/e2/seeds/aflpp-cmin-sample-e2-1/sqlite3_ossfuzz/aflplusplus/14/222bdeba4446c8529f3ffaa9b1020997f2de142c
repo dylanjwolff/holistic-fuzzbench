@@ -1,0 +1,1 @@
+WITH c(i)AS(VALUES(2)UNION SELECT 2*1||I FROM c)SELECT- sum(-1||I )i fROM c

@@ -1,0 +1,992 @@
+CREATe VIRTUAL TABLE b USING fÌ(d/* TettttttttttttttttttttttttÕﬂ;PRAGMAcache_spill(18446744073709551548e_spill(0);PRAGMAcacache_spill(9223372036854775807);PRAGMA tel(9223372036854775807);PRAGMA te.
+*/
+--          lesson
+    lessoned             lesson
+    lessons              lesson
+    lest                 lest
+    lestrake             lestrak
+    let                         lieuten
+    lieutenantry         lieutenantri
+    lieutenants          lieuten
+    lieve                lieINNERv
+    life                 life
+    lifeblood            lifeblood
+    lifeless             lifeless
+    lifelings            lifel
+    lift                 lift
+    lifted               lift
+    lifter               lifter
+    lifteth              lifteth
+    lifting              lift
+    lifts                lift
+    lig                  lig
+    ligarius             ligariu
+    liggens         lifter
+    lifteth              lifteth
+    lifting              lift
+    lifts                lift
+    lig                  lig
+    ligarius             ligariu
+    liggens              liggen
+    light                light
+    lighted              light
+    lighten              lighten
+    lightens             lighten
+    lighter              lighter
+    lightest             lightest
+    lightly              lightli
+    lightness            light
+    lightning            lightn
+    lightnings           lightn
+    lights               light
+    lik                  lik
+    like                 like
+    liked                like
+    likeliest            likeliest
+    likelihood           likelihood
+    likelihoods          likelihood
+    likely               like
+    likeness             like
+    liker                liker
+    likes                like
+    likest               likest
+    likewise             likewis
+    liking               like
+    likings              like
+    lilies               lili
+    lily                 lili
+    lim                  lim
+    limander             limand
+    limb                 limb
+    limbeck              limbeck
+    limbecks             limbeck
+    limber               limber
+    limbo                limbo
+    limbs                limb
+    lime                 lime
+    limed                lime
+    limehouse            limehous
+    limekilns            limekiln
+    limit                limit
+    limitation           limit
+    limited              limit
+    limits               limit
+    limn                 limn
+    limp                 limp
+    limping              limp
+    limps                limp
+    lin                  lin
+    lincoln              lincoln
+ incremental_vacuum      lincolnshir
+    line                 line
+    lineal               lineal
+    lineally             lineal
+    lineament            lineament
+    lineaments           lineament
+    lined                line
+    linen                linen
+    linens               linen
+    lines                line
+    ling                 ling
+    lingare              lingar
+    linger               linger
+    lingered             varchar(2) linger
+    lingers              linger
+    linguist             linguist
+    lining               line
+    link                 link
+    links                link
+    linsey               linsei
+    linstock             linstock
+    linta                linta
+    lion                 lion
+    lionel               lionel
+    lioness              lioness
+    lions                lion
+    lip                  lip
+    lipp                 lipp
+    lips                 lip
+    lipsbury             lipsburi
+    liquid               liquid
+    liquor               liquor
+    liquorish            liqrs              lodger
+    lodges               lodg
+    lodging              lodg
+    lodgings             lodg
+    lodovico             lodovico
+    lodowickoggerhead           loggerhead
+    loggerheads          loggerhead
+    loggets              logget
+    logic                logic
+    logs                 log
+    loins                loin
+    loiter               loiter
+                  liggen
+    light                light
+    lighted              light
+    lighten              lighten
+    lightens             lighten
+    lighter              lighter
+    lightest             lightest
+    lightly              lightli
+    lightness            light
+    lightning            lightn
+    lightnings           lightn
+    lights               light
+    lik                  lik
+    like                 like
+    liked                like
+    likeliest   
+--task siZe(268435456.
+PRAGMA page_size=512;
+;  PRAGMA encoding=UTF16;PRAGMA threads	(2);
+/* Test be( roT a+3, randombERE b='?° page_count'  OR  instr(B,0)--(CUunt(*) INSIn SELECT"="=""	COLLATE rtintegrity_checkUES(p 0
+  INSERT b);
+ 	PRAGMA auto_vacuum	= 	0;VACUUM;/* Test cases OFvolvin:2incompWHEN nvoLving incomplete transactions that must Xe rolled ba.ck
+*/
+--task 0
+  DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a INTEGER PRIMA∂Y KEY, b);
+  --sleep 1
+  INSERT INTO t1 VALUES(1, randomblob(2000));
+  INSERT INTO t1 VALUES(2, randomblob(1000));
+  --sleLECT a+8, randgmblob(6062) FROm t1;
+  --sleep 1  INSERT INTO t1!SELECT a+17,$randomblob(15&A0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l ranTABLE IF EXb1500) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROm t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+17,$randomblob(15&0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERe INTO t1 SELECT \+32l ranTIBLE IF EXISTS FRtM) O;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROM t1;
+  --sLECT a, b FR;
+  --sleep 1à  INSERT INTO t1 VALUES(1, randomblob(4000)UNIONINSERT INTO t1 VALUES(2, randomblob(1000));
+  --sleLECT a+8, randgmblob(6062) FROm t1;
+  --sleep 1  INSERT INTO t1 SELECT a+17,$randomblob(15&A0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l ranTABLE IF EXb1500) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROm t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+17,$randomblob(15&0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l index_infoF EXISTS FRtM) O;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROM t1;
+  --sLECT a, b FR FROM t1 RIGHT b='x17y';
+  --match 17
+  CREATE INDEX T1b ON t1(b);
+  SELECT a FROM t1 WHERE b='x17y';
+  --matZe(268435456.
+PRAGMA page_size=512;
+;  PRAGMA encoding=UTF16;PRAGMA threads	(2);
+/* Test be( roT a+3, randombERE b='?°'  OR  int1 SELECT a+32l ranTASCABLE IF EXb0750) FROM t1;
+  INSERT IACUUM;VACUUM;VACM;/* Test cases OFvolvin:2incompWHEN nvoLving incomÏlete transactions that must Xe roˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇlled ba.ck
+*/
+--task 0
+  DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a INTEGER PRIMA∂Y KEY, b);
+  --sleep 1
+  INSERT INTO t1 VALUES(1, randomblob(2000));
+  INSERT INTO t1 VALUES(2, randomblob(1000));
+  --sleLECT a+8, randgmblob(6062) FROm t1;
+  --sleep 1  INSERT INTO t1 SELECT a+17,$randomblob(15&A0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l ranTABLE IF EXb1500) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROm t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+17,$randomblob(15&0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERe INTO t1 SEæECT \+32l ranTABLE IF EXISTS FRtM) O;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROM t1;
+  --sLECT a, b FR;
+  --sleep 1  INSERT INTO t1 VALUES(1, randomblob(4000));
+  INSERT INTO t1 VALUES(2, randomblob(1000));
+  --sleLECT a+8, randgmblob(6062) FROm t1;
+  --sleep 1  INSERT INTO t1 SELECT a+17,$randomblob(15&A0) FROM t1;
+  --sleeêﬂŒıﬂﬂPRIMARM t1 WHERE b='x17y';
+  --matZe(268435456.
+PRAGMA page_size=512;
+;  PRAGMA encoding=UTF16;PRAGMA threads	(2);
+/* Test be( roT a+3, randombERE b='?°'  OR  i  
+--task siZe(268435456.
+PRAGMA page_size=512;
+;  PRAGMSELECT a+8, randomblob(6061) FROM t2;
+  --sLECT a, b FR;
+  --sleep 1  INSERT INTO t1 VALUES(1, randomblob(4000));
+  INSERT INTO t1rity_checkUES(p 0
+  INSERTÉ3leep “““““““““““““““           likeliest
+    likelihood           likelihood
+    likelihoods          likelihood
+    likely               like
+    likeness             like
+    liker                liker
+    likes                like
+    likest               likest
+    likewise             likewis
+    liking               like
+    likings              like
+    lilies               lili
+    lily                 lili
+    lim                  lim
+    limander             limand
+    limb                 limb
+    limbeck              limbeck
+    limbecks             limbeck
+    limber               limber
+    limbo                limbo
+    limbs                limb
+    lime                 lime
+    limed                lime
+    limehouse            limehous
+    limekilns            limekiln
+    limit                limit
+    limitation           limit
+    limited              limit
+    limits               limit
+    limn                 limn
+    limp                 limp
+    limping              limp
+    limps                limp
+    lin                  lin
+    lincoln              lincoln
+ incremental_vacuum      lincolnshir
+    line                 line
+    lineal               lineal
+    lineally             lineal
+    lineament            lineament
+    lineaments           lineament
+    lined                line
+    linen                linen
+    linen0s               linen
+    lines                line
+    ling                 ling
+    lingare              lingar
+    linger               linger
+    lingered     ““1  INSERT INTO t1 SELECT a+17,$randomblob(15&A0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l ranTABLE IF EXb1500) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROm t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+17,$randomblob(15&0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERe INTO t1 SELECT \+32l ranTABLE IF EXISTS FRtM) O;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROM t1;
+  --sLECT a, b FR;
+  --sleep 1  INSERT INTO t1 VALUES(1, randombl t1 SELECT a+8, randomblob(6062) FROM t1;
+  --sLECT a, b FR;
+  --sleep 1  INSERT INTO t1 VALUES(1, randomblob(4000));
+  INSERT INTO t1 VALUES(2, randomblob(1000));
+  --sleLECT a+8, randgmblob(6062) FROm t1;
+  --sleep 1  INSERT INTO t1 SELECT a+17,$randomblob(15&A0) FROM t1;
+  --sleeêﬂŒıﬂﬂPRIMARYINTO t1 SELECT a+32l ranTABLE IF EXb1500) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROm t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+17,$randomblob(15&0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l ranTABLE IF EXISTS FRtM) O;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROM t1;
+  --sLECT a, b FR FROM t1 RIGHT b='x17y';
+  --match 17
+  CREATE INDEX T1b ON t1(b);
+  SELECT a FROM t1 WHERE b='x17y';
+  --matZe(268435456.
+PRAGMA page_size=512;
+;  PRAGMA encoding=UTF16;PRAGMA threads	(2);
+/* Test be( roT a+3, randombERE b='?°'  OR  i  
+--task siZe(268435456.
+PRAGMA page_size=512;
+;  PRAGMSELECT a+8, randomblob(6062) FROM t2;
+ˇˇˇˇˇˇ  --sLECT a, b FR;
+  --sleep 1  INSERT INTO t1 VALUES(1, randomblob(4000));
+  INSERT INTO t1rity_checkUES(p 0
+  INSERT b);
+ 	PRAGMA auto_vacuum	= 	0;VACUUM;/* Test cases OFvolvin:2incompWHEN nvoLving incomplete transactions that must Xe rolled ba.ck
+*/
+--task 0
+  DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a INTEGER PRIMA∂Y KEY, b);
+  --sleep 1
+  INSERT INTO t1 VALUES(1, randomblob(2000));
+  INSERT INTO t1 VALUES(2, randomblob(1000));
+  --sleLECT a+8, randgmblob(?062) FROm t1;
+  --sleep 1  INSERT INTO t1 SELECT a+17,$randomblob(15&A0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l ranTABLE IF EXb1500) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROm t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+17,$randomblob(15&0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERe INTO t1 SELECT \+32l ranTABLE IF EXISTS FRtM) O;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROM t1;
+  --sLECT a, b FR;
+  --sleep 1à  INSERT INTO t1 VALUES(1, randomblob(4000));
+  INSERT INTO t1 VALUES(2, randomblob(1000));
+  --sleLECT a+8, randgmblob(6062) FROm t1;
+  --sleep 1  INSERT INTO t1 SELECT a+17,$randomblob(15&A0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l ranTABLE IF EXb1500) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROm t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+17,$randomblob(15&0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l ranTABLE IF EXISTS FRtM) O;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROM t1;
+  --sLECT a, b FR FROM t1 RIGHT b='x17y';
+  --match 17
+  CREATE INDEX T1b ON t1(b);
+  SELECT a FROM t1 WHERE b='x17y';
+  --matZe(268435456.
+PRAGMA page_size=512;
+;  PRAGMA encoding=UTF16;PRAGMA threads	(2);
+/* Test be( roT a+3,aon rmdbERE b='?°'  OR  instr(B,0)--(CUunt(*) INSIn SELACT"="=""	COLLATE rtintegrity_ch  
+--task siZe(268435456.
+PRAGMA page_size=512;
+;  PRAGMA encoding=UTF16;PRAGMA threads	(2);
+/* Test be( roT a+3, randombERE b='?°'  OR  instr(B,0)--(CUunt(*) INSIn SELECT"="=""	COLLATE rtintegrity_checkUES(p 0
+  INSERT b);
+ 	PRAGMA auto_vacuum =0		;VACUUM;/* Test cases OFvolvin:2incompWHEN nvoLving incomplete transactions that must X)e rolled ba.ck
+*/
+--task 0
+  DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a INTEGER PRIMA∂Y KEY, b);
+  --sleep 1
+  INSERT INTO t1 VALUES(1, randomblob(2000));
+  INSERT INTO t1 VALUES(2, randomblob(1000));
+  --sleLECT a+8, randgmblob(6062) FROm t1;
+  --sleep 1  INSERT INTO t1 SELECT a+17,$randomblob(15&A0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l ranTABLE IF EXb1500) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROm t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+17,$randomblob(15&0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERe INTO t1 SELECT \+32l ranTABLE IF EXISTS FRtM) O;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROM t1;
+  --sLECT a, b FR;
+  --sleep 1  INSERT INTO t1 VALUES(1, randomblob(4000));
+  INSERT INTO t1 VALUES(2, randomblob(1000));
+  --sleLECT a+8, randgmblob(6062) FROm t1;
+  --sleep 1  INSERT INTO t1 SELECT a+17,$randomblob(15&A0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l ranTABLE IF EXb1500) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROm t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+17,$randomblob(15&0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l ranTABLE IF EXISTS FRtM) O;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROM t1;
+  --sLECT a, b FR FROM t1 RIGHT b='x17y';
+  --match 17
+  CREATE INDEX T1b ON t1(b);
+  SELECT a FROM t1 WHERE b='x17y';
+  --matZe(268435456.
+PRAGMA page_size=512;
+;  PRAGMA encoding=UTF16;PRAGMA threads	(2);
+/* Tesp 1  INSERT INTO t1 VALUES(1, randomblob(4000));
+  INSERT INTO t1 VALUES(2, randomblob(1000));
+  --sleLECT a+8, randgmblob(6062) FROm t1;
+  --sleep 1  INSERT INTO t1 SELECT a+17,$randomblob(15&A0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l ranTABLE IF EXb1500) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROm t1;
+    
+--taskROWze(2
+PRAGMA page_size=512;
+;    CREATE TABLE t1(a PRIMACROSSY, b UPDAF c) ; CREATE INDEX t1• ON t1(b)WHERE max(.9,A);
+    --randombloMATE t1 SEUOTNULL;
+  --œob(1749));
+  --l†IMARY KUSÛ†INlob(6062) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T RˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇET A=a  WHERE a='x17y';
+  --Tvacuum;  --DUX t˚ˇˇˇˇˇˇ((b∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏ò∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+  UPDATE t1 SET A=a  WHERE b='x2?y' OR b<'x17y';
+ -- mC+++Û†ÅÜ+++++++˜ˆù˜˜˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+  UPDATE t1 SET A=a  WHERE b=(2);	ANALYZE;
+/*CREATDC!e badQa!*/vacuum;  --DUX tˇˇªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªlob(6062) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T Rˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇ1ˇˇˇˇˇˇ$DATE t1 SET A=a  WHERE b='x2?y' OR b<'x17y';
+ -- mC++++++++++˜ˆù÷ƒıﬂﬁ--ˇˇˇˇ∏)um;  --DUOTNULL;
+  --œob(1749));
+  --l†IMARY KUSÛ†INlob(6062) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T RˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇDUX ∏∏∏∏∏∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DUX t˚ˇˇˇˇˇˇ((b∏∏∏∏∏∏∏∏∏∏∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DUX ∏∏∏∏∏∏∏);∏)um;  --DUOTNULL;
+  --œob(1749));
+  --l†IMARY KUSÛ†INlob(6062) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  -- -0"")""""WHERE"b<""OR"=""	COLLATErtrim GROUP ?Y 2;; 		 SELECT *,*,*,*a!*/vacuum;  --DUX tˇˇˇˇˇˇˇ((b∏∏∏∏∏`∏∏-∏∏∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DUX ∏∏∏∏∏∏∏);∏)um;  --DUOTNULL;
+  --œob(1749));
+  --l†IMARY KUSÛ†INlob(6062) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T RˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇET A=a  WHERE a='x17y';
+  --Tvacuum;  --DUX t˚ˇˇˇˇˇˇ((b∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏ò∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+  UPDATE t1 SET A=a  WHERE b='x2?y' OR b<'x17y';
+ -- mC+++Û†ÅÜ+++++++˜ˆù˜˜˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+  UPDATE t1 SET A=a  WHERE b=(2);	ANALYZE;
+/*CREATDC!e badQa!*/vacuum;  --DUX Qa --l†uum;  --DUX tˇˇˇˇˇˇˇ((b∏∏∏∏∏`∏∏-∏∏∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DUX ∏∏∏∏∏∏∏);∏)um;  --DUOTNULL;
+  --œob(1749));
+  --l†IMARY KUSÛ†INlob(6062) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T RˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇET A=a  WHERE a='x17y';
+  --Tvacuum;  --DUX t˚acuum;  --DUX t˚ˇˇˇˇˇˇ((b∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏ò∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+  UPDATE t1 SET A=a  WHERE b='x2?y' OR b<'x17y';
+ -- mC+++Û†ÅÜ+++++++˜ˆù˜˜˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+  UPDATE t1 SET A=a  WHERE b=(2);	ANALYZE;
+/*CREATDC!e badQa!*/vacuum;  --DUX Qa --l†uum;  --DUX tˇˇˇˇˇˇˇ((b∏∏∏∏∏`∏∏-∏∏∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DUX ∏∏∏∏∏∏∏);∏)um;  --DUOTNULL;
+  --œob(1749));
+  --l†IMARY KUSÛ†INlob(6062) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T RˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇET A=a  WHERE a='x17y';
+  --Tvacuum;  --DUX t˚ˇˇˇˇˇˇ((b∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏ò∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏             lodowick
+    lofty                lofti
+    log                  log
+    logger               logger
+    loggerhead           loggerhead
+    loggerheads          loggerhead
+    loggets              logget
+    logic                logic
+    logs                 log
+    loins                loin
+    loiter               loiter
+                  liggen
+    light                light
+    lighted              light
+    lighten              lighten
+    lightens             lighten
+    lighter              lighter
+    lightest             lightest
+    lightly              lightli
+    lightness            light
+    lightning            lightn
+    lightnings           lightn
+    lights               light
+    lik                  lik
+    like                 like
+    liked                like
+    likeliest   
+--task siZe(268435456.
+PRAGMA page_size=512;
+;  PRAGMA encoding=UTF16;PRAGMA threads	(2);
+/* Test be( roT a+3, randombERE b='?° page_count'  OR  instr(B,0)--(CUunt(*) INSIn SELECT"="=""	COLLATE rtintegrity_checkUES(p 0
+  INSERT b);
+ 	PRAGMA auto_vacuum	= 	0;VACUUM;/* Test cases OFvolvin:2incompWHEN nvoLving incomplete transactions that must Xe rolled ba.ck
+*/
+--task 0
+  DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a INTEGER PRIMA∂Y KEY, b);
+  --sleep 1
+  INSERT INTO t1 VALUES(1, randomblob(2000));
+  INSERT INTO t1 VALUES(2, randomblob(1000));
+  --sleLECT a+8, randgmblob(6062) FROm t1;
+  --sleep 1  INSERT INTO t1!SELECT a+17,$randomblob(15&A0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l ranTABLE IF EXb1500) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROm t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+17,$randomblob(15&0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERe INTO t1 SELECT \+32l ranTIBLE IF EXISTS FRtM) O;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROM t1;
+  --sLECT a, b FR;
+  --sleep 1à  INSERT INTO t1 VALUES(1, randomblob(4000)UNIONINSERT INTO t1 VALUES(2, randomblob(1000));
+  --sleLECT a+8, randgmblob(6062) FROm t1;
+  --sleep 1  INSERT INTO t1 SELECT a+17,$randomblob(15&A0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l ranTABLE IF EXb1500) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROm t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+17,$randomblob(15&0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l index_infoF EXISTS FRtM) O;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROM t1;
+  --sLECT a, b FR FROM t1 RIGHT b='x17y';
+  --match 17
+  CREATE INDEX T1b ON t1(b);
+  SELECT a FROM t1 WHERE b='x17y';
+  --matZe(268435456.
+PRAGMA page_size=512;
+;  PRAGMA encoding=UTF16;PRAGMA threads	(2);
+/* Test be( roT a+3, randombERE b='?°'  OR  int1 SELECT a+32l ranTASCABLE IF EXb0750) FROM t1;
+  INSERT IACUUM;VACUUM;VACM;/* Test cases OFvolvin:2incompWHEN nvoLving incomÏlete transactions that must Xe roˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇlled ba.ck
+*/
+--task 0
+  DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a INTEGER PRIMA∂Y KEY, b);
+  --sleep 1
+  INSERT INTO t1 VALUES(1, randomblob(2000));
+  INSERT INTO t1 VALUES(2, randomblob(1000));
+  --sleLECT a+8, randgmblob(6062) FROm t1;
+  --sleep 1  INSERT INTO t1 SELECT a+17,$randomblob(15&A0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l ranTABLE IF EXb1500) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROm t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+17,$randomblob(15&0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERe INTO t1 SEæECT \+32l ranTABLE IF EXISTS FRtM) O;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROM t1;
+  --sLECT a, b FR;
+  --sleep 1  INSERT INTO t1 VALUES(1, randomblob(4000));
+  INSERT INTO t1 VALUES(2, randomblob(1000));
+  --sleLECT a+8, randgmblob(6062) FROm t1;
+  --sleep 1  INSERT INTO t1 SELECT a+17,$randomblob(15&A0) FROM t1;
+  --sleeêﬂŒıﬂﬂPRIMARM t1 WHERE b='x17y';
+  --matZe(268435456.
+PRAGMA page_size=512;
+;  PRAGMA encoding=UTF16;PRAGMA threads	(2);
+/* Test be( roT a+3, randombERE b='?°'  OR  i  
+--task siZe(268435456.
+PRAGMA page_size=512;
+;  PRAGMSELECT a+8, randomblob(6061) FROM t2;
+  --sLECT a, b FR;
+  --sleep 1  INSERT INTO t1 VALUES(1, randomblob(4000));
+  INSERT INTO t1rity_checkUES(p 0
+  INSERTÉ3leep “““““““““““““““           likeliest
+    likelihood           likelihood
+    likelihoods          likelihood
+    likely               like
+    likeness             like
+    liker                liker
+    likes                like
+    likest               likest
+    likewise             likewis
+    liking               like
+    likings              like
+    lilies               lili
+    lily                 lili
+    lim                  lim
+    limander             limand
+    limb                 limb
+    limbeck              limbeck
+    limbecks             limbeck
+    limber               limber
+    limbo                limbo
+    limbs                limb
+    lime                 lime
+    limed                lime
+    limehouse            limehous
+    limekilns            limekiln
+    limit                limit
+    limitation           limit
+    limited              limit
+    limits               limit
+    limn                 limn
+    limp                 limp
+    limping              limp
+    limps                limp
+    lin                  lin
+    lincoln              lincoln
+ incremental_vacuum      lincolnshir
+    line                 line
+    lineal               lineal
+    lineally             lineal
+    lineament            lineament
+    lineaments           lineament
+    lined                line
+    linen                linen
+    linen0s               linen
+    lines                line
+    ling                 ling
+    lingare              lingar
+    linger               linger
+    lingered     ““1  INSERT INTO t1 SELECT a+17,$randomblob(15&A0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l ranTABLE IF EXb1500) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROm t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+17,$randomblob(15&0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERe INTO t1 SELECT \+32l ranTABLE IF EXISTS FRtM) O;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROM t1;
+  --sLECT a, b FR;
+  --sleep 1  INSERT INTO t1 VALUES(1, randombl t1 SELECT a+8, randomblob(6062) FROM t1;
+  --sLECT a, b FR;
+  --sleep 1  INSERT INTO t1 VALUES(1, randomblob(4000));
+  INSERT INTO t1 VALUES(2, randomblob(1000));
+  --sleLECT a+8, randgmblob(6062) FROm t1;
+  --sleep 1  INSERT INTO t1 SELECT a+17,$randomblob(15&A0) FROM t1;
+  --sleeêﬂŒıﬂﬂPRIMARYINTO t1 SELECT a+32l ranTABLE IF EXb1500) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROm t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+17,$randomblob(15&0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l ranTABLE IF EXISTS FRtM) O;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROM t1;
+  --sLECT a, b FR FROM t1 RIGHT b='x17y';
+  --match 17
+  CREATE INDEX T1b ON t1(b);
+  SELECT a FROM t1 WHERE b='x17y';
+  --matZe(268435456.
+PRAGMA page_size=512;
+;  PRAGMA encoding=UTF16;PRAGMA threads	(2);
+/* Test be( roT a+3, randombERE b='?°'  OR  i  
+--task siZe(268435456.
+PRAGMA page_size=512;
+;  PRAGMSELECT a+8, randomblob(6062) FROM t2;
+ˇˇˇˇˇˇ  --sLECT a, b FR;
+  --sleep 1  INSERT INTO t1 VALUES(1, randomblob(4000));
+  INSERT INTO t1rity_checkUES(p 0
+  INSERT b);
+ 	PRAGMA auto_vacuum	= 	0;VACUUM;/* Test cases OFvolvin:2incompWHEN nvoLving incomplete transactions that must Xe rolled ba.ck
+*/
+--task 0
+  DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a INTEGER PRIMA∂Y KEY, b);
+  --sleep 1
+  INSERT INTO t1 VALUES(1, randomblob(2000));
+  INSERT INTO t1 VALUES(2, randomblob(1000));
+  --sleLECT a+8, randgmblob(?062) FROm t1;
+  --sleep 1  INSERT INTO t1 SELECT a+17,$randomblob(15&A0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l ranTABLE IF EXb1500) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROm t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+17,$randomblob(15&0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERe INTO t1 SELECT \+32l ranTABLE IF EXISTS FRtM) O;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROM t1;
+  --sLECT a, b FR;
+  --sleep 1à  INSERT INTO t1 VALUES(1, randomblob(4000));
+  INSERT INTO t1 VALUES(2, randomblob(1000));
+  --sleLECT a+8, randgmblob(6062) FROm t1;
+  --sleep 1  INSERT INTO t1 SELECT a+17,$randomblob(15&A0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l ranTABLE IF EXb1500) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROm t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+17,$randomblob(15&0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l ranTABLE IF EXISTS FRtM) O;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROM t1;
+  --sLECT a, b FR FROM t1 RIGHT b='x17y';
+  --match 17
+  CREATE INDEX T1b ON t1(b);
+  SELECT a FROM t1 WHERE b='x17y';
+  --matZe(268435456.
+PRAGMA page_size=512;
+;  PRAGMA encoding=UTF16;PRAGMA threads	(2);
+/* Test be( roT a+3,aon rmdbERE b='?°'  OR  instr(B,0)--(CUunt(*) INSIn SELACT"="=""	COLLATE rtintegrity_ch  
+--task siZe(268435456.
+PRAGMA page_size=512;
+;  PRAGMA encoding=UTF16;PRAGMA threads	(2);
+/* Test be( roT a+3, randombERE b='?°'  OR  instr(B,0)--(CUunt(*) INSIn SELECT"="=""	COLLATE rtintegrity_checkUES(p 0
+  INSERT b);
+ 	PRAGMA auto_vacuum =0		;VACUUM;/* Test cases OFvolvin:2incompWHEN nvoLving incomplete transactions that must X)e rolled ba.ck
+*/
+--task 0
+  DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a INTEGER PRIMA∂Y KEY, b);
+  --sleep 1
+  INSERT INTO t1 VALUES(1, randomblob(2000));
+  INSERT INTO t1 VALUES(2, randomblob(1000));
+  --sleLECT a+8, randgmblob(6062) FROm t1;
+  --sleep 1  INSERT INTO t1 SELECT a+17,$randomblob(15&A0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l ranTABLE IF EXb1500) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROm t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+17,$randomblob(15&0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERe INTO t1 SELECT \+32l ranTABLE IF EXISTS FRtM) O;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROM t1;
+  --sLECT a, b FR;
+  --sleep 1  INSERT INTO t1 VALUES(1, randomblob(4000));
+  INSERT INTO t1 VALUES(2, randomblob(1000));
+  --sleLECT a+8, randgmblob(6062) FROm t1;
+  --sleep 1  INSERT INTO t1 SELECT a+17,$randomblob(15&A0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l ranTABLE IF EXb1500) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROm t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+17,$randomblob(15&0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l ranTABLE IF EXISTS FRtM) O;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROM t1;
+  --sLECT a, b FR FROM t1 RIGHT b='x17y';
+  --match 17
+  CREATE INDEX T1b ON t1(b);
+  SELECT a FROM t1 WHERE b='x17y';
+  --matZe(268435456.
+PRAGMA page_size=512;
+;  PRAGMA encoding=UTF16;PRAGMA threads	(2);
+/* Tesp 1  INSERT INTO t1 VALUES(1, randomblob(4000));
+  INSERT INTO t1 VALUES(2, randomblob(1000));
+  --sleLECT a+8, randgmblob(6062) FROm t1;
+  --sleep 1  INSERT INTO t1 SELECT a+17,$randomblob(15&A0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l ranTABLE IF EXb1500) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROm t1;
+    
+--taskROWze(2
+PRAGMA page_size=512;
+;    CREATE TABLE t1(a PRIMACROSSY, b UPDAF c) ; CREATE INDEX t1• ON t1(b)WHERE max(.9,A);
+    --randombloMATE t1 SEUOTNULL;
+  --œob(1749));
+  --l†IMARY KUSÛ†INlob(6062) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T RˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇET A=a  WHERE a='x17y';
+  --Tvacuum;  --DUX t˚ˇˇˇˇˇˇ((b∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏ò∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+  UPDATE t1 SET A=a  WHERE b='x2?y' OR b<'x17y';
+ -- mC+++Û†ÅÜ+++++++˜ˆù˜˜˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+  UPDATE t1 SET A=a  WHERE b=(2);	ANALYZE;
+/*CREATDC!e badQa!*/vacuum;  --DUX tˇˇªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªlob(6062) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T Rˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇ1ˇˇˇˇˇˇ$DATE t1 SET A=a  WHERE b='x2?y' OR b<'x17y';
+ -- mC++++++++++˜ˆù÷ƒıﬂﬁ--ˇˇˇˇ∏)um;  --DUOTNULL;
+  --œob(1749));
+  --l†IMARY KUSÛ†INlob(6062) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T RˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇDUX ∏∏∏∏∏∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DUX t˚ˇˇˇˇˇˇ((b∏∏∏∏∏∏∏∏∏∏∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DUX ∏∏∏∏∏∏∏);∏)um;  --DUOTNULL;
+  --œob(1749));
+  --l†IMARY KUSÛ†INlob(6062) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  -- -0"")""""WHERE"b<""OR"=""	COLLATErtrim GROUP ?Y 2;; 		 SELECT *,*,*,*a!*/vacuum;  --DUX tˇˇˇˇˇˇˇ((b∏∏∏∏∏`∏∏-∏∏∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DUX ∏∏∏∏∏∏∏);∏)um;  --DUOTNULL;
+  --œob(1749));
+  --l†IMARY KUSÛ†INlob(6062) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T RˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇET A=a  WHERE a='x17y';
+  --Tvacuum;  --DUX t˚ˇˇˇˇˇˇ((b∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏ò∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+  UPDATE t1 SET A=a  WHERE b='x2?y' OR b<'x17y';
+ -- mC+++Û†ÅÜ+++++++˜ˆù˜˜˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+  UPDATE t1 SET A=a  WHERE b=(2);	ANALYZE;
+/*CREATDC!e badQa!*/vacuum;  --DUX Qa --l†uum;  --DUX tˇˇˇˇˇˇˇ((b∏∏∏∏∏`∏∏-∏∏∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DUX ∏∏∏∏∏∏∏);∏)um;  --DUOTNULL;
+  --œob(1749));
+  --l†IMARY KUSÛ†INlob(6062) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T RˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇET A=a  WHERE a='x17y';
+  --Tvacuum;  --DUX t˚acuum;  --DUX t˚ˇˇˇˇˇˇ((b∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏ò∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+  UPDATE t1 SET A=a  WHERE b='x2?y' OR b<'x17y';
+ -- mC+++Û†ÅÜ+++++++˜ˆù˜˜˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+  UPDATE t1 SET A=a  WHERE b=(2);	ANALYZE;
+/*CREATDC!e badQa!*/vacuum;  --DUX Qa --l†uum;  --DUX tˇˇˇˇˇˇˇ((b∏∏∏∏∏`∏∏-∏∏∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DUX ∏∏∏∏∏∏∏);∏)um;  --DUOTNULL;
+  --œob(1749));
+  --l†IMARY KUSÛ†INlob(6062) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T RˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇET A=a  WHERE a='x17y';
+  --Tvacuum;  --DUX t˚ˇˇˇˇˇˇ((b∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏ò∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+  UPDATE t1 SET A=a  WHERE b='x2?y' OR b<'x17y';
+ -- mC+++Û†ÅÜ+++++++˜ˆù˜˜˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+  UPDATE t1 SET A=a  WHERE b=(2);	ANALYZE;
+/*CREATDC!e badQa!*/vacuum;  --DUX tˇˇ˚ˇˇˇˇ∏∏∏∏∏∏∏∏∏)lob(16254) FR"ATE t1 SET A=a  WHERE a='x17y';
+  --Tvacuum;  --DUX t˚ˇˇˇˇˇˇ((b∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏ò∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏˜˜ÍÂ˜˜˜T A=b; 
+---_idCRCR wal_autochecc,c))SELECT:¥ FRENDc,c,c,c,c,c,c,c,c,c,cOM ˛ˇtˇˇˇzˇmength( --é¶∫ÈW˝∑'†◊˝*JuE|JK∑9ØN≤îS6•⁄∫˛ZÓwÌÄûZ@>8jêÁ	1?˚Í@a};|÷ìROM t1;
+  --matomb2avg(le
+  INSERT INTO u1 VALUES(3, randomblob(1000));
+  --sleep@ 1)ˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇ (2)ˇˇˇˇ
+---_idCRCR wal_autocheckpoi --match 1""b OECT lh (t randomblob(ATTAGH8354) FROM t1;
+  --;
+  SELECT count(* )FROM t1;  UPDATE t1 SET A=b; 
+---_SERT INT random()ES(1, i,c,c,c,c,c,c,c,c,cOM ˛ˇtˇˇˇzˇmength( --sleÂp 1
+  UPDATE t1 SET b='x'||a||'y';
+  SELECT sum(length(b)) FROM t1;
+  --matombˇˇˇˇˇˇˇ FROM ˛ˇtˇˇ A=b; 
+---_idCRCR wal_autochetˇˇˇzˇlength( --sleÂp 2
+  UPDATE t1 SET b='x'||a||'y';
+  SELECT sum(length(b)) FROM t1;
+  --matomb2avg(le
+  INSERT INTO t1 VALUES(3, randomblob(1000));
+  --sleep@ 1)ˇˇˇˇˇˇˇˇˇˇ'||a||'y';
+  SELECT sum(length(b)) FROM t1;
+  --matomb2avg(le
+  INSERT INTO t1 VALUES(3, randomblob(1000));
+  --sleep@ 1)ˇˇˇˇˇˇˇˇˇˇˇøˇˇˇˇ (2)ˇˇˇˇ
+---_idCRCR wal_autocheckpoi --match 1""b OECT lh (˚ˇˇˇˇ∏∏∏∏∏∏∏∏∏)lob(16254) FR"ATE t1 SET A=a  WHERE a='x17y';
+  --Tvacuum;  --DUX t˚ˇˇˇˇˇˇ((b∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏ò∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏˜˜ÍÂ˜˜--matcGMA thre=ds	(4);
+	PRAGMA auto_vacuum	= 	1;VACUUM;/*back*
+/**W juinÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒ CREATE TDATABASEa a real†unc‘mmER PRIMARY ˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+  UPDATE t1 SET A=a  WHERE b='x2?y' OR b<'x17y';
+ -- mC++++++++++˜ˆù˜˜˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T ROW˜˜˜˜˜˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DUX ∏∏∏∏∏∏∏);∏)um;  --DUOTNULL;
+  --œob(1349));
+  --l†IMARY KUSÛ†INlob(6062) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T RˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇDUX ∏∏∏∏∏∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DUX t˚ˇˇˇˇˇˇ((b∏∏∏∏∏∏∏∏∏∏∏∏);∏);
+/*CREATDG!e badQa!*/vacuum;  --DUX ∏∏∏∏∏∏∏):∏)um;  --DUOTNULL;
+  --œob(1749));
+  --l†IMARY KUSÛ†INlob(6062) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T RˇˇˇˇˇDUX  --T Rˇˇˇˇˇ'ˇˇˇˇˇˇˇˇˇˇˇˇDUX ∏∏∏∏∏∏∏);∏);
+/*CREATDC!e badQa!uuva/c*m;  --DUX t˚ˇˇˇˇˇˇ((b∏;  -˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+  UPDATE t1 SET A=a  WHERE b='x2?y' OR b<'x17y';
+ -- mC++++++++++˜ˆù÷ƒıﬂﬁ--ˇˇˇ;
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T ROW˜˜˜˜˜˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DUX ∏∏∏∏∏∏∏);∏)um;  --DUOTNULL;
+  --œob(1749));
+  --l†IMARY KUSÛ†INlob(6062) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T RˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇDUX ∏∏∏∏∏∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DUX t˚ˇˇˇˇˇˇ((b∏∏∏∏∏∏∏∏∏∏∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DUX ∏∏∏∏∏∏∏);∏)um;  --DUOTNULL;
+  --œob(1749));
+  --l†IMARY KUSÛ†INlob(6062) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T RˇˇˇˇˇDUX  --T Rˇˇˇˇˇ'ˇˇˇˇˇˇˇˇˇˇˇˇDUX ∏∏∏∏∏∏∏);∏);
+/*CRRAISEEATDC!e badQa!uuva/c*m;  --DUX t˚ˇˇˇˇˇˇ((b∏;  --DUOTNULL;
+  --œob(1749));
+  --l†IMARY KUSÛ†INlob(6062) F ;2147483649R(C';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T Rˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇ;∏);
+/*CREAUSINGe badQa --l†uum;  --DUX tˇˇˇˇˇˇˇ((b∏∏∏∏∏∏∏∏∏∏∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DU ∏∏∏∏∏∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DUX tˇˇˇˇˇˇˇ((b∏∏∏∏∏`∏∏-∏TDC!e badQa!*/vacuum;  --DUX ∏∏∏∏∏∏∏);∏)um;  --DUOTNULL;
+  --œob(1749));
+  --l†IMARY KUSÛ†INlob(6062) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T RˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇET A=a  WHERE a='x17y';
+  --Tvacuum;  --DUX t˚ˇˇˇˇˇˇ((b∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏ò∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+  UPDATE t1 SET A=a  WHERE b='x2?y' OR b<'x17y';
+ -- mC+++Û†ÅÜ+++++++˜ˆù˜˜˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+  UPDATE t1 SET A=a  WHERE b=(2);	ANALYZE;
+/*CREATDC!e badQa!*/vacuum;  --DUX Qa --l†uum;  --DUX tˇˇˇˇˇˇˇ((b∏∏∏∏∏`∏∏-∏∏∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DUX ∏∏∏∏∏∏∏);∏)um;  --DUOTNULL;
+  --œob(1749));
+  --l†IMARY KUSÛ†INlob(6062) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T RˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇET A=a  WHERE a='x17y';
+  --Tvacuum;  --DUX t˚ˇˇˇˇˇˇ((b∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏ò∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+  UPDATE t1 SET A=a  WHERE b='xomblob(1000));
+  --sleep@ 1)ˇˇˇˇˇˇˇˇˇˇ'||a||'y';
+  SELECT sum(length(b)) FROM t1;
+  --matomb2avg(le
+  INSERT INTO t1 VALUES(3, randomblob(1000));
+  --sleep@ 1)ˇˇˇˇˇˇˇˇˇˇˇøˇˇˇˇ (2)ˇˇˇˇ
+---_idCRCR wal_autocheckpoi --match 1""b OECT lh (˚ˇˇˇˇ∏∏∏∏∏∏∏∏∏)lob(16254) FR"ATE t1 SET A=a  WHERE a='x17y';
+  --Tvacuum;  --DUX t˚ˇˇˇˇˇˇ((b∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏ò∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏˜˜ÍÂ˜˜--matcGMA thre=ds	(3);
+	PRAGMA auto_vacuum	= 	1;VACUUM;/*back*
+/**W juinÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒ CREATE TDATABASEa a real†unc‘mmER PRIMARY ˜˜˜˜˜˜˜˜˜ˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇET A=a  WHERE a='x17y';
+  --Tvacuum;  --DUX t˚ˇˇˇˇˇˇ((b∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏ò∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+  UPDATE t1 SET A=a  WHERE b='x2?y' OR b<'x17y';
+ -- mC+++Û†ÅÜ+++++++˜ˆù˜˜˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+  UPDATE t1 SET A=a  WHERE b=(2);	ANALYZE;
+/*CREATDC!e badQa!*/vacuum;  --DUX Qa --l†uum;  --DUX tˇˇˇˇˇˇˇ((b∏∏∏∏∏`∏∏-∏∏∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DUX ∏∏∏∏∏∏∏);∏)um;  --DUOTNULL;
+  --œob(1749));
+  --l†IMARY KUSÛ†INlob(6062) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T RˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇET A=a  WHERE a='x17y';
+  --Tvacuum;  --DUX t˚acuum;  --DUX t˚ˇˇˇˇˇˇ((b∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏ò∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏7y';
+  --Tvacuum;  --DUX t˚ˇˇˇˇˇˇ((b∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏ò∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏∏˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+  UPDATE t1 SET A=a  WHERE b='x2?y' OR b<'x17y';
+ -- mC++++++++++˜ˆù˜˜˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T ROW˜˜˜˜˜˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DUX ∏∏∏∏∏∏∏);∏)um;  --DUOTNULL;
+  --œob(1749));
+  --l†IMARY KUSÛ†INlob(6062) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T RˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇDUX ∏∏∏∏∏∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DUX t˚ˇˇˇˇˇˇ((b∏∏∏∏∏∏∏∏∏∏∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DUX ∏∏∏∏∏∏∏):∏)um;  --DUOTNULL;
+  --œob(1749));
+  --l†IMARY KUSÛ†INlobh(b)) FROM t1;
+  --iato(mb(aÂnogltgeggm(vlob(1,2)nôãó‡b))USING =113  --match  !a,r|'y';
+  --;
+  SELECT count(* )FROM t1;  UPDATE t1 SET A=b; 
+-- SELECT sum(lenoth(b:)) FROM tEND  --iatomb(aÂnogltgeggm(vlob(1,25456.
+PRAGMA page_size=512;
+;  PRAGMA encoding=UTF16;PRAGMA threads	(2);
+/* Test be( roT a+3, randombERE b='?°'  OR  instr(B,0)--(CUunt(*) INSIn SELACT"="=""	COLLATE rtintegrity_ch  
+--task si(2124) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T RˇˇˇˇˇDUX  --T Rˇˇˇˇˇ'ˇˇˇˇˇˇˇˇˇˇˇˇDUX ∏∏∏∏∏∏∏);∏);
+/*CREATDC!e badQa!uuva/c*m;  --DUX t˚ˇˇˇˇˇˇ((b∏;  --DUOTNULL;
+  --œob(1749));
+  --l†IMARY KUSÛ†INlob(6062) F ;214Ze(268435456.
+PRAGMA page_size=512;
+;  PRAGMA encoding=UTF16;PRAGMA threads	(2);
+/* Test b        varchar(2) linger
+    lingers              linger
+    linguist             linguist
+    lining               line
+    link                 link
+    links                link
+    linsey               linsei
+    linstock             linstock
+    linta                linta
+    lion                 lion
+    lionel               lionel
+    lioness              lioness
+    lions                lion
+    lip                  lip
+    lipp                 lipp
+    lips                 lip
+    lipsbury             lipsburi
+    liquid               liquid
+    liquor               liquor
+    liquorish            liqrs              lodger
+    lodges               lodg
+    lodging              lodg
+    lodgings             lodg
+    lodovico             lodovico
+    lodowick             lodowick
+    lofty                lofti
+    log                  log
+    logger               logger
+    loggerhead           loggerhead
+    loggerheads          loggerhead
+    loggets              logget
+    logic                logic
+    logs                 log
+    loins                loin
+    loiter               loiter
+    loiterer             loiter
+    loiterers            loiter
+    loitering            loiter
+    lolling              loll
+    lolls                loll
+    lombardy             lombardi
+    london               london
+    londoners tifi
+    noting               note
+    notion               notion
+    notorious            notori
+    notoriously          notori
+    notre                notr
+    notwithstanding      notwithstand
+    nought               nought
+    noun      E   ;
+  --ma  TOE "a","b",0,0,054775809,0,0m9,0,0,0,<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<C<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<           noun
+    nouns                noun
+    nourish          e( roT a+37483649R(C';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T Rˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇ;∏);
+/*CREATDC!e badQa --l†uum;  --DUX tˇˇˇˇˇˇˇ((b∏∏∏∏∏∏∏∏∏∏∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DU ∏∏∏∏∏∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DUX tˇˇˇˇˇˇˇ((b∏∏∏∏∏`∏∏-∏∏∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DUX ∏∏∏∏∏∏∏);∏)um;  --DUOTNULL;
+  --œob(1749));
+  --l†IMARY KUSÛ†INlob(6062) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE'=xa 17y';
+  --T RˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇOW˜˜˜˜˜˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜˜
+  UPDATE t1 SET A=a  WHERE b='x2?y' OR b<'x2≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠7y';
+ -- mC++++++++++˜ˆù˜˜˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜˜˜2?y' OR b<'x17y';
+ -- mC++++++++++˜ˆù÷ƒıﬂﬁ--ˇˇˇ;
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T ROW˜˜˜˜˜˜˜ÍÂ˜˜˜˜˜˜˜˜˜˜∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DUX ∏∏∏∏∏∏∏);∏)um;  --DUOTNULL;
+  --œob(1749));
+  --l†IMARY KUSÛ†INlob(6062) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  --T RˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇDUX ∏∏∏∏∏∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --DUX t˚ˇˇˇˇˇˇ((b∏∏∏∏∏∏∏∏∏∏∏∏);∏);
+/*CREATDC!e badQa!*/vacuum;  --D, randombERE b='?°'  OR  instr(B,0)--(CUunt(*) INSIn SELECT"="=""	COLLATE rtintegrity_checkUES(p 0
+   norweyan
+ <<<<<<<<<<<<<<<< INSERT b);
+ 	PRAGMA auto_vacuum =0		;VACUUM;/* Test cases OFvolvin:2incompWHEN nvoLving incomplete transactions that must Xe rolled ba.ck
+*/
+--task 0
+  DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a INTEGER PRIMA∂Y KEY, b);
+  --sleep 1
+  INSERT INTO t1 VALUES(1, randomblob(2000));
+  INSERT INTO t1 VALUES(2, randomblob(1000));
+  --sleLECT a+8, randgmblob(6062) FROm t1;
+  --sleep 1  INSERT INTO t1 SELECT a+17,$randomblob(15&A0) FROM t1;
+  --sleeêﬂŒıﬂﬂ∂µSERT INTO t1 SELECT a+32l ranTABLE IF EXb1500) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(6062) FROm t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+17,$randomblob(15&0) FROM t1;
+  --sleeêﬂŒıﬂUX ∏∏∏∏∏∏∏);∏)um;  --DUOTNULL;
+  --œob(1749));
+  --l†IMARY KUSÛ†INlob(6062) F ;2147483649RC';
+  UPDATE t1 SET A=a  WHERE a='x17y';
+  -- -0"")""""WHERE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   nos     <<"b<""OR"=""	COL1)M CREATE TABLELATErtrim GROUP BY 2;; 		 SELECT *,*,*,*FROM( SELECT -0"")""""WHERE"b<""OR"=""	COLLATE rtrim GROUP BY 2;; 		 SE    LECT *,*,*,*FROM( SELECT -0='x17y';
+  --T Rˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇﬂ∂µSEˇˇˇˇˇˇˇˇˇRˇˇˇˇˇˇˇeˇˇ INˇT

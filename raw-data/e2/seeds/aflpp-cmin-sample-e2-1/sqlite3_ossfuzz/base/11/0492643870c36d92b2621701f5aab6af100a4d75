@@ -1,0 +1,2 @@
+	PRAGMA  temp_store_directory(12071) FROM t1;  
+--s698M t825WHE
