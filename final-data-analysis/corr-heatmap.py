@@ -141,6 +141,6 @@ ax.xaxis.set_ticks_position('none')
 figure = plt.gcf() # get current figure
 figure.set_size_inches(10, 6)
 
-plt.savefig(f'assets/spearman-heatmaps/all-pred.png', bbox_inches="tight", \
-    dpi = 100)
+# plt.savefig(f'assets/spearman-heatmaps/all-pred.png', bbox_inches="tight", \
+#    dpi = 100)
 plt.show()
