@@ -213,15 +213,15 @@ def build(*args):  # pylint: disable=too-many-branches,too-many-statements
         new_env['SYMCC_NO_SYMBOLIC_INPUT'] = "1"
         new_env['SYMCC_SILENT'] = "1"
 
-        # For CmpLog build, set the OUT and FUZZ_TARGET environment
-        # variable to point to the new CmpLog build directory.
+        # For symcc build, set the OUT and FUZZ_TARGET environment
+        # variable to point to the new symcc build directory.
         new_env['OUT'] = symcc_build_directory
         fuzz_target = os.getenv('FUZZ_TARGET')
         if fuzz_target:
             new_env['FUZZ_TARGET'] = os.path.join(symcc_build_directory,
                                                   os.path.basename(fuzz_target))
 
-        print('Re-building benchmark for CmpLog fuzzing target')
+        print('Re-building benchmark for symcc fuzzing target')
         utils.build_benchmark(env=new_env)
 
     shutil.copy('/afl/afl-fuzz', build_directory)
@@ -270,6 +270,8 @@ def fuzz(input_corpus,
         os.environ['AFL_CMPLOG_ONLY_NEW'] = '1'
         if 'ADDITIONAL_ARGS' in os.environ:
             flags += os.environ['ADDITIONAL_ARGS'].split(' ')
+
+    os.environ['AFL_FAST_CAL'] = '1'
 
     afl_fuzzer.run_afl_fuzz(input_corpus,
                             output_corpus,

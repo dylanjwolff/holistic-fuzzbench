@@ -55,9 +55,9 @@ docker run \
 -e REPORT_FILESTORE={{report_filestore}} {% if local_experiment %}-v {{report_filestore}}:{{report_filestore}} {% endif %}\
 -e FUZZ_TARGET={{fuzz_target}} \
 {% if use_seeds_per_trial %} -e SEEDS_PER_TRIAL=1 -e SEED_CORPUS_DIR=$guest_seed_per_trial_dir  -v {{seeds_per_trial_dir}}/{{benchmark}}/{{fuzzer}}/{{per_fuzzer_bench_id}}:$guest_seed_per_trial_dir \{% endif %}
--e LOCAL_EXPERIMENT={{local_experiment}} \{% if not local_experiment %}
---name=runner-container \
-{% endif %}--cap-add SYS_NICE --cap-add SYS_PTRACE \
+-e LOCAL_EXPERIMENT={{local_experiment}} \
+{% if not local_experiment %}--name=runner-container {% endif %}\
+--shm-size=2g \
+--cap-add SYS_NICE --cap-add SYS_PTRACE \
 --security-opt seccomp=unconfined \
-{{docker_image_url}} 2>&1 | tee /tmp/runner-log.txt
-
+{{docker_image_url}} 2>&1 | tee /tmp/runner-log-{{trial_id}}.txt
