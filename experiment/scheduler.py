@@ -633,6 +633,19 @@ def start_trials(trials, experiment_config: dict, pool, core_allocation=None):
     logger.info('Starting trials.')
     trial_id_mapping = {trial.id: trial for trial in trials}
 
+    id_fb = {}
+    d = {}
+    for tp in trials:
+        if tp.benchmark not in d:
+            d[tp.benchmark] = {}
+        if tp.fuzzer not in d[tp.benchmark]:
+            d[tp.benchmark][tp.fuzzer] = 0
+        id_fb[tp.id] = d[tp.benchmark][tp.fuzzer]
+        print(f'NONCE=1mKd3 Trial ID Mapping:{tp.id},{tp.benchmark},{tp.fuzzer},{d[tp.benchmark][tp.fuzzer]}')
+        d[tp.benchmark][tp.fuzzer] = d[tp.benchmark][tp.fuzzer] + 1
+
+
+
     # Shuffle trials so that we don't create trials for the same fuzzer
     # benchmark close to one another. This *may* make the preemption rate more
     # evenly distributed across fuzzer benchmarks which will help if we don't
@@ -654,7 +667,7 @@ def start_trials(trials, experiment_config: dict, pool, core_allocation=None):
 
         start_trial_args += [
             (TrialProxy(trial), experiment_config,
-             free_cpusets[index] if free_cpusets is not None else None)
+             free_cpusets[index] if free_cpusets is not None else None, id_fb[trial.id])
         ]
 
     started_trial_proxies = pool.starmap(_start_trial, start_trial_args)
@@ -692,7 +705,7 @@ def _initialize_logs(experiment):
 # https://cloud.google.com/compute/docs/instances/preemptible#preemption_selection
 
 
-def _start_trial(trial: TrialProxy, experiment_config: dict, cpuset=None):
+def _start_trial(trial: TrialProxy, experiment_config: dict, cpuset=None, id_fb=0):
     """Start a trial if possible. Mark the trial as started if it was and then
     return the Trial. Otherwise return None."""
     # TODO(metzman): Add support for early exit (trial_creation_failed) that was
@@ -704,7 +717,7 @@ def _start_trial(trial: TrialProxy, experiment_config: dict, cpuset=None):
     logger.info('Start trial %d.', trial.id)
     started = create_trial_instance(trial.fuzzer, trial.benchmark, trial.id,
                                     experiment_config, trial.preemptible,
-                                    cpuset)
+                                    cpuset, id_fb)
     if started:
         trial.time_started = datetime_now()
         trial.cpuset = cpuset
@@ -719,7 +732,8 @@ def render_startup_script_template(  # pylint: disable=too-many-arguments
         benchmark: str,
         trial_id: int,
         experiment_config: dict,
-        cpuset=None):
+        cpuset=None,
+        id_fb=0):
     """Render the startup script using the template and the parameters
     provided and return the result."""
     experiment = experiment_config['experiment']
@@ -747,9 +761,19 @@ def render_startup_script_template(  # pylint: disable=too-many-arguments
         'no_dictionaries': experiment_config['no_dictionaries'],
         'oss_fuzz_corpus': experiment_config['oss_fuzz_corpus'],
         'num_cpu_cores': experiment_config['runner_num_cpu_cores'],
+        'per_fuzzer_bench_id': id_fb,
         'cpuset': cpuset,
         'custom_seed_corpus_dir': experiment_config['custom_seed_corpus_dir'],
     }
+
+    if 'use_seeds_per_trial' in experiment_config:
+        kwargs['seeds_per_trial_dir'] = experiment_config['seeds_per_trial_dir']
+        kwargs['use_seeds_per_trial'] = experiment_config['use_seeds_per_trial']
+        fuzzer_trials = len(experiment_config['fuzzers']) * experiment_config['trials']
+        kwargs['mod_trial_id'] = trial_id % fuzzer_trials
+
+    else:
+        kwargs['use_seeds_per_trial'] = False
 
     if not local_experiment:
         kwargs['cloud_compute_zone'] = experiment_config['cloud_compute_zone']
@@ -764,14 +788,15 @@ def create_trial_instance(  # pylint: disable=too-many-arguments
         trial_id: int,
         experiment_config: dict,
         preemptible: bool,
-        cpuset=None) -> bool:
+        cpuset=None,
+        id_fb=0) -> bool:
     """Create or start a trial instance for a specific
     trial_id,fuzzer,benchmark."""
     instance_name = experiment_utils.get_trial_instance_name(
         experiment_config['experiment'], trial_id)
     startup_script = render_startup_script_template(instance_name, fuzzer,
                                                     benchmark, trial_id,
-                                                    experiment_config, cpuset)
+                                                    experiment_config, cpuset, id_fb)
     startup_script_path = '/tmp/%s-start-docker.sh' % instance_name
     with open(startup_script_path, 'w') as file_handle:
         file_handle.write(startup_script)
