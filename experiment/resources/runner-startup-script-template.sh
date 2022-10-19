@@ -34,8 +34,6 @@ do
   echo 'Error pulling image, retrying...'
 done{% endif %}
 
-guest_seed_per_trial_dir=/out/seeds_per_trial
-
 docker run \
 --privileged --cpus={{num_cpu_cores}} --rm \
 {% if cpuset %}--cpuset-cpus={{cpuset}} {% endif %}\
@@ -54,7 +52,7 @@ docker run \
 -e EXPERIMENT_FILESTORE={{experiment_filestore}} {% if local_experiment %}-v {{experiment_filestore}}:{{experiment_filestore}} {% endif %}\
 -e REPORT_FILESTORE={{report_filestore}} {% if local_experiment %}-v {{report_filestore}}:{{report_filestore}} {% endif %}\
 -e FUZZ_TARGET={{fuzz_target}} \
-{% if use_seeds_per_trial %} -e SEEDS_PER_TRIAL=1 -e SEED_CORPUS_DIR=$guest_seed_per_trial_dir  -v {{seeds_per_trial_dir}}/{{benchmark}}/{{fuzzer}}/{{per_fuzzer_bench_id}}:$guest_seed_per_trial_dir \{% endif %}
+-e PER_BENCH_TRIAL_ID={{per_fuzzer_bench_id}} \
 -e LOCAL_EXPERIMENT={{local_experiment}} \
 {% if not local_experiment %}--name=runner-container {% endif %}\
 --shm-size=2g \

@@ -185,17 +185,17 @@ class Plotter:
         axes.set(xlabel='Time (hour:minute)')
 
         if self._logscale or logscale:
-            axes.set_xscale('log')
+            axes.set_xscale('symlog')
             ticks = np.logspace(
                 # Start from the time of the first measurement.
-                np.log10(experiment_utils.DEFAULT_SNAPSHOT_SECONDS),
+                0.0,
                 np.log10(snapshot_time + 1),  # Include tick at end time.
                 _DEFAULT_TICKS_COUNT)
         else:
             ticks = np.arange(
-                experiment_utils.DEFAULT_SNAPSHOT_SECONDS,
+                0.0,
                 snapshot_time + 1,  # Include tick at end time.
-                snapshot_time / _DEFAULT_TICKS_COUNT)
+                max(snapshot_time / _DEFAULT_TICKS_COUNT, 1))
 
         axes.set_xticks(ticks)
         axes.set_xticklabels([_formatted_hour_min(t) for t in ticks])

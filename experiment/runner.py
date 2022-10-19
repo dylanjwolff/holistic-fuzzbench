@@ -27,6 +27,7 @@ import tarfile
 import threading
 import time
 import zipfile
+from random import Random
 
 from common import benchmark_config
 from common import environment
@@ -131,7 +132,6 @@ def _unpack_clusterfuzz_seed_corpus(fuzz_target_path, corpus_directory):
     corpus directory if it exists. Copied from unpack_seed_corpus in
     engine_common.py in ClusterFuzz.
     """
-    return
 
     oss_fuzz_corpus = environment.get('OSS_FUZZ_CORPUS')
     if oss_fuzz_corpus:
@@ -172,6 +172,12 @@ def _unpack_clusterfuzz_seed_corpus(fuzz_target_path, corpus_directory):
     logs.info('Unarchived %d files from seed corpus %s.', idx,
               seed_corpus_archive_path)
 
+def sample_corpus(input_directory, random_seed, output_directory=None, algorithm="EXPONENTIAL"):
+    gen = Random(random_seed)
+    val = gen.randrange(100)
+    logs.warning(f"sampling corpus {input_directory} with seed {random_seed} gives {val}")
+
+    return
 
 def run_fuzzer(max_total_time, log_filename):
     """Runs the fuzzer using its script. Logs stdout and stderr of the fuzzer
@@ -179,18 +185,12 @@ def run_fuzzer(max_total_time, log_filename):
     input_corpus = environment.get('SEED_CORPUS_DIR')
     output_corpus = environment.get('OUTPUT_CORPUS_DIR')
     fuzz_target_name = environment.get('FUZZ_TARGET')
+
     target_binary = fuzzer_utils.get_fuzz_target_binary(FUZZ_TARGET_DIR,
                                                         fuzz_target_name)
     if not target_binary:
         logs.error('Fuzz target binary not found.')
         return
-
-    if environment.get('CUSTOM_SEED_CORPUS_DIR'):
-        _copy_custom_seed_corpus(input_corpus)
-    # Looks like Fuzzbench implemented this feature in parallel, should uncomment this
-    # else:
-        # _unpack_clusterfuzz_seed_corpus(target_binary, input_corpus)
-    # _clean_seed_corpus(input_corpus)
 
     if max_total_time is None:
         logs.warning('max_total_time is None. Fuzzing indefinitely.')
@@ -285,32 +285,31 @@ class TrialRunner:  # pylint: disable=too-many-instance-attributes
         max_total_time = environment.get('MAX_TOTAL_TIME')
         args = (max_total_time, self.log_file)
 
-        logs.info('about to get envvars')
+        ## Setup initial corpus before fuzzer thread so that first sync is of the
+        ## initial corpus alone with no new test cases
         input_corpus = environment.get('SEED_CORPUS_DIR')
         output_corpus = environment.get('OUTPUT_CORPUS_DIR')
         fuzz_target_name = environment.get('FUZZ_TARGET')
+        per_benchmark_trial_id = environment.get('PER_BENCH_TRIAL_ID')
+
         target_binary = fuzzer_utils.get_fuzz_target_binary(FUZZ_TARGET_DIR,
                                                             fuzz_target_name)
-        if not target_binary:
-            logs.error('Fuzz target binary not found.')
-            return
 
-        logs.info('about to init corpus.')
-        _unpack_clusterfuzz_seed_corpus(target_binary, input_corpus)
+        if environment.get('CUSTOM_SEED_CORPUS_DIR'):
+            _copy_custom_seed_corpus(input_corpus)
+        else:
+            _unpack_clusterfuzz_seed_corpus(target_binary, input_corpus)
         _clean_seed_corpus(input_corpus)
-        logs.info('about to copy corpus.')
 
-        # time.sleep(3600)
+        sample_corpus(input_corpus, per_benchmark_trial_id)
+
+        # Ensure seeds are in output corpus
         os.rmdir(output_corpus)
         os.makedirs(input_corpus, exist_ok=True)
         shutil.copytree(input_corpus, output_corpus)
-        logs.info('about to sync.')
+
         self.do_sync()
-        time.sleep(20)
-        # Hack to make sure initial corpus is asyncronously archived before the fuzzer starts
-        logs.info('about to rm init corpus.')
-        shutil.rmtree(output_corpus)
-        os.makedirs(output_corpus, exist_ok=True)
+        ## end setup
 
         fuzz_thread = threading.Thread(target=run_fuzzer, args=args)
         fuzz_thread.start()

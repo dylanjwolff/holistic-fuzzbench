@@ -633,6 +633,7 @@ def start_trials(trials, experiment_config: dict, pool, core_allocation=None):
     logger.info('Starting trials.')
     trial_id_mapping = {trial.id: trial for trial in trials}
 
+    # Generate a shared ID for the Nth trial of each fuzzer on each benchmark
     id_fb = {}
     d = {}
     for tp in trials:
@@ -641,7 +642,7 @@ def start_trials(trials, experiment_config: dict, pool, core_allocation=None):
         if tp.fuzzer not in d[tp.benchmark]:
             d[tp.benchmark][tp.fuzzer] = 0
         id_fb[tp.id] = d[tp.benchmark][tp.fuzzer]
-        print(f'NONCE=1mKd3 Trial ID Mapping:{tp.id},{tp.benchmark},{tp.fuzzer},{d[tp.benchmark][tp.fuzzer]}')
+        print(f'Trial ID Mapping:{tp.id},{tp.benchmark},{tp.fuzzer},{d[tp.benchmark][tp.fuzzer]}')
         d[tp.benchmark][tp.fuzzer] = d[tp.benchmark][tp.fuzzer] + 1
 
 
@@ -765,15 +766,6 @@ def render_startup_script_template(  # pylint: disable=too-many-arguments
         'cpuset': cpuset,
         'custom_seed_corpus_dir': experiment_config['custom_seed_corpus_dir'],
     }
-
-    if 'use_seeds_per_trial' in experiment_config:
-        kwargs['seeds_per_trial_dir'] = experiment_config['seeds_per_trial_dir']
-        kwargs['use_seeds_per_trial'] = experiment_config['use_seeds_per_trial']
-        fuzzer_trials = len(experiment_config['fuzzers']) * experiment_config['trials']
-        kwargs['mod_trial_id'] = trial_id % fuzzer_trials
-
-    else:
-        kwargs['use_seeds_per_trial'] = False
 
     if not local_experiment:
         kwargs['cloud_compute_zone'] = experiment_config['cloud_compute_zone']
