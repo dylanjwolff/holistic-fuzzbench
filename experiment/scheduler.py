@@ -767,6 +767,13 @@ def render_startup_script_template(  # pylint: disable=too-many-arguments
         'custom_seed_corpus_dir': experiment_config['custom_seed_corpus_dir'],
     }
 
+    if 'seed_sampling' in experiment_config:
+        kwargs['use_seed_sampling'] = True
+        kwargs['seed_sampling_distribution'] = experiment_config['seed_sampling']['distribution']
+        kwargs['seed_sampling_mean_utilization'] = experiment_config['seed_sampling']['mean_seed_utilization']
+    else:
+        kwargs['use_seed_sampling'] = False
+
     if not local_experiment:
         kwargs['cloud_compute_zone'] = experiment_config['cloud_compute_zone']
         kwargs['cloud_project'] = experiment_config['cloud_project']

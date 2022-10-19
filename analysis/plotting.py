@@ -191,6 +191,7 @@ class Plotter:
                 0.0,
                 np.log10(snapshot_time + 1),  # Include tick at end time.
                 _DEFAULT_TICKS_COUNT)
+            axes.set_xticks([], minor=True)
         else:
             ticks = np.arange(
                 0.0,
@@ -201,6 +202,7 @@ class Plotter:
         axes.set_xticklabels([_formatted_hour_min(t) for t in ticks])
 
         sns.despine(ax=axes, trim=True)
+        plt.xlim(0)
 
     def write_coverage_growth_plot(  # pylint: disable=too-many-arguments
             self,
