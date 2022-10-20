@@ -175,7 +175,17 @@ def _unpack_clusterfuzz_seed_corpus(fuzz_target_path, corpus_directory):
     logs.info('Unarchived %d files from seed corpus %s.', idx,
               seed_corpus_archive_path)
 
-def sample_corpus(corpus_dir, random_seed, dest_dir=None, distribution="EXP", mean_seed_usage=0.2):
+
+def sample_corpus(corpus_dir,
+                  random_seed,
+                  dest_dir=None,
+                  distribution="EXP",
+                  mean_seed_usage=0.2):
+    """Samples a pseudo-random number of files from the input corpus. By default sampling is done 
+    in-place, destructively, removing unsampled files. Will sample (mean_seed_usage * number of seeds)
+    files on average, according to the specified distribution. Sampling is deterministic wrt the 
+    random seed"""
+
     gen = Random(random_seed)
     npgen = RandomState(random_seed)
 
@@ -184,31 +194,37 @@ def sample_corpus(corpus_dir, random_seed, dest_dir=None, distribution="EXP", me
     recf = [f for f in glob.glob(f"{corpus_dir}/**/*") if os.path.isfile(f)]
     dfs = [f for f in glob.glob(f"{corpus_dir}/*") if os.path.isfile(f)]
     corpus_paths = list(set(recf + dfs))
-    corpus_paths.sort() # need to be ordered for deterministic sampling
+    corpus_paths.sort()  # need to be ordered for deterministic sampling
     print(f"Sampling from {len(corpus_paths)} files under {corpus_dir}")
 
     num_seeds = len(corpus_paths)
 
-
     if distribution == "UNIFORM":
-        trial_num_seeds = gen.randint(1, int(np.round(mean_seed_usage*num_seeds))) # inclusive []
+        trial_num_seeds = gen.randint(1,
+                                      int(np.round(mean_seed_usage *
+                                                   num_seeds)))  # inclusive []
     elif distribution == "EXP":
-        trial_num_seeds = int(np.round(npgen.exponential(scale=(mean_seed_usage*num_seeds), size=1)[0]))
+        trial_num_seeds = int(
+            np.round(
+                npgen.exponential(scale=(mean_seed_usage * num_seeds),
+                                  size=1)[0]))
     else:
         raise Exception("Unimplemented sampling algorithm")
 
-    trial_num_seeds = min(trial_num_seeds, num_seeds) # no more than exists
+    trial_num_seeds = min(trial_num_seeds, num_seeds)  # no more than exists
 
     trial_seeds = gen.sample(corpus_paths, k=trial_num_seeds)
     print(trial_seeds)
     print(len(trial_seeds))
 
     if inplace:
-        for path in trial_seeds:
-            os.remove(path)
+        for path in corpus_paths:
+            if path not in trial_seeds:
+                os.remove(path)
     else:
         for path in trial_seeds:
             shutil.copy(path, dest_dir)
+
 
 def run_fuzzer(max_total_time, log_filename):
     """Runs the fuzzer using its script. Logs stdout and stderr of the fuzzer
@@ -324,9 +340,10 @@ class TrialRunner:  # pylint: disable=too-many-instance-attributes
         per_benchmark_trial_id = environment.get('PER_BENCH_TRIAL_ID')
         seed_sample_distribution = environment.get('SEED_SAMPLE_DIST')
         seed_sample_mean_utilization = environment.get('SEED_SAMPLE_MEAN_UTIL')
+        randomness_seed = int(environment.get('RANDOMNESS_SEED'))
 
-        target_binary = fuzzer_utils.get_fuzz_target_binary(FUZZ_TARGET_DIR,
-                                                            fuzz_target_name)
+        target_binary = fuzzer_utils.get_fuzz_target_binary(
+            FUZZ_TARGET_DIR, fuzz_target_name)
 
         if environment.get('CUSTOM_SEED_CORPUS_DIR'):
             _copy_custom_seed_corpus(input_corpus)
@@ -335,9 +352,10 @@ class TrialRunner:  # pylint: disable=too-many-instance-attributes
         _clean_seed_corpus(input_corpus)
 
         if seed_sample_distribution is not None:
-            sample_corpus(input_corpus, per_benchmark_trial_id,
-                    distribution=seed_sample_distribution,
-                    mean_seed_usage=float(seed_sample_mean_utilization))
+            sample_corpus(input_corpus,
+                          per_benchmark_trial_id + randomness_seed,
+                          distribution=seed_sample_distribution,
+                          mean_seed_usage=float(seed_sample_mean_utilization))
 
         # Ensure seeds are in output corpus
         os.rmdir(output_corpus)
