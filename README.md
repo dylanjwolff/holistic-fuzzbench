@@ -1,4 +1,4 @@
-# Explainable Fuzzer Evaluation Artifact
+# Holistic Fuzzer Evaluation Artifact
 
 This artifact is structured as follows:
 
