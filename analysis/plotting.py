@@ -20,7 +20,6 @@ import seaborn as sns
 from matplotlib import colors
 from matplotlib import pyplot as plt
 from analysis import data_utils
-from common import experiment_utils
 
 _DEFAULT_TICKS_COUNT = 12
 _DEFAULT_LABEL_ROTATION = 30
@@ -41,6 +40,8 @@ def _formatted_hour_min(seconds):
         if hours:
             time_string += ':'
         time_string += f'{minutes}m'
+    if seconds == 0:
+        time_string = '0m'
     return time_string
 
 
@@ -54,7 +55,7 @@ def _formatted_title(benchmark_snapshot_df):
     stats_string += _formatted_hour_min(snapshot_time)
 
     trial_count = benchmark_snapshot_df.fuzzer.value_counts().min()
-    stats_string += f', {trial_count} trials/fuzzer'
+    stats_string += f', at least {trial_count} trials/fuzzer'
     stats_string += ')'
     return stats_string
 
@@ -189,7 +190,8 @@ class Plotter:
                 # Start from the time of the first measurement.
                 0.0,
                 np.log10(snapshot_time + 1),  # Include tick at end time.
-                _DEFAULT_TICKS_COUNT)
+                _DEFAULT_TICKS_COUNT - 1)
+            ticks = np.insert(ticks, 0, 0)
             axes.set_xticks([], minor=True)
         else:
             ticks = np.arange(
@@ -200,6 +202,7 @@ class Plotter:
         axes.set_xticks(ticks)
         axes.set_xticklabels([_formatted_hour_min(t) for t in ticks])
 
+        plt.xlim(0)
         sns.despine(ax=axes, trim=True)
         plt.xlim(0)
 

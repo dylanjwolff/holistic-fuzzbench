@@ -54,6 +54,7 @@ docker run \
 -e FUZZ_TARGET={{fuzz_target}} \
 -e PER_BENCH_TRIAL_ID={{per_fuzzer_bench_id}}{% if use_seed_sampling %} -e SEED_SAMPLE_DIST={{seed_sampling_distribution}} -e SEED_SAMPLE_MEAN_UTIL={{seed_sampling_mean_utilization}} {% endif %} \
 -e RANDOMNESS_SEED={{randomness_seed}} \
+-e PRIVATE={{private}} \
 -e LOCAL_EXPERIMENT={{local_experiment}} \
 {% if not local_experiment %}--name=runner-container {% endif %}\
 --shm-size=2g \
