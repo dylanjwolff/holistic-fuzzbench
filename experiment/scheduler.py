@@ -652,24 +652,24 @@ def update_started_trials(trial_proxies, trial_id_mapping, core_allocation):
     return started_trials
 
 
-def get_per_bench_id_mapping(trials):
+
     """Generate a shared ID for the Nth trial of each fuzzer on each benchmark
     This lets us align e.g. the '1st' trial of AFL on bloaty-fuzz-target and
     the '1st' trial of LibFuzzer on bloaty-fuzz-target. When the seed corpora
     are sampled across trials, this ID tells us which trials have identical
     starting corpora"""
 
-    trial_id_to_per_bench_id = {}
+    trial_id_to_corpus_variant_id = {}
     bench_fuzzer_max_ids = {}
     for trial in trials:
         if trial.benchmark not in bench_fuzzer_max_ids:
             bench_fuzzer_max_ids[trial.benchmark] = {}
         if trial.fuzzer not in bench_fuzzer_max_ids[trial.benchmark]:
             bench_fuzzer_max_ids[trial.benchmark][trial.fuzzer] = 0
-        trial_id_to_per_bench_id[trial.id] = \
+        trial_id_to_corpus_variant_id[trial.id] = \
             bench_fuzzer_max_ids[trial.benchmark][trial.fuzzer]
         bench_fuzzer_max_ids[trial.benchmark][trial.fuzzer] += 1
-    return trial_id_to_per_bench_id
+    return trial_id_to_corpus_variant_id
 
 
 def start_trials(trials, experiment_config: dict, pool, core_allocation=None):
@@ -678,7 +678,7 @@ def start_trials(trials, experiment_config: dict, pool, core_allocation=None):
     logger.info('Starting trials.')
     trial_id_mapping = {trial.id: trial for trial in trials}
 
-    trial_id_to_per_bench_id = get_per_bench_id_mapping(trials)
+    trial_id_to_corpus_variant_id = get_corpus_variant_id_mapping(trials)
 
     # Shuffle trials so that we don't create trials for the same fuzzer
     # benchmark close to one another. This *may* make the preemption rate more
@@ -702,7 +702,7 @@ def start_trials(trials, experiment_config: dict, pool, core_allocation=None):
         start_trial_args += [
             (TrialProxy(trial), experiment_config,
              free_cpusets[index] if free_cpusets is not None else None,
-             trial_id_to_per_bench_id[trial.id])
+             trial_id_to_corpus_variant_id[trial.id])
         ]
 
     started_trial_proxies = pool.starmap(_start_trial, start_trial_args)
@@ -743,7 +743,7 @@ def _initialize_logs(experiment):
 def _start_trial(trial: TrialProxy,
                  experiment_config: dict,
                  cpuset=None,
-                 per_bench_id=0):
+                 corpus_variant_id=0):
     """Start a trial if possible. Mark the trial as started if it was and then
     return the Trial. Otherwise return None."""
     # TODO(metzman): Add support for early exit (trial_creation_failed) that was
@@ -755,7 +755,7 @@ def _start_trial(trial: TrialProxy,
     logger.info('Start trial %d.', trial.id)
     started = create_trial_instance(trial.fuzzer, trial.benchmark, trial.id,
                                     experiment_config, trial.preemptible,
-                                    cpuset, per_bench_id)
+                                    cpuset, corpus_variant_id)
     if started:
         trial.time_started = datetime_now()
         trial.cpuset = cpuset
@@ -771,7 +771,7 @@ def render_startup_script_template(  # pylint: disable=too-many-arguments
         trial_id: int,
         experiment_config: dict,
         cpuset=None,
-        per_bench_id=0):
+        corpus_variant_id=0):
     """Render the startup script using the template and the parameters
     provided and return the result."""
     experiment = experiment_config['experiment']
@@ -799,7 +799,7 @@ def render_startup_script_template(  # pylint: disable=too-many-arguments
         'no_dictionaries': experiment_config['no_dictionaries'],
         'oss_fuzz_corpus': experiment_config['oss_fuzz_corpus'],
         'num_cpu_cores': experiment_config['runner_num_cpu_cores'],
-        'per_fuzzer_bench_id': per_bench_id,
+        'corpus_variant_id': corpus_variant_id,
         'private': experiment_config['private'],
         'cpuset': cpuset,
         'custom_seed_corpus_dir': experiment_config['custom_seed_corpus_dir'],
@@ -831,7 +831,7 @@ def create_trial_instance(  # pylint: disable=too-many-arguments
         experiment_config: dict,
         preemptible: bool,
         cpuset=None,
-        per_bench_id=0) -> bool:
+        corpus_variant_id=0) -> bool:
     """Create or start a trial instance for a specific
     trial_id,fuzzer,benchmark."""
     instance_name = experiment_utils.get_trial_instance_name(
@@ -839,7 +839,7 @@ def create_trial_instance(  # pylint: disable=too-many-arguments
     startup_script = render_startup_script_template(instance_name, fuzzer,
                                                     benchmark, trial_id,
                                                     experiment_config, cpuset,
-                                                    per_bench_id)
+                                                    corpus_variant_id)
     startup_script_path = f'/tmp/{instance_name}-start-docker.sh'
     with open(startup_script_path, 'w', encoding='utf-8') as file_handle:
         file_handle.write(startup_script)

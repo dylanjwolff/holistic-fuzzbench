@@ -192,9 +192,7 @@ def sample_corpus(corpus_dir,
 
     inplace = dest_dir is None
 
-    recf = [f for f in glob.glob(f"{corpus_dir}/**/*") if os.path.isfile(f)]
-    dfs = [f for f in glob.glob(f"{corpus_dir}/*") if os.path.isfile(f)]
-    corpus_paths = list(set(recf + dfs))
+    corpus_paths = [f for f in glob.glob(f"{corpus_dir}/**/*", recursive=True) if os.path.isfile(f)]
     corpus_paths.sort()  # need to be ordered for deterministic sampling
     print(f"Sampling from {len(corpus_paths)} files under {corpus_dir}")
 
@@ -354,7 +352,7 @@ class TrialRunner:  # pylint: disable=too-many-instance-attributes
         input_corpus = environment.get('SEED_CORPUS_DIR')
         output_corpus = environment.get('OUTPUT_CORPUS_DIR')
         fuzz_target_name = environment.get('FUZZ_TARGET')
-        per_benchmark_trial_id = environment.get('PER_BENCH_TRIAL_ID')
+        corpus_variant_id = environment.get('CORPUS_VARIANT_ID')
         seed_sample_distribution = environment.get('SEED_SAMPLE_DIST')
         seed_sample_mean_utilization = environment.get('SEED_SAMPLE_MEAN_UTIL')
         randomness_seed = int(environment.get('RANDOMNESS_SEED'))
@@ -370,7 +368,7 @@ class TrialRunner:  # pylint: disable=too-many-instance-attributes
 
         if seed_sample_distribution is not None:
             sample_corpus(input_corpus,
-                          per_benchmark_trial_id + randomness_seed,
+                          corpus_variant_id + randomness_seed,
                           distribution=seed_sample_distribution,
                           mean_seed_usage=float(seed_sample_mean_utilization))
 
