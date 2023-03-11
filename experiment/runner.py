@@ -355,16 +355,10 @@ class TrialRunner:  # pylint: disable=too-many-instance-attributes
         corpus_variant_id = environment.get('CORPUS_VARIANT_ID')
         seed_sample_distribution = environment.get('SEED_SAMPLE_DIST')
         seed_sample_mean_utilization = environment.get('SEED_SAMPLE_MEAN_UTIL')
-        randomness_seed = int(environment.get('RANDOMNESS_SEED'))
+        randomness_seed = int(environment.get('RANDOMNESS_SEED') or 0)
 
         target_binary = fuzzer_utils.get_fuzz_target_binary(
             FUZZ_TARGET_DIR, fuzz_target_name)
-
-        if environment.get('CUSTOM_SEED_CORPUS_DIR'):
-            _copy_custom_seed_corpus(input_corpus)
-        else:
-            _unpack_clusterfuzz_seed_corpus(target_binary, input_corpus)
-        _clean_seed_corpus(input_corpus)
 
         if seed_sample_distribution is not None:
             sample_corpus(input_corpus,
@@ -373,7 +367,7 @@ class TrialRunner:  # pylint: disable=too-many-instance-attributes
                           mean_seed_usage=float(seed_sample_mean_utilization))
 
         # Ensure seeds are in output corpus
-        os.rmdir(output_corpus)
+        shutil.rmtree(output_corpus)
         os.makedirs(input_corpus, exist_ok=True)
         shutil.copytree(input_corpus, output_corpus)
 

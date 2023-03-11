@@ -652,7 +652,7 @@ def update_started_trials(trial_proxies, trial_id_mapping, core_allocation):
     return started_trials
 
 
-
+def get_corpus_variant_id_mapping(trials):
     """Generate a shared ID for the Nth trial of each fuzzer on each benchmark
     This lets us align e.g. the '1st' trial of AFL on bloaty-fuzz-target and
     the '1st' trial of LibFuzzer on bloaty-fuzz-target. When the seed corpora
