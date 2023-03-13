@@ -204,6 +204,7 @@ class Plotter:
 
         plt.xlim(0)
         sns.despine(ax=axes, trim=True)
+        plt.xlim(0)
 
     def write_coverage_growth_plot(  # pylint: disable=too-many-arguments
             self,
