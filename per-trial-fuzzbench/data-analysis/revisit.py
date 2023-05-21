@@ -1,0 +1,203 @@
+import polars as pl
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+import pyarrow
+import pandas as pd
+
+from scipy import stats
+
+import sklearn
+from sklearn import linear_model
+
+import statsmodels.api as sm
+from statsmodels.stats.outliers_influence import variance_inflation_factor
+
+from sklearn.preprocessing import power_transform
+from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import GroupKFold
+from sklearn.model_selection import KFold
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.ensemble import GradientBoostingRegressor
+from sklearn.neural_network import MLPRegressor
+
+
+
+df = pl.scan_csv("e2-comb-data.csv")
+df = pl.read_csv("e2-comb-data.csv")
+
+df = df.filter(pl.col("fuzzer") != "honggfuzz")
+
+df = df = df.with_columns([
+    (pl.col("edges_covered") - pl.col("initial_coverage")).alias("coverage_inc")
+])
+
+corpus_properties = [
+    "corpus_size",
+    "initial_coverage",
+    "eq_reached",
+    "eq_unexplored",
+    "ineq_reached",
+    "ineq_unexplored",
+    "indir_reached",
+    "mean_exec_ns",
+    "q25_exec_ns",
+    "q50_exec_ns",
+    "q75_exec_ns",
+    "q100_exec_ns",
+    "mean_size_bytes",
+    "q25_mean_size_bytes",
+    "q50_mean_size_bytes",
+    "q75_mean_size_bytes",
+    "q100_mean_size_bytes",
+]
+# omitting because of many missing values
+# "shared_reached",
+
+program_properties = [
+    "total_shared",
+    "total_eq",
+    "total_ineq",
+    "total_indir",
+    "bin_text_size",
+]
+
+# all "intermediate" data has been filtered out here
+response_variables = [
+    "edges_covered",
+    "coverage_inc",
+]
+
+## Normalization
+for x in corpus_properties: 
+    df = df.with_columns([
+        ((pl.col(x) - pl.col(x).min()) / (pl.col(x).max() - pl.col(x).min())).over("benchmark").alias(f"{x}_norm"),
+    ])
+
+for x in response_variables: 
+    df = df.with_columns([
+        ((pl.col(x) - pl.col(x).min()) / (pl.col(x).max() - pl.col(x).min())).over("benchmark").alias(f"{x}_norm"),
+    ])
+
+for x in program_properties: 
+    df = df.with_columns([
+        ((pl.col(x) - pl.col(x).min()) / (pl.col(x).max() - pl.col(x).min())).alias(f"{x}_norm"),
+    ])
+
+## Rank Transform
+for x in corpus_properties: 
+    df = df.with_columns([
+        (pl.col(x).rank()).over("benchmark").alias(f"{x}_rank"),
+    ])
+
+for x in response_variables: 
+    df = df.with_columns([
+        (pl.col(x).rank()).over("benchmark").alias(f"{x}_rank"),
+    ])
+
+for x in program_properties: 
+    df = df.with_columns([
+        (pl.col(x).rank()).alias(f"{x}_rank"),
+    ])
+
+x = "mean_exec_ns"
+b = "zlib_zlib_uncompress_fuzzer"
+b = "bloaty_fuzz_target"
+
+
+# p = df.filter(pl.col("benchmark") == b)[x].unique()
+# print(p)
+
+# x = f"{x}_norm"
+# eqr = (df[["benchmark", x]].to_pandas())
+# sns.displot(eqr, x=x, col="benchmark", col_wrap=5, facet_kws={"sharex":False})
+# plt.show()
+
+# x = f"bin_text_size_norm"
+# eqr = (df[["benchmark", x]].to_pandas())
+# sns.displot(eqr, x=x)
+# plt.show()
+
+
+pdf = df.to_pandas()
+# sns.lmplot(data=pdf, x="ineq_unexplored_norm", y="edges_covered_norm", col="benchmark", hue="fuzzer", col_wrap=5)
+# plt.show()
+
+# sns.lmplot(data=pdf, x="corpus_size_norm", y="initial_coverage_norm", col="benchmark", col_wrap=5)
+# plt.show()
+
+preproc = "rank"
+fill = 0.5
+
+norm_p = [f"{p}_{preproc}" for p in (corpus_properties + program_properties)]
+
+to_fill = f"indir_reached_{preproc}"
+pdf = pdf.dropna(subset=filter(lambda p: p != to_fill, norm_p))
+pdf = pdf.fillna(value={to_fill: fill})
+
+pdf = pd.concat((pdf, pd.get_dummies(pdf['fuzzer'], drop_first=True)), axis=1)
+print(pdf.columns)
+
+x = pdf[["entropic", "aflplusplus", "libfuzzer"] + norm_p]
+y = pdf[f"edges_covered_{preproc}"]
+y = pdf[f"coverage_inc_{preproc}"]
+
+trn_scores = []
+tst_scores = []
+# gkf = GroupKFold(n_splits=11)
+# for train, test in gkf.split(x, y, groups=pdf["benchmark"]):
+kf = KFold(n_splits=7)
+for train, test in kf.split(x, y):
+    print("working on split...")
+    x_train, x_test = x.iloc[train], x.iloc[test]
+    y_train, y_test = y.iloc[train], y.iloc[test]
+
+    y_train, lam = stats.boxcox(y_train + 1)
+    y_test = stats.boxcox(y_test + 1, lam)
+
+    lrm = linear_model.LinearRegression()
+    rfc = RandomForestRegressor()
+    gbr = GradientBoostingRegressor()
+    mlpr = MLPRegressor()
+    model = lrm
+    model.fit(x_train, y_train)
+
+    trn_scores = trn_scores + [model.score(x_train, y_train)]
+    tst_scores = tst_scores + [model.score(x_test, y_test)]
+
+   
+print(f"Training scores {np.mean(trn_scores)} +/- {np.std(trn_scores)}")
+print(f"Test scores {np.mean(tst_scores)} +/- {np.std(tst_scores)}")
+
+x = sm.add_constant(x)
+
+model = sm.OLS(y, x).fit()
+# print(model.summary())
+
+def compute_vif(X):
+    vif = pd.DataFrame()
+    vif["Variable"] = X.columns
+    vif["VIF"] = [variance_inflation_factor(X.values, i) for i in range(X.shape[1])]
+    return vif
+
+omit = [
+    "eq_reached",
+    "corpus_size",
+    "ineq_reached",
+    "total_eq",
+    "total_indir",
+    "total_ineq",
+]
+
+omit = [f"{o}_{preproc}" for o in omit]
+
+x = x[filter(lambda c: c not in omit, x.columns)]
+print(compute_vif(x))
+
+from scipy.stats import spearmanr
+from scipy.cluster import hierarchy
+import numpy as np
+
+corr = spearmanr(x).correlation
+corr = (corr + corr.T) / 2
+np.fill_diagonal(corr, 1)
