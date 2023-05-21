@@ -6,12 +6,14 @@ import pyarrow
 import pandas as pd
 
 from scipy import stats
-
-import sklearn
-from sklearn import linear_model
+from scipy.cluster.hierarchy import linkage, dendrogram, fcluster
+from scipy.spatial.distance import squareform
 
 import statsmodels.api as sm
 from statsmodels.stats.outliers_influence import variance_inflation_factor
+
+import sklearn
+from sklearn import linear_model
 
 from sklearn.preprocessing import power_transform
 from sklearn.model_selection import cross_val_score
@@ -127,7 +129,7 @@ pdf = df.to_pandas()
 # plt.show()
 
 preproc = "rank"
-fill = 0.5
+fill = .5
 
 norm_p = [f"{p}_{preproc}" for p in (corpus_properties + program_properties)]
 
@@ -159,7 +161,7 @@ for train, test in kf.split(x, y):
     rfc = RandomForestRegressor()
     gbr = GradientBoostingRegressor()
     mlpr = MLPRegressor()
-    model = lrm
+    model = gbr
     model.fit(x_train, y_train)
 
     trn_scores = trn_scores + [model.score(x_train, y_train)]
@@ -171,9 +173,6 @@ print(f"Test scores {np.mean(tst_scores)} +/- {np.std(tst_scores)}")
 
 x = sm.add_constant(x)
 
-model = sm.OLS(y, x).fit()
-# print(model.summary())
-
 def compute_vif(X):
     vif = pd.DataFrame()
     vif["Variable"] = X.columns
@@ -184,20 +183,46 @@ omit = [
     "eq_reached",
     "corpus_size",
     "ineq_reached",
+    "indir_reached",
     "total_eq",
     "total_indir",
     "total_ineq",
+    "q50_mean_size_bytes",
+    "q50_exec_ns",
+    "mean_size_bytes",
+    "mean_exec_ns",
+
+    "q75_mean_size_bytes",
+    "q75_exec_ns",
+
+    "ineq_unexplored",
+    "eq_unexplored",
 ]
 
 omit = [f"{o}_{preproc}" for o in omit]
 
 x = x[filter(lambda c: c not in omit, x.columns)]
+print(x.max())
+
 print(compute_vif(x))
 
-from scipy.stats import spearmanr
-from scipy.cluster import hierarchy
-import numpy as np
+# TODO boxcox
+# y = stats.boxcox(y.to_numpy())
 
-corr = spearmanr(x).correlation
-corr = (corr + corr.T) / 2
-np.fill_diagonal(corr, 1)
+model = sm.OLS(y, x).fit()
+print(model.summary())
+
+
+correlations = np.round(x.drop(columns=["const"]).corr(), decimals=2)
+
+# sns.heatmap(round(correlations,2), cmap='RdBu', annot=True, annot_kws={"size": 6});
+# plt.show()
+
+dissimilarity = 1 - abs(correlations)
+sf = squareform(dissimilarity)
+Z = linkage(sf, 'complete')
+
+# dendrogram(Z, labels=x.drop(columns=["const"]).columns, orientation='top', 
+#           leaf_rotation=90);
+# plt.xticks(fontsize=6, rotation = 45)
+# plt.show()
