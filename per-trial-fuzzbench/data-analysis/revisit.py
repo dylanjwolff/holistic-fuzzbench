@@ -135,9 +135,9 @@ pdf = df.to_pandas()
 # sns.lmplot(data=pdf, x="corpus_size_norm", y="initial_coverage_norm", col="benchmark", col_wrap=5)
 # plt.show()
 
-preproc = "norm"
-y_preproc = "final_ranking"
+preproc = "rank"
 y_preproc = preproc
+y_preproc = "final_ranking"
 
 y_name = f"coverage_inc_{y_preproc}"
 y_name = f"edges_covered_{y_preproc}"
@@ -164,6 +164,7 @@ x = patsy.dmatrix(fmla, data = x, return_type = "dataframe")
 
 trn_scores = []
 tst_scores = []
+tst_acc = []
 # gkf = GroupKFold(n_splits=11)
 # for train, test in gkf.split(x, y, groups=pdf["benchmark"]):
 kf = KFold(n_splits=7)
@@ -184,10 +185,13 @@ for train, test in kf.split(x, y):
 
     trn_scores = trn_scores + [model.score(x_train, y_train)]
     tst_scores = tst_scores + [model.score(x_test, y_test)]
+    tst_acc = tst_acc + [(np.abs(y_test - model.predict(x_test)) <= 0.5).sum() / len(y_test)]
 
    
 print(f"Training scores {np.mean(trn_scores)} +/- {np.std(trn_scores)}")
 print(f"Test scores {np.mean(tst_scores)} +/- {np.std(tst_scores)}")
+if "ranking" in y_name:
+    print(f"Test acc {np.mean(tst_acc)} +/- {np.std(tst_acc)}")
 
 x = sm.add_constant(x)
 
