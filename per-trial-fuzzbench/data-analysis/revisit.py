@@ -22,7 +22,9 @@ from sklearn.model_selection import KFold
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.neural_network import MLPRegressor
+from sklearn.preprocessing import PolynomialFeatures
 
+import patsy
 
 
 df = pl.scan_csv("e2-comb-data.csv")
@@ -102,6 +104,11 @@ for x in program_properties:
         (pl.col(x).rank()).alias(f"{x}_rank"),
     ])
 
+for x in response_variables: 
+    df = df.with_columns([
+        (pl.col(x).rank()).over(["benchmark", "per_target_trial"]).alias(f"{x}_final_ranking"),
+    ])
+
 x = "mean_exec_ns"
 b = "zlib_zlib_uncompress_fuzzer"
 b = "bloaty_fuzz_target"
@@ -128,7 +135,13 @@ pdf = df.to_pandas()
 # sns.lmplot(data=pdf, x="corpus_size_norm", y="initial_coverage_norm", col="benchmark", col_wrap=5)
 # plt.show()
 
-preproc = "rank"
+preproc = "norm"
+y_preproc = "final_ranking"
+y_preproc = preproc
+
+y_name = f"coverage_inc_{y_preproc}"
+y_name = f"edges_covered_{y_preproc}"
+
 fill = .5
 
 norm_p = [f"{p}_{preproc}" for p in (corpus_properties + program_properties)]
@@ -137,12 +150,17 @@ to_fill = f"indir_reached_{preproc}"
 pdf = pdf.dropna(subset=filter(lambda p: p != to_fill, norm_p))
 pdf = pdf.fillna(value={to_fill: fill})
 
-pdf = pd.concat((pdf, pd.get_dummies(pdf['fuzzer'], drop_first=True)), axis=1)
-print(pdf.columns)
+x = pdf[["fuzzer"] + norm_p]
+y = pdf[y_name]
 
-x = pdf[["entropic", "aflplusplus", "libfuzzer"] + norm_p]
-y = pdf[f"edges_covered_{preproc}"]
-y = pdf[f"coverage_inc_{preproc}"]
+##
+## THE MODEL
+##
+fmla =  f"fuzzer * ( {'+ '.join(norm_p)} )"
+##
+##
+
+x = patsy.dmatrix(fmla, data = x, return_type = "dataframe")
 
 trn_scores = []
 tst_scores = []
@@ -210,10 +228,14 @@ print(compute_vif(x))
 # y = stats.boxcox(y.to_numpy())
 
 model = sm.OLS(y, x).fit()
-print(model.summary())
+# print(model.summary())
 
 
-correlations = np.round(x.drop(columns=["const"]).corr(), decimals=2)
+if "const" in x.columns:
+    x = x.drop(columns=["const"])
+if "Intercept" in x.columns:
+    x = x.drop(columns=["Intercept"])
+correlations = np.round(x.corr(), decimals=2)
 
 # sns.heatmap(round(correlations,2), cmap='RdBu', annot=True, annot_kws={"size": 6});
 # plt.show()
@@ -222,7 +244,8 @@ dissimilarity = 1 - abs(correlations)
 sf = squareform(dissimilarity)
 Z = linkage(sf, 'complete')
 
-# dendrogram(Z, labels=x.drop(columns=["const"]).columns, orientation='top', 
-#           leaf_rotation=90);
+dendrogram(Z, labels=x.columns, orientation='top', 
+    leaf_rotation=90);
 # plt.xticks(fontsize=6, rotation = 45)
 # plt.show()
+
