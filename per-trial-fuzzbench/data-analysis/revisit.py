@@ -58,7 +58,7 @@ corpus_properties = [
     "q75_mean_size_bytes",
     "q100_mean_size_bytes",
 ]
-# omitting because of many missing values
+# omitting because of many missing values:
 # "shared_reached",
 
 program_properties = [
@@ -74,6 +74,9 @@ response_variables = [
     "edges_covered",
     "coverage_inc",
 ]
+
+## filter for pairwise analysis
+df = df.filter((pl.col("fuzzer") == "afl") | (pl.col("fuzzer") == "libfuzzer"))
 
 ## Normalization
 for x in corpus_properties: 
@@ -174,6 +177,7 @@ y = pdf[y_name]
 ## THE MODEL
 ##
 fmla =  f"fuzzer * ( {'+ '.join(norm_p)} )"
+fmla =  f"fuzzer"
 ##
 ##
 
@@ -190,19 +194,29 @@ for train, test in kf.split(x, y):
     x_train, x_test = x.iloc[train], x.iloc[test]
     y_train, y_test = y.iloc[train], y.iloc[test]
 
-    y_train, lam = stats.boxcox(y_train + 1)
-    y_test = stats.boxcox(y_test + 1, lam)
+    # numerical
+    # y_train, lam = stats.boxcox(y_train + 1)
+    # y_test = stats.boxcox(y_test + 1, lam)
+
+    # logistic
+    y_train = y_train < 1.5
+    y_test = y_test < 1.5
 
     lrm = linear_model.LinearRegression()
+    lgr = linear_model.LogisticRegression()
     rfc = RandomForestRegressor()
     gbr = GradientBoostingRegressor()
     mlpr = MLPRegressor()
-    model = gbr
+    model = lgr
     model.fit(x_train, y_train)
 
     trn_scores = trn_scores + [model.score(x_train, y_train)]
     tst_scores = tst_scores + [model.score(x_test, y_test)]
-    tst_acc = tst_acc + [(np.abs(y_test - model.predict(x_test)) <= 0.5).sum() / len(y_test)]
+
+    # numerical
+    # tst_acc = tst_acc + [(np.abs(y_test - model.predict(x_test)) <= 0.5).sum() / len(y_test)]
+    # logistic
+    tst_acc = tst_acc + [(y_test == model.predict(x_test)).sum() / len(y_test)]
 
    
 print(f"Training scores {np.mean(trn_scores)} +/- {np.std(trn_scores)}")
@@ -246,15 +260,16 @@ omit = [
 omit = [f"{o}_{preproc}" for o in omit]
 
 x = x[filter(lambda c: c not in omit, x.columns)]
-# print(x.max())
 
-print(compute_vif(x))
+# print(compute_vif(x))
 
-# TODO boxcox
 # y = stats.boxcox(y.to_numpy())
+# y = y[0]
 
-model = sm.OLS(y, x).fit()
-# print(model.summary())
+model = sm.Logit(y < 1.5, x).fit(method='bfgs')
+
+# model = sm.OLS(y, x).fit()
+print(model.summary())
 
 
 if "const" in x.columns:
