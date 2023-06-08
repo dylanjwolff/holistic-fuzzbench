@@ -205,6 +205,7 @@ for train, test in kf.split(x, y):
     x_train, x_test = x.iloc[train], x.iloc[test]
     y_train, y_test = y.iloc[train], y.iloc[test]
 
+
     if logistic:
         y_train = y_train < 1.5
         y_test = y_test < 1.5
@@ -212,6 +213,8 @@ for train, test in kf.split(x, y):
         lgr = linear_model.LogisticRegression()
         model = lgr
     else:
+        y_test_orig = y_test
+
         y_train, lam = stats.boxcox(y_train + 1)
         y_test = stats.boxcox(y_test + 1, lam)
 
@@ -241,7 +244,7 @@ for train, test in kf.split(x, y):
         dumb_acc = dumb_acc + [(y_test == (dumb_preds < 1.5)).sum() / len(y_test)]
     else:
         tst_acc = tst_acc + [(np.abs(y_test - model.predict(x_test)) <= 0.5).sum() / len(y_test)]
-        dumb_acc = dumb_acc + [(np.abs(y_test - dumb_preds) <= 0.5).sum() / len(y_test)]
+        dumb_acc = dumb_acc + [(np.abs(y_test_orig - dumb_preds) <= 0.5).sum() / len(y_test)]
    
 print(f"Training scores {np.mean(trn_scores)} +/- {np.std(trn_scores)}")
 print(f"Test scores {np.mean(tst_scores)} +/- {np.std(tst_scores)}")
