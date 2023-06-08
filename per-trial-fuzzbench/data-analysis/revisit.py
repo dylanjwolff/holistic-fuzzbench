@@ -78,6 +78,8 @@ response_variables = [
 ## filter for pairwise analysis
 df = df.filter((pl.col("fuzzer") == "afl") | (pl.col("fuzzer") == "libfuzzer"))
 
+logistic = True
+
 ## Normalization
 for x in corpus_properties: 
     df = df.with_columns([
@@ -163,6 +165,12 @@ y_name = f"edges_covered_{y_preproc}"
 fill = .5
 
 # get column names corresponding to preprocessing method
+mean_resp = {}
+for fuzzer in df["fuzzer"].unique():
+    print(fuzzer)
+    subs =  df.filter(pl.col("fuzzer") == fuzzer)
+    mean_resp[fuzzer] = np.round(subs[y_name].mean())
+
 norm_p = [f"{p}_{preproc}" for p in (corpus_properties + program_properties)]
 
 # fill missing
@@ -176,16 +184,19 @@ y = pdf[y_name]
 ##
 ## THE MODEL
 ##
-fmla =  f"fuzzer * ( {'+ '.join(norm_p)} )"
 fmla =  f"fuzzer"
+fmla =  f"fuzzer * ( {'+ '.join(norm_p)} )"
 ##
 ##
 
 x = patsy.dmatrix(fmla, data = x, return_type = "dataframe")
 
+
 trn_scores = []
 tst_scores = []
 tst_acc = []
+dumb_acc = []
+
 # gkf = GroupKFold(n_splits=11) # very high variance when done groupwise
 # for train, test in gkf.split(x, y, groups=pdf["benchmark"]):
 kf = KFold(n_splits=7)
@@ -194,35 +205,49 @@ for train, test in kf.split(x, y):
     x_train, x_test = x.iloc[train], x.iloc[test]
     y_train, y_test = y.iloc[train], y.iloc[test]
 
-    # numerical
-    # y_train, lam = stats.boxcox(y_train + 1)
-    # y_test = stats.boxcox(y_test + 1, lam)
+    if logistic:
+        y_train = y_train < 1.5
+        y_test = y_test < 1.5
 
-    # logistic
-    y_train = y_train < 1.5
-    y_test = y_test < 1.5
+        lgr = linear_model.LogisticRegression()
+        model = lgr
+    else:
+        y_train, lam = stats.boxcox(y_train + 1)
+        y_test = stats.boxcox(y_test + 1, lam)
 
-    lrm = linear_model.LinearRegression()
-    lgr = linear_model.LogisticRegression()
-    rfc = RandomForestRegressor()
-    gbr = GradientBoostingRegressor()
-    mlpr = MLPRegressor()
-    model = lgr
+        lrm = linear_model.LinearRegression()
+        rfc = RandomForestRegressor()
+        gbr = GradientBoostingRegressor()
+        mlpr = MLPRegressor()
+
+        model = lrm
+
     model.fit(x_train, y_train)
+
+    dumb_preds = np.zeros(len(y_test))
+    for fuzzer in mean_resp.keys():
+        cname = f"fuzzer[T.{fuzzer}]"
+        if cname in x_test.columns:
+            dumb_preds = dumb_preds + (x_test[cname]*mean_resp[fuzzer])
+        else:
+            base = fuzzer
+    dumb_preds = dumb_preds + ((dumb_preds == 0)*mean_resp[base])
 
     trn_scores = trn_scores + [model.score(x_train, y_train)]
     tst_scores = tst_scores + [model.score(x_test, y_test)]
 
-    # numerical
-    # tst_acc = tst_acc + [(np.abs(y_test - model.predict(x_test)) <= 0.5).sum() / len(y_test)]
-    # logistic
-    tst_acc = tst_acc + [(y_test == model.predict(x_test)).sum() / len(y_test)]
-
+    if logistic:
+        tst_acc = tst_acc + [(y_test == model.predict(x_test)).sum() / len(y_test)]
+        dumb_acc = dumb_acc + [(y_test == (dumb_preds < 1.5)).sum() / len(y_test)]
+    else:
+        tst_acc = tst_acc + [(np.abs(y_test - model.predict(x_test)) <= 0.5).sum() / len(y_test)]
+        dumb_acc = dumb_acc + [(np.abs(y_test - dumb_preds) <= 0.5).sum() / len(y_test)]
    
 print(f"Training scores {np.mean(trn_scores)} +/- {np.std(trn_scores)}")
 print(f"Test scores {np.mean(tst_scores)} +/- {np.std(tst_scores)}")
 if "ranking" in y_name:
     print(f"Test acc {np.mean(tst_acc)} +/- {np.std(tst_acc)}")
+    print(f"Dumb acc {np.mean(dumb_acc)} +/- {np.std(dumb_acc)}")
 
 
 ##
@@ -263,12 +288,12 @@ x = x[filter(lambda c: c not in omit, x.columns)]
 
 # print(compute_vif(x))
 
-# y = stats.boxcox(y.to_numpy())
-# y = y[0]
-
-model = sm.Logit(y < 1.5, x).fit(method='bfgs')
-
-# model = sm.OLS(y, x).fit()
+if logistic:
+    model = sm.Logit(y < 1.5, x).fit(method='bfgs')
+else:
+    y = stats.boxcox(y.to_numpy())
+    y = y[0]
+    model = sm.OLS(y, x).fit()
 print(model.summary())
 
 
