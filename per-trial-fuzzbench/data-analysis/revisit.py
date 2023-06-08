@@ -26,6 +26,9 @@ from sklearn.preprocessing import PolynomialFeatures
 
 import patsy
 
+##
+## Data prep / cleaning
+##
 
 df = pl.scan_csv("e2-comb-data.csv")
 df = pl.read_csv("e2-comb-data.csv")
@@ -109,6 +112,10 @@ for x in response_variables:
         (pl.col(x).rank()).over(["benchmark", "per_target_trial"]).alias(f"{x}_final_ranking"),
     ])
 
+##
+## Visualizing feature data
+##
+
 x = "mean_exec_ns"
 b = "zlib_zlib_uncompress_fuzzer"
 b = "bloaty_fuzz_target"
@@ -135,17 +142,27 @@ pdf = df.to_pandas()
 # sns.lmplot(data=pdf, x="corpus_size_norm", y="initial_coverage_norm", col="benchmark", col_wrap=5)
 # plt.show()
 
+##
+## Regression Model
+##
+
+# Use rank or norm to preprocess data
 preproc = "rank"
 y_preproc = preproc
-y_preproc = "final_ranking"
 
+# Response variable can be coverage, coverage increase, or ranking among fuzzers
+# w.r.t those metrics 
+y_preproc = "final_ranking"
 y_name = f"coverage_inc_{y_preproc}"
 y_name = f"edges_covered_{y_preproc}"
 
+# need to fill some missing data, value doesn't seem to impact model much at all
 fill = .5
 
+# get column names corresponding to preprocessing method
 norm_p = [f"{p}_{preproc}" for p in (corpus_properties + program_properties)]
 
+# fill missing
 to_fill = f"indir_reached_{preproc}"
 pdf = pdf.dropna(subset=filter(lambda p: p != to_fill, norm_p))
 pdf = pdf.fillna(value={to_fill: fill})
@@ -165,7 +182,7 @@ x = patsy.dmatrix(fmla, data = x, return_type = "dataframe")
 trn_scores = []
 tst_scores = []
 tst_acc = []
-# gkf = GroupKFold(n_splits=11)
+# gkf = GroupKFold(n_splits=11) # very high variance when done groupwise
 # for train, test in gkf.split(x, y, groups=pdf["benchmark"]):
 kf = KFold(n_splits=7)
 for train, test in kf.split(x, y):
@@ -192,6 +209,11 @@ print(f"Training scores {np.mean(trn_scores)} +/- {np.std(trn_scores)}")
 print(f"Test scores {np.mean(tst_scores)} +/- {np.std(tst_scores)}")
 if "ranking" in y_name:
     print(f"Test acc {np.mean(tst_acc)} +/- {np.std(tst_acc)}")
+
+
+##
+## Multicollinearity / Model parsimony checks
+##
 
 x = sm.add_constant(x)
 
@@ -224,7 +246,7 @@ omit = [
 omit = [f"{o}_{preproc}" for o in omit]
 
 x = x[filter(lambda c: c not in omit, x.columns)]
-print(x.max())
+# print(x.max())
 
 print(compute_vif(x))
 
