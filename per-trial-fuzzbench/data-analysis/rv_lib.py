@@ -78,7 +78,7 @@ response_variables = [
 
 pairs = itertools.combinations(["afl", "libfuzzer", "aflplusplus", "entropic"], 2)
 
-def compute_model_acc(df, pair, preproc, response_preproc, response, fill=0.5):
+def compute_model_acc(df, pair, preproc, response_preproc, response, fill=0.5, crossval=True):
     ## filter for pairwise analysis
     df = df.filter((pl.col("fuzzer") == pair[0]) | (pl.col("fuzzer") == pair[1]))
 
@@ -145,18 +145,36 @@ def compute_model_acc(df, pair, preproc, response_preproc, response, fill=0.5):
     ##
     ## THE MODEL
     ##
-    fmla =  f"fuzzer"
     fmla =  f"fuzzer * ( {'+ '.join(norm_p)} )"
+    fmla =  f"fuzzer"
     ##
     ##
 
     x = patsy.dmatrix(fmla, data = x, return_type = "dataframe")
 
-
+    dof = []
     trn_scores = []
+    adj_scores = []
     tst_scores = []
     tst_acc = []
     dumb_acc = []
+
+    if not crossval:
+        _, lam = stats.boxcox(y + 1)
+        y_train = stats.boxcox(y + 1, lam)
+        x_train = x
+        model = linear_model.LinearRegression()
+
+        model.fit(x_train, y_train)
+        trn_scores = trn_scores + [model.score(x_train, y_train)]
+        adj_score = 1 - ( 1-model.score(x_train, y_train) ) * ( len(y_train) - 1 ) / ( len(y_train) - x_train.shape[1] - 1 )
+        adj_scores = adj_scores + [adj_score]
+        dof = dof + [x_train.shape[0] - x_train.shape[1]]
+
+        retval = pd.DataFrame([trn_scores, adj_scores, dof]).T
+        retval.columns = ["train score", "adj score", "dof"]
+        retval["pair"] = [pair]*len(trn_scores)
+        return retval
 
     # gkf = GroupKFold(n_splits=11) # very high variance when done groupwise
     # for train, test in gkf.split(x, y, groups=pdf["benchmark"]):
@@ -191,7 +209,7 @@ def compute_model_acc(df, pair, preproc, response_preproc, response, fill=0.5):
             gbr = GradientBoostingRegressor()
             mlpr = MLPRegressor()
 
-            model = gbr
+            model = lrm
 
         model.fit(x_train, y_train)
 
@@ -223,8 +241,18 @@ def compute_model_acc(df, pair, preproc, response_preproc, response, fill=0.5):
 preproc = "rank"
 y_preproc = preproc
 y_preproc = "final_ranking"
-response = "coverage_inc"
+response = "edges_covered"
 
+all_results = []
+for pair in pairs:
+    r = compute_model_acc(df, pair, preproc, y_preproc, response, crossval=False)
+    all_results = [r] + all_results
+all_results = pd.concat(all_results)
+print(all_results)
+print(all_results.mean())
+print(all_results.std())
+
+pairs = itertools.combinations(["afl", "libfuzzer", "aflplusplus", "entropic"], 2)
 all_results = []
 for pair in pairs:
     r = compute_model_acc(df, pair, preproc, y_preproc, response)
@@ -233,6 +261,58 @@ for pair in pairs:
 
 all_results = pd.concat(all_results)
 
+all_results.to_csv("all_res_jun_13.csv")
 print(all_results)
 print(all_results.mean())
 print(all_results.std())
+
+
+def a12(measurements_x, measurements_y):
+    """Returns Vargha-Delaney A12 measure effect size for two distributions.
+
+    A. Vargha and H. D. Delaney.
+    A critique and improvement of the CL common language effect size statistics
+    of McGraw and Wong.
+    Journal of Educational and Behavioral Statistics, 25(2):101-132, 2000
+
+    The Vargha and Delaney A12 statistic is a non-parametric effect size
+    measure.
+
+    Given observations of a metric (edges_covered or bugs_covered) for
+    fuzzer 1 (F2) and fuzzer 2 (F2), the A12 measures the probability that
+    running F1 will yield a higher metric than running F2.
+
+    Significant levels from original paper:
+      Large   is > 0.714
+      Mediumm is > 0.638
+      Small   is > 0.556
+    """
+
+    x_array = np.asarray(measurements_x)
+    y_array = np.asarray(measurements_y)
+    x_size, y_size = x_array.size, y_array.size
+    ranked = stats.rankdata(np.concatenate((x_array, y_array)))
+    rank_x = ranked[0:x_size]  # get the x-ranks
+
+    rank_x_sum = rank_x.sum()
+    # A = (R1/n1 - (n1+1)/2)/n2 # formula (14) in Vargha and Delaney, 2000
+    # The formula to compute A has been transformed to minimize accuracy errors.
+    # See:
+    # http://mtorchiano.wordpress.com/2014/05/19/effect-size-of-r-precision/
+
+    a12_measure = (2 * rank_x_sum - x_size * (x_size + 1)) / (
+        2 * y_size * x_size)  # equivalent formula to avoid accuracy errors
+    return a12_measure
+
+
+
+w = stats.wilcoxon(all_results["test pred. accuracy"] - all_results["naive pred. accuracy"])
+print(f"Wilcoxon p-val = {w}")
+a = a12(all_results["test pred. accuracy"], all_results["naive pred. accuracy"])
+print(f"VDA = {a}")
+
+# grouped per fuzzer pair
+# print(all_results.groupby("pair").std()["test pred. accuracy"])
+# print(all_results.groupby("pair").std()["naive pred. accuracy"])
+
+
