@@ -9,6 +9,7 @@ import itertools
 from scipy import stats
 from scipy.cluster.hierarchy import linkage, dendrogram, fcluster
 from scipy.spatial.distance import squareform
+from scipy.special import inv_boxcox
 
 import statsmodels.api as sm
 from statsmodels.stats.outliers_influence import variance_inflation_factor
@@ -78,7 +79,7 @@ response_variables = [
 
 pairs = itertools.combinations(["afl", "libfuzzer", "aflplusplus", "entropic"], 2)
 
-def compute_model_acc(df, pair, preproc, response_preproc, response, fill=0.5, crossval=True):
+def compute_model_acc(df, pair, preproc, response_preproc, response, fill=0.5, crossval=True, use_boxcox=False):
     ## filter for pairwise analysis
     df = df.filter((pl.col("fuzzer") == pair[0]) | (pl.col("fuzzer") == pair[1]))
 
@@ -145,8 +146,8 @@ def compute_model_acc(df, pair, preproc, response_preproc, response, fill=0.5, c
     ##
     ## THE MODEL
     ##
-    fmla =  f"fuzzer * ( {'+ '.join(norm_p)} )"
     fmla =  f"fuzzer"
+    fmla =  f"fuzzer * ( {'+ '.join(norm_p)} )"
     ##
     ##
 
@@ -160,8 +161,10 @@ def compute_model_acc(df, pair, preproc, response_preproc, response, fill=0.5, c
     dumb_acc = []
 
     if not crossval:
-        _, lam = stats.boxcox(y + 1)
-        y_train = stats.boxcox(y + 1, lam)
+        y_train = y
+        if use_boxcox:
+            _, lam = stats.boxcox(y + 1)
+            y_train = stats.boxcox(y + 1, lam)
         x_train = x
         model = linear_model.LinearRegression()
 
@@ -201,8 +204,9 @@ def compute_model_acc(df, pair, preproc, response_preproc, response, fill=0.5, c
             lgr = linear_model.LogisticRegression()
             model = lgr
         else:
-            y_train, lam = stats.boxcox(y_train + 1)
-            y_test = stats.boxcox(y_test + 1, lam)
+            if use_boxcox:
+                y_train, lam = stats.boxcox(y_train + 1)
+                y_test = stats.boxcox(y_test + 1, lam)
 
             lrm = linear_model.LinearRegression()
             rfc = RandomForestRegressor()
@@ -221,8 +225,12 @@ def compute_model_acc(df, pair, preproc, response_preproc, response, fill=0.5, c
             tst_acc = tst_acc + [(y_test == model.predict(x_test)).sum() / len(y_test)]
             dumb_acc = dumb_acc + [(y_test == (dumb_preds < 1.5)).sum() / len(y_test)]
         else:
-            tst_acc = tst_acc + [(np.abs(y_test - model.predict(x_test)) <= 0.5).sum() / len(y_test)]
-            dumb_acc = dumb_acc + [(np.abs(y_test_orig - dumb_preds) <= 0.5).sum() / len(y_test)]
+            if use_boxcox:
+                tst_acc = tst_acc + [(np.abs(inv_boxcox(y_test, lam) - inv_boxcox(model.predict(x_test), lam)) <= 0.5).sum() / len(y_test)]
+                dumb_acc = dumb_acc + [(np.abs(y_test_orig - dumb_preds) <= 0.5).sum() / len(y_test)]
+            else:
+                tst_acc = tst_acc + [(np.abs(y_test - model.predict(x_test)) <= 0.5).sum() / len(y_test)]
+                dumb_acc = dumb_acc + [(np.abs(y_test_orig - dumb_preds) <= 0.5).sum() / len(y_test)]
    
     print(f"Training scores {np.mean(trn_scores)} +/- {np.std(trn_scores)}")
     print(f"Test scores {np.mean(tst_scores)} +/- {np.std(tst_scores)}")
@@ -249,8 +257,8 @@ for pair in pairs:
     all_results = [r] + all_results
 all_results = pd.concat(all_results)
 print(all_results)
-print(all_results.mean())
-print(all_results.std())
+print(all_results.mean(numeric_only=True))
+print(all_results.std(numeric_only=True))
 
 pairs = itertools.combinations(["afl", "libfuzzer", "aflplusplus", "entropic"], 2)
 all_results = []
@@ -263,8 +271,8 @@ all_results = pd.concat(all_results)
 
 all_results.to_csv("all_res_jun_13.csv")
 print(all_results)
-print(all_results.mean())
-print(all_results.std())
+print(all_results.mean(numeric_only=True))
+print(all_results.std(numeric_only=True))
 
 
 def a12(measurements_x, measurements_y):
