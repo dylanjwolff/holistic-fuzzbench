@@ -4,7 +4,9 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import pyarrow
 import pandas as pd
+import random
 import itertools
+from collections import defaultdict
 
 from scipy import stats
 from scipy.cluster.hierarchy import linkage, dendrogram, fcluster
@@ -78,27 +80,86 @@ response_variables = [
 ]
 
 def thresh(model, x, y, max_corpus_rank, max_program_rank):
-    base_prop = "bin_text_size_rank"
-    base_prop = "initial_coverage_rank"
-    props = [base_prop]
-    props = [f"fuzzer[T.aflplusplus]:{base_prop}", base_prop]
+    print(f"max corp is {max_corpus_rank}")
+    print(f"max prog is {max_program_rank}")
+    # "bin_text_size_rank",
+
+    # "mean_exec_ns_rank",
+    # "mean_size_bytes_rank", 
+    # "initial_coverage_rank"
+    props = [
+        "mean_exec_ns_rank",
+        "mean_size_bytes_rank", 
+        "initial_coverage_rank"
+    ]
+
+    base_prop = props[0]
+
+    fuzzers =  [
+        f"fuzzer[T.aflplusplus]",
+        f"fuzzer[T.libfuzzer]",
+        f"fuzzer[T.entropic]",
+    ]
+
+    fuzzer = f"fuzzer[T.aflplusplus]"
+    fuzzer = f"fuzzer[T.entropic]"
+    fuzzer = None
+    fuzzer = f"fuzzer[T.libfuzzer]"
+
+    if fuzzer is not None:
+        fprops = [f"{fuzzer}:{p}" for p in props]
+        props = props + fprops
+
+    is_corp = defaultdict(lambda: False)
+    for prop in props:
+        for base_p in corpus_properties:
+            if base_p in prop:
+                is_corp[prop] = True
+                break
+
+    all_corp = len(is_corp) == len(props)
+    all_prog = len(is_corp) == 0
+    assert(all_prog or all_corp)
+
+    for f in fuzzers:
+        if not f == fuzzer:
+            x = x[~x[f].astype(np.bool_)]
+
+    num_rows = len(x.index)
 
     for jj in range(1,10):
-        row = (x.sample(1, random_state=jj))
+        print(num_rows)
+        sampled_row_num = random.randint(0, num_rows)
+        row = (x.iloc[[sampled_row_num]])
+        actual = y.iloc[sampled_row_num]
 
         all = []
-        for rank in range(1, int(np.round(max_corpus_rank))):
-            row2 = row.copy()
-            for prop in props:
-                row2[prop] = rank
-            all.append(row2)
+        if all_corp:
+            for rank in range(1, int(np.round(max_corpus_rank))):
+                row2 = row.copy()
+                for prop in props:
+                    if is_corp[prop]:
+                        row2[prop] = rank
+                all.append(row2)
+            
+        if all_prog:
+            for rank in range(1, int(np.round(max_program_rank))):
+                row2 = row.copy()
+                for prop in props:
+                    if not is_corp[prop]:
+                        row2[prop] = rank
+
+                all.append(row2)
         x_synthetic = pd.concat(all)
 
         y_pred = model.predict(x_synthetic)
+        y_diverge = np.abs(y_pred - actual)
 
         data = x_synthetic
+        data["y_diverge"] = y_diverge
         data["y_pred"] = y_pred
 
+        # sns.lineplot(data=data, x=base_prop, y="y_diverge")
         sns.lineplot(data=data, x=base_prop, y="y_pred")
     plt.show()
     print(x_synthetic[prop])
@@ -294,7 +355,7 @@ y_preproc = preproc
 y_preproc = "final_ranking"
 response = "edges_covered"
 
-r, model = compute_model_acc(df, preproc, y_preproc, response, crossval=False, use_boxcox=True)
+r, model = compute_model_acc(df, preproc, y_preproc, response, crossval=False, use_boxcox=False)
 all_results = r
 print(all_results)
 print(all_results.mean(numeric_only=True))
