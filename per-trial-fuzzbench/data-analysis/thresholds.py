@@ -79,6 +79,8 @@ response_variables = [
     "coverage_inc",
 ]
 
+multi_dim = True
+
 def thresh(model, x, y, max_corpus_rank, max_program_rank):
     print(f"max corp is {max_corpus_rank}")
     print(f"max prog is {max_program_rank}")
@@ -90,7 +92,6 @@ def thresh(model, x, y, max_corpus_rank, max_program_rank):
     props = [
         "mean_exec_ns_rank",
         "mean_size_bytes_rank", 
-        "initial_coverage_rank"
     ]
 
     base_prop = props[0]
@@ -106,6 +107,7 @@ def thresh(model, x, y, max_corpus_rank, max_program_rank):
     fuzzer = None
     fuzzer = f"fuzzer[T.libfuzzer]"
 
+    og_props = props
     if fuzzer is not None:
         fprops = [f"{fuzzer}:{p}" for p in props]
         props = props + fprops
@@ -127,7 +129,7 @@ def thresh(model, x, y, max_corpus_rank, max_program_rank):
 
     num_rows = len(x.index)
 
-    for jj in range(1,10):
+    for jj in range(1,2):
         print(num_rows)
         sampled_row_num = random.randint(0, num_rows)
         row = (x.iloc[[sampled_row_num]])
@@ -135,12 +137,31 @@ def thresh(model, x, y, max_corpus_rank, max_program_rank):
 
         all = []
         if all_corp:
-            for rank in range(1, int(np.round(max_corpus_rank))):
-                row2 = row.copy()
-                for prop in props:
-                    if is_corp[prop]:
-                        row2[prop] = rank
-                all.append(row2)
+            if not multi_dim:
+                for rank in range(1, int(np.round(max_corpus_rank))):
+                    row2 = row.copy()
+                    for prop in props:
+                        if is_corp[prop]:
+                            row2[prop] = rank
+                    all.append(row2)
+            if multi_dim:
+                for rank in range(1, int(np.round(max_corpus_rank))):
+                    for rank_inner in range(1, int(np.round(max_corpus_rank))):
+                        row2 = row.copy()
+                        modd = False
+                        for prop in og_props:
+                            for prop_inner in og_props:
+                                if is_corp[prop] and is_corp[prop_inner] and not prop == prop_inner:
+                                    row2[prop] = rank
+                                    row2[prop_inner] = rank_inner
+                                    for fprop in fprops:
+                                        if prop in fprop:
+                                            row2[fprop] = rank
+                                        if prop_inner in fprop:
+                                            row2[fprop] = rank_inner
+                                    modd = True
+                        if modd:
+                            all.append(row2)
             
         if all_prog:
             for rank in range(1, int(np.round(max_program_rank))):
@@ -156,11 +177,22 @@ def thresh(model, x, y, max_corpus_rank, max_program_rank):
         y_diverge = np.abs(y_pred - actual)
 
         data = x_synthetic
-        data["y_diverge"] = y_diverge
+        # data["y_diverge"] = y_diverge
         data["y_pred"] = y_pred
+        print(data[[base_prop, props[1]]])
 
         # sns.lineplot(data=data, x=base_prop, y="y_diverge")
-        sns.lineplot(data=data, x=base_prop, y="y_pred")
+        # sns.scatterplot(data=data, x=base_prop, y=props[1], hue="y_pred")
+        x_max = int(np.round(max_corpus_rank))
+        shp = (x_max,x_max)
+        print(shp)
+        qarr = np.zeros(shp)
+        
+        for _, row in data.iterrows():
+            qarr[int(row[base_prop]), int(row[props[1]])] = row["y_pred"]
+        print(qarr)
+
+        sns.heatmap(data=qarr[1:, 1:])
     plt.show()
     print(x_synthetic[prop])
 
