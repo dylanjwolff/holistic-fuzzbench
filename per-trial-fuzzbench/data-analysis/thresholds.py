@@ -80,6 +80,7 @@ response_variables = [
 ]
 
 multi_dim = True
+grad = True
 
 def thresh(model, x, y, max_corpus_rank, max_program_rank):
     print(f"max corp is {max_corpus_rank}")
@@ -136,6 +137,7 @@ def thresh(model, x, y, max_corpus_rank, max_program_rank):
         actual = y.iloc[sampled_row_num]
 
         all = []
+        normz = []
         if all_corp:
             if not multi_dim:
                 for rank in range(1, int(np.round(max_corpus_rank))):
@@ -145,6 +147,8 @@ def thresh(model, x, y, max_corpus_rank, max_program_rank):
                             row2[prop] = rank
                     all.append(row2)
             if multi_dim:
+                if grad:
+                    assert(len(og_props) == 2)
                 for rank in range(1, int(np.round(max_corpus_rank))):
                     for rank_inner in range(1, int(np.round(max_corpus_rank))):
                         row2 = row.copy()
@@ -162,6 +166,7 @@ def thresh(model, x, y, max_corpus_rank, max_program_rank):
                                     modd = True
                         if modd:
                             all.append(row2)
+                            normz.append(rank_inner + rank)
             
         if all_prog:
             for rank in range(1, int(np.round(max_program_rank))):
@@ -171,6 +176,7 @@ def thresh(model, x, y, max_corpus_rank, max_program_rank):
                         row2[prop] = rank
 
                 all.append(row2)
+
         x_synthetic = pd.concat(all)
 
         y_pred = model.predict(x_synthetic)
@@ -179,20 +185,28 @@ def thresh(model, x, y, max_corpus_rank, max_program_rank):
         data = x_synthetic
         # data["y_diverge"] = y_diverge
         data["y_pred"] = y_pred
-        print(data[[base_prop, props[1]]])
+        data["norms"] = normz 
+
+
+        print(normz)
+        # print(data[[base_prop, props[1]]])
+        print(data[["y_pred", "norms"]])
 
         # sns.lineplot(data=data, x=base_prop, y="y_diverge")
         # sns.scatterplot(data=data, x=base_prop, y=props[1], hue="y_pred")
-        x_max = int(np.round(max_corpus_rank))
-        shp = (x_max,x_max)
-        print(shp)
-        qarr = np.zeros(shp)
+        if multi_dim and grad:
+            x_max = int(np.round(max_corpus_rank))
+            shp = (x_max,x_max)
+            print(shp)
+            qarr = np.zeros(shp)
         
-        for _, row in data.iterrows():
-            qarr[int(row[base_prop]), int(row[props[1]])] = row["y_pred"]
-        print(qarr)
+            for _, row in data.iterrows():
+                qarr[int(row[base_prop]), int(row[props[1]])] = row["y_pred"]
+            print(qarr)
 
-        sns.heatmap(data=qarr[1:, 1:])
+            sns.heatmap(data=qarr[1:, 1:])
+        elif multi_dim:
+            sns.lmplot(data=data, x="norms", y="y_pred")
     plt.show()
     print(x_synthetic[prop])
 
