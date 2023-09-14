@@ -82,6 +82,87 @@ response_variables = [
 multi_dim = True
 grad = True
 
+
+def concrete_rank_diffs_per_subset(per_b_x, prop, norm_prop, rank_diff):
+        concrete_diffs = []
+        max_rank = per_b_x[norm_prop].max()
+
+        if prop == "initial_coverage":
+            max_prop_per_b = per_b_x["edges_covered"].max()
+        else:
+            max_prop_per_b = per_b_x[prop].max()
+
+        print(f"Property is {prop, norm_prop}")
+        # print(sorted(per_b_x[norm_prop]))
+        prop_list = (sorted(per_b_x[norm_prop].unique()))
+        # print(prop_list)
+        diff_s = [np.abs(prop_list[i] - prop_list[j]) for i in range(len(prop_list)-1) for j in range(len(prop_list)-1)]
+        unique_diffs = (sorted(list(set(diff_s))))
+        print(f"Unique rank differences observed:\n {unique_diffs}")
+        closest = min(unique_diffs, key=lambda z: abs(rank_diff - z))
+        print(f"Closest observed diff was {closest}")
+        print("---")
+        rank_diff = closest
+
+        for prop_rank in sorted(per_b_x[norm_prop]):
+            if prop_rank + rank_diff <= max_rank:
+                concrete_lo = per_b_x[per_b_x[norm_prop] == prop_rank][prop]
+                concrete_hi = per_b_x[per_b_x[norm_prop] == prop_rank + rank_diff][prop]
+                if len(concrete_hi > 0):
+                    concrete_lo = concrete_lo.mean()
+                    concrete_hi = concrete_hi.mean()
+                    # Convert to scalar ^^^
+
+                    concrete_dif = np.abs(concrete_hi - concrete_lo)
+                    norm_concrete_dif = concrete_dif / max_prop_per_b
+                    concrete_diffs = concrete_diffs + [norm_concrete_dif]
+        return concrete_diffs
+
+def concrete_rank_diffs(x, corpus_props, prog_props, rank_diff, prog_rank_diff):
+    norm_p = [f"{p}_{preproc}" for p in corpus_props]
+
+    aggregate_corpus = []
+    props = corpus_props
+    for i in range(0, len(props)):
+        concrete_diffs = [] 
+        prop = props[i]
+        norm_prop = norm_p[i]
+
+        for b in x["benchmark"].unique():
+            per_b_x = x[x["benchmark"]==b]
+            per_b_x = per_b_x.groupby("per_target_trial").max()
+            concrete_diffs = concrete_diffs + \
+                concrete_rank_diffs_per_subset(per_b_x, prop, norm_prop, rank_diff)
+            # normlzd_diffs = (np.array(concrete_diffs)/max_prop_per_b)
+        normlzd_diffs = np.array(concrete_diffs)
+        print(f"\t{normlzd_diffs.mean()} +/- {normlzd_diffs.std()}")
+        for nd in normlzd_diffs:
+            aggregate_corpus = aggregate_corpus + [{"Property": prop, "(Normalized) Concrete Difference in Values": nd}]
+
+    df = pd.DataFrame(aggregate_corpus)
+    print(df)
+    sns.displot(df, x="(Normalized) Concrete Difference in Values", col="Property")
+    plt.show()
+
+    exit(11)
+    props = prog_props
+    norm_p = [f"{p}_{preproc}" for p in prog_props]
+    for i in range(0, len(props)):
+        concrete_diffs = [] 
+        prop = props[i]
+        norm_prop = norm_p[i]
+
+        per_b_x = x
+        concrete_diffs = concrete_diffs + concrete_rank_diffs_per_subset(per_b_x, prop, norm_prop, prog_rank_diff)
+            # normlzd_diffs = (np.array(concrete_diffs)/max_prop_per_b)
+        normlzd_diffs = np.array(concrete_diffs)
+        print(f"\t{normlzd_diffs.mean()} +/- {normlzd_diffs.std()}")
+        sns.histplot(normlzd_diffs)
+        plt.show()
+
+ 
+    exit(0)
+
 def thresh(model, x, y, max_corpus_rank, max_program_rank):
     print(f"max corp is {max_corpus_rank}")
     print(f"max prog is {max_program_rank}")
@@ -276,6 +357,8 @@ def compute_model_acc(df, preproc, response_preproc, response, fill=0.5, crossva
     pdf = pdf.dropna(subset=filter(lambda p: p != to_fill, norm_p))
     pdf = pdf.fillna(value={to_fill: fill})
 
+    concrete_rank_diffs(pdf, corpus_properties, program_properties , 50, 800)
+
     x = pdf[["fuzzer"] + norm_p]
     y = pdf[y_name]
 
@@ -286,7 +369,6 @@ def compute_model_acc(df, preproc, response_preproc, response, fill=0.5, crossva
     fmla =  f"fuzzer * ( {'+ '.join(norm_p)} )"
     ##
     ##
-
     x = patsy.dmatrix(fmla, data = x, return_type = "dataframe")
 
     dof = []
