@@ -82,6 +82,23 @@ response_variables = [
 multi_dim = True
 grad = True
 
+def plot_ranks_vs_normalized_values(df, props):
+    rank_props = [f"{p}_rank" for p in props]
+    norm_props = [f"{p}_norm" for p in props]
+    df = df[(rank_props + norm_props + ["fuzzer", "benchmark", "trial_id"])]
+    print(df.columns)
+    print("b4 ^ after v")
+    longer_norm = pd.melt(df, id_vars=["fuzzer", "benchmark", "trial_id"] + rank_props, value_vars=norm_props, var_name="Prop.", value_name="Normalized Concrete Value")
+    longer_norm["Prop."] = longer_norm["Prop."].map(lambda x: x.replace("_norm", ""))
+    longer_rank = pd.melt(df, id_vars=["fuzzer", "benchmark", "trial_id"], value_vars=rank_props, var_name="Prop.", value_name="Rank")
+    longer_rank["Prop."] = longer_rank["Prop."].map(lambda x: x.replace("_rank", ""))
+    longer = longer_norm.merge(longer_rank, 
+        on=["fuzzer", "benchmark", "trial_id", "Prop."],
+    )
+    print(longer)
+    sns.lmplot(longer, x="Normalized Concrete Value", y="Rank", col="Prop.")
+    plt.show()
+    return
 
 def concrete_rank_diffs_per_subset(per_b_x, prop, norm_prop, rank_diff):
         concrete_diffs = []
@@ -357,7 +374,10 @@ def compute_model_acc(df, preproc, response_preproc, response, fill=0.5, crossva
     pdf = pdf.dropna(subset=filter(lambda p: p != to_fill, norm_p))
     pdf = pdf.fillna(value={to_fill: fill})
 
+    plot_ranks_vs_normalized_values(pdf, corpus_properties)
+    exit(13)
     concrete_rank_diffs(pdf, corpus_properties, program_properties , 50, 800)
+
 
     x = pdf[["fuzzer"] + norm_p]
     y = pdf[y_name]
