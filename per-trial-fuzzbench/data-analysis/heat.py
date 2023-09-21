@@ -67,8 +67,9 @@ fuzzers =  [
     f"entropic",
 ]
 
-fuzzer = f"afl",
+curr_fuzzer = f"libfuzzer"
 
+fprops = [f"fuzzer{curr_fuzzer}:{p}" for p in props] if curr_fuzzer != "libfuzzer" else []
 
 df = df.to_pandas()
 for fuzzer in fuzzers:
@@ -91,13 +92,16 @@ print(ypred)
 
 # ===============
 
+for f in fuzzers:
+    if not f == fuzzer:
+        x = x[~x[f"fuzzer{f}"].astype(np.bool_)]
+
 max_corpus_rank = x["mean_exec_ns"].max()
+max_program_rank = x["bin_text_size"].max()
 all_corp = True
 num_rows = len(x.index)
 multi_dim = True
 grad = True
-
-fprops = [f"fuzzer{fuzzer}:{p}" for p in props]
 
 
 is_corp = defaultdict(lambda: False)
@@ -106,16 +110,24 @@ for prop in props:
         if base_p in prop:
             is_corp[prop] = True
             break
+
 print(num_rows)
 sampled_row_num = random.randint(0, num_rows)
 row = (x.iloc[[sampled_row_num]])
 actual = y.iloc[sampled_row_num]
 
+
+prop_maxes = [int(np.round(
+                  max_corpus_rank if is_corp[p] else max_program_rank)) 
+             for p in props]
+print(is_corp[props[0]])
+print(prop_maxes)
+
 all = []
 normz = []
 if all_corp:
     if not multi_dim:
-        for rank in range(1, int(np.round(max_corpus_rank))):
+        for rank in range(1, prop_maxes[0]):
             row2 = row.copy()
             for prop in props:
                 if is_corp[prop]:
@@ -124,24 +136,21 @@ if all_corp:
     if multi_dim:
         if grad:
             assert(len(props) == 2)
-        for rank in range(1, int(np.round(max_corpus_rank))):
-            for rank_inner in range(1, int(np.round(max_corpus_rank))):
+        for rank in range(1, prop_maxes[0] + 1):
+            for rank_inner in range(1, prop_maxes[1] + 1):
                 row2 = row.copy()
-                modd = False
-                for prop in props:
-                    for prop_inner in props:
-                        if is_corp[prop] and is_corp[prop_inner] and not prop == prop_inner:
-                            row2[prop] = rank
-                            row2[prop_inner] = rank_inner
-                            for fprop in fprops:
-                                if prop in fprop:
-                                    row2[fprop] = rank
-                                if prop_inner in fprop:
-                                    row2[fprop] = rank_inner
-                            modd = True
-                if modd:
-                    all.append(row2)
-                    normz.append(rank_inner + rank)
+                row2[props[0]] = rank
+                row2[props[1]] = rank_inner
+                print(f"set {props[0]} to {rank} and {props[1]} to {rank_inner}")
+                for fprop in fprops:
+                    if props[0] in fprop:
+                        print(f"set {fprop} to {rank}")
+                        row2[fprop] = rank
+                    if props[1] in fprop:
+                        row2[fprop] = rank_inner
+                        print(f"set {fprop} to {rank_inner}")
+                all.append(row2)
+                normz.append(rank_inner + rank)
             
 x_synthetic = pd.concat(all)
 
@@ -153,13 +162,13 @@ data["y_pred"] = y_pred
 data["norms"] = normz 
 
 if multi_dim and grad:
-    x_max = int(np.round(max_corpus_rank))
-    shp = (x_max,x_max)
+    shp = (prop_maxes[0] + 1,prop_maxes[1] + 1)
+
     print(shp)
     qarr = np.zeros(shp)
 
     for _, row in data.iterrows():
-        qarr[int(row[base_prop]), int(row[props[1]])] = row["y_pred"]
+        qarr[int(row[props[0]]), int(row[props[1]])] = row["y_pred"]
 
     sns.heatmap(data=qarr[1:, 1:])
     plt.show()
