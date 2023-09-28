@@ -9,6 +9,7 @@ import pandas as pd
 import seaborn as sns
 
 import matplotlib.pyplot as plt
+from matplotlib.colors import LinearSegmentedColormap, ListedColormap
 
 from collections import defaultdict
 
@@ -49,8 +50,9 @@ coefs = pl.read_csv("bootstrap_coeffs.csv")
 print(df.columns)
 print(coefs)
 
+model_coefs = coefs["estimate"]
 model = linear_model.LinearRegression()
-model.coefs = coefs["estimate"]
+model.coefs = model_coefs
 
 # ==================
 
@@ -59,15 +61,13 @@ props = [
     "mean_exec_ns", 
 ]
 
-base_prop = props[0]
-
 fuzzers =  [
     f"afl",
     f"aflplusplus",
     f"entropic",
 ]
 
-curr_fuzzer = f"libfuzzer"
+curr_fuzzer = f"entropic"
 
 fprops = [f"fuzzer{curr_fuzzer}:{p}" for p in props] if curr_fuzzer != "libfuzzer" else []
 
@@ -84,11 +84,13 @@ x = df[column_order]
 
 model.fit(x, y)
 
-model.coefs = coefs["estimate"]
+model.coefs = model_coefs 
 
-ypred = model.predict(x.iloc[[1]])
-print(np.dot(x.to_numpy()[1] , coefs["estimate"].to_numpy()[1:]) + coefs["estimate"][0])
-print(ypred)
+model_pred = model.predict(x.iloc[[1]])
+def predict(x):
+    return np.dot(x.to_numpy(), model_coefs.to_numpy()[1:]) + model_coefs[0]
+# print(model_pred, predict(x.iloc[[1]]))
+# assert(model_pred == predict(x.iloc[[1]]))
 
 # ===============
 
@@ -120,7 +122,8 @@ actual = y.iloc[sampled_row_num]
 prop_maxes = [int(np.round(
                   max_corpus_rank if is_corp[p] else max_program_rank)) 
              for p in props]
-print(is_corp[props[0]])
+
+print(is_corp[props[1]])
 print(prop_maxes)
 
 all = []
@@ -149,14 +152,17 @@ if all_corp:
                     if props[1] in fprop:
                         row2[fprop] = rank_inner
                         print(f"set {fprop} to {rank_inner}")
+                print("----------")
                 all.append(row2)
                 normz.append(rank_inner + rank)
             
 x_synthetic = pd.concat(all)
 
-y_pred = model.predict(x_synthetic)
-
 data = x_synthetic[column_order]
+print((data.iloc[-1]))
+print(predict(data.iloc[-1]))
+y_pred = predict(data)
+
 # data["y_diverge"] = y_diverge
 data["y_pred"] = y_pred
 data["norms"] = normz 
@@ -170,5 +176,26 @@ if multi_dim and grad:
     for _, row in data.iterrows():
         qarr[int(row[props[0]]), int(row[props[1]])] = row["y_pred"]
 
-    sns.heatmap(data=qarr[1:, 1:])
+    qarr = qarr[1:, 1:]
+    min_val = qarr.min()
+    mask = (qarr - min_val >= 0.5)
+    # inv_mask = (qarr - min_val < 0.5)
+
+    threshold = min_val + 0.5
+    norm_threshold = 0.5 / np.abs(qarr.max() - min_val)
+
+    if threshold < qarr.max():
+        colors = ["blue", "white", "purple"]
+        nodes = [0, norm_threshold, 1]
+        cmap = LinearSegmentedColormap.from_list("mycmap", list(zip(nodes, colors)))
+
+        print(f"min val {min_val}")
+        print(f"thresh is {threshold}")
+        print(f"max is {qarr.max()}")
+        sns.heatmap(data=qarr, cmap=cmap)
+        # sns.heatmap(data=qarr, mask=mask)
+    else:
+        colors = ["blue", "white"]
+        cmap = LinearSegmentedColormap.from_list("mycmap", colors)
+        sns.heatmap(data=qarr, cmap=cmap)
     plt.show()
