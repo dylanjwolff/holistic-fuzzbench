@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 import scipy.stats as ss
 
-df = pl.read_csv("data.csv")
+df = pl.read_csv("smartslow.csv")
 df_2 = pl.read_csv("aflslow.csv")
 df = pl.concat([df, df_2])
 
@@ -63,7 +63,7 @@ def plot_slowdowns(df):
 
     diffed_slowdowns = []
     decrease_colname = "Difference in Edges Covered"
-    slowdown_colname = "Slowdown (microseconds)"
+    slowdown_colname = "Slowdown (ms)"
     for slowdown in slowdowns:
         r = df.filter(pl.col("slowdown").is_in(["0", slowdown])) \
             .sort("slowdown") \
@@ -88,6 +88,8 @@ def plot_slowdowns(df):
 
     plt.show()
 
+# plot_slowdowns(df)
+# exit()
 
 def a12(measurements_x, measurements_y):
     """Returns Vargha-Delaney A12 measure effect size for two distributions.
@@ -155,11 +157,36 @@ def calc_paired_stat(df, f, mirror=False, inverse=True):
 def mwu(x, y):
     return ss.mannwhitneyu(x, y).pvalue
 
+def bf_adj(df, alpha):
+    h, l = df.shape
+    assert(h == l)
+    num_tests = h * l / 2 - h
+    print(f"BF adj. p-value is {alpha/num_tests}")
+    p_adj = df < (alpha/num_tests)
+    p = df < alpha
+    # if assertion fails, lost statistical power
+    #    can try bonferoni-holmes or other more powerful methods rather
+    #    than vanilla bf adjustment
+    assert((p == p_adj).all().all())
+    return p_adj
+
 df = df.filter(pl.col("time") == df["time"].max()).drop("time")
 base_df = df.filter(pl.col("slowdown") == "0").drop("slowdown")
 slowest_df = df.filter(pl.col("slowdown") == "100").drop("slowdown")
 
 print(calc_paired_stat(base_df, a12))
-print(calc_paired_stat(base_df, mwu, mirror=True, inverse=False) < 0.05)
+print(
+    bf_adj(
+        calc_paired_stat(base_df, mwu, mirror=True, inverse=False),
+        0.05
+    ))
+print(calc_paired_stat(base_df, mwu, mirror=True, inverse=False))
 print(calc_paired_stat(slowest_df, a12))
-print(calc_paired_stat(slowest_df, mwu, mirror=True, inverse=False) < 0.05)
+print(
+    bf_adj(
+        calc_paired_stat(slowest_df, mwu, mirror=True, inverse=False),
+        0.05
+    ))
+print(calc_paired_stat(slowest_df, mwu, mirror=True, inverse=False))
+
+
