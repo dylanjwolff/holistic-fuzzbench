@@ -1,6 +1,25 @@
-# On the Generality of Fuzzer Benchmarking
+# Fuzzing: On Benchmarking Outcome as a Function of Benchmark Properties
 
-This artifact is structured as follows:
+This repository is a fork of Fuzzbench which can run experiments and conduct analysis with *sampled* initial corpora for holistic benchmarking which can account for the effects of benchmark properties in fuzzing outcomes. See [our paper](https://dl.acm.org/doi/abs/10.1145/3732936) from TOSEM 2025 for details!  
+
+If you use this artifact for academic research, please cite our paper:
+
+```
+@article{wolff2025fuzzing,
+author = {Wolff, Dylan and B\"{o}hme, Marcel and Roychoudhury, Abhik},
+title = {Fuzzing: On Benchmarking Outcome as a Function of Benchmark Properties},
+year = {2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+issn = {1049-331X},
+url = {https://doi.org/10.1145/3732936},
+doi = {10.1145/3732936},
+journal = {ACM Trans. Softw. Eng. Methodol.},
+month = apr
+}
+```
+
+The artifact is structured as follows:
 
 
 `fuzzbench-per-trial-seeds` -- A modified version of Fuzzbench which allows seeds files to be provided for each trial. Also contains some pre- and post-processing scripts for gathering data
